@@ -1,0 +1,1 @@
+{"name":"freshly-noted-preview","version":"0.1.0","private":true,"description":"鲜有记家庭冰箱管理本地交互概念预览","scripts":{"test":"node validate_preview.js","dev":"node server.js"},"engines":{"node":">=20"}}
