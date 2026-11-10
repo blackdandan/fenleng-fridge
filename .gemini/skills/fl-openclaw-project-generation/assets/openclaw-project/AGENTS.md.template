@@ -1,0 +1,30 @@
+# AGENTS.md
+
+<!-- 中文注释：本文件是目标项目的 Agent 系统架构提示词与启动规则说明。 -->
+
+本项目是部署到 OpenClaw 的工程包。
+
+## 启动与路由规则
+
+当用户在特定的通信通道（Channel，如 Discord, Telegram 等）中表达以下触发意图时，网关将路由并加载主智能体及入口 Skill：
+
+*   **入口 Skill**：`skills/{{ENTRY_SKILL_ID}}/SKILL.md`
+*   **触发意图**：{{TRIGGER_INTENT}}
+
+## 智能体协同边界与 Standing Orders
+
+本工程采用 Requester-Specialist 模式，请遵守以下刚性执行边界：
+
+### 1. 主智能体（Coordinator / Requester Agent）
+
+*   **唯一交互窗口**：直接面向 Channel 用户进行交互和参数收集。
+*   **非阻塞委托原则**：主智能体绝不直接执行耗时超过数秒的代码运行、文件写入或外部检索操作。对于这些任务，主智能体必须配置为 `delegationMode: "prefer"`，通过 `sessions_spawn` 创建专门的子智能体（Specialist subAgent）并行处理。
+*   **会话挂起**：每次使用 `sessions_spawn` 成功拉起子任务后，主智能体必须立即调用 `sessions_yield` 工具结束当前 Turn 并挂起自身，静默等待 Announce 完成事件，严禁使用 sleep 或循环轮询子任务状态。
+*   **异常重连扫描**：主智能体在连线恢复（网络重连或网关重启）时，必须主动通过 `/subagents list` 扫描是否有挂起或异常中断的子任务。一旦发现，必须提取其 `resumeToken` 向 Channel 发送询问：“检测到此前任务因异常中断，是否恢复执行？”收到指令后再调用 `action: "resume"` 恢复执行。
+
+
+### 2. 子智能体（Specialist subAgent）
+
+*   **隔离与安全**：运行在独立的子会话环境中，拥有专属的 `agentDir` 存储，不能直接调用宿主的系统级敏感工具。
+*   **管道自驱动**：负责启动并执行 `taskflows/{{ENTRY_SKILL_ID}}.lobster` 定义的自动化编排流程，默认采用全自动流转，出错或完成时将结果推送给主智能体进行处理。
+

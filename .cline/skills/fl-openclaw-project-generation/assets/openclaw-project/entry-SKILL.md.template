@@ -1,0 +1,50 @@
+---
+name: {{ENTRY_SKILL_ID}}
+description: {{ENTRY_SKILL_DESCRIPTION}}
+---
+
+# {{ENTRY_SKILL_NAME}}
+
+<!-- 中文注释：这是目标 OpenClaw 工程的入口 Skill。它负责触发完整工程，不承载全部业务逻辑。 -->
+
+## 何时使用
+
+当用户表达以下意图时使用本 Skill：
+
+- {{TRIGGER_INTENT}}
+
+## 必填输入
+
+- `brief`: {{BRIEF_DESCRIPTION}}
+
+## 可选输入
+
+- `project_id`: 输出项目或运行实例 ID。
+- `mode`: `dry_run` 或 `live`。
+- `quality`: `fast`、`standard` 或 `high_quality`。
+
+## 执行步骤
+
+1. 确认用户 brief 和运行模式。
+2. 如果用户未提供 `project_id`，生成一个可读的项目 ID。
+3. 将输入写入编排层输入格式。
+4. 调用编排入口：
+
+```text
+{{ORCHESTRATION_ENTRY}}
+```
+
+5. 向用户报告当前阶段、输出路径和下一步。
+6. 如果失败，写入 `evolution/repair-log.md` 并返回可操作的修复建议。
+
+## 用户确认点
+
+- 调用外部付费 provider 前必须确认。
+- 写入或覆盖已有输出目录前必须确认。
+- 从 `dry_run` 切换到 `live` 前必须确认。
+
+## 成功标准
+
+- 编排层完成 smoke test 或 live run。
+- 输出结构化结果。
+- 失败时保留可复现输入和修复建议。

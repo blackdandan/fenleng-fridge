@@ -1,0 +1,40 @@
+# Figma Prompt Archive
+
+<!-- 中文注释：本文件用于记录 MVP Definition Skill 生成的 Figma Prompt 版本。每次新增或更新 Prompt，都必须更新本索引。 -->
+
+## Current Recommended Prompt Set
+
+- App: `{{current_app_version}}`
+- App Path: `docs/mvp/figma-prompts/{{current_app_version}}.md`
+- Web: `{{current_web_version}}`
+- Web Path: `docs/mvp/figma-prompts/{{current_web_version}}.md`
+- Mini Program: `{{current_mini_program_version}}`
+- Mini Program Path: `docs/mvp/figma-prompts/{{current_mini_program_version}}.md`
+- Review Status: `{{current_review_status}}`
+- Reviewer: `ProductUxReviewer`
+
+## Version History
+
+| Version | Path | Source Decision / Input | Change Summary | Review Status | Recommended |
+|---|---|---|---|---|---|
+| `FigmaPrompt-App-V1` | `docs/mvp/figma-prompts/FigmaPrompt-App-V1.md` | {{app_v1_source}} | {{app_v1_change_summary}} | {{app_v1_review_status}} | {{app_v1_recommended}} |
+| `FigmaPrompt-Web-V1` | `docs/mvp/figma-prompts/FigmaPrompt-Web-V1.md` | {{web_v1_source}} | {{web_v1_change_summary}} | {{web_v1_review_status}} | {{web_v1_recommended}} |
+| `FigmaPrompt-MiniProgram-V1` | `docs/mvp/figma-prompts/FigmaPrompt-MiniProgram-V1.md` | {{mini_program_v1_source}} | {{mini_program_v1_change_summary}} | {{mini_program_v1_review_status}} | {{mini_program_v1_recommended}} |
+
+## Versioning Rules
+
+- 必须按端拆分命名，例如 `FigmaPrompt-App-V1.md`、`FigmaPrompt-Web-V1.md`、`FigmaPrompt-MiniProgram-V1.md`。
+- 如果某次变更只影响一个端，只新增该端的新版本，例如 `FigmaPrompt-App-V2.md`。
+- 如果跨端变更，同时新增对应端的新版本，例如 `FigmaPrompt-App-V2.md` 与 `FigmaPrompt-Web-V2.md`。
+- 不得覆盖或删除旧版本，除非用户明确要求清理归档。
+- 每个版本必须说明生成依据、变更摘要和审查状态。
+- 当前推荐版本按端唯一：同一个端只能有一个推荐版本。
+
+## Review Checklist
+
+- [ ] Prompt 能独立说明产品定位、目标用户和核心价值。
+- [ ] Prompt 覆盖所有需要 Figma 生成的页面。
+- [ ] Prompt 文件按端拆分，没有把 App、Web 和小程序混写在同一个 Prompt 文件中。
+- [ ] Prompt 明确组件、状态、文案和禁止项。
+- [ ] Prompt 没有引入 MVP 未确认的新功能。
+- [ ] Prompt 已通过 `ProductUxReviewer` 审查。

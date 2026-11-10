@@ -1,0 +1,7 @@
+// 中文注释：静态 MVP preview 假数据。所有页面演示数据必须集中放在这里。
+
+window.MVP_PREVIEW_DATA = {
+  productName: "{{product_name}}",
+  summary: "{{preview_summary}}",
+  pages: []
+};

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fenleng Component Catalog",
+  "type": "object",
+  "required": ["schemaVersion", "components"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "responsibility", "requiredStates", "tokenFamilies", "forbidden"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "responsibility": { "type": "string", "minLength": 1 },
+          "requiredStates": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "tokenFamilies": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "forbidden": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

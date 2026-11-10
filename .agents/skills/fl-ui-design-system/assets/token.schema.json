@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fenleng Design Token File",
+  "type": "object",
+  "required": ["schemaVersion", "name", "primitive", "semantic"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "name": { "type": "string", "minLength": 1 },
+    "primitive": { "type": "object", "required": ["color", "space", "radius", "duration", "easing", "font", "fontSize", "lineHeight", "stroke", "elevation", "size", "breakpoint", "zIndex"] },
+    "semantic": { "type": "object", "minProperties": 1, "additionalProperties": { "type": "string", "minLength": 1 } }
+  },
+  "additionalProperties": false
+}

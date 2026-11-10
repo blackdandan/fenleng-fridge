@@ -1,0 +1,30 @@
+# Migration Report
+
+## 目标
+
+将历史项目目录迁移为标准项目资产结构：
+
+```text
+00-context/
+01-product/
+02-engineering/
+03-deployment/
+04-operations/
+05-knowledge/
+06-project/
+```
+
+## 迁移原则
+
+- 只迁移顶层目录、文档类目录和项目资产类文件。
+- 不改动 coding 工程内部结构。
+- 每个顶层路径必须有明确动作。
+- 执行实际迁移前必须由用户确认。
+
+## 映射清单
+
+{{MAPPING_TABLE}}
+
+## 人工复核
+
+{{MANUAL_REVIEW_LIST}}

@@ -1,0 +1,31 @@
+# MVP Discovery Log
+
+<!-- 中文注释：本文件记录需求澄清过程、用户回答、产品判断和范围取舍原因。 -->
+
+## Conversation Summary
+
+{{conversation_summary}}
+
+## Key Questions And Answers
+
+| Question | User Answer | Product Interpretation |
+|---|---|---|
+| {{question}} | {{answer}} | {{interpretation}} |
+
+## Scope Decisions
+
+| Decision | Reason | Confirmed By User |
+|---|---|---|
+| {{decision}} | {{reason}} | {{confirmed_by_user}} |
+
+## Rejected Or Deferred Ideas
+
+| Idea | Decision | Reason |
+|---|---|---|
+| {{idea}} | {{decision}} | {{reason}} |
+
+## User Confirmations
+
+- Generation confirmed: {{generation_confirmed}}
+- Preview scope confirmed: {{preview_scope_confirmed}}
+- Skill completion confirmed: {{completion_confirmed}}

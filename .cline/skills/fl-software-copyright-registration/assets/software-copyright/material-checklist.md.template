@@ -1,0 +1,60 @@
+# 软件著作权申请材料清单
+
+<!-- 中文说明：本模板用于整理软著首次申请或补正申请的材料清单。请将占位符替换为项目事实，无法确认的内容保留为“待人工确认”。 -->
+
+## 基本信息
+
+- 软件名称：{{software_name}}
+- 软件简称：{{short_name}}
+- 版本号：{{version}}
+- 申请主体：{{applicant}}
+- 申请模式：{{application_mode}}
+- 项目类型：{{project_type}}
+
+## 材料清单
+
+| 材料 | 状态 | 负责人 | 路径或说明 |
+| :--- | :--- | :--- | :--- |
+| 申请表填报信息摘要 | {{status}} | {{owner}} | deliverables/vN/申请填报信息摘要.md；必须通过摘要校验脚本 |
+| 软件说明书 | {{status}} | {{owner}} | work/软件说明书-{{software_name}}-{{version}}.docx → deliverables/vN/软件说明书.pdf |
+| 源程序鉴别材料 | {{status}} | {{owner}} | work/源程序鉴别材料-{{software_name}}-{{version}}.docx → deliverables/vN/源代码.pdf |
+| 截图材料 | {{status}} | {{owner}} | assets/screenshots/；先补入 work/ 软件说明书 Word |
+| 主体证明材料 | {{status}} | 用户提供 | work/ 或按官方入口要求准备 |
+| 软件主要功能描述 | {{status}} | {{owner}} | work/软件主要功能描述-{{software_name}}-{{version}}.docx → deliverables/vN/软件主要功能描述.pdf |
+| 软件独立开发及原创性声明函 | {{status}} | 用户确认，AI 起草，脚本生成 DOCX/PDF | work/独立开发及原创性声明-{{software_name}}-{{version}}.docx → deliverables/vN/独立开发及原创性声明.pdf |
+
+## 仅保留在 work 的过程文件
+
+| 文件 | 用途 |
+| :--- | :--- |
+| `work/第三方代码与开源组件说明.md` | 记录真实第三方、开源、委托或合作情况，按官方要求决定是否另行提交 |
+| `work/correction-response.md` | 补正阶段逐条对应通知并记录整改动作 |
+| `work/提交前自检报告.md` | 记录源码、PDF、字体、页数和人工阻断项检查结果 |
+
+## 目录规则
+
+- `work/`：保存草稿、扫描日志、源码筛选说明、自检中间结果和人工确认记录。
+- `deliverables/vN/`：只保存当前轮次最终 PDF、申请填报信息摘要 Markdown、材料清单和用户执行步骤；历史版本不得覆盖。
+- high_risk 源程序材料不得标记为可提交；应保留在 `work/` 并重新选材或列为人工阻断项。
+
+## 责任边界
+
+| 事项 | 用户 | AI | Script |
+| :--- | :--- | :--- | :--- |
+| 事实信息 | 提供并确认 | 整理和检查一致性 | 批量检查或替换 |
+| 开发方式和权属说明 | 提供并确认 | 起草声明和风险提示 | 无 |
+| 源码材料 | 确认路径和筛选策略 | 建议核心代码范围 | 提取、排版、审计 |
+| 说明书和截图 | 确认功能真实、截图可用 | 生成说明书草稿 | 可修复文档元数据 |
+| 补正回复 | 提供通知并确认回复事实 | 诊断原因并起草回复 | 重新审计材料 |
+
+## 缺失项
+
+- {{missing_item}}
+
+## 人工确认项
+
+- {{manual_action}}
+
+## 风险提示
+
+- {{risk}}

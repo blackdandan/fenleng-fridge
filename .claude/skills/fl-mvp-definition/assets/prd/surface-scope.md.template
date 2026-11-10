@@ -1,0 +1,27 @@
+# Product Surface Scope
+
+## Surface Matrix
+
+| Surface | In MVP | Primary role | Required pages | Explicit non-goals |
+|---|---|---|---|---|
+| Flutter App | {{flutter_in_mvp}} | {{flutter_role}} | {{flutter_pages}} | {{flutter_non_goals}} |
+| Web | {{web_in_mvp}} | {{web_role}} | {{web_pages}} | {{web_non_goals}} |
+| Taro Mini Program | {{mini_program_in_mvp}} | {{mini_program_role}} | {{mini_program_pages}} | {{mini_program_non_goals}} |
+
+## Mini Program Platform Scope
+
+| Platform | MVP level | Shared flow | Platform-specific capabilities | Certification expectation |
+|---|---|---|---|---|
+| WeChat (`weapp`) | {{weapp_level}} | {{weapp_shared_flow}} | {{weapp_differences}} | {{weapp_certification}} |
+| Alipay (`alipay`) | {{alipay_level}} | {{alipay_shared_flow}} | {{alipay_differences}} | {{alipay_certification}} |
+| Douyin (`tt`) | {{tt_level}} | {{tt_shared_flow}} | {{tt_differences}} | {{tt_certification}} |
+
+## Cross-Surface Contract
+
+- Shared domain concepts: {{shared_domain_concepts}}
+- Shared API/error/permission semantics: {{shared_contracts}}
+- Shared Design System components and states: {{shared_ui_contracts}}
+- Allowed platform differences: {{allowed_platform_differences}}
+- Unsupported capabilities and fallback: {{unsupported_and_fallback}}
+
+“可编译”“基座 Conformance”和“具体应用 Production Certification”必须分别记录，不能互相替代。

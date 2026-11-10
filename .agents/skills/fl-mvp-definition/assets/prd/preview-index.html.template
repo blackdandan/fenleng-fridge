@@ -1,0 +1,17 @@
+<!doctype html>
+<!-- 中文注释：静态 MVP preview 入口。必须引用本地 styles.css、mock-data.js 和 app.js。 -->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{product_name}} MVP Preview</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <noscript>This preview requires JavaScript for local interactions.</noscript>
+    </div>
+    <script src="./mock-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

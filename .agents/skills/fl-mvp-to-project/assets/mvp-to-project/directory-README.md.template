@@ -1,0 +1,21 @@
+# {{TITLE}}
+
+## 用途
+
+{{PURPOSE}}
+
+## 放什么
+
+{{INCLUDES}}
+
+## 不放什么
+
+{{EXCLUDES}}
+
+## 关键文件
+
+{{KEY_FILES}}
+
+## 与其他目录关系
+
+{{RELATIONSHIPS}}

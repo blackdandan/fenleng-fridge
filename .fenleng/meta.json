@@ -1,0 +1,2961 @@
+{
+  "schemaVersion": 3,
+  "managedBy": "fenlengtechbase",
+  "baseVersion": "0.7.34",
+  "sourceSha": "89a1617edbfd1595342b532c586e70b881098d45",
+  "targets": [
+    "codex",
+    "claude-code",
+    "gemini",
+    "cline"
+  ],
+  "managedFiles": {
+    "codex": "AGENTS.md",
+    "claude-code": "CLAUDE.md",
+    "gemini": "GEMINI.md",
+    "cline": ".cline/rules/fenlengtechbase.md"
+  },
+  "managedAssets": {
+    "codex": [
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/audit.md.template",
+        "sha256": "94b046881b4580e1d85aefd306ca4062f47092b6cda1b04149ad994fa7d5ddcc"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/evidence.md.template",
+        "sha256": "9740676669e314c24716786dba5e53f5ce8f92f8dd0685f679a60bb95838df33"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/metrics.json.template",
+        "sha256": "67be4e3d0eb36fdcf228c859e24695878e66521c4cee3df017ab1ad41e9d0b21"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/optimization.md.template",
+        "sha256": "66341441430d06e4c26658e826894fd1daee18706def1cdf75f0528c5c55fa11"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/README.md.template",
+        "sha256": "63835eb04f13873cd89f58b8c5d1e5827a1265630b5b92408c4e4efd1139163b"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/epic-plan/TEMPLATE.md",
+        "sha256": "cd2900e1ce93e482303fc492955a7d4dd8610e0ea66f895b92a3535ac6c9ef87"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/flutter-oh-baseline.json",
+        "sha256": "4932cf8c5f364597d23c0a8c3af14dac845a31225371c276c4f3fff67396a176"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/assets/wp-spec/TEMPLATE.md",
+        "sha256": "e73284e425603ac67c5bf54b47bd5b50766660cc21002726c4290077c2fb2f10"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/architecture.md",
+        "sha256": "b6f005b84613ea2e5974211c12ea7cbd53031329e58cc6c124ec1403f7378c2f"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/day0-account-channel-i18n.md",
+        "sha256": "423e15e2c18a90a2be49ea4d0b2924efb695fcefa0c72afb84018ad3de49427e"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/day0-china-app-privacy-consent.md",
+        "sha256": "d1b99cc10b4eb2a18ad11e5e9872cbde93043c8677785a63b52062515cf3b022"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/day0-ipad-basic-adaptation.md",
+        "sha256": "d7bd133730ba103761648bee846d90cfce3672d931a52da37fba02e51637b7ed"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/day0-telemetry.md",
+        "sha256": "11e0debbd8ee02a617d33055ddb2364dd1eb1c8aa341b57a4f2a12dc5278a6ad"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/design-clean-architecture.md",
+        "sha256": "4ba0bebdb44cce8419091ad3abedb38b251b81150fafc2340bf31939b9f910cb"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/design-modular-architecture.md",
+        "sha256": "f309782c97870b2dffdb665aa4d31f916f2fbc76d60887f72f1a153a73a20205"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain-backend-architecture.md",
+        "sha256": "f1b1606a9abe1eaaf3c690f6ff4271439bcf63d90f589b10307deac5b2062b9f"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain-flutter-architecture.md",
+        "sha256": "107c4164d003349dc4352a9f1f4cca961c7421d32c5fc96d09beeb066ea61b2a"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain-mini-program-architecture.md",
+        "sha256": "9334e747c77d45a9be458a0ce8df3e1cc39e95e16241c14572ad1ee478a616e4"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain-ui-design-system.md",
+        "sha256": "f882aaba4e946987d6ed0038b57fe82b169b365ae730f0b750f29572f5ace462"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain-web-architecture.md",
+        "sha256": "fda581ed18430b2a750d80b4979cbdcf39cd487e34a23cd667285a17440625d1"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/domain.md",
+        "sha256": "315280cefb55cb9e3fcb9a07bfc746f056ed83005ff3273a8c8899bed5497ba9"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/engineering-clean-code.md",
+        "sha256": "0153bd322e8763882f083e954908b39b7b218b1ddfde8a73abf74131946e5e30"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/engineering-karpathy-guidelines.md",
+        "sha256": "6ae5e4015b8061e12bcfb77e5ed43027288dbd1fd22092e3757bd866d39654c1"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/experience-sdk-routing.md",
+        "sha256": "ed5815fcfbbd5b31c317a9fe5bded4c526f299203241656ec52c9326486fd870"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/flutter-oh-three-platforms.md",
+        "sha256": "23ce3e16bcd9b02ebef7e70d676a28fa13a16cbb8a5d12ac9bdeaacbff9fff7a"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/harmonyos-native-capabilities.md",
+        "sha256": "027cf77f711a70d20abee924c2b2b4aa8637f14ba1da17fc7778095931456f18"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/harmonyos-signing.md",
+        "sha256": "e04fd2f5e87a518b81d1214176f2eb761d976dad9910e5e3736929f7d6f54f01"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5667896a8688e6bae54a5e1c77a3b239608010c8c48e3c7bbf5739016b20ab5b"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/testing-mocking-rules.md",
+        "sha256": "a206f680968df5b81f55c79ffcee757740cb533fef2d219b09f8325ed5d64d0e"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/references/workflow-clarification-gate.md",
+        "sha256": "6ab3af0f4d3a3cbd821e7294f3f11961b9c14aeb4b661e49c22486a9d2f54f86"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/check-flutter-fvm.js",
+        "sha256": "9287e7a74f96e34bd6e01a1227c451ac15816b04b0c6e59070181527b87cfcca"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/check-flutter-oh.mjs",
+        "sha256": "3098d917bdab5403a29abbb16dbaf8b673193f3e1aef0325641edc863ffcaddd"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/check-git-clean.js",
+        "sha256": "6e144b16cb2a75c373eeb66b7bb06b5258872d317a07b7f240d004f9e6540d42"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/check-harmonyos-environment.mjs",
+        "sha256": "d5c0b3a7a8a3c379560b57673a404789b36deeca9213c6064ec0e7c4d56157c6"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/package-flutter-android.mjs",
+        "sha256": "d64e0b6a6a39ffb31baa7088ef0af98a3116200bca9b702a190a6dcdf6def4a2"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/package-flutter-harmonyos.mjs",
+        "sha256": "14aa194d2ec23128d68702d0c53fa25d814b0cce28fac473dbceb434a0f2055d"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/store-flutter-android-signing.mjs",
+        "sha256": "4197418268d88f3f9f3052f3695dec9c28c60ee2a03b151e663554a534089132"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/scripts/verify-harmonyos-signing.mjs",
+        "sha256": "69fb2150a9cc99b715353b435c15e1678fc349e7a29c054b57016e4f98d9cdcb"
+      },
+      {
+        "path": ".agents/skills/fl-ai-coding-delivery/SKILL.md",
+        "sha256": "56c05cc6d8d631ee0bc3b2e4d9bb70310eddb618d4eb9fe0d21945147dd2ad7c"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/references/alipay-app.md",
+        "sha256": "b1d3b3158f5f32b5299e5e00c0eba218a3b65ffa07a93bf15e6febb365ab8866"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/references/apple-storekit.md",
+        "sha256": "5cc1ad41b0775bee8f8c874c87a6ad0f19a0588a496a6cc4aef288a1a11a27fc"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/references/digital-subscription-channel-policy.md",
+        "sha256": "20a0fc3bd380f4a6c429049944913dff6ccd0ca6c59364a993e1c01fe272d4d1"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/references/purchase-agreements.md",
+        "sha256": "65f368bd1bbe3e578ba21b9aee2d84bc710d51cb87f45c9b663b2800295df29f"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/references/wechat-app.md",
+        "sha256": "4a4139b03346ae3bc561ce35a69f673c38a8f38a49180ba24035a00f187b9f8d"
+      },
+      {
+        "path": ".agents/skills/fl-app-payment-integration/SKILL.md",
+        "sha256": "d673a6f54c89bac13fa8d454fc59756ebcbb857dc180b5467d8fc63f463daa2e"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/additional-market.md.template",
+        "sha256": "e181550b1a649b3867fd58a37da09e6a17bbdb2d2627112abec1c3034216fa8f"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/apple-app-store-initial.md.template",
+        "sha256": "01435f2dea53e6a746ee861835ded73189c04c3efecb7d9416a83b43fccec8c8"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/apple-app-store-release.md.template",
+        "sha256": "05b0d69ec221429ae54d4d37f5b11362664bd6af543ceba684300778127a0851"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/authorization-info.md.template",
+        "sha256": "17a2728a7275c586f4ef1734ee9d0b3e96fcf031b09f25e8bacebeedf5b8afa3"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/tencent-myapp-initial.md.template",
+        "sha256": "bfd0b36419aa7413de02b1001a7f858b80cb18ddcfaa548235cacf357f40c082"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/assets/tencent-myapp-release.md.template",
+        "sha256": "f9039566277dfee25a6334dd6b8e59b03a4357170e9afc0cdbe1c71a3d472506"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/apple-app-store.md",
+        "sha256": "785f6e76bf1aec44be4366336403668726b622e38d6fb2de2cc53899cae13a5d"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/asset-delivery.md",
+        "sha256": "c11d57d196347b57c7f635f5296396210d84ad727b448203f2dfe3d398c799c6"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/channel-discovery.md",
+        "sha256": "74a83e148f87f0d4881ba579833099d50e3192a5c9bf1446a80f53f23b72fa86"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/huawei-appgallery.md",
+        "sha256": "2d9edf7f954ddaaa75b79a61d4deb2c38d2cd0eae49823cb409088eaaf8739d5"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/huawei-harmonyos.md",
+        "sha256": "b1fd3337c38b4e3172b5685a4b8ef6feae4f7f42f5b85bf128bad991f41c9fd7"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/tencent-myapp.md",
+        "sha256": "f081e0b56afe488a7ae8ba4b30036706454497b42e839587e1a62f1397d91d9d"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/references/vivo.md",
+        "sha256": "f653ebfa3881ac9ad3a6ded7a482700702e9c02075505a94809f97f9cd926a60"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/scripts/validate_assets.py",
+        "sha256": "dc6aa2a48e8c0a75fd77c935ca7923ba343f61f2d4740af46e62efae46759079"
+      },
+      {
+        "path": ".agents/skills/fl-app-store-listing/SKILL.md",
+        "sha256": "ff2c9cd185e9d08b2de028805e643809194de45c68b35fe0cef8a916338f10a1"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/assets/project-knowledge/cross-project-coordination-result.yaml.template",
+        "sha256": "578938826b222dc5dc746cd15067ff22f16852413a44bc27fa24328f6f8f9fed"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "93b819afef5a6791e569e686ea38685cc8b07ad54307cbe2805a020275417224"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/references/project-matrix-dependencies.yaml",
+        "sha256": "3dc053bc85d32f3c6da261d8b910170855d7d13352b5850f62eb8817babc6378"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".agents/skills/fl-cross-project-coordination/SKILL.md",
+        "sha256": "eaeb61fed619f78f96bd65761ca9ea73b4026981c2a42f70675d2328f5146dd0"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/agents/openai.yaml",
+        "sha256": "9519495ffb170eddb22f965669be31503b24854257a13000272d51c48a2da52d"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/agy-cli-capabilities.md",
+        "sha256": "bf1c07f615f4f5b37a7f37dbc333c6abc04793c41a833710bfb05ee5616848f8"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/cline-cli-capabilities.md",
+        "sha256": "37d5003ea3797ccf1b4c45774483606936005705f3e76af87e9d4b3391ab7166"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/codebuddy-cli-capabilities.md",
+        "sha256": "ec693612d26f0454198680de545dfc868ce70d3371f8d0f3bedd5a64b66b8ca2"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/delegation-contract.md",
+        "sha256": "d3f59037731dcd267fe39097007eecc9156d995409a74bb5a694fe7cde053a7e"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/delegation-task-catalog.json",
+        "sha256": "727efc1dcb47e5e54cb3f93f175e66e1d88e5b45702b3cd558815ad38767525e"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/executors.json",
+        "sha256": "ab3ee88350c88a48e1f4a7422d1333b852cf8dcf4542ebcd4b670c55f28148a9"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/openai-luna-cli-capabilities.md",
+        "sha256": "f378696f76e84191fa2d535b89da36a6b6bc77a6809dd2c3edc5ad2cd63c70d8"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/orchestrator-executor-protocol.md",
+        "sha256": "8c48a2ccdd68e98a48cd4648df574db15f9c08e897f5de2e205dd47e8909a1b8"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/references/probe.schema.json",
+        "sha256": "85f55e1be98a1fd874bb40d68615cf8bf8fd935c1d87265971a0b001ecf9fb0f"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/scripts/agent-broker.mjs",
+        "sha256": "6bd32789a262c6eb3bdb7a2834c33600a3b673e72356f630ba194b6a7109c761"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/scripts/session-stream-filter.mjs",
+        "sha256": "300d23022c96ced3bdbe25d37b24e5779fa4456e68994a15b3cee27afa23242a"
+      },
+      {
+        "path": ".agents/skills/fl-delegate-coding-tasks/SKILL.md",
+        "sha256": "3d4dd5be8caed61f85f2367636df8fdfa346bf70967e6a9a1096e6b67b32e4cc"
+      },
+      {
+        "path": ".agents/skills/fl-figma-map-ui-loop/assets/fidelity_sample.py",
+        "sha256": "2282d9cf2c6acf78fd988c3292e0d6be050d838ec7a988933922ce1020083cd5"
+      },
+      {
+        "path": ".agents/skills/fl-figma-map-ui-loop/assets/figma-map-template.md",
+        "sha256": "c4a1048aa98438ce98c0d86f403549a89aac90d2d77d373ff55ddbdd2b1e2c9d"
+      },
+      {
+        "path": ".agents/skills/fl-figma-map-ui-loop/assets/golden_test_template.dart",
+        "sha256": "ea72c7a68d77736fa8582df1f1b2e6a4055ce2c48bdf9c451c8224a5f541ea2a"
+      },
+      {
+        "path": ".agents/skills/fl-figma-map-ui-loop/assets/vm_goto.dart",
+        "sha256": "61450b96116c4e5b2b5e1a1ac53223a0ef126266e79ce8869f2f019c6533b77c"
+      },
+      {
+        "path": ".agents/skills/fl-figma-map-ui-loop/SKILL.md",
+        "sha256": "0b92db0ea0dab210a364a778753f5a39da3d15906a0cfde8617bcada81d910a0"
+      },
+      {
+        "path": ".agents/skills/fl-figma-mini/agents/openai.yaml",
+        "sha256": "1360a92ceb7983746b11f2dde33576f94596880817f62b9e50352b8d704c3dd4"
+      },
+      {
+        "path": ".agents/skills/fl-figma-mini/assets/fidelity_sample.py",
+        "sha256": "8a2fd38d801db2c872b286d4e8ef78572b51141f4290c5cf3723c34315af0c49"
+      },
+      {
+        "path": ".agents/skills/fl-figma-mini/assets/figma-map-template.md",
+        "sha256": "271967581468a89844921a005e0d36c9da26d9c4650b85641accea6472019ee7"
+      },
+      {
+        "path": ".agents/skills/fl-figma-mini/SKILL.md",
+        "sha256": "1e7c46fae73b9912697ec0b13f4446416ca6e1712cd593c08800bb7c737358d0"
+      },
+      {
+        "path": ".agents/skills/fl-matrix-operator/references/application-credential-onboarding.md",
+        "sha256": "d13641f34e4d5a2668f4bfef8b770920522bf154638c85f2af592d17c3a654ba"
+      },
+      {
+        "path": ".agents/skills/fl-matrix-operator/scripts/render-application-credential-script.mjs",
+        "sha256": "e40cb9aadaa2c64020a9b323238c218fe2afd322c3872b5c2531eed016590cc2"
+      },
+      {
+        "path": ".agents/skills/fl-matrix-operator/SKILL.md",
+        "sha256": "f7f33fa1e38842faaac4ff300029c33202a08cb414412d9d035964e614c41b4d"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/acceptance-criteria.md.template",
+        "sha256": "22f19535a7422aa3385ac2a604ff8d8832fa689c2a2eea98ec8f5eefdd18c6ff"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/audience-and-expectation.md.template",
+        "sha256": "5ca49c1ae74fe846537408beee3e3747dc70f93d08c86dac167cdce3c72e59e8"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/data-and-states.md.template",
+        "sha256": "8cf2221e77fed2da6307176d843ce1b4a6eeff00505f09ec1d26676ac17b8209"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/discovery-log.md.template",
+        "sha256": "980c8d84becd19e8f212db527407852acf2af7cf6851a5abc7407646ff249bcc"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/feature-scope.md.template",
+        "sha256": "359f48fd11be7007954677fe0c68519e6d3b7e7daf6e4decbac5da0006947bdf"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/figma-prompt.md.template",
+        "sha256": "cd848fb47331e455d7fbb10121f091f02f0f5f506c1bc94ce57c1f85d540c7d1"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/figma-prompts-README.md.template",
+        "sha256": "ace133d579384e09cf369b8dd53309ef2d9b48ec5a45e499e9627cc62e1b12b0"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/mvp-definition-summary.md.template",
+        "sha256": "692aa4260455ae4ea93a65be5b949685e6d5319f34b71693e628d0a4f7e8907d"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/MVP.md.template",
+        "sha256": "ab1350d7fef839b0486b6676e7bab05d4e20427f827b6b53c82c7dbc091d42c9"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-app.js.template",
+        "sha256": "798fc71ac46231ce8d451f3a4e85f643609f5afaf4a4df4a1eab2372bb158165"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-epic-plan.md.template",
+        "sha256": "a7fea4a9c473e69eb7aaf325d407637cdf0f63a5b6f0ed7814675a47ea273a87"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-index.html.template",
+        "sha256": "7a7f79cca0bdfa2069b982e718ba1676baa61e2bacd4cd867873b2f0b22816ee"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-mock-data.js.template",
+        "sha256": "c7e0306ad5f2e2439dd677c333dc636c3f5bed1073f665211bbae91b3a79692f"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-README.md.template",
+        "sha256": "6c1a53b1a263297534da4755c8fb8e58d492458d3a4ed3b9e1b6289ddc68af4a"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-styles.css.template",
+        "sha256": "18aefbfd42da96bcc7e4781289ff7eef28879937ef7e320973d1cb79bc9eca4a"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/preview-wp-spec.md.template",
+        "sha256": "8696badbb237cfb351b0d0a2d548812f639b44bec931f7b1f95fa629271d6883"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/README.md",
+        "sha256": "1284981975599ac844ce76c4bc425910b9a85c3f59fedaf46655d492029101b8"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/surface-scope.md.template",
+        "sha256": "3247483c23af42f180d556cfdf401d719181416803b49e32ae6f3ac3fab5623d"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/user-flow.md.template",
+        "sha256": "f9b2feef841f9b431a34d8ab9cc6ffc0e01c4710ae6423f844ababf2fd47da98"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/assets/prd/version-history.md.template",
+        "sha256": "68f8e43fb426fa4f672aa4129b0ce947fd809ecba406712f82e7833ec5dead7f"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/references/mvp-conversational-definition.md",
+        "sha256": "db66bcbb7009ebf8b50c2a03f9777df926664538cf43559efd398e659a4c9b94"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/references/mvp-pm-closed-loop.md",
+        "sha256": "25df8e8226264664f1e93dbaf7e5a3cd9f8399bfe23af963ad1b9106afc291fd"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/references/mvp-preview-generation.md",
+        "sha256": "509645e2566e9940a5a2b344978ea5de48219f4de34279b1d4ffeda054757d2b"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-definition/SKILL.md",
+        "sha256": "5ed99c89462e5f7df41a6d2ce9f03440f72e625d717a3cbd74fbf709dd09cf78"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/architecture.md.template",
+        "sha256": "4cf99dca7768eedc43805417631349e7d73e2ee0526a520b3e91215f8d21ad99"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/coding-guide.md.template",
+        "sha256": "2fd746d5005952d0a91ed6654473664732b4dfe2c59e95e98fd0a73d2f63f08a"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/directory-README.md.template",
+        "sha256": "0409c3ac68b9c319f825c0c1029f830683117bf1f858f115856a72ef9f59e530"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/engineering-guide.md.template",
+        "sha256": "da0c616da9a09f641463731e5bb0910c9560e4b2b904609cd0458acd0df4e652"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/migration-report.md.template",
+        "sha256": "55bdbfd3d8c0b41282ddc9ce96eaa747a92cde6b738185b47fee17ffac3c37d9"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/assets/mvp-to-project/project.yaml.template",
+        "sha256": "db9b6882e777d2a11713e6014f0f3afe1b4bd0fa76eb3259a656e23f42d00c65"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/references/mvp-to-project-project-asset-structure.md",
+        "sha256": "f5387adf0d02d22989cb5c1b4001d67efea744d0d43ee174cf464be181992360"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/scripts/mvp_to_project.py",
+        "sha256": "7fe486b2bf9ac4a861b2d02c774783cefb3cfcc9cb3bab64dc1c72db38f3dff5"
+      },
+      {
+        "path": ".agents/skills/fl-mvp-to-project/SKILL.md",
+        "sha256": "1c22ef37eceae658eea65c88c5707e6918e1d0aa9b18b4804c6d126dd9f208bc"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/assets/openclaw-project/AGENTS.md.template",
+        "sha256": "351469d44ee9660b3c126f12936b07637645033e5bc560289e370ecb4c8cf31a"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/assets/openclaw-project/entry-SKILL.md.template",
+        "sha256": "cf81c6bd6cf062864c6b167dab405490c7b95ddcfaac690f0f037f825663b1b0"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/assets/openclaw-project/openclaw.project.yaml.template",
+        "sha256": "8a253e458dcfee2fcb12161e6016e4aad045512c32d5f6325408f4f9bce533b5"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/assets/openclaw-project/README.md.template",
+        "sha256": "8a3c466db32fc45ca95f3cb3e5535969ec0528b637a02a3d1ec585707e6e13c2"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/assets/openclaw-project/taskflow.md.template",
+        "sha256": "93355f52865fd77028fcf20c9ebffbc2c67c13632d950cd4239ba6733e73e35d"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/references/harness-human-control.md",
+        "sha256": "442e4bb936d353ba02a839b633e102a5360cc85ee6ec9b59e83359f8cea70d57"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/references/harness-tool-boundary.md",
+        "sha256": "fc8ec79dff6a2f4f3ac6b617eebb85fb3259b0ba818e80c351a59bc63358d52b"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/references/openclaw-project-generation.md",
+        "sha256": "675c868ddeadd0497acfd6492efec32186e0913567a1bc400272368028b78c49"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/references/standard-skill-definition.md",
+        "sha256": "4138dfe058a29c47ed033f06bd41c35cde9eddd17b219fd2b01312578b6284db"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/scripts/validate_openclaw_project_spec.py",
+        "sha256": "67ceab5b17633ac6825552f603206cf014591ca6ef960288e2dc77dc12148889"
+      },
+      {
+        "path": ".agents/skills/fl-openclaw-project-generation/SKILL.md",
+        "sha256": "e17ad3803656b3ca72df95237b6a3c3098362c20434cbe9a4fec9b62af6d6adb"
+      },
+      {
+        "path": ".agents/skills/fl-project-knowledge-maintenance/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "04b42a8e980dd9e5b85996890a0638e85115fb4cfccdcba4cda12bf73490c27c"
+      },
+      {
+        "path": ".agents/skills/fl-project-knowledge-maintenance/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".agents/skills/fl-project-knowledge-maintenance/SKILL.md",
+        "sha256": "e94a6eb9ef78db27920f48269b858ebb6c135310612e2277e79acdf117ce9d93"
+      },
+      {
+        "path": ".agents/skills/fl-project-mcp-onboarding/assets/project-knowledge/fenleng.project.yaml.template",
+        "sha256": "0d825ac5c33786139cddc52b76b7bbe51c53dae2e50565dc108999a49db46ca0"
+      },
+      {
+        "path": ".agents/skills/fl-project-mcp-onboarding/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".agents/skills/fl-project-mcp-onboarding/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".agents/skills/fl-project-mcp-onboarding/SKILL.md",
+        "sha256": "a9e19c649967e50b44ae8e42d7e2c00612fdd3118bf1d2f670b417057cbf07f9"
+      },
+      {
+        "path": ".agents/skills/fl-select-node/agents/openai.yaml",
+        "sha256": "4e255744a33c0264a6be2d88894397aa3926b7f38e8c1b4976d0343770d9caa7"
+      },
+      {
+        "path": ".agents/skills/fl-select-node/scripts/refresh.py",
+        "sha256": "fe19ce9d1a086fd8609da6f695bfa6a81e7286e7b758d30cc322be3bc2925399"
+      },
+      {
+        "path": ".agents/skills/fl-select-node/SKILL.md",
+        "sha256": "fa5953d13fcb375cc02f047a2bac1b52213d727eb3ed0dc1fc180de81d346db3"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/application-info-summary.md.template",
+        "sha256": "6800e6bcf93e22a1509de114012fc46253f99330430ce3d4bcf961966600478e"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/core-function-description.md.template",
+        "sha256": "912fcf7d4e5a31bda683d7ce37aec9f0aa4789b466bdfb53e2ebf2bff6790e1f"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/correction-response.md.template",
+        "sha256": "cf95eaaeef0f3e452d5854a750e5864307beb455ea36716c6ac1505121f243d4"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/final-deliverable-manifest.md.template",
+        "sha256": "6d20d6195b66e402344f38a8cddec44494d8acea58f192487a6499508b62e3ee"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/independent-development-statement.md.template",
+        "sha256": "efd476f787c886ccec98df45aa530dde8089b7936bc43b5cf7684e3ca57a49e8"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/material-checklist.md.template",
+        "sha256": "768e56ac666f24f5366a3b0fb8be8d510a69c4a9f99dac832a4a525bc56bb96a"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/software-manual.md.template",
+        "sha256": "d30b5fafb8085c13b08c81622508fd839c37fd89c87b4d70885884b7ced82bf0"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/third-party-disclosure.md.template",
+        "sha256": "26117c4b3916a40d211757031a7938554ea70c1f2fb37e8460646ab677346742"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/assets/software-copyright/user-action-guide.md.template",
+        "sha256": "6f12f66114f9f3c8e50d2d258fe8b35ac369950b26ed3047a1c1694b6018fe99"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/references/ip-application-info-summary.md",
+        "sha256": "ef043c0d489ac3d49797d498159a191195d077b1fffc679f24559b9853fd3ade"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/references/ip-correction-response.md",
+        "sha256": "460d51796a46df02475d55fd0691cb2578391043a6ec77999f5d15c87221b2b5"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/references/ip-software-copyright-boundary.md",
+        "sha256": "f8b79c90b6a5ba62b4759b2129816594465403dcf5692ee8e98367e8bc2f9384"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/references/ip-source-code-material-authenticity.md",
+        "sha256": "4b0bb6edee11ac8265f27f8119d256e4277e9716866fdaf578d3b0ed38cc7823"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/audit_common_identifiers.py",
+        "sha256": "e7066752b9f7954fcbe28e4b95d46add9c6098deeb867aa2ba52b7760c9e5e0a"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/build_deliverable_package.py",
+        "sha256": "a4732c1971ab5714ba1673bc63f0ea5b8748e52b4a47bb2029de30452543c03f"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/check-copyright-source.js",
+        "sha256": "459f38979334e85fdebfaeac8eac9cc04396a0e8f910d102b9d231f8cca34ce2"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/extract_source_material.py",
+        "sha256": "098862ce768ce37abd9802809a5f6febd5855dc52f49f93f3809c3f8e4e3a5a9"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/fix_docx_metadata.py",
+        "sha256": "ee764b3a88e9970079f520f619a1516ef4f7d44b39748d14e3adc58403d91fef"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/pseudonymize_common_identifiers.py",
+        "sha256": "2e319a23e41735f213f437ce0ac6b928fd0b6a861b3459f7c8a3a2344630ec63"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/render_docx_pdf.py",
+        "sha256": "60ee8fdedb8163e1188f72b33650b5b0a22681887e82a9589a918b44667cd195"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/review_source_material.py",
+        "sha256": "722844c38770bfeb4614146ba3a8654a4a778529395320ef988026276b1e97f6"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/scripts/validate_application_info.py",
+        "sha256": "c5598181834529d3ebbf7cb71861753a32174093753c4ef95234b6a4219d8d38"
+      },
+      {
+        "path": ".agents/skills/fl-software-copyright-registration/SKILL.md",
+        "sha256": "8a4413091a88e9e2f0a304235056fdb4f75ce25a4c71801d3b6769dd2efcb638"
+      },
+      {
+        "path": ".agents/skills/fl-taste/references/design-methods.md",
+        "sha256": "befc9dbbd168b2294c5a91d5f4836286d44de27d83abec4483b5e769bfed1ba4"
+      },
+      {
+        "path": ".agents/skills/fl-taste/references/provenance.md",
+        "sha256": "ad3b96e06699e388c28f0155bed902a5ff465b0cdbde8cdc790f461f31b33252"
+      },
+      {
+        "path": ".agents/skills/fl-taste/references/upstream-license.txt",
+        "sha256": "3c9f63518df3378772203cc64d38d9e381d2a4723b93d2c3849b2bf3d464de0c"
+      },
+      {
+        "path": ".agents/skills/fl-taste/SKILL.md",
+        "sha256": "5e0f64d827be319150493f6860a2a60191084cf47f49841650279d2d59532334"
+      },
+      {
+        "path": ".agents/skills/fl-ui-design-system/assets/component.schema.json",
+        "sha256": "35c322eca9b4e95ad36ca7f47e9de6fa23d8796acc112c7c31136f42d97712db"
+      },
+      {
+        "path": ".agents/skills/fl-ui-design-system/assets/token.schema.json",
+        "sha256": "04e5d584d42ace9d83b3b259d931ae7577458176cbdc052c725aa4e446e0df43"
+      },
+      {
+        "path": ".agents/skills/fl-ui-design-system/references/knowledge-loading.md",
+        "sha256": "362944c229b0238635492fe673c4aa8ec3b3f5c4de8c4aa78a5e06c4ea9e2eae"
+      },
+      {
+        "path": ".agents/skills/fl-ui-design-system/references/visual-review.md",
+        "sha256": "bd94dbe85f67459c430305bc2fc19d1f206249cd33a179f84e7205f7a93a555a"
+      },
+      {
+        "path": ".agents/skills/fl-ui-design-system/SKILL.md",
+        "sha256": "7a536eb07cc86d2230bd224e0cc91396f78133e36e53afa75b66072a3a31e064"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/assets/upstream.json.gz",
+        "sha256": "1ea0e39d16a49c50a03b30ac327ed3ab8048f5a96a7a7fc37432869b619369ae"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/references/provenance.md",
+        "sha256": "61e2d5e238be0c881f525cc84e0b123f44cba9833b96f700b20047c09231e6a8"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/references/search-and-mapping.md",
+        "sha256": "ca6ae2e94227fc29e7583c3efa0140451a9f287c3ee3e624286b2c8cb954467c"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/references/upstream-license.txt",
+        "sha256": "1b8bd455510cc1f6f9bd510ffe2ec372d1c51fe0e082ddfee8b41825fb7aa055"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/scripts/search.py",
+        "sha256": "df58da6fb40a4d407cee2ef656abe64846789a71245303ac9dd5c671e5af5ce6"
+      },
+      {
+        "path": ".agents/skills/fl-ux-pro/SKILL.md",
+        "sha256": "2d6bc1407279e6472f907d2ca59945ea61d44a65049171c98eb1935345a094a3"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/assets/application-signing-info.json.template",
+        "sha256": "31efa26f54be601acf2893f9a2f0c70f861b2eb4d35457d0170654c5e346f042"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-android-information.md.template",
+        "sha256": "309b1c6475d2532541554e87072036c35b6d5fdac591c8e54439d0702b55a4f0"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-basic-information.md.template",
+        "sha256": "a65505e727dacfb4b0da7032d225ba0548ac662ef85d1072635ee716731e541a"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-ios-information.md.template",
+        "sha256": "ffd5e0d06219cfe19fc04c2078432ac71df08dbbcee2606c952ab32e1327907b"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/references/mobile-application-registration.md",
+        "sha256": "df07e9f0629f5571fb8a6f8a92f005992599b2f0e3675b7cde9a2c44ceda747b"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-mobile-application/SKILL.md",
+        "sha256": "7350a34fa9a5da1336dada9b61c1ff67f50ecb62df264378d2a46799b01528c2"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-website-application/assets/website-application-information.md.template",
+        "sha256": "86b854024f2672c2883d80a7d74f2ee9e49a22d1002b3800ea36730c29c54ceb"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-website-application/references/website-application-registration.md",
+        "sha256": "6c91fbed912f9fed7513fedb3ffbc56e8ba0e459881722acd70d4bd7dd5db6a0"
+      },
+      {
+        "path": ".agents/skills/fl-wechat-website-application/SKILL.md",
+        "sha256": "f3cf4e398dd2b3be6fff1546dbd924af569bcc0161a3dea8b753d407072f5c88"
+      }
+    ],
+    "claude-code": [
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/audit.md.template",
+        "sha256": "94b046881b4580e1d85aefd306ca4062f47092b6cda1b04149ad994fa7d5ddcc"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/evidence.md.template",
+        "sha256": "9740676669e314c24716786dba5e53f5ce8f92f8dd0685f679a60bb95838df33"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/metrics.json.template",
+        "sha256": "67be4e3d0eb36fdcf228c859e24695878e66521c4cee3df017ab1ad41e9d0b21"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/optimization.md.template",
+        "sha256": "66341441430d06e4c26658e826894fd1daee18706def1cdf75f0528c5c55fa11"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/README.md.template",
+        "sha256": "63835eb04f13873cd89f58b8c5d1e5827a1265630b5b92408c4e4efd1139163b"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/epic-plan/TEMPLATE.md",
+        "sha256": "cd2900e1ce93e482303fc492955a7d4dd8610e0ea66f895b92a3535ac6c9ef87"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/flutter-oh-baseline.json",
+        "sha256": "4932cf8c5f364597d23c0a8c3af14dac845a31225371c276c4f3fff67396a176"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/assets/wp-spec/TEMPLATE.md",
+        "sha256": "e73284e425603ac67c5bf54b47bd5b50766660cc21002726c4290077c2fb2f10"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/architecture.md",
+        "sha256": "b6f005b84613ea2e5974211c12ea7cbd53031329e58cc6c124ec1403f7378c2f"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/day0-account-channel-i18n.md",
+        "sha256": "423e15e2c18a90a2be49ea4d0b2924efb695fcefa0c72afb84018ad3de49427e"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/day0-china-app-privacy-consent.md",
+        "sha256": "d1b99cc10b4eb2a18ad11e5e9872cbde93043c8677785a63b52062515cf3b022"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/day0-ipad-basic-adaptation.md",
+        "sha256": "d7bd133730ba103761648bee846d90cfce3672d931a52da37fba02e51637b7ed"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/day0-telemetry.md",
+        "sha256": "11e0debbd8ee02a617d33055ddb2364dd1eb1c8aa341b57a4f2a12dc5278a6ad"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/design-clean-architecture.md",
+        "sha256": "4ba0bebdb44cce8419091ad3abedb38b251b81150fafc2340bf31939b9f910cb"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/design-modular-architecture.md",
+        "sha256": "f309782c97870b2dffdb665aa4d31f916f2fbc76d60887f72f1a153a73a20205"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain-backend-architecture.md",
+        "sha256": "f1b1606a9abe1eaaf3c690f6ff4271439bcf63d90f589b10307deac5b2062b9f"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain-flutter-architecture.md",
+        "sha256": "107c4164d003349dc4352a9f1f4cca961c7421d32c5fc96d09beeb066ea61b2a"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain-mini-program-architecture.md",
+        "sha256": "9334e747c77d45a9be458a0ce8df3e1cc39e95e16241c14572ad1ee478a616e4"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain-ui-design-system.md",
+        "sha256": "f882aaba4e946987d6ed0038b57fe82b169b365ae730f0b750f29572f5ace462"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain-web-architecture.md",
+        "sha256": "fda581ed18430b2a750d80b4979cbdcf39cd487e34a23cd667285a17440625d1"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/domain.md",
+        "sha256": "315280cefb55cb9e3fcb9a07bfc746f056ed83005ff3273a8c8899bed5497ba9"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/engineering-clean-code.md",
+        "sha256": "0153bd322e8763882f083e954908b39b7b218b1ddfde8a73abf74131946e5e30"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/engineering-karpathy-guidelines.md",
+        "sha256": "6ae5e4015b8061e12bcfb77e5ed43027288dbd1fd22092e3757bd866d39654c1"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/experience-sdk-routing.md",
+        "sha256": "ed5815fcfbbd5b31c317a9fe5bded4c526f299203241656ec52c9326486fd870"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/flutter-oh-three-platforms.md",
+        "sha256": "23ce3e16bcd9b02ebef7e70d676a28fa13a16cbb8a5d12ac9bdeaacbff9fff7a"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/harmonyos-native-capabilities.md",
+        "sha256": "027cf77f711a70d20abee924c2b2b4aa8637f14ba1da17fc7778095931456f18"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/harmonyos-signing.md",
+        "sha256": "e04fd2f5e87a518b81d1214176f2eb761d976dad9910e5e3736929f7d6f54f01"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5667896a8688e6bae54a5e1c77a3b239608010c8c48e3c7bbf5739016b20ab5b"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/testing-mocking-rules.md",
+        "sha256": "a206f680968df5b81f55c79ffcee757740cb533fef2d219b09f8325ed5d64d0e"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/references/workflow-clarification-gate.md",
+        "sha256": "6ab3af0f4d3a3cbd821e7294f3f11961b9c14aeb4b661e49c22486a9d2f54f86"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/check-flutter-fvm.js",
+        "sha256": "9287e7a74f96e34bd6e01a1227c451ac15816b04b0c6e59070181527b87cfcca"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/check-flutter-oh.mjs",
+        "sha256": "3098d917bdab5403a29abbb16dbaf8b673193f3e1aef0325641edc863ffcaddd"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/check-git-clean.js",
+        "sha256": "6e144b16cb2a75c373eeb66b7bb06b5258872d317a07b7f240d004f9e6540d42"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/check-harmonyos-environment.mjs",
+        "sha256": "d5c0b3a7a8a3c379560b57673a404789b36deeca9213c6064ec0e7c4d56157c6"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/package-flutter-android.mjs",
+        "sha256": "d64e0b6a6a39ffb31baa7088ef0af98a3116200bca9b702a190a6dcdf6def4a2"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/package-flutter-harmonyos.mjs",
+        "sha256": "14aa194d2ec23128d68702d0c53fa25d814b0cce28fac473dbceb434a0f2055d"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/store-flutter-android-signing.mjs",
+        "sha256": "4197418268d88f3f9f3052f3695dec9c28c60ee2a03b151e663554a534089132"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/scripts/verify-harmonyos-signing.mjs",
+        "sha256": "69fb2150a9cc99b715353b435c15e1678fc349e7a29c054b57016e4f98d9cdcb"
+      },
+      {
+        "path": ".claude/skills/fl-ai-coding-delivery/SKILL.md",
+        "sha256": "56c05cc6d8d631ee0bc3b2e4d9bb70310eddb618d4eb9fe0d21945147dd2ad7c"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/references/alipay-app.md",
+        "sha256": "b1d3b3158f5f32b5299e5e00c0eba218a3b65ffa07a93bf15e6febb365ab8866"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/references/apple-storekit.md",
+        "sha256": "5cc1ad41b0775bee8f8c874c87a6ad0f19a0588a496a6cc4aef288a1a11a27fc"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/references/digital-subscription-channel-policy.md",
+        "sha256": "20a0fc3bd380f4a6c429049944913dff6ccd0ca6c59364a993e1c01fe272d4d1"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/references/purchase-agreements.md",
+        "sha256": "65f368bd1bbe3e578ba21b9aee2d84bc710d51cb87f45c9b663b2800295df29f"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/references/wechat-app.md",
+        "sha256": "4a4139b03346ae3bc561ce35a69f673c38a8f38a49180ba24035a00f187b9f8d"
+      },
+      {
+        "path": ".claude/skills/fl-app-payment-integration/SKILL.md",
+        "sha256": "d673a6f54c89bac13fa8d454fc59756ebcbb857dc180b5467d8fc63f463daa2e"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/additional-market.md.template",
+        "sha256": "e181550b1a649b3867fd58a37da09e6a17bbdb2d2627112abec1c3034216fa8f"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/apple-app-store-initial.md.template",
+        "sha256": "01435f2dea53e6a746ee861835ded73189c04c3efecb7d9416a83b43fccec8c8"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/apple-app-store-release.md.template",
+        "sha256": "05b0d69ec221429ae54d4d37f5b11362664bd6af543ceba684300778127a0851"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/authorization-info.md.template",
+        "sha256": "17a2728a7275c586f4ef1734ee9d0b3e96fcf031b09f25e8bacebeedf5b8afa3"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/tencent-myapp-initial.md.template",
+        "sha256": "bfd0b36419aa7413de02b1001a7f858b80cb18ddcfaa548235cacf357f40c082"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/assets/tencent-myapp-release.md.template",
+        "sha256": "f9039566277dfee25a6334dd6b8e59b03a4357170e9afc0cdbe1c71a3d472506"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/apple-app-store.md",
+        "sha256": "785f6e76bf1aec44be4366336403668726b622e38d6fb2de2cc53899cae13a5d"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/asset-delivery.md",
+        "sha256": "c11d57d196347b57c7f635f5296396210d84ad727b448203f2dfe3d398c799c6"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/channel-discovery.md",
+        "sha256": "74a83e148f87f0d4881ba579833099d50e3192a5c9bf1446a80f53f23b72fa86"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/huawei-appgallery.md",
+        "sha256": "2d9edf7f954ddaaa75b79a61d4deb2c38d2cd0eae49823cb409088eaaf8739d5"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/huawei-harmonyos.md",
+        "sha256": "b1fd3337c38b4e3172b5685a4b8ef6feae4f7f42f5b85bf128bad991f41c9fd7"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/tencent-myapp.md",
+        "sha256": "f081e0b56afe488a7ae8ba4b30036706454497b42e839587e1a62f1397d91d9d"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/references/vivo.md",
+        "sha256": "f653ebfa3881ac9ad3a6ded7a482700702e9c02075505a94809f97f9cd926a60"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/scripts/validate_assets.py",
+        "sha256": "dc6aa2a48e8c0a75fd77c935ca7923ba343f61f2d4740af46e62efae46759079"
+      },
+      {
+        "path": ".claude/skills/fl-app-store-listing/SKILL.md",
+        "sha256": "ff2c9cd185e9d08b2de028805e643809194de45c68b35fe0cef8a916338f10a1"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/assets/project-knowledge/cross-project-coordination-result.yaml.template",
+        "sha256": "578938826b222dc5dc746cd15067ff22f16852413a44bc27fa24328f6f8f9fed"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "93b819afef5a6791e569e686ea38685cc8b07ad54307cbe2805a020275417224"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/references/project-matrix-dependencies.yaml",
+        "sha256": "3dc053bc85d32f3c6da261d8b910170855d7d13352b5850f62eb8817babc6378"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".claude/skills/fl-cross-project-coordination/SKILL.md",
+        "sha256": "eaeb61fed619f78f96bd65761ca9ea73b4026981c2a42f70675d2328f5146dd0"
+      },
+      {
+        "path": ".claude/skills/fl-figma-map-ui-loop/assets/fidelity_sample.py",
+        "sha256": "2282d9cf2c6acf78fd988c3292e0d6be050d838ec7a988933922ce1020083cd5"
+      },
+      {
+        "path": ".claude/skills/fl-figma-map-ui-loop/assets/figma-map-template.md",
+        "sha256": "c4a1048aa98438ce98c0d86f403549a89aac90d2d77d373ff55ddbdd2b1e2c9d"
+      },
+      {
+        "path": ".claude/skills/fl-figma-map-ui-loop/assets/golden_test_template.dart",
+        "sha256": "ea72c7a68d77736fa8582df1f1b2e6a4055ce2c48bdf9c451c8224a5f541ea2a"
+      },
+      {
+        "path": ".claude/skills/fl-figma-map-ui-loop/assets/vm_goto.dart",
+        "sha256": "61450b96116c4e5b2b5e1a1ac53223a0ef126266e79ce8869f2f019c6533b77c"
+      },
+      {
+        "path": ".claude/skills/fl-figma-map-ui-loop/SKILL.md",
+        "sha256": "0b92db0ea0dab210a364a778753f5a39da3d15906a0cfde8617bcada81d910a0"
+      },
+      {
+        "path": ".claude/skills/fl-figma-mini/agents/openai.yaml",
+        "sha256": "1360a92ceb7983746b11f2dde33576f94596880817f62b9e50352b8d704c3dd4"
+      },
+      {
+        "path": ".claude/skills/fl-figma-mini/assets/fidelity_sample.py",
+        "sha256": "8a2fd38d801db2c872b286d4e8ef78572b51141f4290c5cf3723c34315af0c49"
+      },
+      {
+        "path": ".claude/skills/fl-figma-mini/assets/figma-map-template.md",
+        "sha256": "271967581468a89844921a005e0d36c9da26d9c4650b85641accea6472019ee7"
+      },
+      {
+        "path": ".claude/skills/fl-figma-mini/SKILL.md",
+        "sha256": "1e7c46fae73b9912697ec0b13f4446416ca6e1712cd593c08800bb7c737358d0"
+      },
+      {
+        "path": ".claude/skills/fl-matrix-operator/references/application-credential-onboarding.md",
+        "sha256": "d13641f34e4d5a2668f4bfef8b770920522bf154638c85f2af592d17c3a654ba"
+      },
+      {
+        "path": ".claude/skills/fl-matrix-operator/scripts/render-application-credential-script.mjs",
+        "sha256": "e40cb9aadaa2c64020a9b323238c218fe2afd322c3872b5c2531eed016590cc2"
+      },
+      {
+        "path": ".claude/skills/fl-matrix-operator/SKILL.md",
+        "sha256": "f7f33fa1e38842faaac4ff300029c33202a08cb414412d9d035964e614c41b4d"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/acceptance-criteria.md.template",
+        "sha256": "22f19535a7422aa3385ac2a604ff8d8832fa689c2a2eea98ec8f5eefdd18c6ff"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/audience-and-expectation.md.template",
+        "sha256": "5ca49c1ae74fe846537408beee3e3747dc70f93d08c86dac167cdce3c72e59e8"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/data-and-states.md.template",
+        "sha256": "8cf2221e77fed2da6307176d843ce1b4a6eeff00505f09ec1d26676ac17b8209"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/discovery-log.md.template",
+        "sha256": "980c8d84becd19e8f212db527407852acf2af7cf6851a5abc7407646ff249bcc"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/feature-scope.md.template",
+        "sha256": "359f48fd11be7007954677fe0c68519e6d3b7e7daf6e4decbac5da0006947bdf"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/figma-prompt.md.template",
+        "sha256": "cd848fb47331e455d7fbb10121f091f02f0f5f506c1bc94ce57c1f85d540c7d1"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/figma-prompts-README.md.template",
+        "sha256": "ace133d579384e09cf369b8dd53309ef2d9b48ec5a45e499e9627cc62e1b12b0"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/mvp-definition-summary.md.template",
+        "sha256": "692aa4260455ae4ea93a65be5b949685e6d5319f34b71693e628d0a4f7e8907d"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/MVP.md.template",
+        "sha256": "ab1350d7fef839b0486b6676e7bab05d4e20427f827b6b53c82c7dbc091d42c9"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-app.js.template",
+        "sha256": "798fc71ac46231ce8d451f3a4e85f643609f5afaf4a4df4a1eab2372bb158165"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-epic-plan.md.template",
+        "sha256": "a7fea4a9c473e69eb7aaf325d407637cdf0f63a5b6f0ed7814675a47ea273a87"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-index.html.template",
+        "sha256": "7a7f79cca0bdfa2069b982e718ba1676baa61e2bacd4cd867873b2f0b22816ee"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-mock-data.js.template",
+        "sha256": "c7e0306ad5f2e2439dd677c333dc636c3f5bed1073f665211bbae91b3a79692f"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-README.md.template",
+        "sha256": "6c1a53b1a263297534da4755c8fb8e58d492458d3a4ed3b9e1b6289ddc68af4a"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-styles.css.template",
+        "sha256": "18aefbfd42da96bcc7e4781289ff7eef28879937ef7e320973d1cb79bc9eca4a"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/preview-wp-spec.md.template",
+        "sha256": "8696badbb237cfb351b0d0a2d548812f639b44bec931f7b1f95fa629271d6883"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/README.md",
+        "sha256": "1284981975599ac844ce76c4bc425910b9a85c3f59fedaf46655d492029101b8"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/surface-scope.md.template",
+        "sha256": "3247483c23af42f180d556cfdf401d719181416803b49e32ae6f3ac3fab5623d"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/user-flow.md.template",
+        "sha256": "f9b2feef841f9b431a34d8ab9cc6ffc0e01c4710ae6423f844ababf2fd47da98"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/assets/prd/version-history.md.template",
+        "sha256": "68f8e43fb426fa4f672aa4129b0ce947fd809ecba406712f82e7833ec5dead7f"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/references/mvp-conversational-definition.md",
+        "sha256": "db66bcbb7009ebf8b50c2a03f9777df926664538cf43559efd398e659a4c9b94"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/references/mvp-pm-closed-loop.md",
+        "sha256": "25df8e8226264664f1e93dbaf7e5a3cd9f8399bfe23af963ad1b9106afc291fd"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/references/mvp-preview-generation.md",
+        "sha256": "509645e2566e9940a5a2b344978ea5de48219f4de34279b1d4ffeda054757d2b"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-definition/SKILL.md",
+        "sha256": "5ed99c89462e5f7df41a6d2ce9f03440f72e625d717a3cbd74fbf709dd09cf78"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/architecture.md.template",
+        "sha256": "4cf99dca7768eedc43805417631349e7d73e2ee0526a520b3e91215f8d21ad99"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/coding-guide.md.template",
+        "sha256": "2fd746d5005952d0a91ed6654473664732b4dfe2c59e95e98fd0a73d2f63f08a"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/directory-README.md.template",
+        "sha256": "0409c3ac68b9c319f825c0c1029f830683117bf1f858f115856a72ef9f59e530"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/engineering-guide.md.template",
+        "sha256": "da0c616da9a09f641463731e5bb0910c9560e4b2b904609cd0458acd0df4e652"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/migration-report.md.template",
+        "sha256": "55bdbfd3d8c0b41282ddc9ce96eaa747a92cde6b738185b47fee17ffac3c37d9"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/assets/mvp-to-project/project.yaml.template",
+        "sha256": "db9b6882e777d2a11713e6014f0f3afe1b4bd0fa76eb3259a656e23f42d00c65"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/references/mvp-to-project-project-asset-structure.md",
+        "sha256": "f5387adf0d02d22989cb5c1b4001d67efea744d0d43ee174cf464be181992360"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/scripts/mvp_to_project.py",
+        "sha256": "7fe486b2bf9ac4a861b2d02c774783cefb3cfcc9cb3bab64dc1c72db38f3dff5"
+      },
+      {
+        "path": ".claude/skills/fl-mvp-to-project/SKILL.md",
+        "sha256": "1c22ef37eceae658eea65c88c5707e6918e1d0aa9b18b4804c6d126dd9f208bc"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/assets/openclaw-project/AGENTS.md.template",
+        "sha256": "351469d44ee9660b3c126f12936b07637645033e5bc560289e370ecb4c8cf31a"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/assets/openclaw-project/entry-SKILL.md.template",
+        "sha256": "cf81c6bd6cf062864c6b167dab405490c7b95ddcfaac690f0f037f825663b1b0"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/assets/openclaw-project/openclaw.project.yaml.template",
+        "sha256": "8a253e458dcfee2fcb12161e6016e4aad045512c32d5f6325408f4f9bce533b5"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/assets/openclaw-project/README.md.template",
+        "sha256": "8a3c466db32fc45ca95f3cb3e5535969ec0528b637a02a3d1ec585707e6e13c2"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/assets/openclaw-project/taskflow.md.template",
+        "sha256": "93355f52865fd77028fcf20c9ebffbc2c67c13632d950cd4239ba6733e73e35d"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/references/harness-human-control.md",
+        "sha256": "442e4bb936d353ba02a839b633e102a5360cc85ee6ec9b59e83359f8cea70d57"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/references/harness-tool-boundary.md",
+        "sha256": "fc8ec79dff6a2f4f3ac6b617eebb85fb3259b0ba818e80c351a59bc63358d52b"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/references/openclaw-project-generation.md",
+        "sha256": "675c868ddeadd0497acfd6492efec32186e0913567a1bc400272368028b78c49"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/references/standard-skill-definition.md",
+        "sha256": "4138dfe058a29c47ed033f06bd41c35cde9eddd17b219fd2b01312578b6284db"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/scripts/validate_openclaw_project_spec.py",
+        "sha256": "67ceab5b17633ac6825552f603206cf014591ca6ef960288e2dc77dc12148889"
+      },
+      {
+        "path": ".claude/skills/fl-openclaw-project-generation/SKILL.md",
+        "sha256": "e17ad3803656b3ca72df95237b6a3c3098362c20434cbe9a4fec9b62af6d6adb"
+      },
+      {
+        "path": ".claude/skills/fl-project-knowledge-maintenance/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "04b42a8e980dd9e5b85996890a0638e85115fb4cfccdcba4cda12bf73490c27c"
+      },
+      {
+        "path": ".claude/skills/fl-project-knowledge-maintenance/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".claude/skills/fl-project-knowledge-maintenance/SKILL.md",
+        "sha256": "e94a6eb9ef78db27920f48269b858ebb6c135310612e2277e79acdf117ce9d93"
+      },
+      {
+        "path": ".claude/skills/fl-project-mcp-onboarding/assets/project-knowledge/fenleng.project.yaml.template",
+        "sha256": "0d825ac5c33786139cddc52b76b7bbe51c53dae2e50565dc108999a49db46ca0"
+      },
+      {
+        "path": ".claude/skills/fl-project-mcp-onboarding/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".claude/skills/fl-project-mcp-onboarding/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".claude/skills/fl-project-mcp-onboarding/SKILL.md",
+        "sha256": "a9e19c649967e50b44ae8e42d7e2c00612fdd3118bf1d2f670b417057cbf07f9"
+      },
+      {
+        "path": ".claude/skills/fl-select-node/agents/openai.yaml",
+        "sha256": "4e255744a33c0264a6be2d88894397aa3926b7f38e8c1b4976d0343770d9caa7"
+      },
+      {
+        "path": ".claude/skills/fl-select-node/scripts/refresh.py",
+        "sha256": "fe19ce9d1a086fd8609da6f695bfa6a81e7286e7b758d30cc322be3bc2925399"
+      },
+      {
+        "path": ".claude/skills/fl-select-node/SKILL.md",
+        "sha256": "fa5953d13fcb375cc02f047a2bac1b52213d727eb3ed0dc1fc180de81d346db3"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/application-info-summary.md.template",
+        "sha256": "6800e6bcf93e22a1509de114012fc46253f99330430ce3d4bcf961966600478e"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/core-function-description.md.template",
+        "sha256": "912fcf7d4e5a31bda683d7ce37aec9f0aa4789b466bdfb53e2ebf2bff6790e1f"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/correction-response.md.template",
+        "sha256": "cf95eaaeef0f3e452d5854a750e5864307beb455ea36716c6ac1505121f243d4"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/final-deliverable-manifest.md.template",
+        "sha256": "6d20d6195b66e402344f38a8cddec44494d8acea58f192487a6499508b62e3ee"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/independent-development-statement.md.template",
+        "sha256": "efd476f787c886ccec98df45aa530dde8089b7936bc43b5cf7684e3ca57a49e8"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/material-checklist.md.template",
+        "sha256": "768e56ac666f24f5366a3b0fb8be8d510a69c4a9f99dac832a4a525bc56bb96a"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/software-manual.md.template",
+        "sha256": "d30b5fafb8085c13b08c81622508fd839c37fd89c87b4d70885884b7ced82bf0"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/third-party-disclosure.md.template",
+        "sha256": "26117c4b3916a40d211757031a7938554ea70c1f2fb37e8460646ab677346742"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/assets/software-copyright/user-action-guide.md.template",
+        "sha256": "6f12f66114f9f3c8e50d2d258fe8b35ac369950b26ed3047a1c1694b6018fe99"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/references/ip-application-info-summary.md",
+        "sha256": "ef043c0d489ac3d49797d498159a191195d077b1fffc679f24559b9853fd3ade"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/references/ip-correction-response.md",
+        "sha256": "460d51796a46df02475d55fd0691cb2578391043a6ec77999f5d15c87221b2b5"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/references/ip-software-copyright-boundary.md",
+        "sha256": "f8b79c90b6a5ba62b4759b2129816594465403dcf5692ee8e98367e8bc2f9384"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/references/ip-source-code-material-authenticity.md",
+        "sha256": "4b0bb6edee11ac8265f27f8119d256e4277e9716866fdaf578d3b0ed38cc7823"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/audit_common_identifiers.py",
+        "sha256": "e7066752b9f7954fcbe28e4b95d46add9c6098deeb867aa2ba52b7760c9e5e0a"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/build_deliverable_package.py",
+        "sha256": "a4732c1971ab5714ba1673bc63f0ea5b8748e52b4a47bb2029de30452543c03f"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/check-copyright-source.js",
+        "sha256": "459f38979334e85fdebfaeac8eac9cc04396a0e8f910d102b9d231f8cca34ce2"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/extract_source_material.py",
+        "sha256": "098862ce768ce37abd9802809a5f6febd5855dc52f49f93f3809c3f8e4e3a5a9"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/fix_docx_metadata.py",
+        "sha256": "ee764b3a88e9970079f520f619a1516ef4f7d44b39748d14e3adc58403d91fef"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/pseudonymize_common_identifiers.py",
+        "sha256": "2e319a23e41735f213f437ce0ac6b928fd0b6a861b3459f7c8a3a2344630ec63"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/render_docx_pdf.py",
+        "sha256": "60ee8fdedb8163e1188f72b33650b5b0a22681887e82a9589a918b44667cd195"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/review_source_material.py",
+        "sha256": "722844c38770bfeb4614146ba3a8654a4a778529395320ef988026276b1e97f6"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/scripts/validate_application_info.py",
+        "sha256": "c5598181834529d3ebbf7cb71861753a32174093753c4ef95234b6a4219d8d38"
+      },
+      {
+        "path": ".claude/skills/fl-software-copyright-registration/SKILL.md",
+        "sha256": "8a4413091a88e9e2f0a304235056fdb4f75ce25a4c71801d3b6769dd2efcb638"
+      },
+      {
+        "path": ".claude/skills/fl-taste/references/design-methods.md",
+        "sha256": "befc9dbbd168b2294c5a91d5f4836286d44de27d83abec4483b5e769bfed1ba4"
+      },
+      {
+        "path": ".claude/skills/fl-taste/references/provenance.md",
+        "sha256": "ad3b96e06699e388c28f0155bed902a5ff465b0cdbde8cdc790f461f31b33252"
+      },
+      {
+        "path": ".claude/skills/fl-taste/references/upstream-license.txt",
+        "sha256": "3c9f63518df3378772203cc64d38d9e381d2a4723b93d2c3849b2bf3d464de0c"
+      },
+      {
+        "path": ".claude/skills/fl-taste/SKILL.md",
+        "sha256": "5e0f64d827be319150493f6860a2a60191084cf47f49841650279d2d59532334"
+      },
+      {
+        "path": ".claude/skills/fl-ui-design-system/assets/component.schema.json",
+        "sha256": "35c322eca9b4e95ad36ca7f47e9de6fa23d8796acc112c7c31136f42d97712db"
+      },
+      {
+        "path": ".claude/skills/fl-ui-design-system/assets/token.schema.json",
+        "sha256": "04e5d584d42ace9d83b3b259d931ae7577458176cbdc052c725aa4e446e0df43"
+      },
+      {
+        "path": ".claude/skills/fl-ui-design-system/references/knowledge-loading.md",
+        "sha256": "362944c229b0238635492fe673c4aa8ec3b3f5c4de8c4aa78a5e06c4ea9e2eae"
+      },
+      {
+        "path": ".claude/skills/fl-ui-design-system/references/visual-review.md",
+        "sha256": "bd94dbe85f67459c430305bc2fc19d1f206249cd33a179f84e7205f7a93a555a"
+      },
+      {
+        "path": ".claude/skills/fl-ui-design-system/SKILL.md",
+        "sha256": "7a536eb07cc86d2230bd224e0cc91396f78133e36e53afa75b66072a3a31e064"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/assets/upstream.json.gz",
+        "sha256": "1ea0e39d16a49c50a03b30ac327ed3ab8048f5a96a7a7fc37432869b619369ae"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/references/provenance.md",
+        "sha256": "61e2d5e238be0c881f525cc84e0b123f44cba9833b96f700b20047c09231e6a8"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/references/search-and-mapping.md",
+        "sha256": "ca6ae2e94227fc29e7583c3efa0140451a9f287c3ee3e624286b2c8cb954467c"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/references/upstream-license.txt",
+        "sha256": "1b8bd455510cc1f6f9bd510ffe2ec372d1c51fe0e082ddfee8b41825fb7aa055"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/scripts/search.py",
+        "sha256": "df58da6fb40a4d407cee2ef656abe64846789a71245303ac9dd5c671e5af5ce6"
+      },
+      {
+        "path": ".claude/skills/fl-ux-pro/SKILL.md",
+        "sha256": "2d6bc1407279e6472f907d2ca59945ea61d44a65049171c98eb1935345a094a3"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/assets/application-signing-info.json.template",
+        "sha256": "31efa26f54be601acf2893f9a2f0c70f861b2eb4d35457d0170654c5e346f042"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-android-information.md.template",
+        "sha256": "309b1c6475d2532541554e87072036c35b6d5fdac591c8e54439d0702b55a4f0"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-basic-information.md.template",
+        "sha256": "a65505e727dacfb4b0da7032d225ba0548ac662ef85d1072635ee716731e541a"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-ios-information.md.template",
+        "sha256": "ffd5e0d06219cfe19fc04c2078432ac71df08dbbcee2606c952ab32e1327907b"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/references/mobile-application-registration.md",
+        "sha256": "df07e9f0629f5571fb8a6f8a92f005992599b2f0e3675b7cde9a2c44ceda747b"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-mobile-application/SKILL.md",
+        "sha256": "7350a34fa9a5da1336dada9b61c1ff67f50ecb62df264378d2a46799b01528c2"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-website-application/assets/website-application-information.md.template",
+        "sha256": "86b854024f2672c2883d80a7d74f2ee9e49a22d1002b3800ea36730c29c54ceb"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-website-application/references/website-application-registration.md",
+        "sha256": "6c91fbed912f9fed7513fedb3ffbc56e8ba0e459881722acd70d4bd7dd5db6a0"
+      },
+      {
+        "path": ".claude/skills/fl-wechat-website-application/SKILL.md",
+        "sha256": "f3cf4e398dd2b3be6fff1546dbd924af569bcc0161a3dea8b753d407072f5c88"
+      }
+    ],
+    "gemini": [
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/audit.md.template",
+        "sha256": "94b046881b4580e1d85aefd306ca4062f47092b6cda1b04149ad994fa7d5ddcc"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/evidence.md.template",
+        "sha256": "9740676669e314c24716786dba5e53f5ce8f92f8dd0685f679a60bb95838df33"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/metrics.json.template",
+        "sha256": "67be4e3d0eb36fdcf228c859e24695878e66521c4cee3df017ab1ad41e9d0b21"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/optimization.md.template",
+        "sha256": "66341441430d06e4c26658e826894fd1daee18706def1cdf75f0528c5c55fa11"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/README.md.template",
+        "sha256": "63835eb04f13873cd89f58b8c5d1e5827a1265630b5b92408c4e4efd1139163b"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/epic-plan/TEMPLATE.md",
+        "sha256": "cd2900e1ce93e482303fc492955a7d4dd8610e0ea66f895b92a3535ac6c9ef87"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/flutter-oh-baseline.json",
+        "sha256": "4932cf8c5f364597d23c0a8c3af14dac845a31225371c276c4f3fff67396a176"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/assets/wp-spec/TEMPLATE.md",
+        "sha256": "e73284e425603ac67c5bf54b47bd5b50766660cc21002726c4290077c2fb2f10"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/architecture.md",
+        "sha256": "b6f005b84613ea2e5974211c12ea7cbd53031329e58cc6c124ec1403f7378c2f"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/day0-account-channel-i18n.md",
+        "sha256": "423e15e2c18a90a2be49ea4d0b2924efb695fcefa0c72afb84018ad3de49427e"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/day0-china-app-privacy-consent.md",
+        "sha256": "d1b99cc10b4eb2a18ad11e5e9872cbde93043c8677785a63b52062515cf3b022"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/day0-ipad-basic-adaptation.md",
+        "sha256": "d7bd133730ba103761648bee846d90cfce3672d931a52da37fba02e51637b7ed"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/day0-telemetry.md",
+        "sha256": "11e0debbd8ee02a617d33055ddb2364dd1eb1c8aa341b57a4f2a12dc5278a6ad"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/design-clean-architecture.md",
+        "sha256": "4ba0bebdb44cce8419091ad3abedb38b251b81150fafc2340bf31939b9f910cb"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/design-modular-architecture.md",
+        "sha256": "f309782c97870b2dffdb665aa4d31f916f2fbc76d60887f72f1a153a73a20205"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain-backend-architecture.md",
+        "sha256": "f1b1606a9abe1eaaf3c690f6ff4271439bcf63d90f589b10307deac5b2062b9f"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain-flutter-architecture.md",
+        "sha256": "107c4164d003349dc4352a9f1f4cca961c7421d32c5fc96d09beeb066ea61b2a"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain-mini-program-architecture.md",
+        "sha256": "9334e747c77d45a9be458a0ce8df3e1cc39e95e16241c14572ad1ee478a616e4"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain-ui-design-system.md",
+        "sha256": "f882aaba4e946987d6ed0038b57fe82b169b365ae730f0b750f29572f5ace462"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain-web-architecture.md",
+        "sha256": "fda581ed18430b2a750d80b4979cbdcf39cd487e34a23cd667285a17440625d1"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/domain.md",
+        "sha256": "315280cefb55cb9e3fcb9a07bfc746f056ed83005ff3273a8c8899bed5497ba9"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/engineering-clean-code.md",
+        "sha256": "0153bd322e8763882f083e954908b39b7b218b1ddfde8a73abf74131946e5e30"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/engineering-karpathy-guidelines.md",
+        "sha256": "6ae5e4015b8061e12bcfb77e5ed43027288dbd1fd22092e3757bd866d39654c1"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/experience-sdk-routing.md",
+        "sha256": "ed5815fcfbbd5b31c317a9fe5bded4c526f299203241656ec52c9326486fd870"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/flutter-oh-three-platforms.md",
+        "sha256": "23ce3e16bcd9b02ebef7e70d676a28fa13a16cbb8a5d12ac9bdeaacbff9fff7a"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/harmonyos-native-capabilities.md",
+        "sha256": "027cf77f711a70d20abee924c2b2b4aa8637f14ba1da17fc7778095931456f18"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/harmonyos-signing.md",
+        "sha256": "e04fd2f5e87a518b81d1214176f2eb761d976dad9910e5e3736929f7d6f54f01"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5667896a8688e6bae54a5e1c77a3b239608010c8c48e3c7bbf5739016b20ab5b"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/testing-mocking-rules.md",
+        "sha256": "a206f680968df5b81f55c79ffcee757740cb533fef2d219b09f8325ed5d64d0e"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/references/workflow-clarification-gate.md",
+        "sha256": "6ab3af0f4d3a3cbd821e7294f3f11961b9c14aeb4b661e49c22486a9d2f54f86"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/check-flutter-fvm.js",
+        "sha256": "9287e7a74f96e34bd6e01a1227c451ac15816b04b0c6e59070181527b87cfcca"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/check-flutter-oh.mjs",
+        "sha256": "3098d917bdab5403a29abbb16dbaf8b673193f3e1aef0325641edc863ffcaddd"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/check-git-clean.js",
+        "sha256": "6e144b16cb2a75c373eeb66b7bb06b5258872d317a07b7f240d004f9e6540d42"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/check-harmonyos-environment.mjs",
+        "sha256": "d5c0b3a7a8a3c379560b57673a404789b36deeca9213c6064ec0e7c4d56157c6"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/package-flutter-android.mjs",
+        "sha256": "d64e0b6a6a39ffb31baa7088ef0af98a3116200bca9b702a190a6dcdf6def4a2"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/package-flutter-harmonyos.mjs",
+        "sha256": "14aa194d2ec23128d68702d0c53fa25d814b0cce28fac473dbceb434a0f2055d"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/store-flutter-android-signing.mjs",
+        "sha256": "4197418268d88f3f9f3052f3695dec9c28c60ee2a03b151e663554a534089132"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/scripts/verify-harmonyos-signing.mjs",
+        "sha256": "69fb2150a9cc99b715353b435c15e1678fc349e7a29c054b57016e4f98d9cdcb"
+      },
+      {
+        "path": ".gemini/skills/fl-ai-coding-delivery/SKILL.md",
+        "sha256": "56c05cc6d8d631ee0bc3b2e4d9bb70310eddb618d4eb9fe0d21945147dd2ad7c"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/references/alipay-app.md",
+        "sha256": "b1d3b3158f5f32b5299e5e00c0eba218a3b65ffa07a93bf15e6febb365ab8866"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/references/apple-storekit.md",
+        "sha256": "5cc1ad41b0775bee8f8c874c87a6ad0f19a0588a496a6cc4aef288a1a11a27fc"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/references/digital-subscription-channel-policy.md",
+        "sha256": "20a0fc3bd380f4a6c429049944913dff6ccd0ca6c59364a993e1c01fe272d4d1"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/references/purchase-agreements.md",
+        "sha256": "65f368bd1bbe3e578ba21b9aee2d84bc710d51cb87f45c9b663b2800295df29f"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/references/wechat-app.md",
+        "sha256": "4a4139b03346ae3bc561ce35a69f673c38a8f38a49180ba24035a00f187b9f8d"
+      },
+      {
+        "path": ".gemini/skills/fl-app-payment-integration/SKILL.md",
+        "sha256": "d673a6f54c89bac13fa8d454fc59756ebcbb857dc180b5467d8fc63f463daa2e"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/additional-market.md.template",
+        "sha256": "e181550b1a649b3867fd58a37da09e6a17bbdb2d2627112abec1c3034216fa8f"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/apple-app-store-initial.md.template",
+        "sha256": "01435f2dea53e6a746ee861835ded73189c04c3efecb7d9416a83b43fccec8c8"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/apple-app-store-release.md.template",
+        "sha256": "05b0d69ec221429ae54d4d37f5b11362664bd6af543ceba684300778127a0851"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/authorization-info.md.template",
+        "sha256": "17a2728a7275c586f4ef1734ee9d0b3e96fcf031b09f25e8bacebeedf5b8afa3"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/tencent-myapp-initial.md.template",
+        "sha256": "bfd0b36419aa7413de02b1001a7f858b80cb18ddcfaa548235cacf357f40c082"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/assets/tencent-myapp-release.md.template",
+        "sha256": "f9039566277dfee25a6334dd6b8e59b03a4357170e9afc0cdbe1c71a3d472506"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/apple-app-store.md",
+        "sha256": "785f6e76bf1aec44be4366336403668726b622e38d6fb2de2cc53899cae13a5d"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/asset-delivery.md",
+        "sha256": "c11d57d196347b57c7f635f5296396210d84ad727b448203f2dfe3d398c799c6"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/channel-discovery.md",
+        "sha256": "74a83e148f87f0d4881ba579833099d50e3192a5c9bf1446a80f53f23b72fa86"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/huawei-appgallery.md",
+        "sha256": "2d9edf7f954ddaaa75b79a61d4deb2c38d2cd0eae49823cb409088eaaf8739d5"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/huawei-harmonyos.md",
+        "sha256": "b1fd3337c38b4e3172b5685a4b8ef6feae4f7f42f5b85bf128bad991f41c9fd7"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/tencent-myapp.md",
+        "sha256": "f081e0b56afe488a7ae8ba4b30036706454497b42e839587e1a62f1397d91d9d"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/references/vivo.md",
+        "sha256": "f653ebfa3881ac9ad3a6ded7a482700702e9c02075505a94809f97f9cd926a60"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/scripts/validate_assets.py",
+        "sha256": "dc6aa2a48e8c0a75fd77c935ca7923ba343f61f2d4740af46e62efae46759079"
+      },
+      {
+        "path": ".gemini/skills/fl-app-store-listing/SKILL.md",
+        "sha256": "ff2c9cd185e9d08b2de028805e643809194de45c68b35fe0cef8a916338f10a1"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/assets/project-knowledge/cross-project-coordination-result.yaml.template",
+        "sha256": "578938826b222dc5dc746cd15067ff22f16852413a44bc27fa24328f6f8f9fed"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "93b819afef5a6791e569e686ea38685cc8b07ad54307cbe2805a020275417224"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/references/project-matrix-dependencies.yaml",
+        "sha256": "3dc053bc85d32f3c6da261d8b910170855d7d13352b5850f62eb8817babc6378"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".gemini/skills/fl-cross-project-coordination/SKILL.md",
+        "sha256": "eaeb61fed619f78f96bd65761ca9ea73b4026981c2a42f70675d2328f5146dd0"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-map-ui-loop/assets/fidelity_sample.py",
+        "sha256": "2282d9cf2c6acf78fd988c3292e0d6be050d838ec7a988933922ce1020083cd5"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-map-ui-loop/assets/figma-map-template.md",
+        "sha256": "c4a1048aa98438ce98c0d86f403549a89aac90d2d77d373ff55ddbdd2b1e2c9d"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-map-ui-loop/assets/golden_test_template.dart",
+        "sha256": "ea72c7a68d77736fa8582df1f1b2e6a4055ce2c48bdf9c451c8224a5f541ea2a"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-map-ui-loop/assets/vm_goto.dart",
+        "sha256": "61450b96116c4e5b2b5e1a1ac53223a0ef126266e79ce8869f2f019c6533b77c"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-map-ui-loop/SKILL.md",
+        "sha256": "0b92db0ea0dab210a364a778753f5a39da3d15906a0cfde8617bcada81d910a0"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-mini/agents/openai.yaml",
+        "sha256": "1360a92ceb7983746b11f2dde33576f94596880817f62b9e50352b8d704c3dd4"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-mini/assets/fidelity_sample.py",
+        "sha256": "8a2fd38d801db2c872b286d4e8ef78572b51141f4290c5cf3723c34315af0c49"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-mini/assets/figma-map-template.md",
+        "sha256": "271967581468a89844921a005e0d36c9da26d9c4650b85641accea6472019ee7"
+      },
+      {
+        "path": ".gemini/skills/fl-figma-mini/SKILL.md",
+        "sha256": "1e7c46fae73b9912697ec0b13f4446416ca6e1712cd593c08800bb7c737358d0"
+      },
+      {
+        "path": ".gemini/skills/fl-matrix-operator/references/application-credential-onboarding.md",
+        "sha256": "d13641f34e4d5a2668f4bfef8b770920522bf154638c85f2af592d17c3a654ba"
+      },
+      {
+        "path": ".gemini/skills/fl-matrix-operator/scripts/render-application-credential-script.mjs",
+        "sha256": "e40cb9aadaa2c64020a9b323238c218fe2afd322c3872b5c2531eed016590cc2"
+      },
+      {
+        "path": ".gemini/skills/fl-matrix-operator/SKILL.md",
+        "sha256": "f7f33fa1e38842faaac4ff300029c33202a08cb414412d9d035964e614c41b4d"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/acceptance-criteria.md.template",
+        "sha256": "22f19535a7422aa3385ac2a604ff8d8832fa689c2a2eea98ec8f5eefdd18c6ff"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/audience-and-expectation.md.template",
+        "sha256": "5ca49c1ae74fe846537408beee3e3747dc70f93d08c86dac167cdce3c72e59e8"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/data-and-states.md.template",
+        "sha256": "8cf2221e77fed2da6307176d843ce1b4a6eeff00505f09ec1d26676ac17b8209"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/discovery-log.md.template",
+        "sha256": "980c8d84becd19e8f212db527407852acf2af7cf6851a5abc7407646ff249bcc"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/feature-scope.md.template",
+        "sha256": "359f48fd11be7007954677fe0c68519e6d3b7e7daf6e4decbac5da0006947bdf"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/figma-prompt.md.template",
+        "sha256": "cd848fb47331e455d7fbb10121f091f02f0f5f506c1bc94ce57c1f85d540c7d1"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/figma-prompts-README.md.template",
+        "sha256": "ace133d579384e09cf369b8dd53309ef2d9b48ec5a45e499e9627cc62e1b12b0"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/mvp-definition-summary.md.template",
+        "sha256": "692aa4260455ae4ea93a65be5b949685e6d5319f34b71693e628d0a4f7e8907d"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/MVP.md.template",
+        "sha256": "ab1350d7fef839b0486b6676e7bab05d4e20427f827b6b53c82c7dbc091d42c9"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-app.js.template",
+        "sha256": "798fc71ac46231ce8d451f3a4e85f643609f5afaf4a4df4a1eab2372bb158165"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-epic-plan.md.template",
+        "sha256": "a7fea4a9c473e69eb7aaf325d407637cdf0f63a5b6f0ed7814675a47ea273a87"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-index.html.template",
+        "sha256": "7a7f79cca0bdfa2069b982e718ba1676baa61e2bacd4cd867873b2f0b22816ee"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-mock-data.js.template",
+        "sha256": "c7e0306ad5f2e2439dd677c333dc636c3f5bed1073f665211bbae91b3a79692f"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-README.md.template",
+        "sha256": "6c1a53b1a263297534da4755c8fb8e58d492458d3a4ed3b9e1b6289ddc68af4a"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-styles.css.template",
+        "sha256": "18aefbfd42da96bcc7e4781289ff7eef28879937ef7e320973d1cb79bc9eca4a"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/preview-wp-spec.md.template",
+        "sha256": "8696badbb237cfb351b0d0a2d548812f639b44bec931f7b1f95fa629271d6883"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/README.md",
+        "sha256": "1284981975599ac844ce76c4bc425910b9a85c3f59fedaf46655d492029101b8"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/surface-scope.md.template",
+        "sha256": "3247483c23af42f180d556cfdf401d719181416803b49e32ae6f3ac3fab5623d"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/user-flow.md.template",
+        "sha256": "f9b2feef841f9b431a34d8ab9cc6ffc0e01c4710ae6423f844ababf2fd47da98"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/assets/prd/version-history.md.template",
+        "sha256": "68f8e43fb426fa4f672aa4129b0ce947fd809ecba406712f82e7833ec5dead7f"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/references/mvp-conversational-definition.md",
+        "sha256": "db66bcbb7009ebf8b50c2a03f9777df926664538cf43559efd398e659a4c9b94"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/references/mvp-pm-closed-loop.md",
+        "sha256": "25df8e8226264664f1e93dbaf7e5a3cd9f8399bfe23af963ad1b9106afc291fd"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/references/mvp-preview-generation.md",
+        "sha256": "509645e2566e9940a5a2b344978ea5de48219f4de34279b1d4ffeda054757d2b"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-definition/SKILL.md",
+        "sha256": "5ed99c89462e5f7df41a6d2ce9f03440f72e625d717a3cbd74fbf709dd09cf78"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/architecture.md.template",
+        "sha256": "4cf99dca7768eedc43805417631349e7d73e2ee0526a520b3e91215f8d21ad99"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/coding-guide.md.template",
+        "sha256": "2fd746d5005952d0a91ed6654473664732b4dfe2c59e95e98fd0a73d2f63f08a"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/directory-README.md.template",
+        "sha256": "0409c3ac68b9c319f825c0c1029f830683117bf1f858f115856a72ef9f59e530"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/engineering-guide.md.template",
+        "sha256": "da0c616da9a09f641463731e5bb0910c9560e4b2b904609cd0458acd0df4e652"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/migration-report.md.template",
+        "sha256": "55bdbfd3d8c0b41282ddc9ce96eaa747a92cde6b738185b47fee17ffac3c37d9"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/assets/mvp-to-project/project.yaml.template",
+        "sha256": "db9b6882e777d2a11713e6014f0f3afe1b4bd0fa76eb3259a656e23f42d00c65"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/references/mvp-to-project-project-asset-structure.md",
+        "sha256": "f5387adf0d02d22989cb5c1b4001d67efea744d0d43ee174cf464be181992360"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/scripts/mvp_to_project.py",
+        "sha256": "7fe486b2bf9ac4a861b2d02c774783cefb3cfcc9cb3bab64dc1c72db38f3dff5"
+      },
+      {
+        "path": ".gemini/skills/fl-mvp-to-project/SKILL.md",
+        "sha256": "1c22ef37eceae658eea65c88c5707e6918e1d0aa9b18b4804c6d126dd9f208bc"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/assets/openclaw-project/AGENTS.md.template",
+        "sha256": "351469d44ee9660b3c126f12936b07637645033e5bc560289e370ecb4c8cf31a"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/assets/openclaw-project/entry-SKILL.md.template",
+        "sha256": "cf81c6bd6cf062864c6b167dab405490c7b95ddcfaac690f0f037f825663b1b0"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/assets/openclaw-project/openclaw.project.yaml.template",
+        "sha256": "8a253e458dcfee2fcb12161e6016e4aad045512c32d5f6325408f4f9bce533b5"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/assets/openclaw-project/README.md.template",
+        "sha256": "8a3c466db32fc45ca95f3cb3e5535969ec0528b637a02a3d1ec585707e6e13c2"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/assets/openclaw-project/taskflow.md.template",
+        "sha256": "93355f52865fd77028fcf20c9ebffbc2c67c13632d950cd4239ba6733e73e35d"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/references/harness-human-control.md",
+        "sha256": "442e4bb936d353ba02a839b633e102a5360cc85ee6ec9b59e83359f8cea70d57"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/references/harness-tool-boundary.md",
+        "sha256": "fc8ec79dff6a2f4f3ac6b617eebb85fb3259b0ba818e80c351a59bc63358d52b"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/references/openclaw-project-generation.md",
+        "sha256": "675c868ddeadd0497acfd6492efec32186e0913567a1bc400272368028b78c49"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/references/standard-skill-definition.md",
+        "sha256": "4138dfe058a29c47ed033f06bd41c35cde9eddd17b219fd2b01312578b6284db"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/scripts/validate_openclaw_project_spec.py",
+        "sha256": "67ceab5b17633ac6825552f603206cf014591ca6ef960288e2dc77dc12148889"
+      },
+      {
+        "path": ".gemini/skills/fl-openclaw-project-generation/SKILL.md",
+        "sha256": "e17ad3803656b3ca72df95237b6a3c3098362c20434cbe9a4fec9b62af6d6adb"
+      },
+      {
+        "path": ".gemini/skills/fl-project-knowledge-maintenance/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "04b42a8e980dd9e5b85996890a0638e85115fb4cfccdcba4cda12bf73490c27c"
+      },
+      {
+        "path": ".gemini/skills/fl-project-knowledge-maintenance/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".gemini/skills/fl-project-knowledge-maintenance/SKILL.md",
+        "sha256": "e94a6eb9ef78db27920f48269b858ebb6c135310612e2277e79acdf117ce9d93"
+      },
+      {
+        "path": ".gemini/skills/fl-project-mcp-onboarding/assets/project-knowledge/fenleng.project.yaml.template",
+        "sha256": "0d825ac5c33786139cddc52b76b7bbe51c53dae2e50565dc108999a49db46ca0"
+      },
+      {
+        "path": ".gemini/skills/fl-project-mcp-onboarding/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".gemini/skills/fl-project-mcp-onboarding/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".gemini/skills/fl-project-mcp-onboarding/SKILL.md",
+        "sha256": "a9e19c649967e50b44ae8e42d7e2c00612fdd3118bf1d2f670b417057cbf07f9"
+      },
+      {
+        "path": ".gemini/skills/fl-select-node/agents/openai.yaml",
+        "sha256": "4e255744a33c0264a6be2d88894397aa3926b7f38e8c1b4976d0343770d9caa7"
+      },
+      {
+        "path": ".gemini/skills/fl-select-node/scripts/refresh.py",
+        "sha256": "fe19ce9d1a086fd8609da6f695bfa6a81e7286e7b758d30cc322be3bc2925399"
+      },
+      {
+        "path": ".gemini/skills/fl-select-node/SKILL.md",
+        "sha256": "fa5953d13fcb375cc02f047a2bac1b52213d727eb3ed0dc1fc180de81d346db3"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/application-info-summary.md.template",
+        "sha256": "6800e6bcf93e22a1509de114012fc46253f99330430ce3d4bcf961966600478e"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/core-function-description.md.template",
+        "sha256": "912fcf7d4e5a31bda683d7ce37aec9f0aa4789b466bdfb53e2ebf2bff6790e1f"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/correction-response.md.template",
+        "sha256": "cf95eaaeef0f3e452d5854a750e5864307beb455ea36716c6ac1505121f243d4"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/final-deliverable-manifest.md.template",
+        "sha256": "6d20d6195b66e402344f38a8cddec44494d8acea58f192487a6499508b62e3ee"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/independent-development-statement.md.template",
+        "sha256": "efd476f787c886ccec98df45aa530dde8089b7936bc43b5cf7684e3ca57a49e8"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/material-checklist.md.template",
+        "sha256": "768e56ac666f24f5366a3b0fb8be8d510a69c4a9f99dac832a4a525bc56bb96a"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/software-manual.md.template",
+        "sha256": "d30b5fafb8085c13b08c81622508fd839c37fd89c87b4d70885884b7ced82bf0"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/third-party-disclosure.md.template",
+        "sha256": "26117c4b3916a40d211757031a7938554ea70c1f2fb37e8460646ab677346742"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/assets/software-copyright/user-action-guide.md.template",
+        "sha256": "6f12f66114f9f3c8e50d2d258fe8b35ac369950b26ed3047a1c1694b6018fe99"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/references/ip-application-info-summary.md",
+        "sha256": "ef043c0d489ac3d49797d498159a191195d077b1fffc679f24559b9853fd3ade"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/references/ip-correction-response.md",
+        "sha256": "460d51796a46df02475d55fd0691cb2578391043a6ec77999f5d15c87221b2b5"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/references/ip-software-copyright-boundary.md",
+        "sha256": "f8b79c90b6a5ba62b4759b2129816594465403dcf5692ee8e98367e8bc2f9384"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/references/ip-source-code-material-authenticity.md",
+        "sha256": "4b0bb6edee11ac8265f27f8119d256e4277e9716866fdaf578d3b0ed38cc7823"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/audit_common_identifiers.py",
+        "sha256": "e7066752b9f7954fcbe28e4b95d46add9c6098deeb867aa2ba52b7760c9e5e0a"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/build_deliverable_package.py",
+        "sha256": "a4732c1971ab5714ba1673bc63f0ea5b8748e52b4a47bb2029de30452543c03f"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/check-copyright-source.js",
+        "sha256": "459f38979334e85fdebfaeac8eac9cc04396a0e8f910d102b9d231f8cca34ce2"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/extract_source_material.py",
+        "sha256": "098862ce768ce37abd9802809a5f6febd5855dc52f49f93f3809c3f8e4e3a5a9"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/fix_docx_metadata.py",
+        "sha256": "ee764b3a88e9970079f520f619a1516ef4f7d44b39748d14e3adc58403d91fef"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/pseudonymize_common_identifiers.py",
+        "sha256": "2e319a23e41735f213f437ce0ac6b928fd0b6a861b3459f7c8a3a2344630ec63"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/render_docx_pdf.py",
+        "sha256": "60ee8fdedb8163e1188f72b33650b5b0a22681887e82a9589a918b44667cd195"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/review_source_material.py",
+        "sha256": "722844c38770bfeb4614146ba3a8654a4a778529395320ef988026276b1e97f6"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/scripts/validate_application_info.py",
+        "sha256": "c5598181834529d3ebbf7cb71861753a32174093753c4ef95234b6a4219d8d38"
+      },
+      {
+        "path": ".gemini/skills/fl-software-copyright-registration/SKILL.md",
+        "sha256": "8a4413091a88e9e2f0a304235056fdb4f75ce25a4c71801d3b6769dd2efcb638"
+      },
+      {
+        "path": ".gemini/skills/fl-taste/references/design-methods.md",
+        "sha256": "befc9dbbd168b2294c5a91d5f4836286d44de27d83abec4483b5e769bfed1ba4"
+      },
+      {
+        "path": ".gemini/skills/fl-taste/references/provenance.md",
+        "sha256": "ad3b96e06699e388c28f0155bed902a5ff465b0cdbde8cdc790f461f31b33252"
+      },
+      {
+        "path": ".gemini/skills/fl-taste/references/upstream-license.txt",
+        "sha256": "3c9f63518df3378772203cc64d38d9e381d2a4723b93d2c3849b2bf3d464de0c"
+      },
+      {
+        "path": ".gemini/skills/fl-taste/SKILL.md",
+        "sha256": "5e0f64d827be319150493f6860a2a60191084cf47f49841650279d2d59532334"
+      },
+      {
+        "path": ".gemini/skills/fl-ui-design-system/assets/component.schema.json",
+        "sha256": "35c322eca9b4e95ad36ca7f47e9de6fa23d8796acc112c7c31136f42d97712db"
+      },
+      {
+        "path": ".gemini/skills/fl-ui-design-system/assets/token.schema.json",
+        "sha256": "04e5d584d42ace9d83b3b259d931ae7577458176cbdc052c725aa4e446e0df43"
+      },
+      {
+        "path": ".gemini/skills/fl-ui-design-system/references/knowledge-loading.md",
+        "sha256": "362944c229b0238635492fe673c4aa8ec3b3f5c4de8c4aa78a5e06c4ea9e2eae"
+      },
+      {
+        "path": ".gemini/skills/fl-ui-design-system/references/visual-review.md",
+        "sha256": "bd94dbe85f67459c430305bc2fc19d1f206249cd33a179f84e7205f7a93a555a"
+      },
+      {
+        "path": ".gemini/skills/fl-ui-design-system/SKILL.md",
+        "sha256": "7a536eb07cc86d2230bd224e0cc91396f78133e36e53afa75b66072a3a31e064"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/assets/upstream.json.gz",
+        "sha256": "1ea0e39d16a49c50a03b30ac327ed3ab8048f5a96a7a7fc37432869b619369ae"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/references/provenance.md",
+        "sha256": "61e2d5e238be0c881f525cc84e0b123f44cba9833b96f700b20047c09231e6a8"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/references/search-and-mapping.md",
+        "sha256": "ca6ae2e94227fc29e7583c3efa0140451a9f287c3ee3e624286b2c8cb954467c"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/references/upstream-license.txt",
+        "sha256": "1b8bd455510cc1f6f9bd510ffe2ec372d1c51fe0e082ddfee8b41825fb7aa055"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/scripts/search.py",
+        "sha256": "df58da6fb40a4d407cee2ef656abe64846789a71245303ac9dd5c671e5af5ce6"
+      },
+      {
+        "path": ".gemini/skills/fl-ux-pro/SKILL.md",
+        "sha256": "2d6bc1407279e6472f907d2ca59945ea61d44a65049171c98eb1935345a094a3"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/assets/application-signing-info.json.template",
+        "sha256": "31efa26f54be601acf2893f9a2f0c70f861b2eb4d35457d0170654c5e346f042"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-android-information.md.template",
+        "sha256": "309b1c6475d2532541554e87072036c35b6d5fdac591c8e54439d0702b55a4f0"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-basic-information.md.template",
+        "sha256": "a65505e727dacfb4b0da7032d225ba0548ac662ef85d1072635ee716731e541a"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-ios-information.md.template",
+        "sha256": "ffd5e0d06219cfe19fc04c2078432ac71df08dbbcee2606c952ab32e1327907b"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/references/mobile-application-registration.md",
+        "sha256": "df07e9f0629f5571fb8a6f8a92f005992599b2f0e3675b7cde9a2c44ceda747b"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-mobile-application/SKILL.md",
+        "sha256": "7350a34fa9a5da1336dada9b61c1ff67f50ecb62df264378d2a46799b01528c2"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-website-application/assets/website-application-information.md.template",
+        "sha256": "86b854024f2672c2883d80a7d74f2ee9e49a22d1002b3800ea36730c29c54ceb"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-website-application/references/website-application-registration.md",
+        "sha256": "6c91fbed912f9fed7513fedb3ffbc56e8ba0e459881722acd70d4bd7dd5db6a0"
+      },
+      {
+        "path": ".gemini/skills/fl-wechat-website-application/SKILL.md",
+        "sha256": "f3cf4e398dd2b3be6fff1546dbd924af569bcc0161a3dea8b753d407072f5c88"
+      }
+    ],
+    "cline": [
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/audit.md.template",
+        "sha256": "94b046881b4580e1d85aefd306ca4062f47092b6cda1b04149ad994fa7d5ddcc"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/evidence.md.template",
+        "sha256": "9740676669e314c24716786dba5e53f5ce8f92f8dd0685f679a60bb95838df33"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/metrics.json.template",
+        "sha256": "67be4e3d0eb36fdcf228c859e24695878e66521c4cee3df017ab1ad41e9d0b21"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/optimization.md.template",
+        "sha256": "66341441430d06e4c26658e826894fd1daee18706def1cdf75f0528c5c55fa11"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-efficiency-audit/README.md.template",
+        "sha256": "63835eb04f13873cd89f58b8c5d1e5827a1265630b5b92408c4e4efd1139163b"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/epic-plan/TEMPLATE.md",
+        "sha256": "cd2900e1ce93e482303fc492955a7d4dd8610e0ea66f895b92a3535ac6c9ef87"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/flutter-oh-baseline.json",
+        "sha256": "4932cf8c5f364597d23c0a8c3af14dac845a31225371c276c4f3fff67396a176"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/assets/wp-spec/TEMPLATE.md",
+        "sha256": "e73284e425603ac67c5bf54b47bd5b50766660cc21002726c4290077c2fb2f10"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/architecture.md",
+        "sha256": "b6f005b84613ea2e5974211c12ea7cbd53031329e58cc6c124ec1403f7378c2f"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/day0-account-channel-i18n.md",
+        "sha256": "423e15e2c18a90a2be49ea4d0b2924efb695fcefa0c72afb84018ad3de49427e"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/day0-china-app-privacy-consent.md",
+        "sha256": "d1b99cc10b4eb2a18ad11e5e9872cbde93043c8677785a63b52062515cf3b022"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/day0-ipad-basic-adaptation.md",
+        "sha256": "d7bd133730ba103761648bee846d90cfce3672d931a52da37fba02e51637b7ed"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/day0-telemetry.md",
+        "sha256": "11e0debbd8ee02a617d33055ddb2364dd1eb1c8aa341b57a4f2a12dc5278a6ad"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/design-clean-architecture.md",
+        "sha256": "4ba0bebdb44cce8419091ad3abedb38b251b81150fafc2340bf31939b9f910cb"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/design-modular-architecture.md",
+        "sha256": "f309782c97870b2dffdb665aa4d31f916f2fbc76d60887f72f1a153a73a20205"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain-backend-architecture.md",
+        "sha256": "f1b1606a9abe1eaaf3c690f6ff4271439bcf63d90f589b10307deac5b2062b9f"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain-flutter-architecture.md",
+        "sha256": "107c4164d003349dc4352a9f1f4cca961c7421d32c5fc96d09beeb066ea61b2a"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain-mini-program-architecture.md",
+        "sha256": "9334e747c77d45a9be458a0ce8df3e1cc39e95e16241c14572ad1ee478a616e4"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain-ui-design-system.md",
+        "sha256": "f882aaba4e946987d6ed0038b57fe82b169b365ae730f0b750f29572f5ace462"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain-web-architecture.md",
+        "sha256": "fda581ed18430b2a750d80b4979cbdcf39cd487e34a23cd667285a17440625d1"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/domain.md",
+        "sha256": "315280cefb55cb9e3fcb9a07bfc746f056ed83005ff3273a8c8899bed5497ba9"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/engineering-clean-code.md",
+        "sha256": "0153bd322e8763882f083e954908b39b7b218b1ddfde8a73abf74131946e5e30"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/engineering-karpathy-guidelines.md",
+        "sha256": "6ae5e4015b8061e12bcfb77e5ed43027288dbd1fd22092e3757bd866d39654c1"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/experience-sdk-routing.md",
+        "sha256": "ed5815fcfbbd5b31c317a9fe5bded4c526f299203241656ec52c9326486fd870"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/flutter-oh-three-platforms.md",
+        "sha256": "23ce3e16bcd9b02ebef7e70d676a28fa13a16cbb8a5d12ac9bdeaacbff9fff7a"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/harmonyos-native-capabilities.md",
+        "sha256": "027cf77f711a70d20abee924c2b2b4aa8637f14ba1da17fc7778095931456f18"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/harmonyos-signing.md",
+        "sha256": "e04fd2f5e87a518b81d1214176f2eb761d976dad9910e5e3736929f7d6f54f01"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5667896a8688e6bae54a5e1c77a3b239608010c8c48e3c7bbf5739016b20ab5b"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/testing-mocking-rules.md",
+        "sha256": "a206f680968df5b81f55c79ffcee757740cb533fef2d219b09f8325ed5d64d0e"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/references/workflow-clarification-gate.md",
+        "sha256": "6ab3af0f4d3a3cbd821e7294f3f11961b9c14aeb4b661e49c22486a9d2f54f86"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/check-flutter-fvm.js",
+        "sha256": "9287e7a74f96e34bd6e01a1227c451ac15816b04b0c6e59070181527b87cfcca"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/check-flutter-oh.mjs",
+        "sha256": "3098d917bdab5403a29abbb16dbaf8b673193f3e1aef0325641edc863ffcaddd"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/check-git-clean.js",
+        "sha256": "6e144b16cb2a75c373eeb66b7bb06b5258872d317a07b7f240d004f9e6540d42"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/check-harmonyos-environment.mjs",
+        "sha256": "d5c0b3a7a8a3c379560b57673a404789b36deeca9213c6064ec0e7c4d56157c6"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/package-flutter-android.mjs",
+        "sha256": "d64e0b6a6a39ffb31baa7088ef0af98a3116200bca9b702a190a6dcdf6def4a2"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/package-flutter-harmonyos.mjs",
+        "sha256": "14aa194d2ec23128d68702d0c53fa25d814b0cce28fac473dbceb434a0f2055d"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/store-flutter-android-signing.mjs",
+        "sha256": "4197418268d88f3f9f3052f3695dec9c28c60ee2a03b151e663554a534089132"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/scripts/verify-harmonyos-signing.mjs",
+        "sha256": "69fb2150a9cc99b715353b435c15e1678fc349e7a29c054b57016e4f98d9cdcb"
+      },
+      {
+        "path": ".cline/skills/fl-ai-coding-delivery/SKILL.md",
+        "sha256": "56c05cc6d8d631ee0bc3b2e4d9bb70310eddb618d4eb9fe0d21945147dd2ad7c"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/references/alipay-app.md",
+        "sha256": "b1d3b3158f5f32b5299e5e00c0eba218a3b65ffa07a93bf15e6febb365ab8866"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/references/apple-storekit.md",
+        "sha256": "5cc1ad41b0775bee8f8c874c87a6ad0f19a0588a496a6cc4aef288a1a11a27fc"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/references/digital-subscription-channel-policy.md",
+        "sha256": "20a0fc3bd380f4a6c429049944913dff6ccd0ca6c59364a993e1c01fe272d4d1"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/references/purchase-agreements.md",
+        "sha256": "65f368bd1bbe3e578ba21b9aee2d84bc710d51cb87f45c9b663b2800295df29f"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/references/wechat-app.md",
+        "sha256": "4a4139b03346ae3bc561ce35a69f673c38a8f38a49180ba24035a00f187b9f8d"
+      },
+      {
+        "path": ".cline/skills/fl-app-payment-integration/SKILL.md",
+        "sha256": "d673a6f54c89bac13fa8d454fc59756ebcbb857dc180b5467d8fc63f463daa2e"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/additional-market.md.template",
+        "sha256": "e181550b1a649b3867fd58a37da09e6a17bbdb2d2627112abec1c3034216fa8f"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/apple-app-store-initial.md.template",
+        "sha256": "01435f2dea53e6a746ee861835ded73189c04c3efecb7d9416a83b43fccec8c8"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/apple-app-store-release.md.template",
+        "sha256": "05b0d69ec221429ae54d4d37f5b11362664bd6af543ceba684300778127a0851"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/authorization-info.md.template",
+        "sha256": "17a2728a7275c586f4ef1734ee9d0b3e96fcf031b09f25e8bacebeedf5b8afa3"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/tencent-myapp-initial.md.template",
+        "sha256": "bfd0b36419aa7413de02b1001a7f858b80cb18ddcfaa548235cacf357f40c082"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/assets/tencent-myapp-release.md.template",
+        "sha256": "f9039566277dfee25a6334dd6b8e59b03a4357170e9afc0cdbe1c71a3d472506"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/apple-app-store.md",
+        "sha256": "785f6e76bf1aec44be4366336403668726b622e38d6fb2de2cc53899cae13a5d"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/asset-delivery.md",
+        "sha256": "c11d57d196347b57c7f635f5296396210d84ad727b448203f2dfe3d398c799c6"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/channel-discovery.md",
+        "sha256": "74a83e148f87f0d4881ba579833099d50e3192a5c9bf1446a80f53f23b72fa86"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/huawei-appgallery.md",
+        "sha256": "2d9edf7f954ddaaa75b79a61d4deb2c38d2cd0eae49823cb409088eaaf8739d5"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/huawei-harmonyos.md",
+        "sha256": "b1fd3337c38b4e3172b5685a4b8ef6feae4f7f42f5b85bf128bad991f41c9fd7"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/tencent-myapp.md",
+        "sha256": "f081e0b56afe488a7ae8ba4b30036706454497b42e839587e1a62f1397d91d9d"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/references/vivo.md",
+        "sha256": "f653ebfa3881ac9ad3a6ded7a482700702e9c02075505a94809f97f9cd926a60"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/scripts/validate_assets.py",
+        "sha256": "dc6aa2a48e8c0a75fd77c935ca7923ba343f61f2d4740af46e62efae46759079"
+      },
+      {
+        "path": ".cline/skills/fl-app-store-listing/SKILL.md",
+        "sha256": "ff2c9cd185e9d08b2de028805e643809194de45c68b35fe0cef8a916338f10a1"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/assets/project-knowledge/cross-project-coordination-result.yaml.template",
+        "sha256": "578938826b222dc5dc746cd15067ff22f16852413a44bc27fa24328f6f8f9fed"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "93b819afef5a6791e569e686ea38685cc8b07ad54307cbe2805a020275417224"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/references/project-matrix-dependencies.yaml",
+        "sha256": "3dc053bc85d32f3c6da261d8b910170855d7d13352b5850f62eb8817babc6378"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".cline/skills/fl-cross-project-coordination/SKILL.md",
+        "sha256": "eaeb61fed619f78f96bd65761ca9ea73b4026981c2a42f70675d2328f5146dd0"
+      },
+      {
+        "path": ".cline/skills/fl-figma-map-ui-loop/assets/fidelity_sample.py",
+        "sha256": "2282d9cf2c6acf78fd988c3292e0d6be050d838ec7a988933922ce1020083cd5"
+      },
+      {
+        "path": ".cline/skills/fl-figma-map-ui-loop/assets/figma-map-template.md",
+        "sha256": "c4a1048aa98438ce98c0d86f403549a89aac90d2d77d373ff55ddbdd2b1e2c9d"
+      },
+      {
+        "path": ".cline/skills/fl-figma-map-ui-loop/assets/golden_test_template.dart",
+        "sha256": "ea72c7a68d77736fa8582df1f1b2e6a4055ce2c48bdf9c451c8224a5f541ea2a"
+      },
+      {
+        "path": ".cline/skills/fl-figma-map-ui-loop/assets/vm_goto.dart",
+        "sha256": "61450b96116c4e5b2b5e1a1ac53223a0ef126266e79ce8869f2f019c6533b77c"
+      },
+      {
+        "path": ".cline/skills/fl-figma-map-ui-loop/SKILL.md",
+        "sha256": "0b92db0ea0dab210a364a778753f5a39da3d15906a0cfde8617bcada81d910a0"
+      },
+      {
+        "path": ".cline/skills/fl-figma-mini/agents/openai.yaml",
+        "sha256": "1360a92ceb7983746b11f2dde33576f94596880817f62b9e50352b8d704c3dd4"
+      },
+      {
+        "path": ".cline/skills/fl-figma-mini/assets/fidelity_sample.py",
+        "sha256": "8a2fd38d801db2c872b286d4e8ef78572b51141f4290c5cf3723c34315af0c49"
+      },
+      {
+        "path": ".cline/skills/fl-figma-mini/assets/figma-map-template.md",
+        "sha256": "271967581468a89844921a005e0d36c9da26d9c4650b85641accea6472019ee7"
+      },
+      {
+        "path": ".cline/skills/fl-figma-mini/SKILL.md",
+        "sha256": "1e7c46fae73b9912697ec0b13f4446416ca6e1712cd593c08800bb7c737358d0"
+      },
+      {
+        "path": ".cline/skills/fl-matrix-operator/references/application-credential-onboarding.md",
+        "sha256": "d13641f34e4d5a2668f4bfef8b770920522bf154638c85f2af592d17c3a654ba"
+      },
+      {
+        "path": ".cline/skills/fl-matrix-operator/scripts/render-application-credential-script.mjs",
+        "sha256": "e40cb9aadaa2c64020a9b323238c218fe2afd322c3872b5c2531eed016590cc2"
+      },
+      {
+        "path": ".cline/skills/fl-matrix-operator/SKILL.md",
+        "sha256": "f7f33fa1e38842faaac4ff300029c33202a08cb414412d9d035964e614c41b4d"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/acceptance-criteria.md.template",
+        "sha256": "22f19535a7422aa3385ac2a604ff8d8832fa689c2a2eea98ec8f5eefdd18c6ff"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/audience-and-expectation.md.template",
+        "sha256": "5ca49c1ae74fe846537408beee3e3747dc70f93d08c86dac167cdce3c72e59e8"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/data-and-states.md.template",
+        "sha256": "8cf2221e77fed2da6307176d843ce1b4a6eeff00505f09ec1d26676ac17b8209"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/discovery-log.md.template",
+        "sha256": "980c8d84becd19e8f212db527407852acf2af7cf6851a5abc7407646ff249bcc"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/feature-scope.md.template",
+        "sha256": "359f48fd11be7007954677fe0c68519e6d3b7e7daf6e4decbac5da0006947bdf"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/figma-prompt.md.template",
+        "sha256": "cd848fb47331e455d7fbb10121f091f02f0f5f506c1bc94ce57c1f85d540c7d1"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/figma-prompts-README.md.template",
+        "sha256": "ace133d579384e09cf369b8dd53309ef2d9b48ec5a45e499e9627cc62e1b12b0"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/mvp-definition-summary.md.template",
+        "sha256": "692aa4260455ae4ea93a65be5b949685e6d5319f34b71693e628d0a4f7e8907d"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/MVP.md.template",
+        "sha256": "ab1350d7fef839b0486b6676e7bab05d4e20427f827b6b53c82c7dbc091d42c9"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-app.js.template",
+        "sha256": "798fc71ac46231ce8d451f3a4e85f643609f5afaf4a4df4a1eab2372bb158165"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-epic-plan.md.template",
+        "sha256": "a7fea4a9c473e69eb7aaf325d407637cdf0f63a5b6f0ed7814675a47ea273a87"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-index.html.template",
+        "sha256": "7a7f79cca0bdfa2069b982e718ba1676baa61e2bacd4cd867873b2f0b22816ee"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-mock-data.js.template",
+        "sha256": "c7e0306ad5f2e2439dd677c333dc636c3f5bed1073f665211bbae91b3a79692f"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-README.md.template",
+        "sha256": "6c1a53b1a263297534da4755c8fb8e58d492458d3a4ed3b9e1b6289ddc68af4a"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-styles.css.template",
+        "sha256": "18aefbfd42da96bcc7e4781289ff7eef28879937ef7e320973d1cb79bc9eca4a"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/preview-wp-spec.md.template",
+        "sha256": "8696badbb237cfb351b0d0a2d548812f639b44bec931f7b1f95fa629271d6883"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/README.md",
+        "sha256": "1284981975599ac844ce76c4bc425910b9a85c3f59fedaf46655d492029101b8"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/surface-scope.md.template",
+        "sha256": "3247483c23af42f180d556cfdf401d719181416803b49e32ae6f3ac3fab5623d"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/user-flow.md.template",
+        "sha256": "f9b2feef841f9b431a34d8ab9cc6ffc0e01c4710ae6423f844ababf2fd47da98"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/assets/prd/version-history.md.template",
+        "sha256": "68f8e43fb426fa4f672aa4129b0ce947fd809ecba406712f82e7833ec5dead7f"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/references/mvp-conversational-definition.md",
+        "sha256": "db66bcbb7009ebf8b50c2a03f9777df926664538cf43559efd398e659a4c9b94"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/references/mvp-pm-closed-loop.md",
+        "sha256": "25df8e8226264664f1e93dbaf7e5a3cd9f8399bfe23af963ad1b9106afc291fd"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/references/mvp-preview-generation.md",
+        "sha256": "509645e2566e9940a5a2b344978ea5de48219f4de34279b1d4ffeda054757d2b"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-definition/SKILL.md",
+        "sha256": "5ed99c89462e5f7df41a6d2ce9f03440f72e625d717a3cbd74fbf709dd09cf78"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/architecture.md.template",
+        "sha256": "4cf99dca7768eedc43805417631349e7d73e2ee0526a520b3e91215f8d21ad99"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/coding-guide.md.template",
+        "sha256": "2fd746d5005952d0a91ed6654473664732b4dfe2c59e95e98fd0a73d2f63f08a"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/directory-README.md.template",
+        "sha256": "0409c3ac68b9c319f825c0c1029f830683117bf1f858f115856a72ef9f59e530"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/engineering-guide.md.template",
+        "sha256": "da0c616da9a09f641463731e5bb0910c9560e4b2b904609cd0458acd0df4e652"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/migration-report.md.template",
+        "sha256": "55bdbfd3d8c0b41282ddc9ce96eaa747a92cde6b738185b47fee17ffac3c37d9"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/assets/mvp-to-project/project.yaml.template",
+        "sha256": "db9b6882e777d2a11713e6014f0f3afe1b4bd0fa76eb3259a656e23f42d00c65"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/references/mvp-to-project-project-asset-structure.md",
+        "sha256": "f5387adf0d02d22989cb5c1b4001d67efea744d0d43ee174cf464be181992360"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/scripts/mvp_to_project.py",
+        "sha256": "7fe486b2bf9ac4a861b2d02c774783cefb3cfcc9cb3bab64dc1c72db38f3dff5"
+      },
+      {
+        "path": ".cline/skills/fl-mvp-to-project/SKILL.md",
+        "sha256": "1c22ef37eceae658eea65c88c5707e6918e1d0aa9b18b4804c6d126dd9f208bc"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/assets/openclaw-project/AGENTS.md.template",
+        "sha256": "351469d44ee9660b3c126f12936b07637645033e5bc560289e370ecb4c8cf31a"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/assets/openclaw-project/entry-SKILL.md.template",
+        "sha256": "cf81c6bd6cf062864c6b167dab405490c7b95ddcfaac690f0f037f825663b1b0"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/assets/openclaw-project/openclaw.project.yaml.template",
+        "sha256": "8a253e458dcfee2fcb12161e6016e4aad045512c32d5f6325408f4f9bce533b5"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/assets/openclaw-project/README.md.template",
+        "sha256": "8a3c466db32fc45ca95f3cb3e5535969ec0528b637a02a3d1ec585707e6e13c2"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/assets/openclaw-project/taskflow.md.template",
+        "sha256": "93355f52865fd77028fcf20c9ebffbc2c67c13632d950cd4239ba6733e73e35d"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/references/harness-human-control.md",
+        "sha256": "442e4bb936d353ba02a839b633e102a5360cc85ee6ec9b59e83359f8cea70d57"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/references/harness-tool-boundary.md",
+        "sha256": "fc8ec79dff6a2f4f3ac6b617eebb85fb3259b0ba818e80c351a59bc63358d52b"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/references/openclaw-project-generation.md",
+        "sha256": "675c868ddeadd0497acfd6492efec32186e0913567a1bc400272368028b78c49"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/references/standard-skill-definition.md",
+        "sha256": "4138dfe058a29c47ed033f06bd41c35cde9eddd17b219fd2b01312578b6284db"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/scripts/validate_openclaw_project_spec.py",
+        "sha256": "67ceab5b17633ac6825552f603206cf014591ca6ef960288e2dc77dc12148889"
+      },
+      {
+        "path": ".cline/skills/fl-openclaw-project-generation/SKILL.md",
+        "sha256": "e17ad3803656b3ca72df95237b6a3c3098362c20434cbe9a4fec9b62af6d6adb"
+      },
+      {
+        "path": ".cline/skills/fl-project-knowledge-maintenance/references/project-knowledge-cross-project-human-gate.md",
+        "sha256": "04b42a8e980dd9e5b85996890a0638e85115fb4cfccdcba4cda12bf73490c27c"
+      },
+      {
+        "path": ".cline/skills/fl-project-knowledge-maintenance/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".cline/skills/fl-project-knowledge-maintenance/SKILL.md",
+        "sha256": "e94a6eb9ef78db27920f48269b858ebb6c135310612e2277e79acdf117ce9d93"
+      },
+      {
+        "path": ".cline/skills/fl-project-mcp-onboarding/assets/project-knowledge/fenleng.project.yaml.template",
+        "sha256": "0d825ac5c33786139cddc52b76b7bbe51c53dae2e50565dc108999a49db46ca0"
+      },
+      {
+        "path": ".cline/skills/fl-project-mcp-onboarding/references/project-knowledge-project-knowledge-exposure.md",
+        "sha256": "5568a2ac1a921b79f4f17a8f0dcafad65c9ed09b962389da7c9b6558d7bb2059"
+      },
+      {
+        "path": ".cline/skills/fl-project-mcp-onboarding/references/project-matrix.md",
+        "sha256": "e6bbfb7d5d98fb110b90776215b244693d493155e53e2205741a644072642140"
+      },
+      {
+        "path": ".cline/skills/fl-project-mcp-onboarding/SKILL.md",
+        "sha256": "a9e19c649967e50b44ae8e42d7e2c00612fdd3118bf1d2f670b417057cbf07f9"
+      },
+      {
+        "path": ".cline/skills/fl-select-node/agents/openai.yaml",
+        "sha256": "4e255744a33c0264a6be2d88894397aa3926b7f38e8c1b4976d0343770d9caa7"
+      },
+      {
+        "path": ".cline/skills/fl-select-node/scripts/refresh.py",
+        "sha256": "fe19ce9d1a086fd8609da6f695bfa6a81e7286e7b758d30cc322be3bc2925399"
+      },
+      {
+        "path": ".cline/skills/fl-select-node/SKILL.md",
+        "sha256": "fa5953d13fcb375cc02f047a2bac1b52213d727eb3ed0dc1fc180de81d346db3"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/application-info-summary.md.template",
+        "sha256": "6800e6bcf93e22a1509de114012fc46253f99330430ce3d4bcf961966600478e"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/core-function-description.md.template",
+        "sha256": "912fcf7d4e5a31bda683d7ce37aec9f0aa4789b466bdfb53e2ebf2bff6790e1f"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/correction-response.md.template",
+        "sha256": "cf95eaaeef0f3e452d5854a750e5864307beb455ea36716c6ac1505121f243d4"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/final-deliverable-manifest.md.template",
+        "sha256": "6d20d6195b66e402344f38a8cddec44494d8acea58f192487a6499508b62e3ee"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/independent-development-statement.md.template",
+        "sha256": "efd476f787c886ccec98df45aa530dde8089b7936bc43b5cf7684e3ca57a49e8"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/material-checklist.md.template",
+        "sha256": "768e56ac666f24f5366a3b0fb8be8d510a69c4a9f99dac832a4a525bc56bb96a"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/software-manual.md.template",
+        "sha256": "d30b5fafb8085c13b08c81622508fd839c37fd89c87b4d70885884b7ced82bf0"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/third-party-disclosure.md.template",
+        "sha256": "26117c4b3916a40d211757031a7938554ea70c1f2fb37e8460646ab677346742"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/assets/software-copyright/user-action-guide.md.template",
+        "sha256": "6f12f66114f9f3c8e50d2d258fe8b35ac369950b26ed3047a1c1694b6018fe99"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/references/ip-application-info-summary.md",
+        "sha256": "ef043c0d489ac3d49797d498159a191195d077b1fffc679f24559b9853fd3ade"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/references/ip-correction-response.md",
+        "sha256": "460d51796a46df02475d55fd0691cb2578391043a6ec77999f5d15c87221b2b5"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/references/ip-software-copyright-boundary.md",
+        "sha256": "f8b79c90b6a5ba62b4759b2129816594465403dcf5692ee8e98367e8bc2f9384"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/references/ip-source-code-material-authenticity.md",
+        "sha256": "4b0bb6edee11ac8265f27f8119d256e4277e9716866fdaf578d3b0ed38cc7823"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/audit_common_identifiers.py",
+        "sha256": "e7066752b9f7954fcbe28e4b95d46add9c6098deeb867aa2ba52b7760c9e5e0a"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/build_deliverable_package.py",
+        "sha256": "a4732c1971ab5714ba1673bc63f0ea5b8748e52b4a47bb2029de30452543c03f"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/check-copyright-source.js",
+        "sha256": "459f38979334e85fdebfaeac8eac9cc04396a0e8f910d102b9d231f8cca34ce2"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/extract_source_material.py",
+        "sha256": "098862ce768ce37abd9802809a5f6febd5855dc52f49f93f3809c3f8e4e3a5a9"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/fix_docx_metadata.py",
+        "sha256": "ee764b3a88e9970079f520f619a1516ef4f7d44b39748d14e3adc58403d91fef"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/pseudonymize_common_identifiers.py",
+        "sha256": "2e319a23e41735f213f437ce0ac6b928fd0b6a861b3459f7c8a3a2344630ec63"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/render_docx_pdf.py",
+        "sha256": "60ee8fdedb8163e1188f72b33650b5b0a22681887e82a9589a918b44667cd195"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/review_source_material.py",
+        "sha256": "722844c38770bfeb4614146ba3a8654a4a778529395320ef988026276b1e97f6"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/scripts/validate_application_info.py",
+        "sha256": "c5598181834529d3ebbf7cb71861753a32174093753c4ef95234b6a4219d8d38"
+      },
+      {
+        "path": ".cline/skills/fl-software-copyright-registration/SKILL.md",
+        "sha256": "8a4413091a88e9e2f0a304235056fdb4f75ce25a4c71801d3b6769dd2efcb638"
+      },
+      {
+        "path": ".cline/skills/fl-taste/references/design-methods.md",
+        "sha256": "befc9dbbd168b2294c5a91d5f4836286d44de27d83abec4483b5e769bfed1ba4"
+      },
+      {
+        "path": ".cline/skills/fl-taste/references/provenance.md",
+        "sha256": "ad3b96e06699e388c28f0155bed902a5ff465b0cdbde8cdc790f461f31b33252"
+      },
+      {
+        "path": ".cline/skills/fl-taste/references/upstream-license.txt",
+        "sha256": "3c9f63518df3378772203cc64d38d9e381d2a4723b93d2c3849b2bf3d464de0c"
+      },
+      {
+        "path": ".cline/skills/fl-taste/SKILL.md",
+        "sha256": "5e0f64d827be319150493f6860a2a60191084cf47f49841650279d2d59532334"
+      },
+      {
+        "path": ".cline/skills/fl-ui-design-system/assets/component.schema.json",
+        "sha256": "35c322eca9b4e95ad36ca7f47e9de6fa23d8796acc112c7c31136f42d97712db"
+      },
+      {
+        "path": ".cline/skills/fl-ui-design-system/assets/token.schema.json",
+        "sha256": "04e5d584d42ace9d83b3b259d931ae7577458176cbdc052c725aa4e446e0df43"
+      },
+      {
+        "path": ".cline/skills/fl-ui-design-system/references/knowledge-loading.md",
+        "sha256": "362944c229b0238635492fe673c4aa8ec3b3f5c4de8c4aa78a5e06c4ea9e2eae"
+      },
+      {
+        "path": ".cline/skills/fl-ui-design-system/references/visual-review.md",
+        "sha256": "bd94dbe85f67459c430305bc2fc19d1f206249cd33a179f84e7205f7a93a555a"
+      },
+      {
+        "path": ".cline/skills/fl-ui-design-system/SKILL.md",
+        "sha256": "7a536eb07cc86d2230bd224e0cc91396f78133e36e53afa75b66072a3a31e064"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/assets/upstream.json.gz",
+        "sha256": "1ea0e39d16a49c50a03b30ac327ed3ab8048f5a96a7a7fc37432869b619369ae"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/references/provenance.md",
+        "sha256": "61e2d5e238be0c881f525cc84e0b123f44cba9833b96f700b20047c09231e6a8"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/references/search-and-mapping.md",
+        "sha256": "ca6ae2e94227fc29e7583c3efa0140451a9f287c3ee3e624286b2c8cb954467c"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/references/upstream-license.txt",
+        "sha256": "1b8bd455510cc1f6f9bd510ffe2ec372d1c51fe0e082ddfee8b41825fb7aa055"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/scripts/search.py",
+        "sha256": "df58da6fb40a4d407cee2ef656abe64846789a71245303ac9dd5c671e5af5ce6"
+      },
+      {
+        "path": ".cline/skills/fl-ux-pro/SKILL.md",
+        "sha256": "2d6bc1407279e6472f907d2ca59945ea61d44a65049171c98eb1935345a094a3"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/assets/application-signing-info.json.template",
+        "sha256": "31efa26f54be601acf2893f9a2f0c70f861b2eb4d35457d0170654c5e346f042"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-android-information.md.template",
+        "sha256": "309b1c6475d2532541554e87072036c35b6d5fdac591c8e54439d0702b55a4f0"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-basic-information.md.template",
+        "sha256": "a65505e727dacfb4b0da7032d225ba0548ac662ef85d1072635ee716731e541a"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/assets/wechat-mobile-application-ios-information.md.template",
+        "sha256": "ffd5e0d06219cfe19fc04c2078432ac71df08dbbcee2606c952ab32e1327907b"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/references/mobile-application-registration.md",
+        "sha256": "df07e9f0629f5571fb8a6f8a92f005992599b2f0e3675b7cde9a2c44ceda747b"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-mobile-application/SKILL.md",
+        "sha256": "7350a34fa9a5da1336dada9b61c1ff67f50ecb62df264378d2a46799b01528c2"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-website-application/assets/website-application-information.md.template",
+        "sha256": "86b854024f2672c2883d80a7d74f2ee9e49a22d1002b3800ea36730c29c54ceb"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-website-application/references/website-application-registration.md",
+        "sha256": "6c91fbed912f9fed7513fedb3ffbc56e8ba0e459881722acd70d4bd7dd5db6a0"
+      },
+      {
+        "path": ".cline/skills/fl-wechat-website-application/SKILL.md",
+        "sha256": "f3cf4e398dd2b3be6fff1546dbd924af569bcc0161a3dea8b753d407072f5c88"
+      }
+    ]
+  },
+  "lastSyncedAt": "2026-11-10T15:03:22.901Z"
+}

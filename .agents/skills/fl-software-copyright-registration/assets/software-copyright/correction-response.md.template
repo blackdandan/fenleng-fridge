@@ -1,0 +1,28 @@
+# 软件著作权补正说明
+
+<!-- 中文说明：本模板用于逐条回应补正通知。不得编造通知中没有的原因，也不得承诺不存在的事实。 -->
+
+## 基本信息
+
+- 软件名称：{{software_name}}
+- 版本号：{{version}}
+- 申请主体：{{applicant}}
+- 补正通知日期：{{notice_date}}
+
+## 补正意见摘要
+
+{{notice_summary}}
+
+## 问题诊断与整改
+
+| 补正意见 | 涉及材料 | 原因说明 | 整改动作 | 重新提交材料 |
+| :--- | :--- | :--- | :--- | :--- |
+| {{issue}} | {{affected_material}} | {{reason}} | {{action}} | {{resubmission_material}} |
+
+## 人工确认事项
+
+- {{manual_confirmation}}
+
+## 附件清单
+
+- {{attachment}}

@@ -1,0 +1,48 @@
+# 中文注释：本文件描述目标 OpenClaw 项目的入口、编排、验证和进化机制。
+project_id: "{{PROJECT_ID}}"
+name: "{{PROJECT_NAME}}"
+description: "{{PROJECT_DESCRIPTION}}"
+
+entry_skill:
+  id: "{{ENTRY_SKILL_ID}}"
+  path: "skills/{{ENTRY_SKILL_ID}}/SKILL.md"
+  trigger_examples:
+    - "{{TRIGGER_EXAMPLE}}"
+  orchestration_entry: "{{ORCHESTRATION_ENTRY}}"
+
+orchestration:
+  type: "{{ORCHESTRATION_TYPE}}" # lobster | taskflow | runner_script | tool | plugin
+  path: "{{ORCHESTRATION_PATH}}"
+  supports_dry_run: true
+
+skills:
+  - id: "{{ENTRY_SKILL_ID}}"
+    path: "skills/{{ENTRY_SKILL_ID}}/SKILL.md"
+    role: "entry"
+
+schemas:
+  - "schemas/run-input.schema.json"
+  - "schemas/run-output.schema.json"
+
+smoke_test:
+  path: "smoke-tests/dry-run-input.json"
+  mode: "dry_run"
+  expected_result: "入口 Skill 能触发编排层，并生成第一阶段结构化输出。"
+
+repair_and_evolution:
+  repair_log_path: "evolution/repair-log.md"
+  evolution_log_path: "evolution/evolution-log.md"
+
+subagents:
+  allowAgents:
+    - "*"
+  delegationMode: "prefer" # suggest | prefer
+  maxSpawnDepth: 2
+  maxConcurrent: 8
+
+resiliency:
+  supports_orphan_recovery: true
+  idempotent_steps:
+    - "execute"
+    - "deliver"
+

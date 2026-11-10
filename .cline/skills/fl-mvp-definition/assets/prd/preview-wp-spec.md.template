@@ -1,0 +1,44 @@
+# WorkPackage Spec - {{wp_id}}: {{wp_title}}
+
+<!-- 中文注释：本文件是 MVP Preview 单个子工作包的开发规格说明书，详细规范本包需要修改的文件及交互实现方法。 -->
+
+## 📋 WP 基本信息
+
+- **当前工作包**：{{wp_id}}
+- **计划状态**：`In Progress`
+- **关联大计划**：`preview/mvp/plans/preview_epic_plan.md`
+
+## 🎯 本包开发目标
+
+{{wp_description}}
+
+## 📂 涉及与修改文件
+
+- **修改/新增文件**：
+  - [ ] `{{file_1}}` (如 `preview/mvp/app.js`): {{file_1_desc}}
+  - [ ] `{{file_2}}` (如 `preview/mvp/styles.css`): {{file_2_desc}}
+
+## 🎨 UI 界面与交互细节描述
+
+- **目标视图/模块**：{{ui_views}}
+- **涉及的核心交互动作**：
+  - {{interaction_actions}} (例如：点击“编辑”按钮弹出 modal；点击 tab 切换不同维度数据)
+- **支持的页面状态**：
+  - 默认状态：{{state_default}}
+  - 空状态 / 加载模拟：{{state_empty}}
+  - 报错/失败模拟：{{state_error}}
+
+## 📊 本包依赖 Mock 数据结构
+
+- **数据字段与结构**：
+  ```javascript
+  // 需要在 mock-data.js 中声明或扩充以下假数据：
+  {{mock_data_structure}}
+  ```
+
+## ⚙️ 验证手段与回归命令
+
+- **手动验证**：
+  - {{manual_verification_steps}} (例如：打开 index.html 模拟点击 xxx 按钮，确认能正确弹出窗口)
+- **自动化测试/编译指令**：
+  - 运行 `{{test_command}}` 验证代码语法及渲染正确性。

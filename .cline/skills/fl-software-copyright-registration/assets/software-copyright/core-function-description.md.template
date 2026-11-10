@@ -1,0 +1,29 @@
+# {{software_name}} 主要功能描述
+
+<!-- 中文说明：本模板用于补充说明软件核心功能。描述应聚焦真实功能和技术表达，不写泛泛营销话术。 -->
+
+## 软件定位
+
+{{software_positioning}}
+
+## 核心功能
+
+### 1. {{feature_name}}
+
+{{feature_description}}
+
+对应源码或模块：{{source_module}}
+
+### 2. {{feature_name}}
+
+{{feature_description}}
+
+对应源码或模块：{{source_module}}
+
+## 技术特点
+
+- {{technical_characteristic}}
+
+## 原创性表达说明
+
+{{original_expression_summary}}

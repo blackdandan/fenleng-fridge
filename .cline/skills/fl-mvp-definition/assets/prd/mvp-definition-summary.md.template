@@ -1,0 +1,78 @@
+# MVP Definition Summary
+
+<!-- 中文注释：本文件说明 fl-mvp-definition 工作流的职责、边界、产物清单、确认状态和后续建议。 -->
+
+## 1. Skill Responsibility
+
+This workflow clarified and defined the MVP product scope through product-manager-style conversation.
+
+Responsible for:
+
+- Target users, core problem, product hypothesis, MVP scope, product surfaces, product acceptance, static preview.
+
+Not responsible for:
+
+- Technical architecture, database design, API design, implementation plan, deployment, or production code.
+
+## 2. Completion Condition
+
+- User confirmed generation: {{generation_confirmed}}
+- User confirmed MVP document: {{mvp_document_confirmed}}
+- User confirmed preview coverage: {{preview_confirmed}}
+- User confirmed workflow completion: {{workflow_completion_confirmed}}
+
+## 3. Generated Artifacts
+
+| Artifact | Path | Purpose | Authoritative |
+|---|---|---|---|
+| MVP Document | `docs/mvp/MVP.md` | Product MVP source of truth | Yes |
+| Discovery Log | `docs/mvp/discovery-log.md` | Clarification and decision record | No |
+| Feature Scope | `docs/mvp/feature-scope.md` | Feature scope table | No |
+| User Flow | `docs/mvp/user-flow.md` | Product flow and page map | No |
+| Acceptance Criteria | `docs/mvp/acceptance-criteria.md` | Product acceptance criteria | No |
+| Data And States | `docs/mvp/data-and-states.md` | Product data and page states | No |
+| Audience And Expectation | `docs/mvp/audience-and-expectation.md` | Target readers, executable PRD style, Preview expectation, and completeness gate | No |
+| Surface Scope | `docs/mvp/surface-scope.md` | Flutter App, Web, Mini Program and platform support boundary | No |
+| MVP Version History | `docs/mvp/version-history.md` | MVP-level version register, completion status, and completion gates | No |
+| Figma Prompt Index | `docs/mvp/figma-prompts/README.md` | Figma Prompt version archive and recommended version | No |
+| Figma Prompt App V1 | `docs/mvp/figma-prompts/FigmaPrompt-App-V1.md` | App-only prompt for generating mobile app visual design in Figma | No |
+| Figma Prompt Web V1 | `docs/mvp/figma-prompts/FigmaPrompt-Web-V1.md` | Web-only prompt for generating landing page visual design in Figma | No |
+| Figma Prompt Mini Program V1 | `docs/mvp/figma-prompts/FigmaPrompt-MiniProgram-V1.md` | Mini-Program-only prompt for Taro surfaces | No |
+| MVP Definition Summary | `docs/mvp/fl-mvp-definition-summary.md` | Skill summary and boundary | No |
+| Preview README | `preview/mvp/README.md` | Preview coverage and usage | No |
+| Preview Entry | `preview/mvp/index.html` | Static visual preview entry | No |
+| Preview Styles | `preview/mvp/styles.css` | Static preview styles | No |
+| Preview Interactions | `preview/mvp/app.js` | Local preview interactions | No |
+| Preview Mock Data | `preview/mvp/mock-data.js` | Local mock data | No |
+
+## 4. Preview Constraints
+
+- Covers all visual MVP pages and key states.
+- Uses local mock data.
+- Does not make network requests.
+- Expresses product intent, not final implementation.
+- Is oriented toward end users, with clear first-screen value, primary CTA, main path, and feedback states.
+
+## 5. Figma Prompt Archive
+
+- Prompt directory: `docs/mvp/figma-prompts/`
+- Current recommended App version: `{{recommended_figma_prompt_app_version}}`
+- Current recommended Web version: `{{recommended_figma_prompt_web_version}}`
+- Current recommended Mini Program version: `{{recommended_figma_prompt_mini_program_version}}`
+- Latest review status: `{{figma_prompt_review_status}}`
+- Versioning rule: every update creates a new `FigmaPrompt-{Surface}-V{N}.md`; old versions remain archived.
+
+## 6. MVP Version And Completion Status
+
+- Version history path: `docs/mvp/version-history.md`
+- Current MVP version: `{{current_mvp_version}}`
+- Current MVP status: `{{current_mvp_status}}`
+- Completion rule: do not mark completed unless the user explicitly confirms the MVP definition workflow is finished.
+
+## 7. Recommended Next Capability
+
+{{recommended_next_workflow}}
+
+## 8. Open Questions
+
+{{open_questions}}

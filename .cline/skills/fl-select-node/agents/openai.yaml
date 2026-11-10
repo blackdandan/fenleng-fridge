@@ -1,0 +1,4 @@
+interface:
+  display_name: "fl 选择节点"
+  short_description: "验证、排序并编号当前可用的 AGY 日本代理节点"
+  default_prompt: "Use $fl-select-node to find and label currently usable AGY Japanese nodes."

@@ -1,0 +1,49 @@
+# 微信开放平台 iOS 应用信息
+
+> 从本 Skill asset 生成到 `docs/wechat-open-platform/mobile-application/iOS信息.md`。生成时删除本提示，并按目标项目真实 Xcode 配置填写。
+
+## 1. 平台字段
+
+| 字段 | 填写内容 | 状态 | 证据 |
+| --- | --- | --- | --- |
+| 开发 iPhone 应用 | 是 / 否：待确认 | 待确认 | `TARGETED_DEVICE_FAMILY` 与本次申请范围 |
+| 开发 iPad 应用 | 是 / 否：待确认 | 待确认 | `TARGETED_DEVICE_FAMILY` 与本次申请范围 |
+| 正式 Bundle ID | 待填写 | 待确认 | Xcode Release 配置 |
+| 测试版本 Bundle ID | 待填写 | 待确认 | Xcode Debug/Test 配置 |
+| Universal Links | 待填写，必须 HTTPS 且以 `/` 结尾 | 待配置 | Associated Domains、AASA 和真实唤起测试 |
+| 应用已上架 | 是 / 否：待确认 | 待确认 | App Store 页面或 Owner 输入 |
+| 开发方式 | 传统模式开发 | 待页面复核 | 微信开放平台当日页面 |
+| OpenSDK 个人信息处理规则 | 待读取并确认 | 待确认 | 隐私政策、第三方 SDK 清单和初始化行为 |
+
+## 2. Universal Links 一致性
+
+| 项目 | 内容 | 状态 |
+| --- | --- | --- |
+| 微信后台填写值 | 待填写 | 待配置 |
+| Xcode Associated Domains | 待填写 | 待配置 |
+| AASA 部署地址 | 待填写 | 待配置 |
+| AASA App ID（Team ID.Bundle ID） | 待填写 | 待配置 |
+| AASA path / components | 待填写 | 待配置 |
+| HTTPS 与响应 Content-Type | 待验证 | 待验证 |
+| 真实设备唤起 | 待验证 | 待验证 |
+
+只要 Associated Domains、线上 AASA 或真实设备唤起任一缺失，Universal Links 状态就是“待配置”，不得把候选 URL写成已验证事实。
+
+## 3. 未上架限制
+
+应用未上架时，按执行当日页面复核分享、App 跳转小程序、已认证主体微信登录用户次数和一次性订阅消息限制；已上架时标记不适用。
+
+## 4. 验证记录
+
+| 时间 | 检查 | 结果 |
+| --- | --- | --- |
+| 待执行 | Bundle ID、entitlements、AASA、真实设备 Universal Link | 待填写 |
+
+## 5. 提交前确认
+
+- [ ] 正式与测试 Bundle ID 均来自真实 Xcode 配置。
+- [ ] Bundle ID 未配置到其他微信移动应用。
+- [ ] iPhone/iPad 选择与 Target 支持范围一致。
+- [ ] Universal Links 在微信后台、Xcode、AASA 和实际 SDK 中完全一致。
+- [ ] 上架状态与 Android/鸿蒙一致。
+- [ ] 已阅读 iOS 接入指南并落实 OpenSDK 数据处理规则。

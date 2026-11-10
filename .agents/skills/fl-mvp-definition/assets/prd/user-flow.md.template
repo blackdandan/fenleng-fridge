@@ -1,0 +1,27 @@
+# User Flow
+
+<!-- 中文注释：本文件描述用户路径、页面流转和关键分支。 -->
+
+## Primary Flow
+
+{{primary_flow}}
+
+## Flow Steps
+
+| Step | User Action | System Response | Page Or State |
+|---|---|---|---|
+| {{step}} | {{user_action}} | {{system_response}} | {{page_or_state}} |
+
+## Alternate Flows
+
+{{alternate_flows}}
+
+## Failure Or Empty Paths
+
+{{failure_or_empty_paths}}
+
+## Visual Page Map
+
+| Page | Purpose | Key States |
+|---|---|---|
+| {{page}} | {{purpose}} | {{key_states}} |

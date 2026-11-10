@@ -1,0 +1,6 @@
+{
+  "epicId": "[EPIC-ID]",
+  "status": "final|snapshot",
+  "tasks": [],
+  "totals": { "tokens": "unknown", "cost": "unknown", "durationMs": "unknown", "reworkCount": 0, "conflictCount": 0 }
+}

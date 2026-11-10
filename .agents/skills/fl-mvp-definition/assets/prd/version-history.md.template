@@ -1,0 +1,53 @@
+# MVP Version History
+
+<!-- 中文注释：本文件记录 MVP 本体版本、完成状态、状态变更原因和完成 Gate。它不是 Figma Prompt 版本归档，也不是普通讨论日志。 -->
+
+## Current Status
+
+- Current MVP version: `{{current_mvp_version}}`
+- Current status: `{{current_status}}`
+- Completed: `{{completed_yes_or_no}}`
+- Last updated: `{{last_updated_date}}`
+- Owner: `{{owner}}`
+- Latest change summary: {{latest_change_summary}}
+
+## Status Vocabulary
+
+| Status | Meaning |
+|---|---|
+| `drafting` | Still clarifying scope; formal artifacts are not ready. |
+| `generated` | MVP artifacts have been generated, but final user completion is not confirmed. |
+| `needs_revision` | User feedback or review findings require artifact updates. |
+| `completed` | User explicitly confirmed MVP definition is finished. |
+| `blocked` | Skill cannot continue until a missing decision or input is resolved. |
+
+## Completion Gates
+
+| Gate | Required | Current Result | Evidence |
+|---|---:|---|---|
+| MVP scope is explicit | Yes | {{gate_scope_result}} | {{gate_scope_evidence}} |
+| Core docs are generated | Yes | {{gate_docs_result}} | {{gate_docs_evidence}} |
+| Preview is generated or intentionally deferred | Yes | {{gate_preview_result}} | {{gate_preview_evidence}} |
+| Figma Prompt is archived | Yes | {{gate_figma_result}} | {{gate_figma_evidence}} |
+| User confirmed workflow completion | Yes | {{gate_user_completion_result}} | {{gate_user_completion_evidence}} |
+
+## Version Register
+
+| Version | Date | Status After Change | Completed | Trigger | Change Summary | Artifact Impact |
+|---|---|---|---|---|---|---|
+| `{{version}}` | {{date}} | {{status_after_change}} | {{completed}} | {{trigger}} | {{change_summary}} | {{artifact_impact}} |
+
+## Change Log
+
+### {{date}} - {{version}}
+
+- Trigger: {{trigger}}
+- Changed artifacts: {{changed_artifacts}}
+- Decision: {{decision}}
+- Completion impact: {{completion_impact}}
+
+## Rules
+
+- Every MVP scope, page, copy, artifact, Figma Prompt, or Preview change must add a row to `Version Register`.
+- Do not mark `Completed` as `Yes` unless the user explicitly confirms the MVP definition workflow is finished.
+- Figma Prompt versions remain in `docs/mvp/figma-prompts/`; this document records only the MVP-level version and completion state.

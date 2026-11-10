@@ -1,0 +1,51 @@
+# {{PROJECT_NAME}}
+
+<!-- 中文注释：本 README 面向 OpenClaw 项目使用者，说明如何安装、触发、验证和修复项目。 -->
+
+## 项目目标
+
+{{PROJECT_GOAL}}
+
+## OpenClaw 入口
+
+入口 Skill：
+
+```text
+skills/{{ENTRY_SKILL_ID}}/SKILL.md
+```
+
+触发示例：
+
+```text
+{{TRIGGER_EXAMPLE}}
+```
+
+## 项目结构
+
+```text
+{{PROJECT_NAME}}/
+├── AGENTS.md
+├── openclaw.project.yaml
+├── skills/
+├── taskflows/
+├── scripts/
+├── schemas/
+├── smoke-tests/
+├── storage/
+└── evolution/
+```
+
+## 验证
+
+先执行 dry-run smoke test，确认入口 Skill、编排层、schema 和输出路径可用。
+
+```text
+{{VALIDATION_COMMAND}}
+```
+
+## 修复与进化
+
+- 修复记录：`evolution/repair-log.md`
+- 进化记录：`evolution/evolution-log.md`
+
+任何 smoke test 失败都必须记录输入、失败节点、错误摘要和修复动作。

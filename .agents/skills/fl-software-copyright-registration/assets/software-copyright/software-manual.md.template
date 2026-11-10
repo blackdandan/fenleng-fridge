@@ -1,0 +1,60 @@
+# {{software_name}} 软件说明书
+
+<!-- 中文说明：本模板用于生成软件著作权申请中的软件说明书。内容必须来自真实软件功能、截图和运行环境，不得虚构功能。截图缺失时必须保留明确占位，最终 Word 中要求用户在对应位置补充截图。 -->
+
+## 1. 引言
+
+### 1.1 编写目的
+
+本文档用于说明 {{software_name}} {{version}} 的功能、运行环境和使用方法，作为软件著作权申请材料之一。
+
+### 1.2 适用范围
+
+{{applicable_scope}}
+
+## 2. 软件概述
+
+### 2.1 软件简介
+
+{{software_overview}}
+
+### 2.2 运行环境
+
+- 操作系统或运行平台：{{runtime_platform}}
+- 硬件要求：{{hardware_requirements}}
+- 支持软件或依赖环境：{{supporting_software}}
+
+### 2.3 开发环境
+
+- 开发操作系统：{{development_os}}
+- 开发语言：{{programming_languages}}
+- 开发工具：{{development_tools}}
+
+## 3. 安装与启动
+
+{{installation_steps}}
+
+## 4. 功能操作说明
+
+<!-- 中文说明：每个主要功能应包含功能说明、操作步骤和对应截图。截图文件名必须与实际截图材料一致。若截图暂缺，使用 {{screenshot_placeholder:功能名称|需要用户补充的截图说明}}，打包脚本会在 Word 中生成截图占位位置。 -->
+
+### 4.1 {{feature_name}}
+
+功能说明：{{feature_description}}
+
+操作步骤：
+
+1. {{step}}
+
+截图：{{screenshot_path_or_placeholder}}
+
+{{screenshot_placeholder:{{feature_name}}|请在此处插入 {{feature_name}} 的界面截图，截图应能体现上述操作步骤和功能结果。}}
+
+## 5. 异常处理
+
+{{exception_handling}}
+
+## 6. 版本信息
+
+- 软件名称：{{software_name}}
+- 版本号：{{version}}

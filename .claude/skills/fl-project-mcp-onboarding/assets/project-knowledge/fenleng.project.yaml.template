@@ -1,0 +1,44 @@
+# Fenleng 项目知识清单。项目仓库是知识真相源，MCP 只按本文件声明读取。
+schemaVersion: "1.0"
+
+project:
+  # 全矩阵唯一、稳定的小写短横线标识；项目改名时不应随意改变。
+  id: "{{PROJECT_ID}}"
+  name: "{{PROJECT_NAME}}"
+  description: "{{PROJECT_DESCRIPTION}}"
+  type: "{{PROJECT_TYPE}}"
+
+repository:
+  provider: "github"
+  owner: "{{GITHUB_OWNER}}"
+  name: "{{GITHUB_REPOSITORY}}"
+  defaultRef: "main"
+
+knowledge:
+  # 只登记明确的知识目录，禁止使用仓库根目录或包含 .. 的路径。
+  roots:
+    - "knowledge/"
+    - "docs/"
+  # 每个入口必须位于上面的 roots 之一，并真实存在。
+  entrypoints:
+    overview: "knowledge/README.md"
+    architecture: "docs/architecture.md"
+
+exposure:
+  # fenleng-matrix 表示仅在已认证的 Fenlengtech 项目矩阵内可发现。
+  visibility: "fenleng-matrix"
+  allowedConsumers:
+    - "*"
+  # 即使位于 knowledge roots，匹配这些路径的内容也不得暴露。
+  deniedPaths:
+    - "docs/internal/"
+
+ownership:
+  team: "{{OWNER_TEAM}}"
+  maintainers:
+    - "{{MAINTAINER}}"
+
+lifecycle:
+  status: "active"
+  version: "0.1.0"
+  lastReviewedAt: "{{YYYY_MM_DD}}"

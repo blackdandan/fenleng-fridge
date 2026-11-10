@@ -1,0 +1,27 @@
+# Feature Scope
+
+<!-- 中文注释：本文件用于维护 MVP 功能范围。MVP.md 仍是唯一权威主文档。 -->
+
+## P0
+
+| Feature | User Value | Acceptance Signal | Notes |
+|---|---|---|---|
+| {{feature}} | {{user_value}} | {{acceptance_signal}} | {{notes}} |
+
+## P1
+
+| Feature | Reason To Include If Cheap | Notes |
+|---|---|---|
+| {{feature}} | {{reason}} | {{notes}} |
+
+## Later
+
+| Feature | Why Later |
+|---|---|
+| {{feature}} | {{reason}} |
+
+## Out Of Scope
+
+| Feature | Why Excluded |
+|---|---|
+| {{feature}} | {{reason}} |

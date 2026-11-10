@@ -1,0 +1,49 @@
+# Preview Epic Plan - {{module_name}}
+
+<!-- 中文注释：本文件是 MVP 前端 Preview 的全局开发大计划与视觉设计方案，包含页面列表、Mock 数据结构和拆分的 WorkPackage 列表。 -->
+
+## 🎨 视觉设计规范 (Rich Aesthetics)
+
+- **设计风格主题**：{{design_theme}} (例如：暗黑玻璃态 / 扁平极简极光风 / 高亮数据仪表盘)
+- **目标观众**：最终用户，以及需要快速理解产品价值的客户/业务方。
+- **首屏价值表达**：{{first_screen_value_expression}}
+- **核心 CTA**：{{primary_cta_expression}}
+- **调色盘与渐变色**：
+  - 主色：{{color_primary}}
+  - 辅助色：{{color_secondary}}
+  - 背景与卡片色：{{color_background}}
+- **核心动效与过渡**：
+  - {{micro_animations}} (例如：Hover 缩放微动效、Tab 切换平滑推移、图表加载延迟展开)
+
+## 🗺️ Preview 页面与组件结构
+
+```text
+preview/mvp/
+├── plans/                      # 规划目录
+├── assets/                     # 静态资源
+├── package.json                # 工程依赖与启动脚本
+├── index.html                  # 静态单页/多页入口
+├── styles.css                  # 全局精美 CSS 样式
+├── mock-data.js                # 全局 mock 数据字典
+├── app.js                      # 路由与交互控制中心
+└── validate_preview.js         # 仿真回归验证脚本
+```
+
+## 📅 WorkPackage (WP) 状态看板
+
+| WP ID | 📌 任务模块 | 📂 涉及/修改文件 | ⚙️ 验证手段 | 🚦 状态 |
+| :--- | :--- | :--- | :--- | :--- |
+| **WP-01** | 初始化样式脚手架与基础 UI | `package.json`, `index.html`, `styles.css` | 本地双击 index.html 渲染基础排版骨架 | `Pending` |
+| **WP-02** | 集中式 Mock 数据与逻辑层搭建 | `mock-data.js`, `app.js` (基础配置) | node 检查 mock-data.js 语法，页面可提取数据 | `Pending` |
+| **WP-03** | 核心主页面与看板 UI 渲染 | `index.html`, `app.js`, `styles.css` | 主页面组件与视图完整渲染，无报错 | `Pending` |
+| **WP-04** | 子页面跳转、弹窗与用户流交互 | `index.html`, `app.js` | 验证多页面/Tab 状态切换逻辑，弹出框可触发 | `Pending` |
+| **WP-05** | 编写仿真测试脚本与完整性回归 | `validate_preview.js` | 运行 `node validate_preview.js` 零报错通过 | `Pending` |
+
+## 🏁 整体验收标准
+
+- [ ] 所有设计的功能页面均已在 `index.html` 与 `app.js` 中有对应的静态视图和 Mock 状态表现。
+- [ ] UI 高颜值，符合磨砂玻璃/渐变等现代视觉标准。
+- [ ] 首屏能让最终用户理解产品价值，核心 CTA 明确，主路径清晰。
+- [ ] 空状态、错误状态、成功状态均有用户下一步去向。
+- [ ] 零网络依赖，断网下完全可用。
+- [ ] `node validate_preview.js` 自动化交互测试 100% 成功通过。

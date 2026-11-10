@@ -1,0 +1,65 @@
+# Engineering Guide
+
+## 工程目标
+
+本文件说明当前项目的工程化目标和约束，后续 coding 必须以本目录下的指导文件为依据。
+
+## 技术栈
+
+{{TECH_STACK_LIST}}
+
+## 架构入口
+
+- `architecture.md`：系统边界、模块关系和关键技术决策。
+- `coding-guide.md`：真实代码工程的组织原则和禁止事项。
+
+## 工程容器
+
+真实代码只放入 `../06-project/`。本阶段只确定工程容器级目录，不展开 coding 内部结构。
+
+{{PROJECT_CONTAINER_LIST}}
+
+## 跨项目知识与共享平台
+
+接入 Fenleng 矩阵公共服务或共享平台时，先按同级目录判断是否存在目标项目工作区，例如 `../fenleng-shared-platform/`。存在合法 `fenleng.project.yaml` 时，优先通过 Project Knowledge MCP 本地只读读取。
+
+同级目录不存在时，只能通过中央 Registry 和远程只读 knowledge 入口读取目标项目暴露的文档。不要为了接入说明默认 clone 整个仓库；确需临时拉取时，只拉取 Manifest 声明的 knowledge 根和入口，读取完成后删除临时目录。
+
+`GITHUB_TOKEN` 等私有仓库读取凭据只能配置在运行环境中，不写入项目文件。临时拉取目录、缓存目录和远程 knowledge 副本不得提交。
+
+## 不做什么
+
+- 不在项目资产目录中放真实业务代码。
+- 不绕过 `architecture.md` 和 `coding-guide.md` 直接创建代码结构。
+- 不扩展 MVP 未确认的功能范围。
+- 不把外部平台仓库完整复制进本项目。
+
+
+## APP 首次创建备案入口（Android/iOS/HarmonyOS NEXT）
+
+实现移动 APP 时，从 `../00-context/project.yaml` 的 `appRegistration` 建立三端共用的运行时配置，并在此记录具体代码路径。编号为空时显示“备案号待补充”；补号时填写真实 APP 编号并更新该运行时配置，不使用网站备案号。
+
+“我的”或介绍等显著界面展示 APP备案号，游客和登录态均可查看。使用“设置”路径时不得超过两级；第三级必须为“ICP备案编号”或“APP备案编号”专用菜单。编号本身或下方的查询链接通过外部浏览器打开 `https://beian.miit.gov.cn`。验收无编号、有编号、游客、登录、打开失败及大字体状态。
+
+## APP / Web 首版账号、渠道与国际化
+
+含账号能力时，从 `../00-context/project.yaml` 的 `accountLifecycle` 实现“邮箱验证码通过后才创建账号”，并从首版提供账号设置内的注销按钮。注销等待期固定 7 天，等待期内成功登录取消注销，届满且没有登录才执行删除或匿名化。
+
+APP 与 Web 分别维护标准字符串目录，Day 0 提供 `zh-CN`、`zh-TW`、`en`、`es`、`fr`、`de`、`pt-BR`、`it`、`ja`、`ko`、`ar`、`hi`、`id`、`ru`、`tr`、`vi`、`th`、`nl`、`pl`、`uk` 至少二十种实际译文。首选设备/浏览器语言，用户显式偏好持久化并覆盖系统语言；缺失键可检测、阿拉伯语按 RTL 布局。工程落地后在本节补充字符串目录、语言解析器和偏好存储的真实路径。
+
+`china` 与 `global` 是显式构建渠道：China 构建含未默认勾选的协议/隐私确认、微信登录和可点击 APP备案号；Global 构建使用 Firebase 统一认证且不展示中国备案信息。工程落地后记录 flavor/environment、认证适配器和 CI 验证的真实路径。
+
+## Day 0 产品埋点
+
+APP、Web 与小程序统一使用 Fenleng Client SDK telemetry API。实现每个关键业务流程时，同步维护版本化事件目录、同意分类、触发调用和测试；不得在上线后补埋点，也不得自建上报通道。
+
+工程落地后在此记录事件目录、SDK 初始化、用户同意状态、公共上下文提供器和关键流程埋点的真实路径。密码、Token、验证码、邮箱和完整内容正文不得进入埋点。
+
+## Day 0 基础设施、契约与跨仓直通预检
+
+进入编码阶段前，必须先核对 `../00-context/project.yaml` 的 `day0Infrastructure`：
+
+1. **生产域名与对象存储前置**：涉及文件上传或产物持久化的业务直接按 OSS Bucket + ECS 实例 RAM Role 契约实现，禁止因未提前确认 Bucket 而先用 PostgreSQL `bytea` 存大对象再事后返工迁移。
+2. **根 Manifest 与矩阵登记前置**：仓库根目录从 Day 0 建立 `fenleng.project.yaml` 并在 `fenlengtechbase/knowledge/project-matrix/projects.json` 完成项目 ID 登记，保证 `fl kno audit` 与 `fl operator` 全程可用。
+3. **同机跨仓直通与 Contract-First UI**：绘制登录、注册、支付、账号设置等 Figma 状态图或编写端侧代码前，必须先核对本仓库锁定的 `fenleng-client-sdk` 与 `fenleng-shared-platform` 契约；若 MVP 体验（如注册即返回原子 Session、Web 微信 `sessionStorage` + `state` 无感回调、三端小程序支付）高于当前 SDK 能力且同机上游仓库可用，优先在契约测试保护下联动升级上游基座，不得先画降级 UI 再多次返工。
+4. **中国渠道原生插件延后注册（DeferredPluginRegistrant）**：Android `MainActivity`、iOS `AppDelegate`、HarmonyOS `EntryAbility` 冷启动阶段只允许注册 pre-consent allowlist 能力；文件选择、微信、支付等业务插件必须绑定到 `postConsentBootstrap` 同意后再注册。

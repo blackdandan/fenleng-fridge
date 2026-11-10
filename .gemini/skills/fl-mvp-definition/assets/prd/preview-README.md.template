@@ -1,0 +1,55 @@
+# MVP Preview
+
+<!-- 中文注释：本文件说明 preview 覆盖范围、使用方式和限制。 -->
+
+## How To Open
+
+### 方式 A：直接本地双击打开（免部署）
+在浏览器中直接双击打开 `preview/mvp/index.html`。
+
+### 方式 B：使用 Node.js 静态服务运行与交互测试
+1. **安装本地依赖** (如有配置三方依赖或静态开发服务器)：
+   ```bash
+   cd preview/mvp/
+   npm install
+   ```
+2. **启动本地静态预览服务** (如 package.json 中配置了 dev)：
+   ```bash
+   npm run dev
+   ```
+3. **运行自动化交互仿真回归测试**：
+   在交付前或交互变更后，运行以下命令确保没有运行时 JS/TDZ 错误：
+   ```bash
+   node validate_preview.js
+   ```
+
+## Covered Pages
+
+| Page | Purpose | Covered States |
+|---|---|---|
+| {{page}} | {{purpose}} | {{states}} |
+
+## User Experience Acceptance
+
+| Check | Expected Result |
+|---|---|
+| First-screen value | {{first_screen_value}} |
+| Primary CTA | {{primary_cta}} |
+| Main user path | {{main_user_path}} |
+| Empty state guidance | {{empty_state_guidance}} |
+| Error state recovery | {{error_state_recovery}} |
+| Success feedback | {{success_feedback}} |
+| Customer-readable value | {{customer_readable_value}} |
+
+## Mock Data
+
+All mock data lives in `preview/mvp/mock-data.js`.
+
+## Constraints
+
+- This preview uses local mock data only and is a 100% static frontend page.
+- This preview must not make network requests. Zero API calls are enforced.
+- Allows installing third-party npm packages via `package.json` for compilation, dev servers, or graphics/visual rendering helpers.
+- This preview expresses product visual and interaction intent based on `docs/mvp/MVP.md`.
+- This preview is oriented toward end users and customer/business readers, not only internal wireframe review.
+- Requires running and passing `node validate_preview.js` testing successfully before final sign-off.

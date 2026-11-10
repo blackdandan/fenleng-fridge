@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "executors": [
+    {
+      "id": "agy-default",
+      "enabled": true,
+      "command": "agy",
+      "model": null,
+      "reasoningEffort": null,
+      "suitableTasks": ["边界明确的实现与修复", "需要持续多轮整改的任务"],
+      "avoidTasks": ["需要并行修改同一工作区的任务"],
+      "supportedCategories": ["analysis", "implementation", "bugfix", "testing", "refactor", "mechanical", "documentation", "engineering", "verification", "review"],
+      "preferredTaskTypes": ["codebase-exploration", "impact-analysis", "bug-root-cause-analysis", "implementation-research", "local-feature-implementation", "localized-bug-fix", "concurrency-fix", "local-refactor", "implementation-review", "regression-risk-review"],
+      "riskLimit": "high",
+      "selectionPriority": 100,
+      "capabilityReference": "agy-cli-capabilities.md",
+      "capabilities": { "nonInteractive": true, "structuredOutput": true, "logicalSession": true, "interrupt": true, "canWrite": true, "canRunTests": true, "canReview": true },
+      "session": {
+        "strategy": "persistent-stream",
+        "workingDirectory": "process-cwd",
+        "startArgs": ["--input-format", "stream-json", "--output-format", "stream-json", "--mode", "accept-edits", "--print-timeout", "3600s"],
+        "outputFilter": { "script": "session-stream-filter.mjs", "profile": "agy", "maxSummaryChars": 2000 }
+      },
+      "probe": {
+        "versionArgs": ["--version"],
+        "connectivityArgs": ["--output-format", "json", "--mode", "plan", "--print-timeout", "${TIMEOUT}s", "--print=Connectivity probe only. Do not use tools or modify files. Reply exactly OK."],
+        "expectOutput": true,
+        "expectedReply": "OK"
+      }
+    },
+    {
+      "id": "cline-default",
+      "enabled": true,
+      "command": "cline",
+      "model": null,
+      "reasoningEffort": null,
+      "suitableTasks": ["边界明确的实现与修复", "适合复用原生 Session 的任务"],
+      "avoidTasks": ["需要并行修改同一工作区的任务"],
+      "supportedCategories": ["analysis", "implementation", "bugfix", "testing", "refactor", "mechanical", "documentation", "engineering", "verification", "review"],
+      "preferredTaskTypes": ["function-implementation", "adapter-implementation", "unit-test-addition", "integration-test-addition", "test-repair", "bulk-rename", "api-migration-mechanical", "metadata-update", "generated-artifact-refresh", "build-fix", "targeted-test-run", "build-verification"],
+      "riskLimit": "high",
+      "selectionPriority": 80,
+      "capabilityReference": "cline-cli-capabilities.md",
+      "capabilities": { "nonInteractive": true, "structuredOutput": true, "logicalSession": true, "interrupt": true, "canWrite": true, "canRunTests": true, "canReview": true },
+      "session": {
+        "strategy": "native-session",
+        "workingDirectory": "explicit-argument",
+        "startArgs": ["--cwd", "${PROJECT}", "--json"],
+        "resumeArgs": ["--cwd", "${PROJECT}", "--json", "--id", "${SESSION_ID}"],
+        "outputFilter": { "script": "session-stream-filter.mjs", "profile": "cline", "maxSummaryChars": 2000 }
+      },
+      "probe": {
+        "versionArgs": ["--version"],
+        "connectivityArgs": ["--cwd", "${PROJECT}", "--json", "--auto-approve", "false", "--timeout", "${TIMEOUT}", "Connectivity probe only. Do not use tools or modify files. Reply exactly OK."],
+        "expectOutput": true,
+        "expectedReply": "OK"
+      }
+    },
+    {
+      "id": "codebuddy-default",
+      "enabled": false,
+      "command": "codebuddy",
+      "model": null,
+      "reasoningEffort": null,
+      "suitableTasks": ["明确验证过能力与认证后的单轮任务"],
+      "avoidTasks": ["尚未完成本机连通验证的任务"],
+      "supportedCategories": ["mechanical", "documentation", "verification"],
+      "preferredTaskTypes": ["formatting", "import-cleanup", "readme-update", "lint-verification"],
+      "riskLimit": "low",
+      "selectionPriority": 10,
+      "capabilityReference": "codebuddy-cli-capabilities.md",
+      "capabilities": { "nonInteractive": true, "structuredOutput": true, "logicalSession": true, "interrupt": true, "canWrite": true, "canRunTests": true, "canReview": false },
+      "session": { "strategy": "native-session", "workingDirectory": "process-cwd", "startArgs": [], "outputFilter": { "script": "session-stream-filter.mjs", "profile": "codebuddy", "maxSummaryChars": 2000 } },
+      "probe": {
+        "versionArgs": ["--version"],
+        "connectivityArgs": ["-p", "--output-format", "json", "--permission-mode", "acceptEdits", "Connectivity probe only. Do not use tools or modify files. Reply exactly OK."],
+        "expectOutput": true,
+        "expectedReply": "OK"
+      }
+    },
+    {
+      "id": "openai-luna-max",
+      "enabled": true,
+      "command": "codex",
+      "model": "gpt-5.6-luna",
+      "reasoningEffort": "max",
+      "suitableTasks": ["边界明确的实现与修复", "需要持续多轮整改的任务"],
+      "avoidTasks": ["需要并行修改同一工作区的任务"],
+      "supportedCategories": ["analysis", "implementation", "bugfix", "testing", "refactor", "mechanical", "documentation", "engineering", "verification", "review"],
+      "preferredTaskTypes": ["codebase-exploration", "impact-analysis", "bug-root-cause-analysis", "implementation-research", "local-feature-implementation", "localized-bug-fix", "concurrency-fix", "local-refactor", "implementation-review", "regression-risk-review"],
+      "riskLimit": "high",
+      "selectionPriority": 90,
+      "fallbackFor": ["agy-default"],
+      "capabilityReference": "openai-luna-cli-capabilities.md",
+      "capabilities": { "nonInteractive": true, "structuredOutput": true, "logicalSession": true, "interrupt": true, "canWrite": true, "canRunTests": true, "canReview": true },
+      "session": {
+        "strategy": "native-session",
+        "workingDirectory": "explicit-argument",
+        "startArgs": ["exec", "--json", "--cd", "${PROJECT}", "--model", "${MODEL}", "--config", "model_reasoning_effort=${REASONING_EFFORT}"],
+        "resumeArgs": ["exec", "resume", "--json", "--model", "${MODEL}", "--config", "model_reasoning_effort=${REASONING_EFFORT}", "${SESSION_ID}"],
+        "outputFilter": { "script": "session-stream-filter.mjs", "profile": "codex", "maxSummaryChars": 2000 }
+      },
+      "probe": {
+        "versionArgs": ["--version"],
+        "connectivityArgs": ["exec", "--json", "--cd", "${PROJECT}", "--model", "${MODEL}", "--config", "model_reasoning_effort=${REASONING_EFFORT}", "Connectivity probe only. Do not use tools or modify files. Reply exactly OK."],
+        "expectOutput": true,
+        "expectedReply": "OK"
+      }
+    }
+  ]
+}

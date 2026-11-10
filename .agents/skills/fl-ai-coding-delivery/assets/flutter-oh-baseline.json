@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "fvmVersion": "4.1.2",
+  "sdk": {
+    "repository": "https://gitcode.com/CPF-Flutter/flutter_flutter.git",
+    "forkAlias": "fltech-oh",
+    "tag": "3.41.9+ohos-1.0.2",
+    "commit": "62357a93d653bf844f730bb1f4b7cc9e2139d14e",
+    "flutter": "3.41.9+ohos-1.0.2",
+    "dart": "3.11.5"
+  },
+  "platforms": [
+    "android",
+    "ios",
+    "ohos"
+  ],
+  "commandsViaFvm": true,
+  "day1PlatformsRequired": true,
+  "android": {
+    "newProjectNdk": "29.0.14206865",
+    "flutterTemplateDefaultNdk": "28.2.13676358",
+    "existingProductMigrationRequiresValidation": true
+  },
+  "harmonyos": {
+    "devecoStudio": "26.0.0.851",
+    "sdk": "26.0.0.105",
+    "api": 26,
+    "minimumJava": 17,
+    "minimumNode": 22,
+    "bundledNode": "24.14.1",
+    "ohpm": "26.0.0.630",
+    "hvigorw": "6.26.8",
+    "hdc": "3.2.0f"
+  }
+}

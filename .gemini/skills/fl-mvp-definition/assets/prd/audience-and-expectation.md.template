@@ -1,0 +1,50 @@
+# Audience And Expectation
+
+<!-- 中文注释：本文件记录本次 PRD 与 Preview 的目标读者、表达风格、用户期待和生成前完整性 Gate。 -->
+
+## Target Readers
+
+| Reader | What They Need To Understand | Required Detail Level |
+|---|---|---|
+| R&D Team | {{rd_expectation}} | Executable: scope, flows, states, data, acceptance, boundaries |
+| Customer / Business Stakeholder | {{customer_expectation}} | Value-readable: problem, value loop, core experience, success signal |
+| End User via Preview | {{end_user_preview_expectation}} | Experience-readable: first impression, primary path, CTA, feedback |
+
+## Document Style
+
+- Style: Executable PRD.
+- Must be concrete enough for R&D to break down implementation work after technical planning.
+- Must be clear enough for customer/business readers to understand the product value and expected user experience.
+- Must avoid unconfirmed features, vague slogans, and implementation details outside MVP Definition boundaries.
+
+## Preview Style
+
+- Preview audience: end users.
+- Preview must express realistic product experience, not only internal wireframes.
+- Preview must make the value proposition, information hierarchy, primary CTA, and key feedback visible.
+
+## User Expectation Priorities
+
+| Priority | User Expectation | Confirmation |
+|---|---|---|
+| 1 | {{expectation_priority_1}} | {{confirmation_1}} |
+| 2 | {{expectation_priority_2}} | {{confirmation_2}} |
+| 3 | {{expectation_priority_3}} | {{confirmation_3}} |
+
+## PRD Completeness Gate
+
+| Check | Pass Criteria | Result | Notes |
+|---|---|---|---|
+| User and scenario clarity | Target user, core problem, scenario, and current alternative are explicit. | {{gate_user_scenario_result}} | {{gate_user_scenario_notes}} |
+| MVP scope discipline | P0 is small enough; P1, Later, and Out of Scope are explicit. | {{gate_scope_result}} | {{gate_scope_notes}} |
+| Value loop closure | The user path reaches a clear value moment and has no dead end. | {{gate_value_loop_result}} | {{gate_value_loop_notes}} |
+| Page and state coverage | Product surfaces include default, empty, error, and success states. | {{gate_state_result}} | {{gate_state_notes}} |
+| Data and visualization clarity | Product data, mock data, and chart axes/units are explicit where needed. | {{gate_data_result}} | {{gate_data_notes}} |
+| Acceptance clarity | Product acceptance criteria are observable and judgeable. | {{gate_acceptance_result}} | {{gate_acceptance_notes}} |
+| R&D handoff readiness | The PRD is usable for later technical planning and development breakdown. | {{gate_rd_handoff_result}} | {{gate_rd_handoff_notes}} |
+| Customer readability | Customer/business readers can understand value, scope, and expected experience. | {{gate_customer_result}} | {{gate_customer_notes}} |
+| Preview readiness | The Preview scope can show first-screen value, primary CTA, main path, and feedback. | {{gate_preview_result}} | {{gate_preview_notes}} |
+
+## Gate Decision
+
+{{gate_decision}}

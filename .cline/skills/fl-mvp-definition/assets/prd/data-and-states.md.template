@@ -1,0 +1,31 @@
+# Data And States
+
+<!-- 中文注释：本文件描述产品层面的数据、页面状态和 preview 假数据要求，不做数据库设计。 -->
+
+## Product Entities
+
+| Entity | Product Meaning | Example Fields |
+|---|---|---|
+| {{entity}} | {{meaning}} | {{example_fields}} |
+
+## Page States
+
+| Page | Default State | Empty State | Error State | Success State |
+|---|---|---|---|---|
+| {{page}} | {{default_state}} | {{empty_state}} | {{error_state}} | {{success_state}} |
+
+## Mock Data Requirements
+
+{{mock_data_requirements}}
+
+## Visualization and Chart Specifications
+
+<!-- 中文注释：凡涉及数据可视化的图表，必须在此处清晰定义其指标、坐标轴以及产品设计决策推演，拒绝宽泛描述。 -->
+
+| 图表ID / 名称 | 图表类型 | 横轴定义 (单位与物理含义) | 纵轴定义 (单位与物理含义) | 数据颗粒度 / 时效性 | 核心交互 Tooltip 指标 | 产品设计决策推演 (Why) |
+|---|---|---|---|---|---|---|
+| {{chart_id}} | {{type}} | {{x_axis}} | {{y_axis}} | {{granularity}} | {{tooltip_metrics}} | {{design_reasoning}} |
+
+## Explicit Non-Technical Boundary
+
+This document does not define database schema, API contracts, caching, storage, deployment, or implementation architecture.

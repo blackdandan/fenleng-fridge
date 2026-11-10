@@ -1,0 +1,95 @@
+# schema_version: 当前项目资产结构模板版本。
+schema_version: "1.0"
+
+# project: 项目基础信息，由 fl-mvp-to-project 根据 MVP 和用户确认生成。
+project:
+  name: "{{PROJECT_NAME}}"
+  type: "{{PROJECT_TYPE}}"
+  tech_stack:
+{{TECH_STACK_ITEMS}}
+  asset_structure:
+    - "00-context"
+    - "01-product"
+    - "02-engineering"
+    - "03-deployment"
+    - "04-operations"
+    - "05-knowledge"
+    - "06-project"
+  project_containers:
+{{PROJECT_CONTAINER_ITEMS}}
+
+# Flutter App 适用：生成时从 fl-ai-coding-delivery/assets/flutter-oh-baseline.json
+# 读取唯一版本，不在模板维护第二份版本号。非 Flutter 项目删除此段。
+flutterBaseline:
+  source: "fl-ai-coding-delivery/assets/flutter-oh-baseline.json"
+  platforms:
+    - "android"
+    - "ios"
+    - "ohos"
+  day1PlatformsRequired: true
+  sharedFeatureContract: true
+
+# 仅 Android/iOS/HarmonyOS NEXT APP 适用：真实 APP 编号尚未提供时保持空值，不使用网站备案号。
+appRegistration:
+  number: ""
+  queryUrl: "https://beian.miit.gov.cn"
+
+# APP/Web 首版必须显式选择构建渠道；不要根据用户所在地动态猜测。
+releaseChannels:
+  available:
+    - "china"
+    - "global"
+  default: "china"
+
+# 仅含中国发布渠道的 Android/iOS/HarmonyOS NEXT APP 适用；路径必须在编码阶段填写为真实文件。
+privacyConsent:
+  releaseChannels:
+    - "china"
+  policyVersion: ""
+  consentRecordPath: ""
+  offlineTermsPath: ""
+  offlinePrivacyPath: ""
+  preConsentAllowlist:
+    - "flutter-rendering"
+    - "consent-record"
+    - "bundled-legal-documents"
+    - "accessibility-display-state"
+  postConsentBootstrapPath: ""
+
+accountLifecycle:
+  emailVerificationRequiredBeforeRegistration: true
+  deletionGracePeriodDays: 7
+
+localization:
+  appStringsDirectory: ""
+  webStringsDirectory: ""
+  defaultLocale: "zh-CN"
+  preferenceOverridesDeviceLocale: true
+
+telemetry:
+  sdk: "fenleng-client-sdk"
+  eventCatalogPath: ""
+  consentSourcePath: ""
+  contextProviderPath: ""
+  batchSize: 50
+  maxQueueSize: 100
+
+# Day 0 基础设施、应用标识与跨仓治理预检（避免编码中途因缺域名/OSS/跨仓授权而返工）
+day0Infrastructure:
+  domains:
+    official: ""
+    workspace: ""
+    api: ""
+  objectStorage:
+    bucket: ""
+    region: "cn-hangzhou"
+    ramRole: ""
+    policyName: ""
+  applicationIds:
+    androidPackageName: ""
+    iosBundleId: ""
+    ohosBundleName: ""
+  matrixGovernance:
+    rootManifestPath: "fenleng.project.yaml"
+    centralRegistryProjectId: ""
+    sameMachineUpstreamSyncAllowed: true

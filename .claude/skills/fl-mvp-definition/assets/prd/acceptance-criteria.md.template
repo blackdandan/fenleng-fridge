@@ -1,0 +1,45 @@
+# Acceptance Criteria
+
+<!-- 中文注释：本文件只记录产品验收标准，不记录技术验收标准。 -->
+
+## Product Acceptance Criteria
+
+| ID | Requirement | Given | When | Then |
+|---|---|---|---|---|
+| AC-001 | {{requirement}} | {{given}} | {{when}} | {{then}} |
+
+## MVP Completion Criteria
+
+{{mvp_completion_criteria}}
+
+## R&D Handoff Acceptance
+
+| Check | Acceptance Standard |
+|---|---|
+| Scope can be planned | P0/P1/Later/Out of Scope are explicit enough for later technical planning. |
+| User flow can be implemented | Main flow, branch flow, and exit/fallback paths are described without hidden steps. |
+| State coverage is complete | Default, empty, error, success, permission/login, and reverse/exit states are defined where applicable. |
+| Data requirements are usable | Product entities, mock data, and visualization units are clear enough to design technical data models later. |
+| Acceptance can be tested | Each P0 behavior has observable product acceptance criteria. |
+
+## Customer / Business Acceptance
+
+| Check | Acceptance Standard |
+|---|---|
+| Value is understandable | Customer/business readers can explain who the product serves and what value it creates. |
+| Scope is understandable | Customer/business readers can distinguish MVP scope from later ideas. |
+| Experience is understandable | Customer/business readers can follow the main user path and expected result. |
+
+## Preview UX Acceptance
+
+| Check | Acceptance Standard |
+|---|---|
+| First-screen value | A target user can understand the product value from the first screen without reading PRD text. |
+| Primary CTA clarity | The main action is visible and matches the minimum value loop. |
+| Main path clarity | The primary user path can be completed in a small number of clear steps. |
+| Feedback clarity | Success, empty, error, and blocked states provide clear next steps. |
+| PRD consistency | Preview pages, states, and mock data match `MVP.md`, `user-flow.md`, and `data-and-states.md`. |
+
+## Non-Acceptance Conditions
+
+{{non_acceptance_conditions}}

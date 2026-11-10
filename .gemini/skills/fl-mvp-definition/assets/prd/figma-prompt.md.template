@@ -1,0 +1,88 @@
+# FigmaPrompt-{{surface}}-V{{version}}
+
+<!-- 中文注释：本文件是交付给 Figma 或设计工具的单端视觉生成 Prompt。每次更新必须新增版本文件，例如 FigmaPrompt-App-V1.md、FigmaPrompt-Web-V1.md、FigmaPrompt-MiniProgram-V1.md，不得覆盖旧版本。 -->
+
+## 1. Prompt Metadata
+
+- Version: `FigmaPrompt-{{surface}}-V{{version}}`
+- Surface: `{{surface}}`
+- Project: `{{project_name}}`
+- Source MVP: `docs/mvp/MVP.md`
+- Source Preview: `preview/mvp/index.html`
+- Generated At: `{{generated_at}}`
+- Recommended: `{{is_recommended_version}}`
+- Reviewer: `ProductUxReviewer`
+- Review Status: `{{review_status}}`
+
+## 2. Product Context
+
+{{product_context}}
+
+## 3. Single Surface Boundary
+
+本 Prompt 只能覆盖 `{{surface}}` 一个端。不得将 App、Web、后台协议、组件库和其它端页面混写进同一个 Prompt 文件。
+
+命名规则：
+
+- App 端：`FigmaPrompt-App-V{N}.md`
+- Web 端：`FigmaPrompt-Web-V{N}.md`
+- 小程序端：`FigmaPrompt-MiniProgram-V{N}.md`
+- 其它端：`FigmaPrompt-{Surface}-V{N}.md`
+
+每个端必须有独立页面清单、状态清单、禁止项和验收检查项。
+
+当 Surface 为 MiniProgram 时，必须声明目标平台、共享页面、平台差异、系统控制界面边界、触控目标、系统字体、Standard/Compact Density 和安全区，不得仿造平台授权或支付系统弹窗。
+
+## 4. Target Users
+
+{{target_users}}
+
+## 5. Design Goal
+
+{{design_goal}}
+
+## 6. Required Screens
+
+<!-- 中文注释：逐页列出 Figma 必须生成的页面。每个页面都要说明用途、核心元素、CTA、状态和不应出现的内容。 -->
+
+{{required_screens}}
+
+## 7. Components And States
+
+{{components_and_states}}
+
+## 8. Visual Direction
+
+<!-- 先按 fl-ui-design-system 读取当前视觉规范；新页面用 fl-ux-pro 实际检索并记录来源与 Token 映射，审美升级用 fl-taste 选择构图、排版、素材和动效。这里写入 Design Read、页面 Profile、Typography/Density、构图理由及拒绝的模板，不能只写“简洁、高级”。上游色值不能直接取代 FL Token。 -->
+
+{{visual_direction}}
+
+## 9. Copy And Content Requirements
+
+{{copy_requirements}}
+
+## 10. Do Not Include
+
+<!-- 中文注释：写明用户明确禁止或 MVP 范围外的入口、文案、功能承诺。 -->
+
+{{do_not_include}}
+
+## 11. Figma Output Requirements
+
+{{figma_output_requirements}}
+
+## 12. Acceptance Checklist
+
+- [ ] Covers every required screen.
+- [ ] Keeps P0 and P1 boundaries visible.
+- [ ] Does not include forbidden copy or out-of-scope entry points.
+- [ ] Uses realistic, buildable UI patterns.
+- [ ] Provides enough component/state detail for visual design.
+- [ ] Can be handed to Figma without reading the full PRD.
+- [ ] Identifies existing component instances, variable bindings and Auto Layout/responsive constraints.
+- [ ] Records design-search evidence and its mapping to the current Fenleng theme and typography/density profiles.
+- [ ] Names concrete screenshot/viewports/state checks; distinguishes a prompt review from an executed Figma visual review.
+
+## 13. Version Change Notes
+
+{{version_change_notes}}

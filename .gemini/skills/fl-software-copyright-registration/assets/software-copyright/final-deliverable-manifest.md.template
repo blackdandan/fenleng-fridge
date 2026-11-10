@@ -1,0 +1,59 @@
+# 软件著作权最终交付材料清单
+
+<!-- 中文说明：本模板只描述最终交付目录中的文件。草稿、扫描日志和中间过程文件不得列入“可提交材料”。 -->
+
+## 基本信息
+
+- 软件名称：{{software_name}}
+- 软件简称：{{short_name}}
+- 版本号：{{version}}
+- 申请主体：{{applicant}}
+- 申请模式：{{application_mode}}
+- 最终交付目录：{{deliverables_dir}}
+- 过程文件目录：{{work_dir}}
+
+## 可提交材料
+
+| 材料 | 文件 | 格式 | 状态 | 人工动作 |
+| :--- | :--- | :--- | :--- | :--- |
+| 申请表填报信息摘要 | {{application_info_file}} | MD | {{status}} | 运行申请摘要校验脚本；在官方系统填写时复核 |
+| 软件说明书 | {{software_manual_file}} | PDF | {{status}} | 由 `work/` Word 生成；截图占位必须先在 Word 中补齐 |
+| 源程序鉴别材料 | {{source_material_file}} | PDF | {{status}} | 由 `work/` Word 生成；high_risk 时不得直接提交 |
+| 软件主要功能描述 | {{core_function_file}} | PDF | {{status}} | 由 `work/` Word 生成，复核功能真实性 |
+| 软件独立开发及原创性声明 | {{statement_file}} | PDF | {{status}} | 由 `work/` Word 生成，签字或盖章 |
+| 用户执行步骤文档 | {{user_action_guide_file}} | MD/PDF | {{status}} | 按步骤完成确认、补图、签章和提交 |
+
+## 不应提交的过程文件
+
+- `work/` 下的草稿、扫描日志、中间报告和风险分析。
+- 被标记为 high_risk 的源程序材料。
+- 未经用户确认的软件名称、版本、申请主体、开发方式或权属说明。
+
+## 仅保留在 work 的过程文件
+
+- `work/` 下的可编辑 Word 源文件、补正说明、第三方/开源代码情况说明和提交前自检报告。
+- 除非官方入口明确要求，不把过程文件复制到当前轮次的 `deliverables/vN/`。
+
+## 人工确认项
+
+- {{manual_action}}
+
+## 截图补充项
+
+若软件说明书 Word 中包含截图占位，用户应直接在对应占位位置插入截图后再提交。
+
+| Word 文档位置 | 需要补充的截图 | 用途 |
+| :--- | :--- | :--- |
+| {{screenshot_placeholder_location}} | {{required_screenshot}} | {{screenshot_purpose}} |
+
+## 阻断风险
+
+- {{blocking_risk}}
+
+## 未完成时的暂停原因
+
+仅当缺少用户必须提供或确认的输入时填写本节。不得因为只生成了草稿或过程文件就在此结束。
+
+| 所需用户动作 | 用途 | 期望文件或信息 | 阻断的最终材料 |
+| :--- | :--- | :--- | :--- |
+| {{required_user_action}} | {{purpose}} | {{expected_input}} | {{blocked_deliverable}} |

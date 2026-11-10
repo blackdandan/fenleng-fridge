@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fenleng CLI executor probe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "executor", "workspace", "installed", "version", "authenticated", "reachable", "usable", "checkedAt", "durationMs", "attempts", "failureCode", "cached"],
+  "properties": {
+    "schemaVersion": { "const": 2 },
+    "executor": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "workspace": { "type": "string", "minLength": 1 },
+    "installed": { "type": "boolean" },
+    "version": { "type": ["string", "null"], "maxLength": 120 },
+    "authenticated": { "type": ["boolean", "null"] },
+    "reachable": { "type": ["boolean", "null"] },
+    "usable": { "type": "boolean" },
+    "checkedAt": { "type": "string", "format": "date-time" },
+    "durationMs": { "type": "integer", "minimum": 0 },
+    "attempts": { "type": "integer", "minimum": 0, "maximum": 3 },
+    "failureCode": {
+      "type": ["string", "null"],
+      "enum": [null, "disabled", "not_installed", "version_failed", "authentication_failed", "network_unreachable", "probe_timed_out", "probe_failed"]
+    },
+    "cached": { "type": "boolean" }
+  }
+}

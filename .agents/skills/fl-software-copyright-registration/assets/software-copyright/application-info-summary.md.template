@@ -1,0 +1,45 @@
+# 软件著作权申请填报信息摘要
+
+<!--
+本模板是官方系统填报前的 Markdown 工作源文件，不生成 DOCX/PDF。
+软件名称必须由申请人确认；参考补正中“名称应明确”的原因，默认示例使用“XXXXApp”形式，版本号单独填写，不把版本号重复拼进名称。
+字符数按去除空白后的 Unicode 字符数统计，标点也计入；占位符、待确认内容不能进入最终交付件。
+-->
+
+## 基本信息
+
+- 软件名称：{{software_name}}App
+- 版本号：V1.0
+
+## 环境信息
+
+以下六项每项不超过 50 个字：
+
+- 开发的硬件环境：{{development_hardware_environment}}
+- 运行的硬件环境：{{runtime_hardware_environment}}
+- 开发该软件的操作系统：{{development_operating_system}}
+- 软件开发环境 / 开发工具：{{development_tools}}
+- 该软件的运行平台 / 操作系统：{{runtime_platform_operating_system}}
+- 软件运行支撑环境 / 支持软件：{{runtime_supporting_software}}
+
+## 软件说明
+
+- 源程序量：{{source_line_count}} 行
+- 开发目的：{{development_purpose}}
+- 面向领域 / 行业：{{target_domain_industry}}
+
+### 软件的主要功能
+
+{{main_functions}}
+
+### 软件的技术特点
+
+{{technical_characteristics}}
+
+<!--
+填写硬约束：
+- 开发目的：不超过 50 个字。
+- 面向领域 / 行业：不超过 50 个字。
+- 软件的主要功能：500 至 1300 个字。
+- 软件的技术特点：不超过 100 个字。
+-->

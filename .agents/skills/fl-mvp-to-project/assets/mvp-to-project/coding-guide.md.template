@@ -1,0 +1,32 @@
+# Coding Guide
+
+## 读取顺序
+
+后续 coding 前应先读取：
+
+1. `engineering-guide.md`
+2. `architecture.md`
+3. 本文件
+
+## 代码位置
+
+真实代码只允许放入：
+
+```text
+../06-project/
+```
+
+## 目录原则
+
+`fl-mvp-to-project` 只确定工程容器级目录。`src/`、`components/`、`modules/`、`controllers/` 等内部代码目录，应在实际 coding 阶段依据本文件和 `architecture.md` 创建。
+
+## 命名约定
+
+- 目录和文件命名应服务业务含义，避免无意义分层。
+- 多端或多服务项目应先区分工程容器，再讨论各工程内部结构。
+
+## 禁止事项
+
+- 不把产品需求、部署资料、运营资料放入 `06-project/`。
+- 不绕过 MVP 范围创建额外功能。
+- 不在没有架构依据时新增工程容器。

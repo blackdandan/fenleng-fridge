@@ -1,0 +1,11 @@
+# AI Coding 效率审计索引
+
+| Epic | 状态 | 最后审计 | 审计结论 | 定期优化报告 |
+|---|---|---|---|---|
+| [EPIC-ID] | final\|snapshot | YYYY-MM-DD | [链接] | [链接或无] |
+
+## 使用规则
+
+- 仅已完成且验收合并的 Epic 标记为 `final`。
+- 缺失 Token、成本或耗时必须写为 `unknown`。
+- 每一项流程优化建议必须指向对应 Epic 的 `audit.md` 和 `evidence.md`。

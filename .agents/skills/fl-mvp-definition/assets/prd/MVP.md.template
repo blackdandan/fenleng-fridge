@@ -1,0 +1,77 @@
+# {{product_name}} MVP
+
+<!-- 中文注释：本文件是 MVP 定义的唯一权威主文档。其他 docs/mvp 文档不得引入本文件未确认的新需求。 -->
+
+## 1. Product Intent
+
+{{mvp_product_intent}}
+
+## 2. Target Readers And Document Intent
+
+{{target_readers_and_document_intent}}
+
+## 3. Target Users
+
+{{target_users}}
+
+## 4. Core Problem
+
+{{core_problem}}
+
+## 5. Current Alternatives
+
+{{current_alternatives}}
+
+## 6. MVP Hypothesis
+
+{{mvp_hypothesis}}
+
+## 7. Minimum Value Loop
+
+{{minimum_value_loop}}
+
+## 8. MVP Scope
+
+### P0
+
+{{p0_scope}}
+
+### P1
+
+{{p1_scope}}
+
+### Later
+
+{{later_scope}}
+
+### Out of Scope
+
+{{out_of_scope}}
+
+## 9. Product Surfaces
+
+{{product_surfaces}}
+
+## 10. Key User Flow
+
+{{key_user_flow}}
+
+## 11. Data and States
+
+{{data_and_states_summary}}
+
+## 12. Product Acceptance
+
+{{product_acceptance_summary}}
+
+## 13. Preview Experience Intent
+
+{{preview_experience_intent}}
+
+## 14. Success Signals
+
+{{success_signals}}
+
+## 15. Open Product Questions
+
+{{open_product_questions}}

@@ -1,0 +1,17 @@
+// 中文注释：静态 MVP preview 本地交互。不得使用 fetch、XMLHttpRequest 或任何网络请求。
+
+(function () {
+  const app = document.getElementById("app");
+  const data = window.MVP_PREVIEW_DATA || {};
+
+  function render() {
+    app.innerHTML = `
+      <main class="preview-page">
+        <h1>${data.productName || "MVP Preview"}</h1>
+        <p>${data.summary || "Replace this preview with product-specific pages and states."}</p>
+      </main>
+    `;
+  }
+
+  render();
+})();
