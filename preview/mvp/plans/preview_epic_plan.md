@@ -1,5 +1,11 @@
 # 无产品名 · 手机冰箱库存预览 V2
 
+## V0.3 增量（2026-11-12）
+- V3-App：首进协议、Android相机解释、设置法律入口/反馈/备案、模拟游客身份与本地分析，Completed（仅本地原型）。
+- 不接真实后端、不修改库存本机边界，无独立分析开关。具体规则以 `docs/mvp/MVP.md` V0.3 为准。
+- `node validate_preview.js` 与 `node validate_v3.cjs` 均通过；后者覆盖拒绝/受限/相册/系统设置模拟、反馈失败重试防重、游客未就绪、协议往返和整体撤回、事件白名单/100条上限、320/390/430与130%法律文本无横向溢出。零浏览器运行时错误，零HTTP网络请求。
+- `.qa/v3-consent.png`、`v3-camera-explanation.png`、`v3-settings.png`、`v3-feedback.png`、`v3-privacy-large.png` 为本轮截图。既有库存流程不削减验收。
+
 ## 授权与边界
 2026-11-12 用户确认讨论方案并要求更新 preview。仅更新本地静态交互原型，不开发 Flutter 工程、不接后端、不提交或推送。目标产品是 Android/iPhone 个人免登录 App，仅存本机。原型采用浏览器本地模拟，不承诺原生相机或系统通知已实现。
 
