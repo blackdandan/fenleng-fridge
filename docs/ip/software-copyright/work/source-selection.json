@@ -10,163 +10,190 @@
       "path": "06-project/app/packages/core/lib/src/inventory_rules.dart",
       "sha256": "c74139bcf9d555a3e76b380725177e51aec2d005345177a073d10925b59e3f69",
       "effectiveLines": 148,
-      "renderedLines": 148
+      "renderedLines": 148,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/core/lib/src/inventory_state.dart",
       "sha256": "afb229062a7448e6938583344a23eb73ccfbc6a6ff53a61890d4b85b8a3605b8",
       "effectiveLines": 138,
-      "renderedLines": 138
+      "renderedLines": 138,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/core/lib/src/inventory_repository.dart",
       "sha256": "87ddc17420eff338c17c2265f15060691629a9ac06e3c44658c9b8c305d4c035",
       "effectiveLines": 90,
-      "renderedLines": 90
+      "renderedLines": 90,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/core/lib/src/file_inventory_storage.dart",
       "sha256": "991624e4a433a1dd7e7c7f35aac712c44617a72ee7b5dca078811ae0c4f64f9d",
       "effectiveLines": 85,
-      "renderedLines": 85
+      "renderedLines": 85,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/inventory_actions.dart",
-      "sha256": "d35afbd4e2df30d7e297ebd6e74fab1d273f5d15b94e299298f410a83f6bf056",
+      "sha256": "0964cda912c001bf3024bee999f73763ab3d987e379d5e4df05c684ef9a389f3",
       "effectiveLines": 56,
-      "renderedLines": 56
+      "renderedLines": 56,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/capture_flow.dart",
       "sha256": "c99b1c72e68346a79eaaf6ceb6809b0b5632afce90fcfd488bd473ca4c40d59c",
       "effectiveLines": 132,
-      "renderedLines": 132
+      "renderedLines": 132,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/photo_lifecycle.dart",
       "sha256": "df5d41a798144878502356443a10c1aefc06f30eb9a57a3e636f36612017045d",
       "effectiveLines": 44,
-      "renderedLines": 44
+      "renderedLines": 44,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/notification_session.dart",
-      "sha256": "cf763e796900db140d7e71b954e6a24c916508f75995627a4c1abd61f3d29be6",
+      "sha256": "e9035bd6d7d653149c8188b98c9b94a1ef9d7d914124d46a4fcad85c2d36522e",
       "effectiveLines": 199,
-      "renderedLines": 199
+      "renderedLines": 199,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/review_items.dart",
       "sha256": "194b1445e6a94c625206a88e2e320eee328ad9f4bdded144bc640cb2f0c72ca8",
       "effectiveLines": 18,
-      "renderedLines": 18
+      "renderedLines": 18,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/camera_coordinator.dart",
       "sha256": "567285a559c7201f1f385d9ed46e2028b5edc4ccd09bf419a14af89db35942dd",
       "effectiveLines": 79,
-      "renderedLines": 79
+      "renderedLines": 79,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/cabinet.dart",
-      "sha256": "7a7456d4bb80147f7694164d34a09884bb79255af48f103ee5be3e4ae51206e9",
+      "sha256": "b36d289ac062670e051cbaabf1768ecf0851b39239fc4f0ec19f2e40597727fa",
       "effectiveLines": 205,
-      "renderedLines": 205
+      "renderedLines": 205,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/cabinet_door.dart",
-      "sha256": "86493072978f7a67e55047de0920ea3141e279f2a571e7df7d3d35ad9791da49",
+      "sha256": "6097e1ae8859db99b82b04b1dfcaf0f88a77b18a93bacdd8b38cb501f87a39cd",
       "effectiveLines": 199,
-      "renderedLines": 201
+      "renderedLines": 201,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/cabinet_photos.dart",
-      "sha256": "c51745fcf841a03d190be0e1ed8fb1b67599e5275429a8c656959aaf9de0d2b4",
+      "sha256": "62e19936b9c60543ea555f85e617caccfa1680ba9bbeeb8943ec67e85ba4d1ea",
       "effectiveLines": 113,
-      "renderedLines": 113
+      "renderedLines": 113,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/capture_screen.dart",
-      "sha256": "5381f0df90b89f93b883ee4d594771be2d880b06dff68e1098eb97a58b419f0f",
+      "sha256": "665f4a6d5012b613566009db5763b593f792a24de319d047611c7a87cb3b476e",
       "effectiveLines": 79,
-      "renderedLines": 79
+      "renderedLines": 79,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/capture_viewfinder.dart",
-      "sha256": "23d7171471610dd38e19f717c4cf4104277d164dd1f64e298e23acca337f0c72",
+      "sha256": "088cd2b26420174f6cee397461dc17140a00088ba0b83a7310134ee793169e1f",
       "effectiveLines": 109,
-      "renderedLines": 109
+      "renderedLines": 109,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/packages/features/feature_inventory/lib/src/record_editor_fields.dart",
-      "sha256": "1e4249cee22d068f958c3c73544395472d2e73cf45ab2981a01ebb67e6df49e5",
+      "sha256": "35516e13126d9fa6e3b45f757f68b312f4a864ef6adef424c5af679bbdfbe53b",
       "effectiveLines": 216,
-      "renderedLines": 216
+      "renderedLines": 216,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/account_deletion.dart",
       "sha256": "2957dcce34f18f88e02f59c68f1e448c6b077f38a40bd55bd5bc9213975a21cf",
       "effectiveLines": 302,
-      "renderedLines": 303
+      "renderedLines": 303,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/feedback_session.dart",
       "sha256": "f721920973f783831ab9c09008672b406ac418a8ff757ad564399712fd193cb8",
       "effectiveLines": 179,
-      "renderedLines": 180
+      "renderedLines": 180,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/application/privacy_actions.dart",
       "sha256": "30e597449ce4ccf40e9b8c360860a78f92785bc6797c5cd7101774fd6fab726a",
       "effectiveLines": 131,
-      "renderedLines": 133
+      "renderedLines": 133,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/infrastructure/feedback_draft_storage.dart",
       "sha256": "d391385e864a880f2df2d2a3ef981af20af26f890f5f6ce54ae9c5b4bb04e0cc",
       "effectiveLines": 42,
-      "renderedLines": 42
+      "renderedLines": 42,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/infrastructure/food_media.dart",
       "sha256": "533da05c8dd6b08e5ab21d8357ce5708010ff656494c2eac38759eb8cc3fe59c",
       "effectiveLines": 137,
-      "renderedLines": 137
+      "renderedLines": 137,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/infrastructure/local_notifications.dart",
       "sha256": "4fd3d40ae87cd79f7ffced1075d7c300b529db57588184a58ba175b8c287f4fd",
       "effectiveLines": 62,
-      "renderedLines": 62
+      "renderedLines": 62,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/infrastructure/product_telemetry.dart",
       "sha256": "a0caeed1417ed0074eba23460521006000676cdcc9132780f8eaed9076059784",
       "effectiveLines": 141,
-      "renderedLines": 143
+      "renderedLines": 143,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/presentation/account_deletion.dart",
       "sha256": "9d210bf772f882f029f125817a17945bea2252db1a4d5ee66415e7c5b7ae59f0",
       "effectiveLines": 229,
-      "renderedLines": 230
+      "renderedLines": 230,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/presentation/capture_page.dart",
-      "sha256": "3199b60e8fe85c66f3e4e68ce814dd80a5ca983a31a2bc2759ce4008dbeffbe5",
+      "sha256": "8003900cd707fd7358c470f40617d8413fa0d36c28c5fc9d3fed6ed363de55a2",
       "effectiveLines": 118,
-      "renderedLines": 118
+      "renderedLines": 118,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/presentation/notification_routes.dart",
-      "sha256": "3a35900bd9006d548af1ef815bf647590988667917f4799d842af93269a97990",
+      "sha256": "84d408669721e092b9d2073b79edfa9da22bf7617031ff88d0c26448d87659dc",
       "effectiveLines": 94,
-      "renderedLines": 94
+      "renderedLines": 94,
+      "hashNormalization": "LF"
     },
     {
       "path": "06-project/app/apps/fridge/lib/presentation/privacy_routes.dart",
       "sha256": "4378f7eeda3ad1af59427b1ab1d6c16c64f9f2e6f9d66e185e418755bdf8fb08",
       "effectiveLines": 66,
-      "renderedLines": 66
+      "renderedLines": 66,
+      "hashNormalization": "LF"
     }
   ],
   "excluded": [
@@ -375,5 +402,6 @@
       "reason": "本次仅选Android App完整业务模块；其余UI、鉴权、实体/配置或未选业务文件不进入鉴别材料"
     }
   ],
-  "thirdParty": "不包含Flutter、官方SDK、第三方插件、小程序、官网或Shared Platform源码；未改名、混淆或补写材料代码。"
+  "thirdParty": "不包含Flutter、官方SDK、第三方插件、小程序、官网或Shared Platform源码；未改名、混淆或补写材料代码。",
+  "sourceHashNormalization": "LF"
 }

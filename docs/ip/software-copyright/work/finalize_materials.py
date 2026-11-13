@@ -38,7 +38,7 @@ def main():
 官方办理入口：https://www.ccopyright.com.cn/
 本次核验日期：2026年11月13日。
 '''
-    (FINAL/'用户执行步骤.md').write_text(guide,encoding='utf8')
+    (FINAL/'用户执行步骤.md').write_bytes(guide.encode('utf8'))
     (WORK/'用户执行步骤.md').write_text(guide,encoding='utf8')
     doc=Document();doc.core_properties.author='杭州临安芬棱软件设计工作室（个体工商户）'
     for line in guide.splitlines():
@@ -57,7 +57,7 @@ def main():
       '可编辑Word、源码筛选、开源边界、自动与人工审查报告保留在../../work；本目录只放最终PDF/Markdown。',
       '登记名称、权属、完成日期、首次发表、主体证明和签章尚待Owner确认；不得用材料编制日代替法律事实。','',
       '源码自动单行重复34.76%，high_risk保留；10/20行代码片段无重复且来源完整。人工复核未关闭前不要直接提交。']
-    (FINAL/'最终交付材料清单.md').write_text('\n'.join(rows)+'\n',encoding='utf8')
+    (FINAL/'最终交付材料清单.md').write_bytes(('\n'.join(rows)+'\n').encode('utf8'))
     lines=(WORK/'源程序鉴别材料.txt').read_text(encoding='utf8').splitlines()
     sem=[x.strip() for x in lines if len(x.strip())>5 and not re.fullmatch(r'[{}()\[\],;\s]+',x.strip())]
     blocks={n:sum(v>1 for v in Counter(tuple(sem[i:i+n])for i in range(len(sem)-n+1)).values())for n in [5,10,20]}

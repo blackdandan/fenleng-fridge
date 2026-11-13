@@ -53,7 +53,7 @@ def source_material():
         # Run the installed extractor for each selected complete file; preserve real source order.
         extracted=extractor.collect_lines([file],False,None)
         output.extend(extracted[1:])
-        manifest.append(dict(path=file.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(file.read_bytes()).hexdigest(),effectiveLines=len(extracted)-1,renderedLines=size(file)))
+        manifest.append(dict(path=file.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(file.read_bytes().replace(b'\r\n',b'\n')).hexdigest(),hashNormalization='LF',effectiveLines=len(extracted)-1,renderedLines=size(file)))
     extractor.write_docx(output,WORK/'源程序鉴别材料.docx',NAME,VERSION)
     extractor.write_text(output,WORK/'源程序鉴别材料.txt')
     all_files=[p for folder in [ROOT/'06-project/app/apps/fridge/lib',ROOT/'06-project/app/packages'] for p in folder.rglob('*.dart') if 'test' not in p.parts and 'generated' not in p.parts]
@@ -93,7 +93,7 @@ def write_docs(volume):
 ### 软件的技术特点
 采用Flutter分层客户端、本地持久化与照片生命周期管理；检查计划驱动库存处置和通知更新；平台会话与反馈通过官方SDK接入，事件以UUID去重。
 '''
-    (WORK/'application-info-summary.md').write_text(summary,encoding='utf8')
+    (WORK/'application-info-summary.md').write_bytes(summary.encode('utf8'))
     (WORK/'core-function-description.md').write_text(f'# 软件主要功能描述\n\n软件：{NAME} {VERSION}\n\n'+FUNCTIONS,encoding='utf8')
     (WORK/'independent-development-statement.md').write_text(f'''# 独立开发及原创性声明
 
