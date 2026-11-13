@@ -1,0 +1,1256 @@
+{
+  "date": "2026-11-13",
+  "status": "in-progress",
+  "goalComplete": false,
+  "plan": "02-engineering/plans/full-implementation.md",
+  "workPackages": {
+    "WP01": "in-progress",
+    "WP02": "in-progress",
+    "WP03": "in-progress",
+    "WP04": "in-progress",
+    "WP05": "in-progress",
+    "WP06": "in-progress",
+    "WP07": "in-progress",
+    "WP08": "in-progress"
+  },
+  "verified": {
+    "flutterBaseline": "Fixed fork 62357a93d653bf844f730bb1f4b7cc9e2139d14e verified; android/ios/ohos created",
+    "flutterWorkspace": "FVM/Melos resolves six packages",
+    "uiKit": "fenleng tokens/theme/ui 0.2.0 at 2036816e23cb11a09de494ee5b976fbb58eb516a via Git",
+    "signing": "Owner-authorized fixed JKS and credentials created; four SSH Vault entries verified without logging secrets",
+    "ndk": "Official 29.0.14206865 archive size and SHA1 verified and installed",
+    "dartDomainTests": 8,
+    "dartDiskPersistenceTests": 4,
+    "flutterConsentTests": 4,
+    "typescriptDomainTests": 8,
+    "typescriptRepositoryTests": 3,
+    "typescriptTypecheck": "passed current 200-key mini typecheck and weapp build",
+    "dartAnalyze": "Current notification/session/routes/settings and modified tests: no issues; .fenleng/ios-notification-analyze.log. Additional iPad layout file analyze passed.",
+    "miniProgramInitialShellBuild": "passed; not a completed business mini-program",
+    "localization": "20 languages,200 keys; canonical/App/mini byte parity and APK keys verified",
+    "androidInitialDebugBuild": {
+      "status": "passed",
+      "apk": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-debug.apk",
+      "bytes": 146502261,
+      "sha256": "9d68659e27bf12f74b454497a86de101bbbadb97ac70dc16ef54e7a6fd94f103",
+      "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+      "certificateMatchesRegisteredIdentity": true,
+      "finalFunctionalDeliverable": false,
+      "runtimeDeviceValidation": "not-run-no-device"
+    },
+    "flutterIdentityControllerTests": 7,
+    "flutterSdkIdentityTests": 17,
+    "miniIdentityTests": 9,
+    "miniProgramIdentityBuild": "passed: settings -> account -> optional WeChat login; native WeChat provider verification pending real configuration; remaining business routes incomplete",
+    "androidCurrentDebugBuild": {
+      "status": "passed",
+      "apk": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-debug.apk",
+      "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+      "bytes": 204147812,
+      "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+      "certificateMatchesRegisteredIdentity": true,
+      "package": "com.fenlengtech.fridge",
+      "version": "0.1.0+1",
+      "channel": "china",
+      "kind": "debug-preview",
+      "hardened": false,
+      "sourceAheadOfApk": false,
+      "includes": "200 shared locale keys; current first-consent Figma styles, separate feature permission notice and safe-area fixes; existing local inventory/media/reminders/account/feedback/global client wiring retained. Online configuration remains disabled by default.",
+      "finalFunctionalDeliverable": false,
+      "runtime": "Installed only on independent emulator5582. Final visual fixture430/320/light/dark/text2 restored original consent bytes, stock and display. Actual withdrawal/reconsent flow separately verified on prior4093 visual build.",
+      "build": "Standard script attempted; fixed OH auto-pub requires missing HMOS SDK. Same fixed Flutter --no-pub, existing fixed Gradle signing and per-command Gradle Java17 home succeeded. No global configuration or credential change.",
+      "payloadInspection": "20 locales x200 keys verified inside APK",
+      "sourceAheadReason": null
+    },
+    "androidRuntimeMedia": "Own isolated API35 emulator: real emulator sensor capture, OS multi-photo picker, 3 distinct private photos, restart persistence; not physical-device evidence",
+    "flutterIdentityStorageTests": 1,
+    "flutterAccountLayout": "passed: 20 locales x 2 themes, width320, text scale2",
+    "sdkKnowledgeAudit": "pass, fl.cmd kno audit --project ../fenleng-client-sdk --base 334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "androidLegalRuntime": "passed: native WebView, actual rendered V0.4 body/new email, return to unaccepted gate, no extra action bar, readable system bars, inventory unchanged; final screenshot legal-webview-v04-final.png",
+    "sharedPlatformGuestCandidate": {
+      "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "applicationTests": 7,
+      "postgresAtomicityTests": 3,
+      "httpTests": 3,
+      "skipped": 0,
+      "bootstrapCompile": "passed",
+      "contracts": "127 public operations validate; compatibility pass; contract release manifest regenerated",
+      "knowledgeAudit": "pass",
+      "productionDeployed": false,
+      "clientIntegration": "Flutter and Taro official SDK local candidates + App/mini consumers wired and tested; default disabled, platform deployment/registration and immutable SDK publication pending"
+    },
+    "miniIdentityLifecycle": "One shared owner across account/feedback; consent-epoch setup/cleanup; guest kind survives restore, optional WeChat replacement, late code fenced, feedback401 invalidation with controlled retry, durable text/key/receipt",
+    "miniProgramBuildWarnings": "Latest account deletion UI build passed; common.js549KiB exceeds webpack244KiB recommendation; NoAsyncChunks recommendation remains",
+    "dartRepositoryTests": 3,
+    "miniSnapshotStorageTests": 2,
+    "miniCaptureControllerTests": 4,
+    "miniAllSourceTests": 128,
+    "miniReviewReminderBuild": "passed: real organize/undo and reminder pending/original counts; visual/native delivery not complete",
+    "flutterVisualStatus": "Android home/zone/review/detail/history/settings/camera retained. Reminder2 flat colors exact; adjusted card bounds<=2px, backSVG<=1px, date/title/body positions<=2px. Native font differences reported. Remaining consent/permission visual states and iOS/Harmony pending.",
+    "flutterAppAllTests": 168,
+    "flutterCabinetLayoutTests": 4,
+    "flutterHomeGolden": "passed: apps/fridge/test/goldens/home-430.png",
+    "androidEmptyHome": "passed native empty-inventory QA state: three centered plus/photo-entry zones, no seed records/counts/hint/tutorial; original 3 QA records restored",
+    "flutterInventoryLayoutTests": 4,
+    "flutterReminderRouteTests": 2,
+    "flutterInventoryGoldens": "passed: zone-430.png and review-430.png; home-430.png regression passed",
+    "miniInventoryUiBuild": "passed after 101-key bundle/token synchronization; typecheck and weapp build passed; .fenleng/mini-build-detail-history.log has no Warning/Error lines; native WeChat visual validation pending",
+    "identityLatestVerification": "App95 + selected official SDK25 =120 passed together; independent SDK full71 and global consent1 passed. Real Provider, immutable SDK version and platform deployment remain pending.",
+    "flutterDetailHistoryPageTests": 3,
+    "flutterDetailHistoryRouteTests": 1,
+    "flutterDetailHistoryGoldens": "passed after Android/Figma numeric sampling: detail-430.png and history-430.png; all five current App goldens pass",
+    "flutterDetailHistoryVisual": "Android430: nine exact flat colors, four field/save/history block bounds<=1px, two calendar glyph bounds exact and dropdown<=1px; Android320 top/bottom inspected. Native font glyph differences remain reported.",
+    "flutterPresentationHarness": "Route host keyed by locale/theme/page type/key; settings/feedback160states rendered at320/text2; completeApp51pass",
+    "androidDetailHistoryFlow": {
+      "evidence": "02-engineering/evidence/android/detail-history-native-results.json",
+      "apkSha256": "b55d3d40344bdf591d33982d046110406150f81e8ecd52de78dde23ea2b6374e",
+      "verified": "real private file reads: edits preserve current reminder/other records, restore creates new cycle, delete cancellation, permanent delete removes selected record/backup/photo, narrow delete accessible",
+      "latestSourceRouteRegression": "passed: detail_history_flow_test on final source"
+    },
+    "flutterSettingsFeedbackPageTests": 4,
+    "flutterSettingsDisplayTests": 4,
+    "flutterSettingsFeedbackRouteTests": 1,
+    "flutterFeedbackSessionTests": 8,
+    "flutterFeedbackSdkAdapterTests": 3,
+    "flutterAppGoldens": "All14 pass: existing10 plus reminders pending/partial/handled/empty after native/Figma sampling.",
+    "flutterSettingsFeedbackEvidence": "02-engineering/flutter-ui/pages/settings-feedback.md",
+    "androidSettingsFeedbackFlow": {
+      "evidence": "02-engineering/evidence/android/settings-feedback-native-results.json",
+      "apkSha256": "c99b7239395616e3a68a1fb6b01e1f119a8fb70abfc420c1211cca6590689e98",
+      "completed": true,
+      "restored": true,
+      "verified": "real default/time writes preserve existing food/current cycles; native dark/language survive restart; unconfigured feedback retains durable text/key across restart+retry without receipt; filing intent;320 footer"
+    },
+    "androidSettingsFeedbackVisual": {
+      "evidence": "02-engineering/evidence/android/settings-feedback-visual-results.json",
+      "apkSha256": "74781b70c9f6464b99b0240728bb73aeb3dcecbc3368682e3b52e732aa733e05",
+      "completed": true,
+      "restored": true,
+      "sampling": [
+        "02-engineering/evidence/android/settings-fidelity-sampling.json",
+        "02-engineering/evidence/android/feedback-fidelity-sampling.json"
+      ]
+    },
+    "miniLatestBuild": "passed:70 tests,typecheck,boundaries,weapp3 pages,20locale159keys; common.js401KiB warning; source-only native fidelity",
+    "flutterAppAllTestsScope": "Full App71/14 goldens passed before adding one additional iPad layout test; that new test separately passed80states. No claim that native iOS XCTest ran.",
+    "flutterPhotoLifecycleTests": 3,
+    "flutterPhotoLifecycleEvidence": "02-engineering/specs/photo-lifecycle-evidence.md; App3 real disk cases, fullApp57/core15 pass; Android startup collection/reference retention verified; OS replacement path still pending",
+    "dartCoreAllTests": 17,
+    "flutterCameraPageTests": 3,
+    "flutterCameraLayoutMatrix": "120states:20locales*2hostThemes*3states at320/text2; fixed-dark camera, controls and footer reachable",
+    "androidCameraFlow": {
+      "evidence": "02-engineering/evidence/android/camera-native-results.json",
+      "apkSha256": "ea64ffb8ccf4927507525519ec7a7cfd7bb2851528b6825281beb0b03246da3a",
+      "completed": true,
+      "restored": true,
+      "verified": "2real sensor photos004cold/005frozen, originals unchanged, sequential IDs+restart, unreferenced managed startup cleanup, explanation before OS request and decline keeps album"
+    },
+    "androidCameraVisual": {
+      "evidence": "02-engineering/evidence/android/camera-visual-results.json",
+      "apkSha256": "f8b4b95188fa963a0907ba023909e87c054269ab1949466c23f2384d75d2f45d",
+      "completed": true,
+      "restored": true,
+      "sampling": "02-engineering/evidence/android/camera-fidelity-sampling.json"
+    },
+    "flutterNotificationTests": {
+      "session": 7,
+      "pages": 3,
+      "routes": 2,
+      "nativeCodec": 2,
+      "plan": 2,
+      "pageMatrix": "240phone states incl iOS timing/capacity and80iPad states; iPad1 separate new test after full71"
+    },
+    "androidNotificationsNative": {
+      "evidence": "02-engineering/evidence/android/notifications-native-results.json",
+      "apkSha256": "f50ee291500a2a92caea93d52463919f3994abe56b43d21bf80779d4fa3d4c37",
+      "completed": true,
+      "restored": true
+    },
+    "androidNotificationsVisual": {
+      "evidence": "02-engineering/evidence/android/notifications-visual-results.json",
+      "apkSha256": "c9c8e32b75ba1d706648dcf88b852ff400602eb8fb95f486c7e733d28a95fa5f",
+      "completed": true,
+      "restored": true
+    },
+    "flutterRemindersEvidence": "02-engineering/flutter-ui/pages/reminders.md",
+    "iosNotificationSource": {
+      "status": "source-prepared-not-compiled",
+      "evidence": "02-engineering/evidence/ios/notification-source-results.json",
+      "swiftSources": 4,
+      "xctestCasesDefined": 13,
+      "syntaxAndProjectReferences": "pass",
+      "xcodeBuild": "not-run-Windows",
+      "xctest": "not-run-Windows",
+      "device": "not-run",
+      "limitations": "Same-time batches coalesce; different times share a day thread and may produce multiple grouped cards. Conservative60-batch window replenishes on app use. Strict background single-card merge not achieved.",
+      "handoff": "03-deployment/ios-notification-verification.md"
+    },
+    "androidIosAdapterCompatibilitySmoke": {
+      "evidence": "02-engineering/evidence/android/ios-adapter-android-smoke.json",
+      "apkSha256": "c700b67354356dcc9d3b2522236a18fc7b261610b37b2648d9244c06ee4c0eee",
+      "completed": true
+    },
+    "miniProgramAllTests": 43,
+    "miniRecordSettingsStage": {
+      "evidence": "02-engineering/mini-program/pages/records-settings-history.md",
+      "newTests": 17,
+      "finalEditorTargetedTests": 9,
+      "sourceContracts": "02-engineering/evidence/mini-program/record-settings-source-results.json",
+      "nativeScreenshots": "not-run-developer-tools-missing",
+      "physicalDevice": "not-run",
+      "feedback": "unavailable state only; real SDK/draft pending",
+      "subscriptionMessages": "pending-WP06"
+    },
+    "website": {
+      "status": "local-preview-implemented-not-deployed",
+      "source": "06-project/web",
+      "staticOutput": "06-project/web/dist",
+      "localUrl": "http://127.0.0.1:4817/",
+      "languages": 20,
+      "websiteSpecificKeys": 34,
+      "browserMatrixStates": 80,
+      "browserEvidence": "02-engineering/evidence/website/browser-results.json",
+      "downloadEvidence": "02-engineering/evidence/website/download-recovery-http.json",
+      "apkSha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+      "apkBytes": 184867411,
+      "apkVersion": "0.1.0",
+      "apkBuild": "1",
+      "apkKind": "debug-preview",
+      "apkSignatureVerified": true,
+      "httpFullBodyHashVerified": true,
+      "legalVersion": "V0.4",
+      "legalBodyLanguage": "Chinese review draft only; not20-language legal translation",
+      "contact": "fenlengtech@163.com",
+      "screenshots": [
+        "home390.png",
+        "home1440.png",
+        "home320-ar.png",
+        "privacy320.png",
+        "home320-text2.png"
+      ],
+      "domainDeployed": false,
+      "wechatDeviceDownloadVerified": false,
+      "analytics": "Official anonymous SDK candidate wired; default off; unified website consent; 16 targeted +9 browser +80 layout cases passed locally; production configuration pending",
+      "browserMatrixScope": "80-state original static UI verification; CSS/source unchanged. Latest APK separately full-HTTP verified after rebuild."
+    },
+    "flutterGuestIdentityStage": {
+      "status": "source-and-local-http-validated",
+      "appTests": 78,
+      "sdkIdentityTests": 17,
+      "combinedFullTests": 95,
+      "guestSdkTests": 7,
+      "guestControllerTests": 5,
+      "guestFeedbackHttpTests": 1,
+      "miniWechatTests": 9,
+      "analyze": "passed",
+      "evidence": "02-engineering/specs/guest-session-implementation-evidence.md",
+      "log": ".fenleng/flutter-guest-stage-full.log",
+      "productionDeployed": false,
+      "providerValidated": false,
+      "sdkPublished": false,
+      "miniGuestIntegrated": true
+    },
+    "miniGuestFeedbackStage": {
+      "status": "source-and-local-http-validated",
+      "allMiniTests": 61,
+      "newTests": 18,
+      "taroSdkTests": 39,
+      "newSdkTests": 7,
+      "typecheck": "passed",
+      "platformBoundaries": "passed",
+      "sourceAndCandidateIntegrityChecks": "passed",
+      "weappBuild": "passed",
+      "distBytes": 822493,
+      "warnings": [
+        "common.js391KiB exceeds webpack244KiB recommendation; async chunks recommendation"
+      ],
+      "evidence": "02-engineering/mini-program/pages/feedback-identity.md",
+      "nativeWeChatVisual": "not-run-no-developer-tools",
+      "productionProvider": "not-run",
+      "sdkPublished": false,
+      "platformDeployed": false
+    },
+    "telemetryDeliveryFoundation": {
+      "status": "local-candidate-validated",
+      "productHooksIntegrated": "App and mini7 event types plus anonymous website app-entry integrated locally; production configuration and final artifacts pending",
+      "platformApplicationTests": 5,
+      "realPostgresTests": 3,
+      "httpTests": 3,
+      "existingContextTest": 1,
+      "skipped": 0,
+      "bootstrapCompile": "passed",
+      "javascriptSdkFullTests": 80,
+      "flutterTelemetryTests": 7,
+      "contracts": "127 operations, compatibility pass,30-file release manifest regenerated",
+      "evidence": "02-engineering/specs/telemetry-delivery-foundation.md",
+      "sdkPublished": false,
+      "productionDeployed": false,
+      "miniCoreCandidateVendored": false,
+      "knowledgeAudit": "project/SDK/platform all pass, nextAction none"
+    },
+    "flutterProductTelemetryStage": {
+      "status": "source-sdk-http-and-build-validated",
+      "appTests": 95,
+      "combinedTests": 120,
+      "newProductTests": 17,
+      "analyze": "passed",
+      "singleOfficialSdk": true,
+      "strictEnums": true,
+      "defaultProductionSendingEnabled": false,
+      "realProductionAnalytics": "not-run",
+      "unifiedPrivacyWithdrawalUi": "pending-full-WP03-flow",
+      "evidence": "02-engineering/specs/flutter-product-telemetry-evidence.md",
+      "sdkIdentityAndTelemetryAndTimeoutTests": 25,
+      "flutterSdkAllTests": 71,
+      "responseBodyTimeout": "reproduced before fix; SDK timeout + body subscription cancellation now passed",
+      "apkSha256": "88fcdb076e3eb9fe8e1f40af5d20237bcde4998081bcd09a88132c01102d6639",
+      "nativeSmoke": "passed-own-emulator",
+      "globalConsentTest": 1,
+      "knowledgeAudit": "project and SDK pass,nextAction none"
+    },
+    "flutterPrivacyWithdrawalTests": "9 targeted withdrawal/reader/layout tests; completeApp104 passed before4 additional WeChat native boundary tests; Dart analyze clean",
+    "wechatNativeBoundaryTests": "4 passed using officialMethodChannel SDK; invalid config/not installed/cancel/denial/timeout/retry; simulated native transport,not real WeChat",
+    "androidPrivacyWithdrawal": "passed on own API35: real native reader and confirmation,active session absent/empty,no active owned wakeup alarms,restart/reconsent and original bytes preserved",
+    "miniPrivacyWithdrawal": {
+      "source": "connected: dedicated legal WebView,nonce message requests native confirmation,immediate identity fence,durable pending/retry/recovery,exact session key cleanup",
+      "tests": 70,
+      "browserBridgeLocales": 20,
+      "browserGuards": 6,
+      "nativeWeChat": "not-run-AppID/business-domain/device pending",
+      "webDefault": true
+    },
+    "wechatSubscriptionProvider": {
+      "stage": "provider-only",
+      "tests": 10,
+      "failures": 0,
+      "localHttp": true,
+      "productionEnabled": false,
+      "evidence": "02-engineering/evidence/mini-subscription-provider-results.json",
+      "remaining": "HTTP,periodic/provider configuration,officialSDK/mini and real configuration"
+    },
+    "wechatMiniRecipientBinding": {
+      "source": "V54/JDBC and verified mini-provider login transaction,existing export/deletion lifecycle",
+      "postgresBindingTests": 6,
+      "milestoneRelevantTests": 31,
+      "failures": 0,
+      "productionMigration": "not-run",
+      "publicApi": "not-added",
+      "evidence": "02-engineering/evidence/mini-subscription-binding-evidence.json",
+      "runtimeCompatibility": "V54 preflight and188-variable schema synchronized; runtime/preflight/release-engineering checks passed; existing approval/secret requirements preserved"
+    },
+    "miniReminderLedger": {
+      "stage": "V55 persistent core only",
+      "coreTests": 21,
+      "relevantMilestoneTests": 29,
+      "laterPlanTests": 7,
+      "failures": 0,
+      "dispatch": "Historical core-only milestone; see miniReminderHttpRuntime for later composition",
+      "evidence": "02-engineering/evidence/mini-reminder-ledger-results.json",
+      "remaining": "HTTP/runtime candidate implemented next stage; official SDK and mini consent/sync/revoke/deep link still pending"
+    },
+    "miniReminderHttpRuntime": {
+      "stage": "local opt-in candidate",
+      "operations": 5,
+      "tests": 37,
+      "failures": 0,
+      "skipped": 0,
+      "runtimeVariables": 190,
+      "dispatch": "Optional one-thread30s schedule and real per-app provider factory; defaults disabled; not deployed",
+      "contract": "OpenAPI/schema, compatibility and release manifest updated",
+      "evidence": "02-engineering/evidence/mini-reminder-http-results.json",
+      "remaining": "Client UI/calendar/lifecycle/deep link now locally implemented; formal platform/WeChat config,SDK immutable Git version and device validation remain"
+    },
+    "miniReminderSdk": {
+      "sdkAndContractTests": 59,
+      "consumerTests": 74,
+      "failures": 0,
+      "stage": "Historical reminder SDK checkpoint; current core/Taro candidates listed in miniProductTelemetry; reminder UI/runtime local source implemented",
+      "archive": "fenleng-sdk-taro-0.5.0-fridge-reminders-candidate.tgz",
+      "sha256": "9f278ce7dbba194a7ed332b0ad6106b147d4988d0c84e15f0dd5465d5c71e6f9",
+      "published": false,
+      "checks": "types,boundaries,weapp build,installed-source integrity and both knowledge audits passed",
+      "evidence": "02-engineering/evidence/mini-reminder-sdk-results.json"
+    },
+    "miniReminderClient": {
+      "stage": "local source and tests; formal WeChat host not-run",
+      "tests": 91,
+      "componentProxyCases": 720,
+      "localeKeys": 171,
+      "evidence": "02-engineering/evidence/mini-reminder-client-results.json",
+      "remaining": "formal server/WeChat config,SDK immutable Git version,host/device verification"
+    },
+    "miniProductTelemetry": {
+      "events": 7,
+      "consumerTests": 102,
+      "relatedSdkTests": 71,
+      "stage": "local SDK/source and tests; default disabled",
+      "coreCandidate": "fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz",
+      "taroCandidate": "fenleng-sdk-taro-0.5.0-fridge-telemetry-candidate.tgz",
+      "evidence": "02-engineering/evidence/mini-product-telemetry-results.json",
+      "remaining": "platform event/role registration and deployment,SDK full Git commit,native runtime/real analytics data"
+    },
+    "legalDraftRefresh": {
+      "version": "V0.4 still draft/effective date pending",
+      "scope": "mini reminder data/cancellation and removal of obsolete all-simulated claim",
+      "websiteAndOfflineSource": "Legal source/bindings/4 viewport checks passed. Earlier rebuild temporarily omitted APK; later download-recovery stage restored it and verified actual HTTP/browser bytes.",
+      "installedApk": "not rebuilt in this stage"
+    },
+    "websiteDownloadRecovery": {
+      "status": "passed",
+      "tests": 5,
+      "bytes": 184867411,
+      "sha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+      "defaultBuildKeepsApk": true,
+      "realHttpAndBrowserDownload": true,
+      "nativeWechat": "not-run",
+      "evidence": "02-engineering/evidence/website-download-recovery-results.json"
+    },
+    "websiteAnonymousAnalytics": {
+      "status": "validated-with-follow-up",
+      "scope": "Local official SDK candidate, real Chromium with intercepted local provider; no production collection",
+      "tests": {
+        "targeted": 16,
+        "browserLifecycle": 9,
+        "localizedLayouts": 80,
+        "build": "passed",
+        "staticAndApkCheck": "passed"
+      },
+      "evidence": "02-engineering/evidence/website/anonymous/results.json",
+      "defaultEnabled": false,
+      "anonymous": {
+        "credentials": "omit",
+        "authorization": false,
+        "cookie": false,
+        "identityStorageRead": false,
+        "event": "fridge.website.preview.opened.v1",
+        "properties": {
+          "target": "app"
+        }
+      },
+      "sdkProvenance": "06-project/web/vendor/provenance.json",
+      "remaining": [
+        "Production platform deployment, public website client registration and CORS configuration",
+        "Production domain/TLS and real WeChat download/install validation",
+        "Immutable upstream SDK publication and final delivery archives"
+      ],
+      "goalComplete": false
+    },
+    "harmonyNotificationSource": {
+      "status": "source-candidate-not-native-validated",
+      "hostTests": 28,
+      "hostTestsMethod": "Actual ETS sources transpiled by esbuild, native APIs replaced with explicit fakes; not ArkTS compilation",
+      "nativeBuild": "not-run",
+      "nativeRuntime": "not-run",
+      "environment": "not-ready: missing matching SDK,ohpm,hvigor,hdc",
+      "scope": "WP04 same approved three-platform feature; no new native plugin dependency",
+      "files": {
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderBridge.ets": "3dac4f8b8d53eb02617ec522e8e31ccc99ca04ba429092c2de2d401532e414d3",
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderCoordinator.ets": "7abb2538376d6b56ba05afe3c6b6f3555feded7bf9b083673e2490a722f31e5b",
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderNative.ets": "76c89ddb24ce98abbdd98fc502edb760fcc0535ee62b11ff7fc883314e872e00",
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderPlan.ets": "d09fc17c746a93dc77130243a90cd6a89ce8d8ade2e08692f5015066a9c188a7",
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/entryability/EntryAbility.ets": "d466ccf8f053e9b9e15860f068f6c8eec273181ee6d9540a3b4c094ab9aa734e",
+        "06-project/app/apps/fridge/ohos/entry/src/main/ets/entryability/BootstrapChannel.ets": "8c9cdb4e92712db5ed15f6602b8e84b0fe77207bb5ba5e894d625a2588acc4ef"
+      },
+      "testLog": "02-engineering/evidence/harmony/harmony-reminders-combined.log",
+      "environmentLog": "02-engineering/evidence/harmony/harmony-reminders-environment.log",
+      "handoff": "03-deployment/harmony-notification-verification.md",
+      "limitations": [
+        "No ArkTS type checking,HAP,signature,installation or device delivery proof",
+        "API17 atomic card update unavailable; explicit native failure instead of unsafe recreation",
+        "Permission eligibility/profile needs formal Huawei verification",
+        "OS cancellation interaction with same date card and time/zone/reboot behaviors need native verification"
+      ],
+      "goalComplete": false,
+      "knowledgeAudit": "passed: nextAction=none"
+    },
+    "wechatAccountLifecyclePlatform": {
+      "status": "platform-local-candidate-consumers-pending",
+      "goalComplete": false,
+      "baseline": {
+        "projectId": "fenleng-shared-platform",
+        "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+        "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+        "source": "docs/runbooks/account-lifecycle-operations.md",
+        "sourceMode": "github",
+        "retrievedAt": "2026-11-13T05:52:08.210Z"
+      },
+      "tests": [
+        {
+          "suite": "com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest",
+          "tests": 7,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.application.usecase.FederatedDeletionProofTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.FederatedDeletionProofTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest",
+          "tests": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.application.usecase.ProcessUserDataRequestsTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.ProcessUserDataRequestsTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.application.usecase.WechatDeletionProofTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.WechatDeletionProofTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest",
+          "tests": 4,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest",
+          "tests": 10,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.persistence.MiniRecipientAtomicityTest",
+          "tests": 9,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.MiniRecipientAtomicityTest.xml"
+        },
+        {
+          "suite": "com.fenleng.platform.bootstrap.WechatLoginConfigurationTest",
+          "tests": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.bootstrap.WechatLoginConfigurationTest.xml"
+        }
+      ],
+      "testsPassed": 57,
+      "files": {
+        "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/port/FederatedDeletionConfirmationPort.kt": "546b8999dfa78ee7900e355518c7edb1aec42c7cba64eca301cba0255c0f006b",
+        "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FederatedDeletionProof.kt": "818b18eb9d22bb4a22c2be95a201ac86f0e15949f37c05eef552002da66fbdc4",
+        "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FederatedDeletionReauthentication.kt": "fd07715fc15d2705be5499c99a199491af04ee1401e96b680de68f03ee807bad",
+        "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/FederatedDeletionReauthenticationHttpController.kt": "f511c59ee244bd9570f321874c8ad86f9b80ccd7caeecb72e18032a4e93e5c65",
+        "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/WechatLogin.kt": "f19b2ae2e61a626b452b70931241a051c46673a4b056adcfd09b864f8cc53f5e",
+        "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/StepUpConfiguration.kt": "90a5a0fd6ca9cf54aa8c464f67d254d2ca84b0ba70e5f395922cb44f580f48b9",
+        "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WechatLoginConfiguration.kt": "75b08156d3670cbe7d970d1ebd7eb46671c31a0a556062f2c350309484abd411",
+        "backend/platform-persistence/src/main/resources/db/migration/V56__wechat_self_deletion_provider.sql": "b914237849f11d1ad623d6dcf4f0b66fbefb42da6f3a535f8742524066e4eacc",
+        "docs/contracts/v1/schemas/identity.schema.json": "bff86fab0ae3d7a89d07a733667e5531bd8a05981426c19feed2c13bfd1ec030"
+      },
+      "contracts": {
+        "validation": "passed:132 operations,14 events",
+        "compatibility": "passed",
+        "releaseManifest": "passed:1.9.0,34 files"
+      },
+      "bootstrapCompile": "passed",
+      "migration": "V56 passed in ephemeral local PostgreSQL; not run in production",
+      "productionDeployed": false,
+      "productionDeleteApprovedChanged": false,
+      "sdkAndConsumers": "not yet integrated",
+      "providerProof": "Local provider substitutes only; WeChat exchange verification time does not prove auth_time or signed nonce",
+      "firstAttempt": "HTTP test exposed missing provider domain allowance; corrected and final targeted suites passed",
+      "next": "Official SDK lifecycle methods and product account UI, receipts, consent/identity fencing and20 languages",
+      "knowledgeAudits": {
+        "fridge": "passed:nextAction=none",
+        "sharedPlatform": "passed:nextAction=none"
+      },
+      "sharedPlatformBranch": "main"
+    },
+    "accountLifecycleSdk": {
+      "status": "sdk-local-candidate-installed-consumer-ui-pending",
+      "goalComplete": false,
+      "sdk": {
+        "repository": "https://github.com/blackdandan/fenleng-client-sdk.git",
+        "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+        "sourceMode": "local-worktree-candidate",
+        "published": false
+      },
+      "platformContract": {
+        "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+        "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+        "openApiSha256": "9c6e6ae719679f8e7b95bdcd2e5586d7faba4be2d380bc073b0f1b637dfc35d1",
+        "schemaSha256": "bff86fab0ae3d7a89d07a733667e5531bd8a05981426c19feed2c13bfd1ec030",
+        "selfDataHeader": "X-Action-Confirmation",
+        "controlledOperationsHeaderUnchanged": "Action-Confirmation-Id"
+      },
+      "tests": {
+        "javascriptRelatedSdk": 97,
+        "flutterSdk": 72,
+        "candidateContract": 1,
+        "platformHttpHeaderAndChallenge": 5,
+        "miniConsumer": 102,
+        "taroTypes": "passed",
+        "miniTypes": "passed",
+        "miniBoundaries": "passed",
+        "miniWeappBuild": "passed",
+        "installedArchiveAndFiles": "passed",
+        "knowledgeAudits": "fridge,SDK,platform all passed; nextAction=none"
+      },
+      "candidate": {
+        "archive": "fenleng-sdk-taro-0.5.0-fridge-account-lifecycle-candidate.tgz",
+        "sha256": "7ab076a953d7f570ecac50c1a5194b7e1d17698693da57f1783ecfc17f47cf00",
+        "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+        "sourceMode": "local-worktree-candidate",
+        "published": false,
+        "sourceFiles": {
+          "tests/account-lifecycle.test.js": "e9a21d12b6c9bc6f6bc005cbf7e6490b0645f443d1e72ece3e284d9e19f75284",
+          "src/auth.js": "e706c2ee17f9a7374de9a7d6343d34b7bd3351aa4a45c62128fa4d3a1785e107",
+          "src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+          "tests/client.test.js": "cc66716701064611cffc741c602d3b8f5b774f7e4b1d68f3c47bc375d40aca74",
+          "src/commerce.js": "bb4b0b8e73e95c1fb58349750be13bfc0cd9197059c4539e6b4881a550727875",
+          "tests/commerce.test.js": "74c224c7c1b142ad19c6facb9ad0c2754b16f9211f8897662ace7b4e7decee58",
+          "src/feedback.js": "767f3937cfdd3913daa28852944357de7ad80f1640d9e462190e896dbb538271",
+          "tests/guest-feedback.test.js": "0025a9fa1f2df940f422e4001158a2867f7e0abdcb6b1acd13d62d16c19ec571",
+          "index.js": "1fe5f7ac2c3a80904b09364254891f0e197ca34dd6ee9cfb2e951148ae382fa7",
+          "src/mini-reminder-plan.js": "9c65c0bcf95915e7d572e41399d6f6cbd251a0579a88228e94c3b45a79622004",
+          "tests/mini-reminder-plan.test.js": "b6a7bfae71f80edb1da8ef8867c871de43e91f391b822712b4037ff0a634f706",
+          "src/mini-reminders.js": "2efdbf75b2178995959b91af8649f4267bc9118681ab54335d6345c0621ce470",
+          "tests/mini-reminders.test.js": "77df0c848638d6201d9240abf4f97a08345ad5df13d003fae99708ac49023ed6",
+          "src/payment-session.js": "4453835c40f11c9c392506c21f96fce7985981cb36449fdef8f171ee8d05ed4b",
+          "tests/payment-session.test.js": "510f2550bc4495d1c731e1a066172fe92e61630f0b3ef51a91fea905f2e95fcb",
+          "src/session.js": "e41ca7a7311a26ea82bb0abdb8a653dca01b8edb1984c446e2371663a9bf49a0",
+          "tests/session.test.js": "c9ce070afbdae9d081604fbab7efc5de10630f5cc7e66f519f0df5ee6bc3a799",
+          "src/storage.js": "d3d517e0c6224419aa9d02e12c9c0f54892a754bb08404940811b445fcf8e631",
+          "tests/taro.test.js": "74ac574b408ecf69823dae5371944174c837e9e93e5801367ea97fb098de4083",
+          "src/telemetry.js": "ecfffcce2d0dc4a8c281e97b13b5a1493818c8d867f0e75a09ad58c728c16c8c",
+          "fixtures/account-lifecycle-contract.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c",
+          "package.json": "53b37a891b2c8642e7f6e77a807237ff066542a3f9d2d978b38bbb9c8f2fb36e",
+          "README.md": "017c96041ecb96b797b0e45c05d0c350cf26af7754797ac6b9fd410d3db77814",
+          "index.d.ts": "a1ea0f0b51fb9b119666d942f4bf044a72939bdabc9f500119605f644109cba5"
+        },
+        "lifecycleContract": "fixtures/account-lifecycle-contract.json"
+      },
+      "sourceHashes": {
+        "packages/sdk-taro/src/auth.js": "e706c2ee17f9a7374de9a7d6343d34b7bd3351aa4a45c62128fa4d3a1785e107",
+        "packages/sdk-taro/src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+        "packages/sdk-taro/index.d.ts": "a1ea0f0b51fb9b119666d942f4bf044a72939bdabc9f500119605f644109cba5",
+        "packages/sdk-flutter/lib/src/auth.dart": "28e82d8b815f9ae1cf4a690e5a06f8bbd9cf04a03ccf752c9fc652c6b0f9f153",
+        "packages/sdk-web/src/auth.js": "7d6fa5e247594f34dc13e4acb82240fb1d07c855efc3c260af0f4c03159401dc",
+        "contract/fridge-account-lifecycle-candidate.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c"
+      },
+      "notes": [
+        "Initial Flutter test resolution referenced cached stock Flutter3.44.5; refreshed dependency resolution with fixed FVM Dart without mutating global cache; fixed fork3.41.9/OH used for final72 tests",
+        "Initial SDK test exposed an assumed incorrect confirmation header; cross-check then found self-service OpenAPI incorrectly reused admin header. Corrected scoped OpenAPI definition and verified actual Spring HTTP controller and local native-transport HTTP test",
+        "Mini common.js458KiB/NoAsyncChunks warnings persist; no claim of native WeChat validation"
+      ],
+      "remaining": [
+        "App/mini account deletion UI, unified confirmation and20 languages",
+        "Durable intent/receipt and unknown outcome handling; no automatic login after unconfirmed DELETE",
+        "Cancellation/identity/consent fencing and reminder lifecycle integration",
+        "Immutable upstream SDK publication and formal platform configuration/deployment/provider verification"
+      ],
+      "productionDeployed": false,
+      "productionDeletionExecuted": false
+    },
+    "miniAccountDeletionApplication": {
+      "status": "application-and-sdk-wired-account-presentation-pending",
+      "goalComplete": false,
+      "tests": {
+        "newFoundationAndGateway": 25,
+        "targetedIncludingExistingIdentityFeedback": 40,
+        "taroSdkTargeted": 9,
+        "typecheck": "passed",
+        "boundaries": "passed",
+        "weappBuild": "passed at milestone before final timestamp parser; rebuild with UI pending",
+        "candidateHashes": "24 installed files and archive passed",
+        "miniFullAtMilestone": 126,
+        "knowledgeAudits": "fridge and SDK passed; nextAction=none"
+      },
+      "runtimeEvidence": "OnlineRuntime source wiring, type checking and weapp compilation; account-page and runtime UI lifecycle verification not yet performed",
+      "sourceHashes": {
+        "packages/application/src/account-deletion.ts": "32a8371f1cb5d7cd46a4b66e23f2e4c463f45fe23c46076d305b33ec65c3c442",
+        "packages/platform-contracts/src/account-deletion.ts": "a58e63b859a8e78c0598b5dc808dc9b77806f673958678532bbde138059f072c",
+        "packages/api-client/src/account-deletion.ts": "01bbbbe5457c9dee0bb9912d90ccd605ded85240e04161d8e2f9e63f01c80a02",
+        "packages/api-client/src/identity.ts": "6e489f9bbc916d7a0a4bdd872162119657bdbe8ee03867649ad910d5c69842cc",
+        "packages/platform-adapters/weapp/src/deletion-storage.ts": "7cf99e35e1ee11cffe46c84bacf2c2379df1486971989402fef554a3fad9fc09",
+        "apps/miniapp/src/online-runtime.ts": "21e2fb1bd3e7b18c54583fb72a811785f33a3787249937c92c389ba732b296dc",
+        "apps/miniapp/src/deletion-runtime.ts": "77220b120569b71570be7d0f6ca3cbe78db86500753ca8a2a5ddc8192974d3ba"
+      },
+      "candidate": {
+        "archive": "fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz",
+        "sha256": "456ee21558452b964e7a5d5ade27ddeac853eddf32399346c5914c9fae8e1cb0",
+        "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+        "sourceMode": "local-worktree-candidate",
+        "published": false,
+        "sourceFiles": {
+          "tests/account-lifecycle.test.js": "e0d2fbf9e2ef3ed7d77f7533ffb5ffe391da24cf983df6938630c0bddb032737",
+          "src/auth.js": "d3c66ca675d700672f784a1861d6a6ab9d0cceeaa482bfff0a7cab18627fb59d",
+          "src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+          "tests/client.test.js": "cc66716701064611cffc741c602d3b8f5b774f7e4b1d68f3c47bc375d40aca74",
+          "src/commerce.js": "bb4b0b8e73e95c1fb58349750be13bfc0cd9197059c4539e6b4881a550727875",
+          "tests/commerce.test.js": "74c224c7c1b142ad19c6facb9ad0c2754b16f9211f8897662ace7b4e7decee58",
+          "src/feedback.js": "767f3937cfdd3913daa28852944357de7ad80f1640d9e462190e896dbb538271",
+          "tests/guest-feedback.test.js": "0025a9fa1f2df940f422e4001158a2867f7e0abdcb6b1acd13d62d16c19ec571",
+          "index.js": "1fe5f7ac2c3a80904b09364254891f0e197ca34dd6ee9cfb2e951148ae382fa7",
+          "src/mini-reminder-plan.js": "9c65c0bcf95915e7d572e41399d6f6cbd251a0579a88228e94c3b45a79622004",
+          "tests/mini-reminder-plan.test.js": "b6a7bfae71f80edb1da8ef8867c871de43e91f391b822712b4037ff0a634f706",
+          "src/mini-reminders.js": "2efdbf75b2178995959b91af8649f4267bc9118681ab54335d6345c0621ce470",
+          "tests/mini-reminders.test.js": "77df0c848638d6201d9240abf4f97a08345ad5df13d003fae99708ac49023ed6",
+          "src/payment-session.js": "4453835c40f11c9c392506c21f96fce7985981cb36449fdef8f171ee8d05ed4b",
+          "tests/payment-session.test.js": "510f2550bc4495d1c731e1a066172fe92e61630f0b3ef51a91fea905f2e95fcb",
+          "src/session.js": "e41ca7a7311a26ea82bb0abdb8a653dca01b8edb1984c446e2371663a9bf49a0",
+          "tests/session.test.js": "c9ce070afbdae9d081604fbab7efc5de10630f5cc7e66f519f0df5ee6bc3a799",
+          "src/storage.js": "d3d517e0c6224419aa9d02e12c9c0f54892a754bb08404940811b445fcf8e631",
+          "tests/taro.test.js": "74ac574b408ecf69823dae5371944174c837e9e93e5801367ea97fb098de4083",
+          "src/telemetry.js": "ecfffcce2d0dc4a8c281e97b13b5a1493818c8d867f0e75a09ad58c728c16c8c",
+          "fixtures/account-lifecycle-contract.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c",
+          "package.json": "53b37a891b2c8642e7f6e77a807237ff066542a3f9d2d978b38bbb9c8f2fb36e",
+          "README.md": "017c96041ecb96b797b0e45c05d0c350cf26af7754797ac6b9fd410d3db77814",
+          "index.d.ts": "a1abbd629f8826ec9dc6716cf36c817f5bfd03015daa89728d55086ab0e49a66"
+        },
+        "lifecycleContract": "fixtures/account-lifecycle-contract.json"
+      },
+      "implemented": [
+        "Durable owner-scoped intent/submitting/unknown/accepted/cancelled journal, no provider proof or token persisted",
+        "Explicit confirmation before challenge/proof/DELETE; no implicit login or guest creation in gateway",
+        "Same key on unknown-outcome retry; no automatic resubmit or original-account login",
+        "Genuine ACK validated for owner/type/status and seven-day timestamps, persisted before local-only logout",
+        "Receipt-save and local cleanup failure retry without another DELETE",
+        "Identity revision, page/consent cancellation, original ACK after concurrent401, newer-session cleanup fence",
+        "SDK authenticated currentUser read added; MiniIdentity native proof does not exchange a login",
+        "Runtime serializes identity changes, stops reminders before DELETE and closes feedback; callback completion does not force background resume"
+      ],
+      "limitations": [
+        "Account page entry, confirmation dialog,20-language strings, date presentation and visual/runtime UI verification remain",
+        "No real WeChat host authorization or formal platform deployment test",
+        "Flutter account deletion consumer still not implemented",
+        "476KiB common.js and NoAsyncChunks build warnings remain"
+      ],
+      "productionDeployed": false,
+      "newApkBuilt": false,
+      "sourceAheadOfMiniDist": true,
+      "supersededBy": "miniAccountDeletionUi / evidence/mini-account-deletion-ui-results.json; original application-stage snapshot retained as historical evidence"
+    },
+    "miniAccountDeletionUi": {
+      "status": "locally-validated-native-provider-pending",
+      "goalComplete": false,
+      "scope": "Actual account page/runtime/application/SDK with browser DOM and fake native APIs; not WeChat-host or production",
+      "tests": {
+        "miniSource": 128,
+        "typecheck": "passed",
+        "boundaries": "passed",
+        "weappBuild": "passed",
+        "sourceCandidateHashesAndCompiledEvents": "passed",
+        "actualPageBrowserFlows": 9,
+        "componentLayouts": 800,
+        "localeCount": 20,
+        "sharedKeys": 193,
+        "localeCopiesAndPlaceholders": "passed",
+        "platformSuites": [
+          {
+            "name": "com.fenleng.platform.application.usecase.GuestLoginTest",
+            "tests": "7",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          },
+          {
+            "name": "com.fenleng.platform.application.usecase.RegisterIdentityTest",
+            "tests": "4",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          },
+          {
+            "name": "com.fenleng.platform.application.usecase.WechatDeletionProofTest",
+            "tests": "5",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          },
+          {
+            "name": "com.fenleng.platform.application.usecase.WechatProfileHydrationTest",
+            "tests": "3",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          },
+          {
+            "name": "com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest",
+            "tests": "14",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          },
+          {
+            "name": "com.fenleng.platform.persistence.MiniRecipientAtomicityTest",
+            "tests": "9",
+            "failures": "0",
+            "errors": "0",
+            "skipped": "0"
+          }
+        ],
+        "platformTests": 42,
+        "bootstrapCompile": "passed",
+        "knowledgeAudits": {
+          "fridge": "pass",
+          "platform": "pass",
+          "nextAction": "none"
+        }
+      },
+      "fixes": [
+        "Hold accepted receipt and original session until durable save/local cleanup retries complete; no automatic 401 refresh before receipt persistence",
+        "Explicit new login retires unknown local intent and next deletion uses new key",
+        "WeChat login and confirmation consumption serialize using same account row lock; rollback preserves old intent"
+      ],
+      "sourceHashes": {
+        "apps/miniapp/src/pages/account/index.tsx": "ef2bfb3efe49bba187222fb6805b19e04134e3365b7b62b1bd38ac231e404bb1",
+        "apps/miniapp/src/online-runtime.ts": "f27bbb48215904aa5d7d9aca15319eb954b7501c31316ec822a55425a88ef6c3",
+        "packages/ui-kit/src/account-deletion-view.tsx": "fbea2ee2187dd4dbe7ff42df38b1e9191e3e87b3ae4791772238d898bf22ec7a",
+        "packages/ui-kit/src/account-deletion.scss": "8883cf8e7fddb01d7392cfd810a09dc836f159b8f275508b44ccd1b483fc0594",
+        "packages/ui-kit/src/strings.ts": "2e7b8032d61940764ec211301576ddd3d421982f75eb78bc086dee5bd35a36e3",
+        "packages/application/src/account-deletion.ts": "a7813f67129769ed019a30b432a50eaf48493aca46b6d9d7fb039ebd5935686f",
+        "packages/platform-contracts/src/account-deletion.ts": "2a5523965e4047510f252a3589e2880eca464c261eedb1cd2f57a92bd062e51c",
+        "scripts/check-account-deletion-ui.mjs": "adfb7fa9d1386706dfc53e1d2d23ae5cdc77312add6a7c83681240d07fa21448"
+      },
+      "evidenceDirectory": "02-engineering/evidence/mini-program/account-deletion-ui",
+      "limitations": [
+        "Browser native APIs and DOM components are substitutes; no WeChat-host or real provider evidence",
+        "Flutter account-deletion consumer remains to be implemented",
+        "common.js549KiB and NoAsyncChunks warnings; formal WeChat package/device checks pending",
+        "No production migrations or deployment; SDK immutable publication pending"
+      ],
+      "sourceAheadOfMiniDist": false,
+      "newApkBuilt": false,
+      "productionDeployed": false,
+      "latestLocaleFollowup": {
+        "sharedKeys": 194,
+        "typecheck": "passed",
+        "weappBuild": "passed",
+        "actualPageFlows": 9,
+        "componentLayouts": 800,
+        "evidenceDirectory": "02-engineering/evidence/mini-program/account-deletion-ui-194"
+      }
+    },
+    "flutterAccountDeletionFoundation": {
+      "status": "model-and-storage-validated-gateway-runtime-ui-pending",
+      "goalComplete": false,
+      "tests": {
+        "model": 13,
+        "fileStorage": 4,
+        "targetedAnalyze": "No issues found"
+      },
+      "scope": "Application model with test driver and real temporary file storage; not SDK, native Provider, runtime or account-page evidence",
+      "sourceHashes": {
+        "lib/application/account_deletion.dart": "2957dcce34f18f88e02f59c68f1e448c6b077f38a40bd55bd5bc9213975a21cf",
+        "lib/infrastructure/deletion_storage.dart": "699245c2bd2cc559b64413c891482f6099d8ad620939a2cd85056c94e5bdd3ac",
+        "test/account_deletion_test.dart": "99ee5e6254120561f645c7e5d9fd06f3d97d345db941ecf36a9f99ca82a5d67f",
+        "test/deletion_storage_test.dart": "9911b0c995dda542e795ad17de516bd0024f44ad9561cb9f9f9d0aa865c7a46a"
+      },
+      "newApkBuilt": false,
+      "remainingDevelopment": [
+        "Official SDK gateway and fresh native provider proof",
+        "Shared human identity revision/local-cleanup fence",
+        "OnlineSessions/privacy/background coordination",
+        "Account UI receipt/unknown/confirmation and20locale layout verification",
+        "Stage regression and final APK packaging"
+      ],
+      "evidenceDirectory": "02-engineering/evidence/flutter/account-deletion-foundation",
+      "supersededBy": "flutterAccountDeletion / evidence/flutter-account-deletion-results.json"
+    },
+    "flutterAccountDeletion": {
+      "status": "locally-validated-sdk-runtime-and-ui-native-verification-pending",
+      "goalComplete": false,
+      "tests": {
+        "appFull": 144,
+        "sdkFlutterFull": 75,
+        "newModelAndFileStorage": 17,
+        "newGateway": 10,
+        "actualAccountPageFlows": 5,
+        "actualBootstrapFlows": 3,
+        "componentLayouts": 400,
+        "targetedAnalyze": "No issues found",
+        "baseline": "Fixed62357a93 verified",
+        "locales": 20,
+        "sharedKeys": 194,
+        "localeCopiesAndPlaceholders": "passed",
+        "existingGoldens": 14,
+        "knowledgeAudits": {
+          "fridge": "pass",
+          "sdk": "pass",
+          "nextAction": "none"
+        }
+      },
+      "scope": "Actual Flutter AccountPage/Bootstrap/model with official SDK, explicit mock HTTP and native-proof drivers, and real temp storage tests; not native Provider, device, production, iOS or Harmony verification",
+      "sourceHashes": {
+        "lib/application/account_deletion.dart": "2957dcce34f18f88e02f59c68f1e448c6b077f38a40bd55bd5bc9213975a21cf",
+        "lib/application/identity_session.dart": "d29ca52c6e667269a4c278e12f5b4a3f8ae7794c124b70d4f289793efcb2f891",
+        "lib/application/bootstrap.dart": "904b34e619dca85a8a4c5c8070fadf85c59ffbe96f561e681f80c18c0629e753",
+        "lib/application/online_sessions.dart": "5e99dc0655820a3ec21b9f71b8caa53c826a5813cad69c6103393d052426e41f",
+        "lib/application/privacy_actions.dart": "27ea9b2b8c4b63e2fde5e17694a44225e81878f7174448872d7df85a91a8e7f8",
+        "lib/infrastructure/platform_deletion.dart": "55f21506c05a1b0826fc38bbd9294eb637d091f6116996c699a854a1381116a5",
+        "lib/infrastructure/platform_identity.dart": "7ebc3d9164c117ca011fa1130eaa269157e8f007e2a596a6a24bb16cfa4594cc",
+        "lib/infrastructure/deletion_storage.dart": "699245c2bd2cc559b64413c891482f6099d8ad620939a2cd85056c94e5bdd3ac",
+        "lib/presentation/account_page.dart": "205d82b5ede93d012938f47bf2abc13aace9eeb4db4aa7b6133e7e245c6addb5",
+        "lib/presentation/account_deletion.dart": "839950133c28bc6966ca8e8908b79d1868d2060a2d6aef4c2434ffa22f9d9a64",
+        "lib/presentation/app_routes.dart": "d589a2286c55e8377116e4a5ba5da835d80981ca1f670e93d783239182e690fd",
+        "lib/main.dart": "aa9a012b23002d0fe3699d20c9e25e391bcac9b9b1a3252265c18eaefa208f3e",
+        "test/account_deletion_test.dart": "99ee5e6254120561f645c7e5d9fd06f3d97d345db941ecf36a9f99ca82a5d67f",
+        "test/deletion_storage_test.dart": "9911b0c995dda542e795ad17de516bd0024f44ad9561cb9f9f9d0aa865c7a46a",
+        "test/platform_deletion_test.dart": "83a317c57eb7fee5d538c784d525a468d903847eea01bb9696134a3c702401e0",
+        "test/account_deletion_page_test.dart": "26bbdf6ad271a03fd251eff1631c43d407576051521fb59ab099e8ad303f99b5",
+        "test/account_deletion_layout_test.dart": "29413b35403b0e184bd8c2f9bd10eb0c616383629fbaae52c8824a2bd911ec47",
+        "test/online_deletion_test.dart": "89772c287445e6d141ff73fb445176550c1470e1b4eaa0b4beafd6fcc51e9434",
+        "test/support/deletion_fixture.dart": "e135e64d70f3274a9cdb1f851787ead1d13d63111b567ed07d9afb3811e3b88f"
+      },
+      "sdkCandidate": {
+        "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+        "published": false,
+        "mode": "local path override",
+        "sourceHashes": {
+          "packages/sdk-flutter/lib/src/auth.dart": "a3caefd211409c2ff02f7e403808c51d308a8f39a5197de2fd697ab0f1b0707d",
+          "packages/sdk-flutter/lib/src/auth_types.dart": "442586034d41bc8ab780187c982afcb9f64c72ce4ca6431718a22fbda6df667e",
+          "packages/sdk-flutter/test/account_lifecycle_consumer_test.dart": "6291c162f862e3e40dad5e10a4010f17fd57719654cdefd1aa12f7bd18b6b62c"
+        }
+      },
+      "androidBuild": {
+        "status": "passed",
+        "apk": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-debug.apk",
+        "sha256": "4348a6d3ced06e09df21f29d0d8671aece7ee00b9740b63605fde6ab23fb2f50",
+        "bytes": 184867411,
+        "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+        "certificateMatchesRegisteredIdentity": true,
+        "package": "com.fenlengtech.fridge",
+        "version": "0.1.0+1",
+        "channel": "china",
+        "kind": "debug-preview",
+        "hardened": false,
+        "sourceAheadOfApk": false,
+        "includes": "Latest account-deletion SDK/runtime/account-page and194-key locale assets; previous local business features/legal/consent retained. Identity/telemetry defines remain disabled.",
+        "finalFunctionalDeliverable": false,
+        "runtime": "Not installed or native-verified for this new build. Owner emulator retains prior installed preview.",
+        "build": "Standard script attempted; fixed OH auto-pub requires missing HMOS SDK. Same fixed Flutter --no-pub, existing fixed Gradle signing and per-command Gradle Java17 home succeeded. No global configuration or credential change."
+      },
+      "limitations": [
+        "Native Android screenshots for new page still pending",
+        "Real WeChat/Apple Provider configuration and authorization unverified",
+        "Global Firebase identity branch remains development work",
+        "SDK immutable publication/removal of ignored local overrides remains",
+        "iOS compile/device handoff and Harmony toolchain validation remain"
+      ],
+      "evidenceDirectory": "02-engineering/evidence/flutter/account-deletion",
+      "productionDeployed": false,
+      "ownerEmulatorChanged": false,
+      "apkPayload": {
+        "status": "passed",
+        "localeKeys": 194,
+        "kernelBytes": 55507552,
+        "symbols": {
+          "PlatformDeletionGateway": true,
+          "AccountDeletionSection": true,
+          "deletionReauthenticate": true,
+          "account_deletion.dart": true
+        },
+        "scope": "Exact APK ZIP payload, not device/runtime proof"
+      },
+      "websiteDownload": {
+        "status": "passed",
+        "scope": "Actual Chromium download through the current local website; not Android WeChat",
+        "bytes": 184867411,
+        "sha256": "4348a6d3ced06e09df21f29d0d8671aece7ee00b9740b63605fde6ab23fb2f50",
+        "filename": "fridge-0.1.0-1-android-debug.apk",
+        "url": "http://127.0.0.1:4817/downloads/fridge-0.1.0-1-android-debug.apk",
+        "screenshot": ".fenleng/website-restored-download-390.png"
+      }
+    },
+    "androidInstalledOwnerPreview": {
+      "status": "passed",
+      "apk": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-debug.apk",
+      "sha256": "eaff8aaedd85dc026fca4f320d2b9a8234b9b923ab044e8bf6be6a3518b6adf3",
+      "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+      "finalFunctionalDeliverable": false,
+      "includes": "Prior current China client with199 locale keys, updated legal drafts and global dependency foundation. Camera rationale visual fix not included.",
+      "sourceAheadOfApk": true,
+      "runtime": "Previously installed and opened at Owner request; current installed APK hash reverified read-only. No change to this device in this UI QA turn.",
+      "sourceAheadReason": "Camera rationale visual fix is in separate latest QA APK7b790718...",
+      "bytes": 184913722,
+      "artifactPathIsHistorical": true,
+      "note": "Original build path now contains newer7b790718 APK; Owner installation remains eaff verified by on-device hash."
+    },
+    "websiteLatestDebugDownload": {
+      "status": "passed",
+      "scope": "Actual Chromium download through the current local website; not Android WeChat",
+      "bytes": 204147812,
+      "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+      "filename": "fridge-0.1.0-1-android-debug.apk",
+      "url": "http://127.0.0.1:4817/downloads/fridge-0.1.0-1-android-debug.apk",
+      "screenshot": ".fenleng/website-restored-download-390.png"
+    },
+    "globalIdentityFoundation": {
+      "status": "provider-and-native-bootstrap-foundation-validated-runtime-ui-pending",
+      "goalComplete": false,
+      "scope": "10 controller tests with explicit native-driver port fake; real FlutterFire/Google driver typed/analyzed, Android Kotlin compiled and merged manifest inspected; no Provider success, iOS compilation or completed global product claim",
+      "tests": {
+        "providerController": 10,
+        "analyze": "No issues found",
+        "dartPubGet": "passed;13 dependencies changed",
+        "androidTasks": [
+          ":app:compileDebugKotlin",
+          ":app:processDebugMainManifest"
+        ],
+        "androidCompile": "passed",
+        "sourceCheck": {
+          "status": "passed",
+          "scope": "Android compiled merged manifest and Android/iOS source registration inventories; not native runtime/iOS compile",
+          "androidPluginClasses": [
+            "com.baseflow.permissionhandler.PermissionHandlerPlugin",
+            "com.fenleng.sdk.nativeidentity.FenlengNativeIdentityPlugin",
+            "io.flutter.plugins.camerax.CameraAndroidCameraxPlugin",
+            "io.flutter.plugins.firebase.auth.FlutterFirebaseAuthPlugin",
+            "io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin",
+            "io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin",
+            "io.flutter.plugins.googlesignin.GoogleSignInPlugin",
+            "io.flutter.plugins.imagepicker.ImagePickerPlugin"
+          ],
+          "iosPluginClasses": [
+            "CameraPlugin",
+            "FLTFirebaseAuthPlugin",
+            "FLTFirebaseCorePlugin",
+            "FLTImagePickerPlugin",
+            "FenlengNativeIdentityPlugin",
+            "GoogleSignInPlugin",
+            "PermissionHandlerPlugin"
+          ],
+          "firebaseAutoInitializerAbsent": true,
+          "iosMinimum": "15.0",
+          "defaultFirebaseEnabled": false
+        },
+        "iosCompile": "not-run-Windows",
+        "fullAppRegression": "deferred until global runtime/UI milestone; previous144 boundary predates new dependencies",
+        "knowledgeAudit": "deferred until global runtime/UI milestone"
+      },
+      "sdkEvidence": {
+        "repository": "https://github.com/blackdandan/fenleng-client-sdk",
+        "resolvedCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+        "source": "packages/sdk-flutter-firebase-identity/lib/src/firebase_identity.dart",
+        "sourceMode": "local-git-blob",
+        "sha256": "09614edb663de7dab66e5c4c75ac228365128d1c498b0c0a8b2a3556637d6c53",
+        "mcpRead": "REF_NOT_FOUND; not represented as successful remote retrieval"
+      },
+      "technicalSources": [
+        "https://firebase.google.com/docs/flutter/setup",
+        "https://firebase.google.com/docs/auth/flutter/federated-auth",
+        "https://firebase.google.com/docs/reference/android/com/google/firebase/FirebaseApp"
+      ],
+      "sourceHashes": {
+        "06-project/app/apps/fridge/lib/infrastructure/global_firebase_identity.dart": "fc5fac976f7d4d1eb03edd6bc410b7486a36c260eb8370b63489b17c42c878df",
+        "06-project/app/apps/fridge/test/global_firebase_identity_test.dart": "1b8c71b6e30ea79d698f282456ee640fe6661045244ceb0e57a4698c53483551",
+        "06-project/app/apps/fridge/android/app/src/main/AndroidManifest.xml": "08284a7431f6c6864bffc4fd7c34c0c5ce54ed395270519e210a1f8b9bc49aa9",
+        "06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/MainActivity.kt": "e51a4a2b2a53e7435ef66d122ee1df01e89454e5426c1568647bafae524c76a2",
+        "06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/DeferredPluginRegistrant.kt": "48fb942a4e52d9977879198fca9f1970d91cc051908f813f4f84e35a7843d7f9",
+        "06-project/app/apps/fridge/ios/Runner/AppDelegate.swift": "fece092726fb27b2028ea30d2ca3c2216ca11006486f263c2cd2375508c8ba59",
+        "06-project/app/apps/fridge/ios/Runner/FridgeDeferredPluginRegistrant.h": "1e344316091f5ad04c491a742579df3e5220ee51cdd8f58c891b8999fc27dfbf",
+        "06-project/app/apps/fridge/ios/Runner/FridgeDeferredPluginRegistrant.m": "c53ee76ce40fb0f924c3df9c3aa11151a47388b57521273e73e40de0106770fb",
+        "06-project/app/apps/fridge/ios/Runner/Runner-Bridging-Header.h": "14a519e4ad4447d5c0430cf66c3890d0088cd34b94d12b6403b48f571d2f715d",
+        "06-project/app/apps/fridge/ios/Runner.xcodeproj/project.pbxproj": "ea214f71ce5d7c1df2ed40f091109a4592810eba632b535f3214eeaf40aa82be",
+        "06-project/app/apps/fridge/ios/Podfile": "8663d216d33e1d4e9940ace2739d46e826db5d82ddaec8523a3e950d019e5145",
+        "06-project/app/apps/fridge/pubspec.yaml": "262eb904c4c24b36c34b1f87f8ae99a154fad6e1faeeec4022c5c4685deef538",
+        "06-project/app/pubspec.lock": "44553c36a49a4288aac35ede4f2cd91564b2d4c24dbd92ea87f6aab5448ad72c",
+        "06-project/scripts/refresh-mobile-plugins.dart": "48deff06a585a6abce69b241b016c82d20d96915d19bbc63676ba9c1852f5309",
+        "06-project/scripts/check-global-identity-source.py": "4b8ad0d6bef6730c67c0eb05e4956b3ee5f32d1a8751c9ac80e311e6d4c7edf8",
+        "03-deployment/config/firebase-global.example.json": "25d86a5559b903a640e88fdd8a01da884f92444fdba8b9ed898dd22f7b5164ca"
+      },
+      "remainingAgentWork": [
+        "Global explicit feature-triggered online consent/persistence and SDK composition",
+        "Google/Apple account UI and Shared Platform exchange",
+        "FIREBASE self-deletion proof and session owner lifecycle integration",
+        "Withdrawal/background and local-only cleanup runtime tests",
+        "Provider SDK/privacy inventory and final channel regression/build/native screenshots"
+      ],
+      "ownerConfiguration": [
+        "Product-specific Firebase project/platform app public options and Provider enablement",
+        "Google OAuth server/iOS clients and iOS reversed URL scheme",
+        "Apple capability/profile and Shared Platform Firebase audience registration"
+      ],
+      "apkBuilt": false,
+      "ownerEmulatorChanged": false,
+      "evidenceDirectory": "02-engineering/evidence/flutter/global-identity-foundation"
+    },
+    "globalClientRuntime": {
+      "tests": 26,
+      "skipped": 0,
+      "layoutCombinations": 280,
+      "analyze": "18 targeted files, no issues",
+      "nativeProviderSuccess": "not-verified-needs-real-config",
+      "serverLifecycleAudit": "Firebase/Apple login atomicity fixed; enrolled Firebase cleanup candidate implemented; local tests pass; real provider/config/deployment pending",
+      "evidence": "02-engineering/specs/global-identity-evidence.md"
+    },
+    "globalServerLoginAtomicity": {
+      "status": "login-atomicity-validated-firebase-remote-cleanup-incomplete",
+      "goalComplete": false,
+      "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+      "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "sourceMode": "local-worktree-candidate",
+      "knowledgeEvidence": {
+        "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+        "source": "@git-tree",
+        "sourceMode": "cache",
+        "query": "Firebase"
+      },
+      "tests": [
+        {
+          "name": "JdbcFederatedDeletionConfirmationRepositoryTest",
+          "tests": 24,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "JdbcUserDataRequestProcessorTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "FederatedDeletionProofTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "name": "ProcessUserDataRequestsTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ],
+      "addedParameterizedCases": 10,
+      "limitations": [
+        "Provider verification and signing are explicit test ports",
+        "No production deployment or policy change",
+        "Remote Firebase Auth user deletion remains Agent implementation work",
+        "Existing newer-session confirmation retirement rule remains WeChat-only"
+      ],
+      "sourceHashes": {
+        "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FirebaseLogin.kt": "1c7995a94e43b745aa0e99541e26dcf5f731af08027d82b09d6992576a333def",
+        "backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/JdbcFederatedDeletionConfirmationRepositoryTest.kt": "13f559850e95347d7d600345dd35cb89e6d43c35b2a25425ecc186404598d28c",
+        "docs/spec/wp-fridge-federated-login-atomicity.md": "b36ee0c5a24d30bf2d2251bae00af29597917b58b512d98d902b3b993047d77b"
+      },
+      "remoteCleanupFollowup": "02-engineering/evidence/firebase-account-cleanup-results.json"
+    },
+    "firebaseAccountCleanup": {
+      "status": "candidate-implemented-locally-verified-not-deployed",
+      "totalPassed": 46,
+      "evidence": "02-engineering/evidence/firebase-account-cleanup-results.json",
+      "productionDeletionPerformed": false
+    },
+    "androidPhotoReplacementAndRationale": {
+      "status": "android-photo-replacement-and-camera-rationale-validated",
+      "evidence": "02-engineering/evidence/android/delivery-current/native-results.json"
+    },
+    "firstConsentVisual": {
+      "status": "android-first-consent-visual-and-flow-validated-with-explicit-limits",
+      "evidence": "02-engineering/evidence/android/consent-current/results.json"
+    },
+    "dataRequestRecovery": {
+      "status": "candidate-transactional-recovery-verified-not-deployed",
+      "passed": 20,
+      "evidence": "02-engineering/evidence/data-request-recovery-results.json"
+    },
+    "websiteStableDownload": {
+      "status": "stable-download-local-browser-verified-not-deployed",
+      "evidence": "02-engineering/evidence/website-stable-download-results.json"
+    },
+    "websitePreviewDeployment": {
+      "status": "public-development-preview-deployed-and-http-download-verified",
+      "site": "https://fridge.fenlengtech.com/",
+      "download": "https://fridge.fenlengtech.com/downloads/fenleng-fridge_latest.apk",
+      "evidence": "02-engineering/evidence/website-preview-production-results.json"
+    }
+  },
+  "runningProcesses": [
+    {
+      "purpose": "Own local website preview",
+      "processId": 33216,
+      "url": "http://127.0.0.1:4817/",
+      "verification": "TCP4817 listener revalidated; not proof of public deployment"
+    }
+  ],
+  "environment": {
+    "harmonyos": "SDK/ohpm/hvigor not installed, source work continues",
+    "ios": "Windows; macOS/Xcode verification handed to Owner",
+    "androidDevice": "Dedicated QA emulator-5582 connected; Owner preview emulator is not connected. Installation cancelled at Owner request; no physical Android device verified."
+  },
+  "incompleteImplementation": [
+    "No additional source defect confirmed by this scoped review; native build/runtime and real service verification remain unproven as listed below."
+  ],
+  "pluginResearch": {
+    "repository": "https://gitcode.com/openharmony-tpc/flutter_packages.git",
+    "resolvedCommit": "bddb2c981fcf826eaf19ed97f55113708aa55727",
+    "localReadOnlyCache": ".fenleng/cache/flutter_packages",
+    "candidatePaths": [
+      "packages/camera/camera_ohos",
+      "packages/image_picker/image_picker_ohos"
+    ],
+    "note": "Verified source exists; do not treat this as runtime compatibility. Upstream wrappers old; investigate using current official camera/image_picker plus explicitly pinned OH implementation."
+  },
+  "nextActions": [
+    "Real Android WeChat browser handoff/physical installation remains device follow-up; current public preview and full HTTP download are verified.",
+    "Formal Provider/product registration/platform and SDK publication remain separate from this website preview.",
+    "iOS Mac/device verification and Harmony tool installation/Huawei login remain Owner handoffs; formal China hardened-release gate remains unverified."
+  ],
+  "currentDeliveryEvidence": "02-engineering/evidence/android/delivery-current/native-results.json",
+  "sourceDeliveryCandidate": {
+    "status": "snapshot-validated-with-follow-up",
+    "manifest": ".fenleng/deliveries/latest-source-candidate.json",
+    "validationLineage": ".fenleng/deliveries/latest-source-validation-lineage.json",
+    "finalDeliverable": false,
+    "runtimeValidatedCandidate": "e17d162433f2",
+    "snapshotSelection": "Use latest-source-candidate.json in local deliveries or CANDIDATE-MANIFEST.json inside a supplied archive; historical IDs scope their own tests."
+  },
+  "currentDeliveryArchives": {
+    "manifest": ".fenleng/deliveries/latest-source-candidate.json",
+    "builtArtifacts": ".fenleng/deliveries/latest-built-artifacts.json",
+    "consumerEvidence": "02-engineering/evidence/current-delivery-archives.json",
+    "runtimeValidation": "e17d App168/global26/core17/mini128; eb303 runtime sources identical; independent eb303 dependency resolution verified"
+  },
+  "historicalIncompleteImplementation": [
+    "App: guest/feedback and seven event types wired and locally validated. Complete global privacy withdrawal and global identity, Harmony native build/runtime verification, remaining consent/permission visuals and OS photo replacement/device verification remain; iOS native compile/device and strict single-card limit remain as handed off.",
+    "Optional China App WeChat/iOS Apple and account-deletion SDK/runtime/UI locally tested. Global Firebase Provider/native-bootstrap foundation10 tests/Android compile passed; online-consent/UI/session/deletion composition remains Agent development. Formal configuration and real Provider/native UI verification remain.",
+    "Official SDK local candidates require immutable publication or approved clean-consumer closure; three ignored path overrides now include Flutter core/native identity/Firebase bridge. No expanded upstream push performed.",
+    "Mini: full source routes including durable feedback and shared guest/WeChat identity are wired and locally tested. Subscription source locally integrated; formal config/device validation, account lifecycle, formal registration/provider and native WeChat visual/device validation remain.",
+    "Shared Platform guest + official Flutter/Taro SDK + App/mini consumer candidates implemented and locally tested; formal platform deployment/registration and SDK immutable publication pending; subscription UI/runtime/calendar/lifecycle/deep link are locally integrated; HTTP/runtime and SDK remain candidates, formal config/deployment/device validation pending.",
+    "Official website static source/dist now implemented with20 UI languages,legal pages,release statuses and verified local debugAPK download. Production domain/TLS/filing,real WeChat/mobile download,legal publication/translations and production website analytics configuration remain; final source/installable archives still pending.",
+    "Android debug build is not final complete or hardened release; iOS Xcode and Harmony toolchain/device verification remain"
+  ],
+  "pendingVerification": [
+    "Real Android WeChat browser handoff and physical installation.",
+    "Website/App filing and formal hardened-release physical-device gate.",
+    "Formal SDK/platform publication and actual Provider configuration.",
+    "iOS Mac/Xcode/device; Harmony tooling/Huawei login and HAP/device."
+  ]
+}

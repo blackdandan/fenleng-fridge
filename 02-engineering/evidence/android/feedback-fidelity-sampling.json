@@ -1,0 +1,200 @@
+{
+  "scope": "Draft components from Figma2:289; no whole-page equality or native accepted-receipt claim. Production omits the34.4px demo badge, demo controls and fake receipt; uses the shared original SVG back button.",
+  "normalization": {
+    "density": 402,
+    "statusCrop": 136,
+    "referenceSystemRegion": 45,
+    "demoBadgeRemoved": 34.4
+  },
+  "geometry": {
+    "textarea": {
+      "referenceBounds": [
+        26,
+        203,
+        404,
+        405
+      ],
+      "renderBounds": [
+        25,
+        169,
+        405,
+        371
+      ],
+      "referenceSize": [
+        378,
+        202
+      ],
+      "renderSize": [
+        380,
+        202
+      ],
+      "maxSizeDelta": 2,
+      "maxBoundaryDeltaAfterDemoRemoval": 1
+    },
+    "submit": {
+      "referenceBounds": [
+        25,
+        466,
+        405,
+        511
+      ],
+      "renderBounds": [
+        24,
+        432,
+        406,
+        476
+      ],
+      "referenceSize": [
+        380,
+        45
+      ],
+      "renderSize": [
+        382,
+        44
+      ],
+      "maxSizeDelta": 2,
+      "maxBoundaryDeltaAfterDemoRemoval": 1
+    }
+  },
+  "colors": {
+    "page": {
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "textarea": {
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "primary": {
+      "reference": "#45654c",
+      "render": "#45654c",
+      "maxChannelDelta": 0
+    }
+  },
+  "typography": {
+    "title": {
+      "referenceInkBounds": [
+        63,
+        71,
+        105,
+        91
+      ],
+      "renderInkBounds": [
+        63,
+        71,
+        104,
+        91
+      ],
+      "referenceInkSize": [
+        42,
+        20
+      ],
+      "renderInkSize": [
+        41,
+        20
+      ],
+      "note": "Microsoft YaHei reference vs native Noto CJK; measured, not asserted pixel-identical"
+    },
+    "label": {
+      "referenceInkBounds": [
+        26,
+        170,
+        104,
+        184
+      ],
+      "renderInkBounds": [
+        26,
+        136,
+        104,
+        150
+      ],
+      "referenceInkSize": [
+        78,
+        14
+      ],
+      "renderInkSize": [
+        78,
+        14
+      ],
+      "note": "Microsoft YaHei reference vs native Noto CJK; measured, not asserted pixel-identical"
+    },
+    "placeholder": {
+      "referenceInkBounds": [
+        39,
+        220,
+        293,
+        235
+      ],
+      "renderInkBounds": [
+        38,
+        187,
+        292,
+        202
+      ],
+      "referenceInkSize": [
+        254,
+        15
+      ],
+      "renderInkSize": [
+        254,
+        15
+      ],
+      "note": "Microsoft YaHei reference vs native Noto CJK; measured, not asserted pixel-identical"
+    },
+    "privacy": {
+      "referenceInkBounds": [
+        25,
+        423,
+        329,
+        435
+      ],
+      "renderInkBounds": [
+        25,
+        389,
+        335,
+        401
+      ],
+      "referenceInkSize": [
+        304,
+        12
+      ],
+      "renderInkSize": [
+        310,
+        12
+      ],
+      "note": "Microsoft YaHei reference vs native Noto CJK; measured, not asserted pixel-identical"
+    },
+    "submit": {
+      "referenceInkBounds": [
+        186,
+        481,
+        243,
+        494
+      ],
+      "renderInkBounds": [
+        187,
+        448,
+        243,
+        461
+      ],
+      "referenceInkSize": [
+        57,
+        13
+      ],
+      "renderInkSize": [
+        56,
+        13
+      ],
+      "note": "Microsoft YaHei reference vs native Noto CJK; measured, not asserted pixel-identical"
+    }
+  },
+  "checks": {
+    "threeFlatColorsExact": true,
+    "componentSizesWithin2px": true,
+    "componentPositionWithin2pxAfterDemoRemoval": true,
+    "allFiveTypographyGroupsMeasured": true
+  },
+  "apkSha256": "74781b70c9f6464b99b0240728bb73aeb3dcecbc3368682e3b52e732aa733e05"
+}

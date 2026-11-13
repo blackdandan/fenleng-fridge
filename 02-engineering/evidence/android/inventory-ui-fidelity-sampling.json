@@ -1,0 +1,492 @@
+{
+  "colors": {
+    "page": {
+      "point": [
+        10,
+        850
+      ],
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "primaryAction": {
+      "point": [
+        30,
+        171
+      ],
+      "reference": "#45654c",
+      "render": "#45654c",
+      "maxChannelDelta": 0
+    },
+    "secondaryAction": {
+      "point": [
+        230,
+        171
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "reviewSurface": {
+      "point": [
+        30,
+        220
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "fullChoice": {
+      "point": [
+        60,
+        285
+      ],
+      "reference": "#e2ebd7",
+      "render": "#e2ebd7",
+      "maxChannelDelta": 0
+    },
+    "halfChoice": {
+      "point": [
+        140,
+        285
+      ],
+      "reference": "#f3f5ed",
+      "render": "#f3f5ed",
+      "maxChannelDelta": 0
+    },
+    "smallChoice": {
+      "point": [
+        225,
+        285
+      ],
+      "reference": "#f3f5ed",
+      "render": "#f3f5ed",
+      "maxChannelDelta": 0
+    },
+    "goneChoice": {
+      "point": [
+        315,
+        285
+      ],
+      "reference": "#f6f0e8",
+      "render": "#f6f0e8",
+      "maxChannelDelta": 0
+    }
+  },
+  "zoneGeometry": {
+    "primaryPaintExactRgb": {
+      "referenceBounds": [
+        24,
+        150,
+        209,
+        196
+      ],
+      "renderBounds": [
+        24,
+        153,
+        208,
+        193
+      ],
+      "maxBoundaryDelta": 3
+    },
+    "secondaryPaintExactRgb": {
+      "referenceBounds": [
+        220,
+        151,
+        405,
+        195
+      ],
+      "renderBounds": [
+        223,
+        152,
+        404,
+        195
+      ],
+      "maxBoundaryDelta": 3
+    }
+  },
+  "reviewGeometry": {
+    "card1": {
+      "referenceBounds": [
+        26,
+        174,
+        404,
+        334
+      ],
+      "renderBounds": [
+        25,
+        173,
+        405,
+        334
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "card2": {
+      "referenceBounds": [
+        26,
+        350,
+        404,
+        510
+      ],
+      "renderBounds": [
+        25,
+        349,
+        405,
+        509
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "card3": {
+      "referenceBounds": [
+        26,
+        525,
+        404,
+        685
+      ],
+      "renderBounds": [
+        25,
+        525,
+        405,
+        685
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "card4": {
+      "referenceBounds": [
+        26,
+        701,
+        404,
+        861
+      ],
+      "renderBounds": [
+        25,
+        700,
+        405,
+        860
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "icons": {
+    "zoneBack": {
+      "referenceBounds": [
+        30,
+        68,
+        36,
+        80
+      ],
+      "renderBounds": [
+        30,
+        68,
+        36,
+        80
+      ],
+      "maxBoundaryDelta": 0,
+      "referenceInkSize": [
+        6,
+        12
+      ],
+      "renderInkSize": [
+        6,
+        12
+      ]
+    },
+    "reviewBack": {
+      "referenceBounds": [
+        30,
+        69,
+        37,
+        81
+      ],
+      "renderBounds": [
+        30,
+        68,
+        36,
+        80
+      ],
+      "maxBoundaryDelta": 1,
+      "referenceInkSize": [
+        7,
+        12
+      ],
+      "renderInkSize": [
+        6,
+        12
+      ]
+    },
+    "camera": {
+      "referenceBounds": [
+        81,
+        167,
+        93,
+        179
+      ],
+      "renderBounds": [
+        81,
+        167,
+        94,
+        179
+      ],
+      "maxBoundaryDelta": 1,
+      "referenceInkSize": [
+        12,
+        12
+      ],
+      "renderInkSize": [
+        13,
+        12
+      ]
+    }
+  },
+  "typography": {
+    "zoneTitle": {
+      "referenceBounds": [
+        59,
+        64,
+        123,
+        84
+      ],
+      "renderBounds": [
+        59,
+        65,
+        123,
+        86
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 110
+    },
+    "reviewTitle": {
+      "referenceBounds": [
+        60,
+        65,
+        190,
+        85
+      ],
+      "renderBounds": [
+        59,
+        65,
+        189,
+        86
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 110
+    },
+    "recordNumber": {
+      "referenceBounds": [
+        69,
+        351,
+        96,
+        360
+      ],
+      "renderBounds": [
+        70,
+        351,
+        94,
+        359
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 180
+    },
+    "recordDate": {
+      "referenceBounds": [
+        63,
+        372,
+        104,
+        381
+      ],
+      "renderBounds": [
+        60,
+        373,
+        106,
+        382
+      ],
+      "maxBoundaryDelta": 3,
+      "maxChannelThreshold": 210
+    },
+    "reviewMetadata": {
+      "referenceBounds": [
+        125,
+        220,
+        227,
+        250
+      ],
+      "renderBounds": [
+        125,
+        220,
+        228,
+        251
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 210
+    }
+  },
+  "actionLayoutFrames": {
+    "\u98df\u6750\u5165\u5e93": {
+      "figmaFrame": [
+        24,
+        149.6,
+        209.2,
+        195.6
+      ],
+      "nativeFrame": [
+        23.88888888888889,
+        150.11111111111111,
+        209.82407407407408,
+        195.89814814814815
+      ],
+      "maxBoundaryDelta": 0.6240740740740875
+    },
+    "\u6574\u7406\u98df\u6750": {
+      "figmaFrame": [
+        219.2,
+        149.6,
+        406,
+        195.6
+      ],
+      "nativeFrame": [
+        220.17592592592592,
+        150.11111111111111,
+        406.1111111111111,
+        195.89814814814815
+      ],
+      "maxBoundaryDelta": 0.9759259259259352
+    }
+  },
+  "edgeResamplingObservation": [
+    {
+      "point": [
+        116,
+        148
+      ],
+      "reference": [
+        248,
+        248,
+        243
+      ],
+      "render": [
+        248,
+        248,
+        243
+      ]
+    },
+    {
+      "point": [
+        116,
+        149
+      ],
+      "reference": [
+        248,
+        248,
+        243
+      ],
+      "render": [
+        250,
+        249,
+        245
+      ]
+    },
+    {
+      "point": [
+        116,
+        150
+      ],
+      "reference": [
+        69,
+        101,
+        76
+      ],
+      "render": [
+        96,
+        123,
+        101
+      ]
+    },
+    {
+      "point": [
+        116,
+        151
+      ],
+      "reference": [
+        69,
+        101,
+        76
+      ],
+      "render": [
+        62,
+        96,
+        70
+      ]
+    },
+    {
+      "point": [
+        116,
+        152
+      ],
+      "reference": [
+        69,
+        101,
+        76
+      ],
+      "render": [
+        70,
+        102,
+        77
+      ]
+    },
+    {
+      "point": [
+        116,
+        153
+      ],
+      "reference": [
+        69,
+        101,
+        76
+      ],
+      "render": [
+        69,
+        101,
+        76
+      ]
+    },
+    {
+      "point": [
+        116,
+        154
+      ],
+      "reference": [
+        69,
+        101,
+        76
+      ],
+      "render": [
+        69,
+        101,
+        76
+      ]
+    }
+  ],
+  "result": {
+    "allEightColorPointsExact": true,
+    "actionBoundsWithin1px": true,
+    "firstFourCardBoundsWithin1px": true,
+    "allThreeIconInkBoundsWithin1px": true
+  },
+  "scope": "Nodes2:44/2:99, Android430 baseline top viewport. Native list-end and persistence/undo proof are recorded separately; platform-font bounds are observations.",
+  "normalization": {
+    "nativeSize": [
+      1080,
+      2400
+    ],
+    "nativeDensity": 402,
+    "nativeStatusCropPx": 136,
+    "referenceSystemRegionPx": 45,
+    "outputSize": [
+      430,
+      900
+    ],
+    "surfaceSegmentationMaxChannelDelta": 2,
+    "method": "Action layout: native semantic frames vs Figma geometry; panels: anti-alias-aware RGB segmentation; exact RGB paint bboxes retained separately"
+  },
+  "apkSha256": "295f31b91285fa7301f386ccef8c23b46f38222dfeba70c841274c35406bb16b"
+}

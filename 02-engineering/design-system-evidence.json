@@ -1,0 +1,225 @@
+{
+  "project": "fenleng-fridge",
+  "sources": [
+    {
+      "path": "knowledge/design-system/README.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/README.md",
+        "sourceMode": "cache",
+        "cacheHit": true,
+        "retrievedAt": "2026-11-12T16:53:18.543Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/principles.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/principles.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.766Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/typography.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/typography.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.323Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/layout.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/layout.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.946Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/interaction.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/interaction.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.836Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/tokens.json",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/tokens.json",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.662Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/theme-contract.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/theme-contract.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.820Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/text-scale-contract.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/text-scale-contract.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.666Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/component-catalog.yaml",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/component-catalog.yaml",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:19.075Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/accessibility.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/accessibility.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:19.674Z"
+      }
+    },
+    {
+      "path": "knowledge/mini-program/README.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/mini-program/README.md",
+        "sourceMode": "cache",
+        "cacheHit": true,
+        "retrievedAt": "2026-11-12T16:53:17.905Z"
+      }
+    },
+    {
+      "path": "knowledge/mini-program/platform-capability-matrix.json",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/mini-program/platform-capability-matrix.json",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:53:18.545Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/integration/flutter.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/integration/flutter.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:54:36.026Z"
+      }
+    },
+    {
+      "path": "knowledge/design-system/integration/mini-program.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/design-system/integration/mini-program.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:54:34.094Z"
+      }
+    },
+    {
+      "path": "knowledge/mini-program/identity-session-contract.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/mini-program/identity-session-contract.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:54:33.828Z"
+      }
+    },
+    {
+      "path": "knowledge/mini-program/payment-open-capabilities.md",
+      "evidence": {
+        "projectId": "fenlengtechbase",
+        "repository": "https://github.com/blackdandan/fenlengtechbase",
+        "requestedRef": "main",
+        "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+        "source": "knowledge/mini-program/payment-open-capabilities.md",
+        "sourceMode": "github",
+        "cacheHit": false,
+        "retrievedAt": "2026-11-12T16:54:34.810Z"
+      }
+    }
+  ],
+  "flutterKit": {
+    "repository": "https://github.com/blackdandan/fenleng-app-ui-kit",
+    "resolvedCommit": "2036816e23cb11a09de494ee5b976fbb58eb516a",
+    "packages": [
+      "fenleng_tokens",
+      "fenleng_theme",
+      "fenleng_ui"
+    ],
+    "version": "0.2.0"
+  },
+  "productVisualStatus": "owner-accepted-2026-11-13",
+  "theme": "forest-with-approved-product-semantic-mapping"
+}

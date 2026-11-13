@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "Local privacy web page refreshed text and viewport; not native App WebView or formal publication",
+  "results": [
+    {
+      "width": 320,
+      "colorScheme": "light",
+      "status": "passed",
+      "screenshot": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\legal-refresh-320-light.png"
+    },
+    {
+      "width": 320,
+      "colorScheme": "dark",
+      "status": "passed",
+      "screenshot": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\legal-refresh-320-dark.png"
+    },
+    {
+      "width": 430,
+      "colorScheme": "light",
+      "status": "passed",
+      "screenshot": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\legal-refresh-430-light.png"
+    },
+    {
+      "width": 430,
+      "colorScheme": "dark",
+      "status": "passed",
+      "screenshot": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\legal-refresh-430-dark.png"
+    }
+  ]
+}

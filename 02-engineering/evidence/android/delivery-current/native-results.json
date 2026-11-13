@@ -1,0 +1,74 @@
+{
+  "status": "android-photo-replacement-and-camera-rationale-validated",
+  "goalComplete": false,
+  "device": {
+    "serial": "emulator-5582",
+    "avd": "fridge_delivery_api35",
+    "api": 35,
+    "physicalDevice": false
+  },
+  "ownerPreview": {
+    "serial": "emulator-5580",
+    "sha256": "eaff8aaedd85dc026fca4f320d2b9a8234b9b923ab044e8bf6be6a3518b6adf3",
+    "unchangedThisTurn": true
+  },
+  "functionalProofApk": "eaff8aaedd85dc026fca4f320d2b9a8234b9b923ab044e8bf6be6a3518b6adf3",
+  "latestVisualProofApk": "7b79071854112b674533dd09de295312d4ed47fdd5381c79fcacfb90397849f6",
+  "latestBytes": 184913722,
+  "functionalAssertions": {
+    "firstConsentReadDeclineRetryAccept": true,
+    "freshInventoryHasZeroFoods": true,
+    "cameraRationaleBeforeSystemPrompt": true,
+    "cameraDeclineKeepsAlbumAndSettings": true,
+    "realEmulatorCameraCaptureCreatesOnePrivatePhoto": true,
+    "systemSinglePhotoPickerCancelPreservesInventory": true,
+    "systemSinglePhotoPickerReplacementChangesOnlyPhotoPath": true,
+    "replacementHasDifferentActualBytes": true,
+    "restartPreservesFullInventoryAndReplacement": true,
+    "unreferencedOldPhotoCollectedAfterRestart": true
+  },
+  "visualAssertions": {
+    "current430and320NativeScreenshots": true,
+    "closeCancelsWithoutSystemAuthorization": true,
+    "widgetTestsPassed": 2,
+    "largeTextLayoutCombinations": 40,
+    "actionChoicesVerified": 4,
+    "analyze": "No issues found",
+    "sampling": "camera-rationale-digital-sampling.json"
+  },
+  "limitations": [
+    "Native emulator evidence, not physical Android device",
+    "Photo workflow ran on eaff APK; subsequent change only camera-rationale UI/tokens; final rationale APK separately installed and verified",
+    "Remaining consent/legal full visual pass not covered by this result",
+    "iOS/Harmony runtime not run",
+    "Current package remains Debug preview, not hardened final release"
+  ],
+  "sourceHashes": {
+    "06-project/app/apps/fridge/lib/presentation/camera_rationale.dart": "ca224b3fb4ad23f036653ae996bdd7c4f0789a65389872a14a3389b9a9d59ad1",
+    "06-project/app/apps/fridge/lib/application/photo_lifecycle.dart": "df5d41a798144878502356443a10c1aefc06f30eb9a57a3e636f36612017045d",
+    "06-project/app/apps/fridge/lib/infrastructure/food_media.dart": "533da05c8dd6b08e5ab21d8357ce5708010ff656494c2eac38759eb8cc3fe59c",
+    "06-project/app/packages/core/lib/src/file_inventory_storage.dart": "991624e4a433a1dd7e7c7f35aac712c44617a72ee7b5dca078811ae0c4f64f9d",
+    "06-project/contracts/design-tokens.json": "685516922aa85e5c878e266825ae40c22a7131c858ced74253c66eea8a105595",
+    "06-project/app/apps/fridge/test/camera_rationale_test.dart": "874e5a10ae84a828c9d1a7eb0fd16fe9e2acd18a2f08897d974138bec7271ec9"
+  },
+  "screenshotHashes": {
+    "camera-declined-en.png": "094eef37202565df191ad15db5d741a5a4670d86ac43cadcb50989f19c98e0a7",
+    "camera-one-real-photo-en.png": "a8126b798c1d022c132468c39b3640180ca6b8774f3e948320fcfe77d290c142",
+    "camera-rationale-320-zh-fixed.png": "40849b44cabff4fb8588aec3cea507e6bcc47937fbbb2a48569ff8034c45c38b",
+    "camera-rationale-430-zh-fixed.png": "e1e88f845ac779033e33541994a2bee031ba881df08c66374e32cdb681cd1f1e",
+    "camera-rationale-en.png": "5a7c542140cbe6cafb1caad11068e719dd10818bf55985ce6586f51e8baf79ec",
+    "camera-rationale-zh-before-fix.png": "866fb1ff3ffd1dea8d68c4e3621570c257fa2cd948e33194e16b001bf9054fc7",
+    "camera-rationale-zh-fixed.png": "047050bec4d23f619f473517a50992e4c459a712dd324ad587d66afb11fd5d23",
+    "camera-ready-en.png": "1cfe76fca59126c654feadf89a75664990ad0d95fb60e8b222fc18c1b9e03153",
+    "camera-system-permission.png": "6b4070a6da73fdd5967a346f4af19de843be6ce2dbad5fc7414c1d932b0cc933",
+    "consent-declined-en.png": "37e0592f8dd5cf3ba87310064b375a5ff84f461b45f67b1f0d398d882bbd4589",
+    "detail-after-system-replacement-en.png": "175938f2c74bca3bdfd27964c9ab54d3678a5ed1229f2a38c87e49e4feeb7eb3",
+    "detail-before-replacement-en.png": "5fe2334afe687979964514128881dca7c3936fe427d370a457d66703b07cbd8a",
+    "first-consent-en.png": "c089a9d4a0f8ee9034ae671d72424fec22c4bafab610c523fbd7e618ede4e69a",
+    "first-empty-home-en.png": "b1a9207593b999715e46679632182ba899882eda02d11e6c329fd02f24cda7e4",
+    "home-zh-after-system-replacement.png": "dd42d1f5ebffa724fd444625cf10f0b8d41bd30283eb81f8eb08b7bf988e6f9f",
+    "replacement-survived-restart-en.png": "a95e6269c30582b46b537e3b030f944b0a964232e6c341899b57620273273606",
+    "system-picker-replacement.png": "03fd6d9760b585ddd03eddce3b94dc13188cefda76b37062db48bc09cd33237a",
+    "terms-webview.png": "6af8f0a7d59786b785fc01d66a1e72ad9501075f34c0b78857e8f85b364a2eee"
+  }
+}

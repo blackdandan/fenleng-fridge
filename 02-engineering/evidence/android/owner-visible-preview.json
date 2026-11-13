@@ -1,0 +1,15 @@
+{
+  "device": "emulator-5580",
+  "avd": "fridge_api35",
+  "visible": true,
+  "emulatorProcessId": 37944,
+  "windowProcessId": 43504,
+  "package": "com.fenlengtech.fridge",
+  "install": "adb install -r returned Success",
+  "launch": "MainActivity foreground and home screenshot inspected",
+  "apkSha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+  "screenshot": ".fenleng/android-owner-home-final-visible.png",
+  "preserved": "Existing inventory,photos,privacy and settings retained; no clear-data/uninstall/wipe-data",
+  "runtimeRecovery": "Three generated app_flutter/flutter_assets files were zero bytes with matching extraction timestamp. Removed only those files and exact timestamp marker; runtime re-extracted valid sizes 55414992/11031872/15011. Origin not yet proven; APK entries were intact.",
+  "scope": "Preview debug build only; not new source completion or real WeChat login proof"
+}

@@ -1,0 +1,15 @@
+packages:
+  - apps/*
+  - packages/*
+  - packages/platform-adapters/*
+overrides:
+  webpack: 5.91.0
+  '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  '@tarojs/binding': true
+  '@tarojs/cli': true
+  esbuild: true
+  core-js: false
+  core-js-pure: false

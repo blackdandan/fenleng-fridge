@@ -1,0 +1,75 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/ai_test.dart
+00:00 +0: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/alipay_payment_test.dart: agreement lookup failure never changes confirmed paid result
+00:00 +1: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/alipay_payment_test.dart: cancel does not override an already confirmed paid order
+00:00 +2: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/alipay_payment_test.dart: Alipay 9000 is confirmed by platform reconciliation and refreshes entitlements
+00:00 +3: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/alipay_payment_test.dart: native exception still reconciles after durable session save
+00:00 +4: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/alipay_payment_test.dart: SDK success cannot turn a still pending server order into paid
+00:00 +5: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_auth_test.dart: native Apple proof uses platform verifier and shared session storage
+00:00 +6: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_auth_test.dart: partial token persistence cannot leave an authenticated access token
+00:00 +7: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_auth_test.dart: malformed successful response does not become an authenticated session
+00:00 +8: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: restore attempts every receipt and preserves rejected transactions
+00:00 +9: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: fresh active Apple subscription prevents creating a duplicate order
+00:00 +10: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: empty StoreKit products produce retryable failure without purchase
+00:00 +11: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: store metadata replaces account test price
+00:00 +12: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: purchase intent requests confirmation without purchase or verification
+00:00 +13: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: finish follows server verification and confirmed paid order
+00:00 +14: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: unfinished restore forwards Apple signed proof to server verification
+00:00 +15: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: server rejection leaves transaction unfinished for recovery
+00:00 +16: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: account switch before finish preserves the transaction
+00:00 +17: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: manual result retry syncs only the selected order without starting payment
+00:00 +18: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: manual result retry preserves unfinished transaction on verification failure
+00:00 +19: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: Apple purchase cannot use an omitted store quote
+00:00 +20: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/apple_store_payment_test.dart: resuming a confirmed order never opens another purchase sheet
+00:00 +21: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +22: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +23: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +24: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +25: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +26: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +27: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: registration stores atomic session and publishes authenticated without password login
+00:00 +28: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: registration without session tokens cannot publish authenticated
+00:00 +29: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: login stores only server-issued tokens and refresh is deduplicated
+00:00 +30: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: account deletion sends step-up confirmation header
+00:00 +31: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: incompatible API and insecure transport fail closed
+00:00 +32: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/capabilities_test.dart: stale entitlement cannot authorize
+00:00 +33: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/capabilities_test.dart: feedback attachment requires consent
+00:00 +34: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/commerce_orders_test.dart: channel capability error is preserved and is not retryable network failure
+00:00 +35: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/commerce_orders_test.dart: non-object error responses retain their HTTP classification
+00:00 +36: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/commerce_orders_test.dart: platform prices retain recurring mode rather than silently downgrade
+00:00 +37: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/commerce_orders_test.dart: order history consumes platform array and retains authentication
+00:00 +38: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: concurrent guest calls make one ordinary POST without identifiers
+00:00 +39: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: guest kind survives reconstruction and token rotation
+00:00 +40: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: unknown network result is not replayed until a new controlled call
+00:00 +41: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: offline restore preserves guest tokens and can recover later
+00:00 +42: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: refresh recovers missing access token; expired refresh clears kind
+00:00 +43: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: logout clears guest tokens even if remote logout fails
+00:00 +44: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/guest_auth_test.dart: kind persistence failure removes the whole token pair
+00:00 +45: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: current access refreshes forbidden stale scope once and restores active subscription
+00:00 +46: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: no current subscription is a valid nullable response
+00:00 +47: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: alipay resume uses original channel and never creates a new order
+00:00 +48: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: wechat-pay resume uses original channel and never creates a new order
+00:00 +49: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: manual pending query reconciles once without polling delay
+00:00 +50: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: forbidden digital channel is blocked before creating an order
+00:00 +51: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: HarmonyOS China permits configured wallets and global stays unavailable
+00:00 +52: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: expired payment session refreshes once and retries authoritative reads
+00:00 +53: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_channel_recovery_test.dart: native user cancellation keeps the unpaid authoritative order recoverable
+00:00 +54: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_recovery_store_test.dart: failed persistence is reported and does not poison later writes
+00:00 +55: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_recovery_store_test.dart: failed persistence is reported and does not poison later writes
+00:00 +56: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_recovery_store_test.dart: recovery survives store recreation and isolates accounts and orders
+00:00 +57: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/payment_test.dart: duplicate purchase taps invoke native provider once and return server order
+00:00 +58: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/purchase_agreement_test.dart: nullable agreement and explicit confirmation use commerce contract
+00:01 +59: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/qr_auth_test.dart: QR login never sends poll capability to scan or confirm
+00:01 +60: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/qr_auth_test.dart: generated QR challenge rejects malformed capabilities
+00:01 +61: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_concurrency_test.dart: overflow preserves events added during a flush
+00:01 +62: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_concurrency_test.dart: overflow preserves events added during a flush
+00:01 +63: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/response_timeout_test.dart: response body timeout ends the request and cancels the stalled body
+00:01 +64: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +65: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +66: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +67: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +68: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +69: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/telemetry_test.dart: telemetry sends controlled context and rejects sensitive fields
+00:01 +70: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/wechat_auth_test.dart: WeChat code is exchanged only by Shared Platform
+00:01 +71: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/wechat_deletion_test.dart: WeChat deletion handshake and request preserve the original session and exact confirmation
+00:01 +72: All tests passed!

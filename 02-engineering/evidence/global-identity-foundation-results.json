@@ -1,0 +1,90 @@
+{
+  "status": "provider-and-native-bootstrap-foundation-validated-runtime-ui-pending",
+  "goalComplete": false,
+  "scope": "10 controller tests with explicit native-driver port fake; real FlutterFire/Google driver typed/analyzed, Android Kotlin compiled and merged manifest inspected; no Provider success, iOS compilation or completed global product claim",
+  "tests": {
+    "providerController": 10,
+    "analyze": "No issues found",
+    "dartPubGet": "passed;13 dependencies changed",
+    "androidTasks": [
+      ":app:compileDebugKotlin",
+      ":app:processDebugMainManifest"
+    ],
+    "androidCompile": "passed",
+    "sourceCheck": {
+      "status": "passed",
+      "scope": "Android compiled merged manifest and Android/iOS source registration inventories; not native runtime/iOS compile",
+      "androidPluginClasses": [
+        "com.baseflow.permissionhandler.PermissionHandlerPlugin",
+        "com.fenleng.sdk.nativeidentity.FenlengNativeIdentityPlugin",
+        "io.flutter.plugins.camerax.CameraAndroidCameraxPlugin",
+        "io.flutter.plugins.firebase.auth.FlutterFirebaseAuthPlugin",
+        "io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin",
+        "io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin",
+        "io.flutter.plugins.googlesignin.GoogleSignInPlugin",
+        "io.flutter.plugins.imagepicker.ImagePickerPlugin"
+      ],
+      "iosPluginClasses": [
+        "CameraPlugin",
+        "FLTFirebaseAuthPlugin",
+        "FLTFirebaseCorePlugin",
+        "FLTImagePickerPlugin",
+        "FenlengNativeIdentityPlugin",
+        "GoogleSignInPlugin",
+        "PermissionHandlerPlugin"
+      ],
+      "firebaseAutoInitializerAbsent": true,
+      "iosMinimum": "15.0",
+      "defaultFirebaseEnabled": false
+    },
+    "iosCompile": "not-run-Windows",
+    "fullAppRegression": "deferred until global runtime/UI milestone; previous144 boundary predates new dependencies",
+    "knowledgeAudit": "deferred until global runtime/UI milestone"
+  },
+  "sdkEvidence": {
+    "repository": "https://github.com/blackdandan/fenleng-client-sdk",
+    "resolvedCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "source": "packages/sdk-flutter-firebase-identity/lib/src/firebase_identity.dart",
+    "sourceMode": "local-git-blob",
+    "sha256": "09614edb663de7dab66e5c4c75ac228365128d1c498b0c0a8b2a3556637d6c53",
+    "mcpRead": "REF_NOT_FOUND; not represented as successful remote retrieval"
+  },
+  "technicalSources": [
+    "https://firebase.google.com/docs/flutter/setup",
+    "https://firebase.google.com/docs/auth/flutter/federated-auth",
+    "https://firebase.google.com/docs/reference/android/com/google/firebase/FirebaseApp"
+  ],
+  "sourceHashes": {
+    "06-project/app/apps/fridge/lib/infrastructure/global_firebase_identity.dart": "fc5fac976f7d4d1eb03edd6bc410b7486a36c260eb8370b63489b17c42c878df",
+    "06-project/app/apps/fridge/test/global_firebase_identity_test.dart": "1b8c71b6e30ea79d698f282456ee640fe6661045244ceb0e57a4698c53483551",
+    "06-project/app/apps/fridge/android/app/src/main/AndroidManifest.xml": "08284a7431f6c6864bffc4fd7c34c0c5ce54ed395270519e210a1f8b9bc49aa9",
+    "06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/MainActivity.kt": "e51a4a2b2a53e7435ef66d122ee1df01e89454e5426c1568647bafae524c76a2",
+    "06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/DeferredPluginRegistrant.kt": "48fb942a4e52d9977879198fca9f1970d91cc051908f813f4f84e35a7843d7f9",
+    "06-project/app/apps/fridge/ios/Runner/AppDelegate.swift": "fece092726fb27b2028ea30d2ca3c2216ca11006486f263c2cd2375508c8ba59",
+    "06-project/app/apps/fridge/ios/Runner/FridgeDeferredPluginRegistrant.h": "1e344316091f5ad04c491a742579df3e5220ee51cdd8f58c891b8999fc27dfbf",
+    "06-project/app/apps/fridge/ios/Runner/FridgeDeferredPluginRegistrant.m": "c53ee76ce40fb0f924c3df9c3aa11151a47388b57521273e73e40de0106770fb",
+    "06-project/app/apps/fridge/ios/Runner/Runner-Bridging-Header.h": "14a519e4ad4447d5c0430cf66c3890d0088cd34b94d12b6403b48f571d2f715d",
+    "06-project/app/apps/fridge/ios/Runner.xcodeproj/project.pbxproj": "ea214f71ce5d7c1df2ed40f091109a4592810eba632b535f3214eeaf40aa82be",
+    "06-project/app/apps/fridge/ios/Podfile": "8663d216d33e1d4e9940ace2739d46e826db5d82ddaec8523a3e950d019e5145",
+    "06-project/app/apps/fridge/pubspec.yaml": "262eb904c4c24b36c34b1f87f8ae99a154fad6e1faeeec4022c5c4685deef538",
+    "06-project/app/pubspec.lock": "44553c36a49a4288aac35ede4f2cd91564b2d4c24dbd92ea87f6aab5448ad72c",
+    "06-project/scripts/refresh-mobile-plugins.dart": "48deff06a585a6abce69b241b016c82d20d96915d19bbc63676ba9c1852f5309",
+    "06-project/scripts/check-global-identity-source.py": "4b8ad0d6bef6730c67c0eb05e4956b3ee5f32d1a8751c9ac80e311e6d4c7edf8",
+    "03-deployment/config/firebase-global.example.json": "25d86a5559b903a640e88fdd8a01da884f92444fdba8b9ed898dd22f7b5164ca"
+  },
+  "remainingAgentWork": [
+    "Global explicit feature-triggered online consent/persistence and SDK composition",
+    "Google/Apple account UI and Shared Platform exchange",
+    "FIREBASE self-deletion proof and session owner lifecycle integration",
+    "Withdrawal/background and local-only cleanup runtime tests",
+    "Provider SDK/privacy inventory and final channel regression/build/native screenshots"
+  ],
+  "ownerConfiguration": [
+    "Product-specific Firebase project/platform app public options and Provider enablement",
+    "Google OAuth server/iOS clients and iOS reversed URL scheme",
+    "Apple capability/profile and Shared Platform Firebase audience registration"
+  ],
+  "apkBuilt": false,
+  "ownerEmulatorChanged": false,
+  "evidenceDirectory": "02-engineering/evidence/flutter/global-identity-foundation"
+}

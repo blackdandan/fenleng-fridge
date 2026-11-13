@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "食材の写真を撮影し、この端末内だけに保存します。写真のアップロードや録音は行いません。ライブラリの写真も選択できます。";
+"NSPhotoLibraryUsageDescription" = "写真ライブラリ — 写真と在庫は端末内だけに保存";
+"CFBundleDisplayName" = "私の冷蔵庫";

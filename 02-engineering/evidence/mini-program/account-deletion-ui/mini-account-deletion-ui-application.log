@@ -1,0 +1,31 @@
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:compileKotlin UP-TO-DATE
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar UP-TO-DATE
+> Task :platform-application:compileTestKotlin UP-TO-DATE
+> Task :platform-application:compileTestJava NO-SOURCE
+> Task :platform-application:processTestResources NO-SOURCE
+> Task :platform-application:testClasses UP-TO-DATE
+> Task :platform-application:test
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 1s
+6 actionable tasks: 1 executed, 5 up-to-date

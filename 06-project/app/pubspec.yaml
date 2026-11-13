@@ -1,0 +1,26 @@
+name: fenleng_fridge_workspace
+publish_to: none
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+workspace:
+  - apps/fridge
+  - packages/core
+  - packages/navigation
+  - packages/ui_kit
+  - packages/features/feature_inventory
+  - packages/features/feature_settings
+dev_dependencies:
+  melos: 7.8.2
+# Exact official SDK candidates already verified in the delivery archive.
+# Remove these overrides only when the same changes have an immutable upstream release.
+dependency_overrides:
+  fenleng_sdk_flutter:
+    path: vendor/flsdk/sdk-flutter
+  fenleng_sdk_flutter_native_identity:
+    path: vendor/flsdk/sdk-flutter-native-identity
+  fenleng_sdk_flutter_firebase_identity:
+    path: vendor/flsdk/sdk-flutter-firebase-identity
+melos:
+  scripts:
+    analyze: exec -- flutter analyze
+    test: exec --dir-exists=test -- flutter test

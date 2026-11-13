@@ -1,0 +1,500 @@
+{
+  "completed": true,
+  "scope": "Isolated desktop Chromium local static-site QA, not Android/iOS/WeChat installation or deployed-domain evidence",
+  "matrix": [
+    {
+      "locale": "zh-CN",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-TW",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "fr",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "de",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pt-BR",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "it",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ko",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ar",
+      "width": 320,
+      "overflow": 0,
+      "dir": "rtl"
+    },
+    {
+      "locale": "hi",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "id",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "tr",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "vi",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "th",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "nl",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pl",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "uk",
+      "width": 320,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-CN",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-TW",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "es",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "fr",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "de",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pt-BR",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "it",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ko",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ar",
+      "width": 390,
+      "overflow": 0,
+      "dir": "rtl"
+    },
+    {
+      "locale": "hi",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "id",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "tr",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "vi",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "th",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "nl",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pl",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "uk",
+      "width": 390,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-CN",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-TW",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "es",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "fr",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "de",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pt-BR",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "it",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ja",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ko",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ar",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "rtl"
+    },
+    {
+      "locale": "hi",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "id",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "tr",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "vi",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "th",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "nl",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "pl",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "uk",
+      "width": 1440,
+      "overflow": 0,
+      "dir": "ltr"
+    },
+    {
+      "locale": "zh-CN",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "zh-TW",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "es",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "fr",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "de",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "pt-BR",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "it",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "ja",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "ko",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "ar",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "hi",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "id",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "tr",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "vi",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "th",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "nl",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "pl",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    },
+    {
+      "locale": "uk",
+      "width": 320,
+      "textScale": 2,
+      "overflow": 0
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "home390.png",
+    "home1440.png",
+    "home320-ar.png",
+    "privacy320.png",
+    "home320-text2.png"
+  ],
+  "androidDownload": {
+    "actualBrowserDownloadEvent": true,
+    "headAndRange": true,
+    "sha256": "c700b67354356dcc9d3b2522236a18fc7b261610b37b2648d9244c06ee4c0eee",
+    "bytes": 184867315
+  }
+}

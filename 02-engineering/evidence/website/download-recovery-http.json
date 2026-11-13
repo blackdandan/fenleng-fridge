@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "Actual local HTTP full body with WeChat user-agent string,not native WeChat",
+  "failedBuildPreservedReleaseAndApk": true,
+  "httpStatus": 200,
+  "bytes": 184867411,
+  "sha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+  "headers": {
+    "Content-Type": "application/vnd.android.package-archive",
+    "Content-Length": "184867411",
+    "Content-Disposition": "attachment; filename=\"fridge-0.1.0-1-android-debug.apk\"",
+    "X-Content-Type-Options": null
+  },
+  "download": "downloads/fridge-0.1.0-1-android-debug.apk"
+}

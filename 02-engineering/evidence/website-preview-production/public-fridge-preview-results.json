@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "origin": "https://fridge.fenlengtech.com",
+  "tlsValidation": "default enabled; no ignoreHTTPSErrors",
+  "transport": "direct to actual121.199.10.6; temporary browser-only DNS mapping avoids local fake DNS; default HTTP2",
+  "filename": "fenleng-fridge_latest.apk",
+  "downloadUrl": "https://fridge.fenlengtech.com/downloads/fenleng-fridge_latest.apk",
+  "downloadStarted": true,
+  "completeBrowserDownloadVerified": false,
+  "fullHttpDownload": "separate curl verification still pending",
+  "pages": [
+    {
+      "route": "/terms/",
+      "status": 200
+    },
+    {
+      "route": "/privacy/",
+      "status": 200
+    },
+    {
+      "route": "/app/",
+      "status": 200
+    }
+  ],
+  "narrowGermanOverflow": false,
+  "scope": "Actual public Chromium pages and download initiation; explicit test cancellation. Not real Android WeChat or physical device installation."
+}

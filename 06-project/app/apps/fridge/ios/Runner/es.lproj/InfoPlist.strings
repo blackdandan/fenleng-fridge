@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Fotografía alimentos y guarda las fotos en este dispositivo. No se suben fotos ni se graba audio. También puedes elegir fotos de la galería.";
+"NSPhotoLibraryUsageDescription" = "Galería — Fotos e inventario solo en este dispositivo";
+"CFBundleDisplayName" = "Mi nevera";

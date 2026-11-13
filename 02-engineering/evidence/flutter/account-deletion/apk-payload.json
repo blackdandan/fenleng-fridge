@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "localeKeys": 194,
+  "kernelBytes": 55507552,
+  "symbols": {
+    "PlatformDeletionGateway": true,
+    "AccountDeletionSection": true,
+    "deletionReauthenticate": true,
+    "account_deletion.dart": true
+  },
+  "scope": "Exact APK ZIP payload, not device/runtime proof"
+}

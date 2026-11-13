@@ -1,0 +1,105 @@
+{
+  "project": "fenleng-fridge",
+  "contract": {
+    "projectId": "fenleng-shared-platform",
+    "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+    "requestedRef": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "source": "docs/contracts/notification-feedback-contract.md",
+    "sourceMode": "cache",
+    "cacheHit": true,
+    "retrievedAt": "2026-11-12T21:28:31.385Z"
+  },
+  "schema": {
+    "projectId": "fenleng-shared-platform",
+    "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+    "requestedRef": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "source": "docs/contracts/v1/schemas/engagement.schema.json",
+    "sourceMode": "github",
+    "cacheHit": false,
+    "retrievedAt": "2026-11-12T21:49:14.859Z"
+  },
+  "feedbackRequest": {
+    "type": "object",
+    "required": [
+      "projectId",
+      "version",
+      "message",
+      "attachmentConsent",
+      "attachments"
+    ],
+    "properties": {
+      "projectId": {
+        "type": "string"
+      },
+      "version": {
+        "type": "string"
+      },
+      "traceId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "category": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4000
+      },
+      "attachmentConsent": {
+        "type": "boolean"
+      },
+      "attachments": {
+        "type": "array",
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "required": [
+            "type",
+            "content"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "SCREENSHOT",
+                "LOGS"
+              ]
+            },
+            "content": {
+              "type": "string",
+              "maxLength": 1000000
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "sdk": {
+    "repository": "https://github.com/blackdandan/fenleng-client-sdk.git",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "source": "packages/sdk-flutter/lib/src/notifications.dart",
+    "sourceMode": "local-git",
+    "note": "Feedback API source unchanged; other identity candidate changes remain local and require immutable upstream pin before final clean delivery."
+  },
+  "responseVerification": {
+    "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+    "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "sources": [
+      "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/EngagementHttpController.kt",
+      "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/port/EngagementPorts.kt"
+    ],
+    "sourceMode": "local-git",
+    "requiredReceipt": {
+      "id": "nonempty string up to128",
+      "status": "RECEIVED"
+    }
+  },
+  "deploymentVerified": false,
+  "guestClientIntegration": "pending; UI/source SDK path and local wire tests do not prove real guest/provider/production submission"
+}

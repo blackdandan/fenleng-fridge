@@ -1,0 +1,78 @@
+{
+  "status": "application-and-sdk-wired-account-presentation-pending",
+  "goalComplete": false,
+  "tests": {
+    "newFoundationAndGateway": 25,
+    "targetedIncludingExistingIdentityFeedback": 40,
+    "taroSdkTargeted": 9,
+    "typecheck": "passed",
+    "boundaries": "passed",
+    "weappBuild": "passed at milestone before final timestamp parser; rebuild with UI pending",
+    "candidateHashes": "24 installed files and archive passed",
+    "miniFullAtMilestone": 126,
+    "knowledgeAudits": "fridge and SDK passed; nextAction=none"
+  },
+  "runtimeEvidence": "OnlineRuntime source wiring, type checking and weapp compilation; account-page and runtime UI lifecycle verification not yet performed",
+  "sourceHashes": {
+    "packages/application/src/account-deletion.ts": "32a8371f1cb5d7cd46a4b66e23f2e4c463f45fe23c46076d305b33ec65c3c442",
+    "packages/platform-contracts/src/account-deletion.ts": "a58e63b859a8e78c0598b5dc808dc9b77806f673958678532bbde138059f072c",
+    "packages/api-client/src/account-deletion.ts": "01bbbbe5457c9dee0bb9912d90ccd605ded85240e04161d8e2f9e63f01c80a02",
+    "packages/api-client/src/identity.ts": "6e489f9bbc916d7a0a4bdd872162119657bdbe8ee03867649ad910d5c69842cc",
+    "packages/platform-adapters/weapp/src/deletion-storage.ts": "7cf99e35e1ee11cffe46c84bacf2c2379df1486971989402fef554a3fad9fc09",
+    "apps/miniapp/src/online-runtime.ts": "21e2fb1bd3e7b18c54583fb72a811785f33a3787249937c92c389ba732b296dc",
+    "apps/miniapp/src/deletion-runtime.ts": "77220b120569b71570be7d0f6ca3cbe78db86500753ca8a2a5ddc8192974d3ba"
+  },
+  "candidate": {
+    "archive": "fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz",
+    "sha256": "456ee21558452b964e7a5d5ade27ddeac853eddf32399346c5914c9fae8e1cb0",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "sourceMode": "local-worktree-candidate",
+    "published": false,
+    "sourceFiles": {
+      "tests/account-lifecycle.test.js": "e0d2fbf9e2ef3ed7d77f7533ffb5ffe391da24cf983df6938630c0bddb032737",
+      "src/auth.js": "d3c66ca675d700672f784a1861d6a6ab9d0cceeaa482bfff0a7cab18627fb59d",
+      "src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+      "tests/client.test.js": "cc66716701064611cffc741c602d3b8f5b774f7e4b1d68f3c47bc375d40aca74",
+      "src/commerce.js": "bb4b0b8e73e95c1fb58349750be13bfc0cd9197059c4539e6b4881a550727875",
+      "tests/commerce.test.js": "74c224c7c1b142ad19c6facb9ad0c2754b16f9211f8897662ace7b4e7decee58",
+      "src/feedback.js": "767f3937cfdd3913daa28852944357de7ad80f1640d9e462190e896dbb538271",
+      "tests/guest-feedback.test.js": "0025a9fa1f2df940f422e4001158a2867f7e0abdcb6b1acd13d62d16c19ec571",
+      "index.js": "1fe5f7ac2c3a80904b09364254891f0e197ca34dd6ee9cfb2e951148ae382fa7",
+      "src/mini-reminder-plan.js": "9c65c0bcf95915e7d572e41399d6f6cbd251a0579a88228e94c3b45a79622004",
+      "tests/mini-reminder-plan.test.js": "b6a7bfae71f80edb1da8ef8867c871de43e91f391b822712b4037ff0a634f706",
+      "src/mini-reminders.js": "2efdbf75b2178995959b91af8649f4267bc9118681ab54335d6345c0621ce470",
+      "tests/mini-reminders.test.js": "77df0c848638d6201d9240abf4f97a08345ad5df13d003fae99708ac49023ed6",
+      "src/payment-session.js": "4453835c40f11c9c392506c21f96fce7985981cb36449fdef8f171ee8d05ed4b",
+      "tests/payment-session.test.js": "510f2550bc4495d1c731e1a066172fe92e61630f0b3ef51a91fea905f2e95fcb",
+      "src/session.js": "e41ca7a7311a26ea82bb0abdb8a653dca01b8edb1984c446e2371663a9bf49a0",
+      "tests/session.test.js": "c9ce070afbdae9d081604fbab7efc5de10630f5cc7e66f519f0df5ee6bc3a799",
+      "src/storage.js": "d3d517e0c6224419aa9d02e12c9c0f54892a754bb08404940811b445fcf8e631",
+      "tests/taro.test.js": "74ac574b408ecf69823dae5371944174c837e9e93e5801367ea97fb098de4083",
+      "src/telemetry.js": "ecfffcce2d0dc4a8c281e97b13b5a1493818c8d867f0e75a09ad58c728c16c8c",
+      "fixtures/account-lifecycle-contract.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c",
+      "package.json": "53b37a891b2c8642e7f6e77a807237ff066542a3f9d2d978b38bbb9c8f2fb36e",
+      "README.md": "017c96041ecb96b797b0e45c05d0c350cf26af7754797ac6b9fd410d3db77814",
+      "index.d.ts": "a1abbd629f8826ec9dc6716cf36c817f5bfd03015daa89728d55086ab0e49a66"
+    },
+    "lifecycleContract": "fixtures/account-lifecycle-contract.json"
+  },
+  "implemented": [
+    "Durable owner-scoped intent/submitting/unknown/accepted/cancelled journal, no provider proof or token persisted",
+    "Explicit confirmation before challenge/proof/DELETE; no implicit login or guest creation in gateway",
+    "Same key on unknown-outcome retry; no automatic resubmit or original-account login",
+    "Genuine ACK validated for owner/type/status and seven-day timestamps, persisted before local-only logout",
+    "Receipt-save and local cleanup failure retry without another DELETE",
+    "Identity revision, page/consent cancellation, original ACK after concurrent401, newer-session cleanup fence",
+    "SDK authenticated currentUser read added; MiniIdentity native proof does not exchange a login",
+    "Runtime serializes identity changes, stops reminders before DELETE and closes feedback; callback completion does not force background resume"
+  ],
+  "limitations": [
+    "Account page entry, confirmation dialog,20-language strings, date presentation and visual/runtime UI verification remain",
+    "No real WeChat host authorization or formal platform deployment test",
+    "Flutter account deletion consumer still not implemented",
+    "476KiB common.js and NoAsyncChunks build warnings remain"
+  ],
+  "productionDeployed": false,
+  "newApkBuilt": false,
+  "sourceAheadOfMiniDist": true
+}

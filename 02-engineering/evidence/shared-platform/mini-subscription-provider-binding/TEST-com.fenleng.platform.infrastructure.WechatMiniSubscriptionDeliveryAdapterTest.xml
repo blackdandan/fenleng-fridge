@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T02:55:28.742Z" hostname="DESKTOP-PF7J11G" time="0.699">
+  <properties/>
+  <testcase name="REST payload uses template values and provider acknowledgement only()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.033"/>
+  <testcase name="deadline includes response body and timed out write is not automatically replayed()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.511"/>
+  <testcase name="invalid content and token acquisition failure never send()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.006"/>
+  <testcase name="missing malformed and noninteger acknowledgements remain unconfirmed()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.131"/>
+  <testcase name="permission unavailable explicit busy and permanent errors are distinguished without automatic replay()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.011"/>
+  <testcase name="token rejection invalidates local cache but does not replay the send()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

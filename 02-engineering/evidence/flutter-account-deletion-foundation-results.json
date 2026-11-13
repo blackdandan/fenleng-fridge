@@ -1,0 +1,25 @@
+{
+  "status": "model-and-storage-validated-gateway-runtime-ui-pending",
+  "goalComplete": false,
+  "tests": {
+    "model": 13,
+    "fileStorage": 4,
+    "targetedAnalyze": "No issues found"
+  },
+  "scope": "Application model with test driver and real temporary file storage; not SDK, native Provider, runtime or account-page evidence",
+  "sourceHashes": {
+    "lib/application/account_deletion.dart": "2957dcce34f18f88e02f59c68f1e448c6b077f38a40bd55bd5bc9213975a21cf",
+    "lib/infrastructure/deletion_storage.dart": "699245c2bd2cc559b64413c891482f6099d8ad620939a2cd85056c94e5bdd3ac",
+    "test/account_deletion_test.dart": "99ee5e6254120561f645c7e5d9fd06f3d97d345db941ecf36a9f99ca82a5d67f",
+    "test/deletion_storage_test.dart": "9911b0c995dda542e795ad17de516bd0024f44ad9561cb9f9f9d0aa865c7a46a"
+  },
+  "newApkBuilt": false,
+  "remainingDevelopment": [
+    "Official SDK gateway and fresh native provider proof",
+    "Shared human identity revision/local-cleanup fence",
+    "OnlineSessions/privacy/background coordination",
+    "Account UI receipt/unknown/confirmation and20locale layout verification",
+    "Stage regression and final APK packaging"
+  ],
+  "evidenceDirectory": "02-engineering/evidence/flutter/account-deletion-foundation"
+}

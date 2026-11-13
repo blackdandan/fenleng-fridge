@@ -1,0 +1,98 @@
+00:00 +0: loading test\file_storage_test.dart
+00:00 +0 -1: loading test\file_storage_test.dart [E]
+  Failed to load "test\file_storage_test.dart":
+  系统找不到指定的文件。 (at ../../flutter/third_party/dart/runtime/bin/process_win.cc:577)
+    Command: ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\dartaotruntime.exe ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk --platform=lib/_internal/vm_platform_strong.dill --target=vm --filesystem-scheme org-dartlang-root --output-dill C:\Users\Admin\AppData\Local\Temp\dart_test.kernel.d2cf8371\output.dill --packages=D:\Development\WorkSpaces\CodeXWP\fenleng-fridge\.fenleng\deliveries\s-mwvqrqkp\06-project\app\.dart_tool\package_config.json --incremental --no-print-incremental-dependencies
+  #0      _ProcessImpl._start (dart:io-patch/process_patch.dart:411:33)
+  #1      Process.start (dart:io-patch/process_patch.dart:42:20)
+  #2      FrontendServerClient.start (package:frontend_server_client/src/frontend_server_client.dart:156:32)
+  #3      _TestCompilerForLanguageVersion._createCompiler (package:test_core/src/runner/vm/test_compiler.dart:196:60)
+  <asynchronous suspension>
+  #4      _TestCompilerForLanguageVersion._compile (package:test_core/src/runner/vm/test_compiler.dart:126:26)
+  <asynchronous suspension>
+  #5      Pool.withResource (package:pool/pool.dart:127:14)
+  <asynchronous suspension>
+  #6      VMPlatform._compileToKernel (package:test_core/src/runner/vm/platform.dart:284:22)
+  <asynchronous suspension>
+  #7      VMPlatform._spawnIsolate (package:test_core/src/runner/vm/platform.dart:260:11)
+  <asynchronous suspension>
+  #8      VMPlatform.load (package:test_core/src/runner/vm/platform.dart:83:19)
+  <asynchronous suspension>
+  #9      Loader.loadFile.<anonymous closure> (package:test_core/src/runner/loader.dart:244:27)
+  <asynchronous suspension>
+  #10     new LoadSuite.<anonymous closure>.<anonymous closure> (package:test_core/src/runner/load_suite.dart:95:21)
+  <asynchronous suspension>
+  
+00:00 +0 -2: loading test\inventory_test.dart [E]
+  Failed to load "test\inventory_test.dart":
+  系统找不到指定的文件。 (at ../../flutter/third_party/dart/runtime/bin/process_win.cc:577)
+    Command: ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\dartaotruntime.exe ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk --platform=lib/_internal/vm_platform_strong.dill --target=vm --filesystem-scheme org-dartlang-root --output-dill C:\Users\Admin\AppData\Local\Temp\dart_test.kernel.d2cf8371\output.dill --packages=D:\Development\WorkSpaces\CodeXWP\fenleng-fridge\.fenleng\deliveries\s-mwvqrqkp\06-project\app\.dart_tool\package_config.json --incremental --no-print-incremental-dependencies
+  #0      _ProcessImpl._start (dart:io-patch/process_patch.dart:411:33)
+  #1      Process.start (dart:io-patch/process_patch.dart:42:20)
+  #2      FrontendServerClient.start (package:frontend_server_client/src/frontend_server_client.dart:156:32)
+  #3      _TestCompilerForLanguageVersion._createCompiler (package:test_core/src/runner/vm/test_compiler.dart:196:60)
+  <asynchronous suspension>
+  #4      _TestCompilerForLanguageVersion._compile (package:test_core/src/runner/vm/test_compiler.dart:126:26)
+  <asynchronous suspension>
+  #5      Pool.withResource (package:pool/pool.dart:127:14)
+  <asynchronous suspension>
+  #6      VMPlatform._compileToKernel (package:test_core/src/runner/vm/platform.dart:284:22)
+  <asynchronous suspension>
+  #7      VMPlatform._spawnIsolate (package:test_core/src/runner/vm/platform.dart:260:11)
+  <asynchronous suspension>
+  #8      VMPlatform.load (package:test_core/src/runner/vm/platform.dart:83:19)
+  <asynchronous suspension>
+  #9      Loader.loadFile.<anonymous closure> (package:test_core/src/runner/loader.dart:244:27)
+  <asynchronous suspension>
+  #10     new LoadSuite.<anonymous closure>.<anonymous closure> (package:test_core/src/runner/load_suite.dart:95:21)
+  <asynchronous suspension>
+  
+00:00 +0 -3: loading test\notification_plan_test.dart [E]
+  Failed to load "test\notification_plan_test.dart":
+  系统找不到指定的文件。 (at ../../flutter/third_party/dart/runtime/bin/process_win.cc:577)
+    Command: ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\dartaotruntime.exe ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk --platform=lib/_internal/vm_platform_strong.dill --target=vm --filesystem-scheme org-dartlang-root --output-dill C:\Users\Admin\AppData\Local\Temp\dart_test.kernel.d2cf8371\output.dill --packages=D:\Development\WorkSpaces\CodeXWP\fenleng-fridge\.fenleng\deliveries\s-mwvqrqkp\06-project\app\.dart_tool\package_config.json --incremental --no-print-incremental-dependencies
+  #0      _ProcessImpl._start (dart:io-patch/process_patch.dart:411:33)
+  #1      Process.start (dart:io-patch/process_patch.dart:42:20)
+  #2      FrontendServerClient.start (package:frontend_server_client/src/frontend_server_client.dart:156:32)
+  #3      _TestCompilerForLanguageVersion._createCompiler (package:test_core/src/runner/vm/test_compiler.dart:196:60)
+  <asynchronous suspension>
+  #4      _TestCompilerForLanguageVersion._compile (package:test_core/src/runner/vm/test_compiler.dart:126:26)
+  <asynchronous suspension>
+  #5      Pool.withResource (package:pool/pool.dart:127:14)
+  <asynchronous suspension>
+  #6      VMPlatform._compileToKernel (package:test_core/src/runner/vm/platform.dart:284:22)
+  <asynchronous suspension>
+  #7      VMPlatform._spawnIsolate (package:test_core/src/runner/vm/platform.dart:260:11)
+  <asynchronous suspension>
+  #8      VMPlatform.load (package:test_core/src/runner/vm/platform.dart:83:19)
+  <asynchronous suspension>
+  #9      Loader.loadFile.<anonymous closure> (package:test_core/src/runner/loader.dart:244:27)
+  <asynchronous suspension>
+  #10     new LoadSuite.<anonymous closure>.<anonymous closure> (package:test_core/src/runner/load_suite.dart:95:21)
+  <asynchronous suspension>
+  
+00:00 +0 -4: loading test\repository_test.dart [E]
+  Failed to load "test\repository_test.dart":
+  系统找不到指定的文件。 (at ../../flutter/third_party/dart/runtime/bin/process_win.cc:577)
+    Command: ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\dartaotruntime.exe ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk\bin\snapshots\frontend_server_aot.dart.snapshot --sdk-root ..\..\..\..\..\..\..\..\..\..\Toolchains\fvm-cache\versions\fltech-oh\62357a93d653bf844f730bb1f4b7cc9e2139d14e\bin\cache\dart-sdk --platform=lib/_internal/vm_platform_strong.dill --target=vm --filesystem-scheme org-dartlang-root --output-dill C:\Users\Admin\AppData\Local\Temp\dart_test.kernel.d2cf8371\output.dill --packages=D:\Development\WorkSpaces\CodeXWP\fenleng-fridge\.fenleng\deliveries\s-mwvqrqkp\06-project\app\.dart_tool\package_config.json --incremental --no-print-incremental-dependencies
+  #0      _ProcessImpl._start (dart:io-patch/process_patch.dart:411:33)
+  #1      Process.start (dart:io-patch/process_patch.dart:42:20)
+  #2      FrontendServerClient.start (package:frontend_server_client/src/frontend_server_client.dart:156:32)
+  #3      _TestCompilerForLanguageVersion._createCompiler (package:test_core/src/runner/vm/test_compiler.dart:196:60)
+  <asynchronous suspension>
+  #4      _TestCompilerForLanguageVersion._compile (package:test_core/src/runner/vm/test_compiler.dart:126:26)
+  <asynchronous suspension>
+  #5      Pool.withResource (package:pool/pool.dart:127:14)
+  <asynchronous suspension>
+  #6      VMPlatform._compileToKernel (package:test_core/src/runner/vm/platform.dart:284:22)
+  <asynchronous suspension>
+  #7      VMPlatform._spawnIsolate (package:test_core/src/runner/vm/platform.dart:260:11)
+  <asynchronous suspension>
+  #8      VMPlatform.load (package:test_core/src/runner/vm/platform.dart:83:19)
+  <asynchronous suspension>
+  #9      Loader.loadFile.<anonymous closure> (package:test_core/src/runner/loader.dart:244:27)
+  <asynchronous suspension>
+  #10     new LoadSuite.<anonymous closure>.<anonymous closure> (package:test_core/src/runner/load_suite.dart:95:21)
+  <asynchronous suspension>
+  
+00:00 +0 -4: Some tests failed.

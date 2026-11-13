@@ -1,0 +1,70 @@
+{
+  "scope": "Source token/asset/locale contracts and compiled route inventory only; no WeChat runtime, native screenshot, golden or Figma pixel proof",
+  "figmaFile": "b34I8tzPpU7tv1sHHdWLkq",
+  "nodes": [
+    "2:149",
+    "2:172",
+    "2:227"
+  ],
+  "sourceContracts": "pass",
+  "assets": [
+    {
+      "asset": "calendar.svg",
+      "sourceNode": "54:4",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "84b99e833e93134df3a2e86df22d041ad07d1531b74217bde91ef32938cd58de",
+      "rootWidth": "11.6667",
+      "rootHeight": "12.5"
+    },
+    {
+      "asset": "editor-chevron.svg",
+      "sourceNode": "53:22",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "5ad61631046c0fb0a2352c1708393c91c737da203643d1833407fe9f1884be3f",
+      "rootWidth": "10",
+      "rootHeight": "6"
+    },
+    {
+      "asset": "settings-cold.svg",
+      "sourceNode": "30:52",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "405cf21d9448f924c8b18febde831649eaafce0853031c8422318d8e68757325",
+      "rootWidth": "16",
+      "rootHeight": "16"
+    },
+    {
+      "asset": "settings-frozen.svg",
+      "sourceNode": "30:61",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "d4fc9fe7078046cf477ee0b8df6576ae2a0e795a5261473af349d2cf7d0a204e",
+      "rootWidth": "16",
+      "rootHeight": "16"
+    },
+    {
+      "asset": "settings-pantry.svg",
+      "sourceNode": "30:70",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "d919f43c897dbc129ecac24db750de454e20460e7252f872271ec9acd10e9343",
+      "rootWidth": "16",
+      "rootHeight": "16"
+    },
+    {
+      "asset": "clock.svg",
+      "sourceNode": "41:14",
+      "sourceMode": "exact-existing-Figma-export-reuse",
+      "sha256": "3655ccdfbaa48597919dc39e093484db38719c0164dec02096581390f1c8a16c",
+      "rootWidth": "11.375",
+      "rootHeight": "11.375"
+    }
+  ],
+  "locales": 20,
+  "keys": 159,
+  "compiledPages": [
+    "pages/index/index",
+    "pages/account/index",
+    "pages/legal/index"
+  ],
+  "developerTools": "not-run-not-installed",
+  "physicalDevice": "not-run",
+  "nativeFidelity": "not-run"
+}

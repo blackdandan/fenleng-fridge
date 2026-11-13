@@ -1,0 +1,90 @@
+{
+  "status": "self-contained-source-and-built-artifacts-candidate-verified",
+  "goalComplete": false,
+  "source": {
+    "status": "prepared-not-clean-consumer-validated",
+    "contentId": "aa706dd122a9f61b0c95320de5383e76defd980800bb73114b7a4b74efb3bae1",
+    "staging": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\s-mwvqrqkp",
+    "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-source-candidate-aa706dd122a9.zip",
+    "sha256": "2b013cc3245a3beef288c29ed22481a31c026061ee5a33a99cac8bc2a9a0cf73",
+    "bytes": 40495350,
+    "sourceFiles": 1528,
+    "sdkCandidateFiles": 68
+  },
+  "builtArtifacts": [
+    {
+      "kind": "weapp",
+      "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-weapp-candidate-67fb291a0a5e.zip",
+      "sha256": "a2808e2d8690f94f9796b91d8297c2ef43b539aa7de541beaf75d2a8efc3b63d",
+      "bytes": 238398,
+      "files": 28,
+      "contentId": "67fb291a0a5e1a36ba35db5b3a3ebd245556e6ee8669065e28bfe2d5c6817198",
+      "status": "archive-content-verified-not-production-deployed"
+    },
+    {
+      "kind": "website",
+      "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-website-candidate-3dddac78661e.zip",
+      "sha256": "08b4fda126a828b793c139c82f20e3f59847f6c909256274bd8c6ca8840143ac",
+      "bytes": 81423115,
+      "files": 20,
+      "contentId": "3dddac78661e026c94ce4a9fb8acac8bd18862133c15c784c1309b0065d8feaf",
+      "status": "archive-content-verified-not-production-deployed"
+    }
+  ],
+  "consumerValidation": {
+    "dependencies": "passed fixed FVM Dart pub get in independent candidate directory",
+    "sdkResolution": "three unpublished official SDK packages resolve inside candidate vendor; no sibling SDK workspace paths",
+    "app": {
+      "passed": 165,
+      "skipped": 7,
+      "skips": "global-only tests intentionally skipped in default china run"
+    },
+    "global": {
+      "passed": 26,
+      "skipped": 0,
+      "scope": "explicit global-channel tests"
+    },
+    "core": {
+      "passed": 17,
+      "command": "fixed FVM flutter test --no-pub packages/core/test",
+      "dartTestAttempt": "failed Windows relative frontend runtime path; fixed Flutter test runner passes without modifying SDK/cache"
+    },
+    "archive": "all1528 source files match manifest; candidate contentId/CRC verified",
+    "miniIsolatedConsumer": {
+      "install": "pnpm offline frozen-lockfile passed using existing cache",
+      "typecheck": "passed",
+      "weappBuild": "passed",
+      "compiledFiles": 28,
+      "byteDifferencesFromPackagedBuild": []
+    },
+    "fullAppAnalysis": {
+      "initial": "one curly-braces info in global_online_layout_test.dart",
+      "currentSourceAndValidationDirectory": "fixed; complete analyze No issues found",
+      "layoutRetest": "1 test covering280 combinations passed",
+      "archiveCaveat": "aa706 source archive predates style-only test fix and later delivery documentation; final archive regeneration pending"
+    }
+  },
+  "miniCurrentSource": {
+    "tests": 128,
+    "skipped": 0,
+    "typecheck": "passed",
+    "boundaries": "passed",
+    "weappBuild": "passed",
+    "warnings": [
+      "common.js574KiB",
+      "NoAsyncChunks recommendation"
+    ]
+  },
+  "limitations": [
+    "Independent workspace reuses installed fixed Flutter SDK and dependency caches; not empty-cache offline machine proof",
+    "Official SDK publication and Shared Platform deployment not performed",
+    "App artifact remains debug preview; China hardened release/device gate not completed",
+    "Remaining first-consent/legal visual closure and final handoff/efficiency audit incomplete",
+    "Actual WeChat/Google/Apple and iOS/Harmony devices not verified"
+  ],
+  "filesExcluded": [
+    "signing keystore/password/provisioning files",
+    "local device data and caches",
+    "node_modules/build/dist from source ZIP; website/weapp builds supplied separately"
+  ]
+}

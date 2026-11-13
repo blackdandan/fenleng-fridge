@@ -1,0 +1,43 @@
+{
+  "status": "client-runtime-validated-with-follow-up",
+  "goalComplete": false,
+  "tests": {
+    "globalTargeted": 26,
+    "skipped": 0,
+    "layoutCombinations": 280,
+    "targetedAnalyze": "passed18files",
+    "priorFullApp": {
+      "passed": 163,
+      "skipped": 6,
+      "limitation": "predates final stale-deletion epoch guard; current guard covered by targeted runtime tests"
+    }
+  },
+  "apk": {
+    "channel": "china",
+    "kind": "debug-preview",
+    "sha256": "eaff8aaedd85dc026fca4f320d2b9a8234b9b923ab044e8bf6be6a3518b6adf3",
+    "bytes": 184913722,
+    "installed": "adb install -r Success; emulator-5580; MainActivity RESUMED",
+    "physicalDevice": false,
+    "locales": 20,
+    "keys": 199
+  },
+  "website": "actual Chromium download verified identical bytes/SHA; not real WeChat host verification",
+  "limitations": [
+    "No real Google/Apple authorization configuration",
+    "No iOS Xcode build on Windows",
+    "Server Firebase/Apple login-deletion concurrency and Firebase user cleanup remain to audit",
+    "SDK local path overrides remain; immutable clean consumer not validated",
+    "Final hardened release delivery and remaining native UI checks incomplete"
+  ],
+  "sourceHashes": {
+    "06-project/app/apps/fridge/lib/application/online_sessions.dart": "1ddf241b95057e9a9a7128d3a98e1a79aeccee742f3a03b9d4cab77be5c5ab34",
+    "06-project/app/apps/fridge/lib/application/privacy_actions.dart": "30e597449ce4ccf40e9b8c360860a78f92785bc6797c5cd7101774fd6fab726a",
+    "06-project/app/apps/fridge/lib/infrastructure/global_firebase_identity.dart": "698882a5d64f9a93b9aa41cb5752a03d2ffc5b038a2dc2bebf620db6e56a7315",
+    "06-project/app/apps/fridge/lib/infrastructure/global_firebase_native.dart": "1fc662c6f08a38380532d707d7ad116fb3d4753f9b9b9769ac6dac696d6c97f5",
+    "06-project/app/apps/fridge/lib/presentation/online_consent.dart": "9a02399bde03182e5355c343e1aadae0f36874a66d1a485f4697232f0fc8a942",
+    "06-project/app/apps/fridge/test/global_online_bootstrap_test.dart": "8390b5985ff9c34cfa5ce5a1eaf82211e3e5ffdd63788f4f136b9cfa9cf602f6",
+    "06-project/app/apps/fridge/test/global_online_consent_test.dart": "995cc4ee8543d6c7a0a85697090df02473edd8a6840553dd7638d116afd8d001",
+    "02-engineering/specs/global-sdk-data-inventory.md": "eb7c0da22eadf975a59c3e475a069431e00ea7a9a96e17b787b0b8138c7c59f2"
+  }
+}

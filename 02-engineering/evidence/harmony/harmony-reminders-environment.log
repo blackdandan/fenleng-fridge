@@ -1,0 +1,42 @@
+{
+  "sdkDirectories": [],
+  "sdkVersions": [],
+  "tools": [
+    {
+      "command": "java",
+      "available": true,
+      "version": "java version \"17.0.15\" 2025-04-15 LTS\r"
+    },
+    {
+      "command": "node",
+      "available": true,
+      "version": "v25.0.0"
+    },
+    {
+      "command": "ohpm.cmd",
+      "available": false,
+      "version": null
+    },
+    {
+      "command": "hvigorw.bat",
+      "available": false,
+      "version": null
+    },
+    {
+      "command": "hdc.exe",
+      "available": false,
+      "version": null
+    }
+  ],
+  "errors": [
+    "No HarmonyOS SDK directory configured; install the matching DevEco SDK and set HOS_SDK_HOME/DEVECO_SDK_HOME",
+    "HarmonyOS SDK must match 26.0.0.105 (API 26)",
+    "ohpm.cmd not available on PATH",
+    "hvigorw.bat not available on PATH",
+    "hdc.exe not available on PATH"
+  ],
+  "status": "not-ready",
+  "note": "Environment detection does not prove HAP build, signing or runtime compatibility"
+}
+(node:33132) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)

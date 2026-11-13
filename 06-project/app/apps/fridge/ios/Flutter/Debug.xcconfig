@@ -1,0 +1,2 @@
+#include "IdentityDefaults.xcconfig"
+#include "Generated.xcconfig"

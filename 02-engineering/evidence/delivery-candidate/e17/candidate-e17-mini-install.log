@@ -1,0 +1,57 @@
+Scope: all 8 workspace projects
+✓ Lockfile passes supply-chain policies (verified 4h ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: D:\.pnpm-store\v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 106, reused 106, downloaded 0, added 95
+Progress: resolved 230, reused 230, downloaded 0, added 219
+Progress: resolved 345, reused 345, downloaded 0, added 334
+Progress: resolved 445, reused 445, downloaded 0, added 434
+Progress: resolved 529, reused 529, downloaded 0, added 518
+Progress: resolved 564, reused 564, downloaded 0, added 553
+Progress: resolved 653, reused 653, downloaded 0, added 642
+Progress: resolved 750, reused 750, downloaded 0, added 739
+Progress: resolved 852, reused 852, downloaded 0, added 841
+Progress: resolved 969, reused 969, downloaded 0, added 958
+Progress: resolved 1040, reused 1040, downloaded 0, added 1031
+Progress: resolved 1056, reused 1056, downloaded 0, added 1049
+Progress: resolved 1071, reused 1071, downloaded 0, added 1068
+Progress: resolved 1072, reused 1072, downloaded 0, added 1071
+Progress: resolved 1072, reused 1072, downloaded 0, added 1072
+Progress: resolved 1074, reused 1074, downloaded 0, added 1074
+Packages: +1076
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1076, reused 1076, downloaded 0, added 1076, done
+.../esbuild@0.21.5/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@tarojs/binding postinstall$ node postinstall.js
+.../node_modules/@swc/core postinstall$ node postinstall.js
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@parcel/watcher install: Done
+.../node_modules/@tarojs/binding postinstall: Done
+.../node_modules/@swc/core postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.21.5/node_modules/esbuild postinstall: Done
+.../node_modules/@tarojs/cli postinstall$ node postinstall.js
+.../node_modules/@tarojs/cli postinstall: Done
+
+devDependencies:
++ @babel/core 7.28.5
++ @babel/preset-react 7.28.5
++ @babel/preset-typescript 7.28.5
++ @tarojs/cli 4.3.2
++ @tarojs/plugin-framework-react 4.3.2
++ @tarojs/plugin-platform-weapp 4.3.2
++ @tarojs/webpack5-runner 4.3.2
++ @types/node 22.19.0
++ @types/react 18.3.27
++ babel-preset-taro 4.3.2
++ less 4.4.2
++ sass 1.94.2
++ tsx 4.23.15
++ typescript 5.9.3
++ webpack 5.91.0
+
+Done in 52.2s using pnpm v12.15.0

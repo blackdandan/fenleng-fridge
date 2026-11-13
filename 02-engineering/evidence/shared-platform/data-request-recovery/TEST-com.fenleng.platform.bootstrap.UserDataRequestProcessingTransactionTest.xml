@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T11:47:06.176Z" hostname="DESKTOP-PF7J11G" time="8.181">
+  <properties/>
+  <testcase name="progress CAS conflict cannot commit deletion without completed request()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.512"/>
+  <testcase name="in flight claim is skipped by another worker until completion commits()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.322"/>
+  <testcase name="later failure does not roll back previous committed task()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.457"/>
+  <testcase name="ordinary remote failure commits existing bounded backoff()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.293"/>
+  <testcase name="worker termination after remote acknowledgement leaves request reclaimable()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.27"/>
+  <testcase name="event failure rolls back claim anonymization and outbox then retries remote UID()" classname="com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest" time="1.325"/>
+  <system-out><![CDATA[19:47:00.272 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- Detected a Windows x86_64 system
+19:47:00.275 [Test worker] INFO io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver -- Detected distribution: 'Unknown'
+19:47:00.277 [Test worker] INFO io.zonky.test.db.postgres.embedded.DefaultPostgresBinaryResolver -- System specific postgres binaries found: 'postgres-windows-x86_64.txz'
+19:47:00.334 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- Postgres binaries at C:\Users\Admin\AppData\Local\Temp\embedded-pg\PG-712e3ba6f67dfcd31e1f1e8b35de707a
+19:47:00.404 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- The files belonging to this database system will be owned by user "Admin".
+19:47:00.404 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- This user must also own the server process.
+19:47:00.404 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- The database cluster will be initialized with locale "Chinese (Simplified)_China.936".
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- initdb: could not find suitable text search configuration for locale "Chinese (Simplified)_China.936"
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- The default text search configuration will be set to "simple".
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- Data page checksums are disabled.
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:00.405 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- fixing permissions on existing directory C:/Users/Admin/AppData/Local/Temp/epg7747833813800367780 ... ok
+19:47:00.408 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- creating subdirectories ... ok
+19:47:00.409 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- selecting dynamic shared memory implementation ... windows
+19:47:00.448 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- selecting default max_connections ... 100
+19:47:00.490 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- selecting default shared_buffers ... 128MB
+19:47:00.492 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- selecting default time zone ... Asia/Shanghai
+19:47:00.494 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- creating configuration files ... ok
+19:47:01.330 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- running bootstrap script ... ok
+19:47:03.150 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- performing post-bootstrap initialization ... ok
+19:47:05.771 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- syncing data to disk ... ok
+19:47:05.771 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:05.772 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- Success. You can now start the database server using:
+19:47:05.772 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:05.772 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres --     ^"C^:^\Users^\Admin^\AppData^\Local^\Temp^\embedded^-pg^\PG^-712e3ba6f67dfcd31e1f1e8b35de707a^\bin^\pg^_ctl^" -D ^"C^:^\Users^\Admin^\AppData^\Local^\Temp^\epg7747833813800367780^" -l logfile start
+19:47:05.772 [initdb:pid(50700)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 
+19:47:05.776 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- fdcae62b-467a-4a00-9e01-b34877c8e87d initdb completed in 00:00:05.441
+19:47:05.785 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- fdcae62b-467a-4a00-9e01-b34877c8e87d postmaster started as Process[pid=54208, exitValue="not exited"] on port 59561.  Waiting up to PT10S for server startup to finish.
+19:47:05.924 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- waiting for server to start....2026-11-13 19:47:05.924 CST [2268] ???:  ???????? PostgreSQL 16.13, compiled by Visual C++ build 1944, 64-bit
+19:47:05.928 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:05.928 CST [2268] ???:  ???????IPv6???"::1"????? 59561
+19:47:05.928 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:05.928 CST [2268] ???:  ???????IPv4???"127.0.0.1"????? 59561
+19:47:05.992 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:05.992 CST [52692] ???:  ???????ι?????? 2026-11-13 19:47:03 CST
+19:47:06.022 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:06.022 CST [2268] ???:  ??????????????????
+19:47:06.086 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres --  done
+19:47:06.086 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- server started
+19:47:06.130 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- fdcae62b-467a-4a00-9e01-b34877c8e87d postmaster startup finished in 00:00:00.350
+19:47:06.515 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:06.576 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:06.581 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:06.666 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:06.682 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:06.733 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:06.746 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:06.759 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:06.775 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:06.782 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:06.793 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:06.807 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:06.813 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:06.819 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:06.832 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:06.840 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:06.852 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:06.880 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:06.891 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:06.894 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:06.898 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:06.902 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:06.914 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:06.941 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:06.947 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:06.956 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:06.964 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:06.970 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:06.974 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:06.977 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:06.984 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:06.990 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:06.996 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:07.003 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:07.010 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:07.017 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:07.025 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:07.033 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:07.043 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:07.052 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:07.064 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:07.071 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:07.082 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:07.086 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:07.094 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:07.112 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:07.117 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:07.121 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:07.128 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:07.132 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:07.135 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:07.145 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:07.156 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:07.162 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:07.167 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:07.192 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:07.200 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:07.205 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:07.213 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:07.234 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:07.240 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.352s)
+19:47:07.567 [Test worker] ERROR com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle_failed failureType=IllegalStateException
+19:47:07.963 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:07.982 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:07.985 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:08.152 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:08.155 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:08.213 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:08.223 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:08.236 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:08.252 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:08.256 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:08.266 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:08.278 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:08.282 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:08.288 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:08.297 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:08.304 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:08.312 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:08.335 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:08.345 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:08.347 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:08.350 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:08.353 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:08.363 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:08.389 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:08.396 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:08.404 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:08.412 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:08.416 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:08.420 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:08.423 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:08.429 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:08.433 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:08.440 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:08.446 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:08.451 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:08.457 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:08.464 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:08.471 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:08.480 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:08.489 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:08.500 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:08.506 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:08.517 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:08.521 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:08.527 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:08.543 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:08.547 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:08.551 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:08.557 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:08.561 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:08.564 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:08.572 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:08.581 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:08.587 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:08.590 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:08.614 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:08.621 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:08.626 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:08.632 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:08.647 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:08.649 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.343s)
+19:47:08.970 [pool-1-thread-1] INFO com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle claimed=1 completed=1 blocked=0 retryScheduled=0 stale=0
+19:47:09.271 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:09.291 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:09.295 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:09.341 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:09.343 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:09.389 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:09.397 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:09.406 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:09.421 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:09.425 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:09.433 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:09.443 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:09.448 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:09.454 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:09.461 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:09.467 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:09.476 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:09.495 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:09.502 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:09.504 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:09.507 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:09.510 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:09.517 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:09.539 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:09.545 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:09.551 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:09.558 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:09.561 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:09.563 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:09.566 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:09.570 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:09.574 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:09.579 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:09.584 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:09.588 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:09.594 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:09.601 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:09.607 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:09.616 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:09.623 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:09.633 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:09.639 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:09.648 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:09.652 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:09.656 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:09.672 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:09.676 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:09.679 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:09.683 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:09.687 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:09.689 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:09.698 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:09.706 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:09.712 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:09.715 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:09.739 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:09.747 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:09.751 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:09.757 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:09.772 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:09.774 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.295s)
+19:47:10.282 [Test worker] ERROR com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle_failed failureType=IllegalStateException
+19:47:10.730 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:10.747 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:10.750 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:10.807 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:10.809 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:10.861 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:10.870 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:10.880 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:10.897 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:10.901 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:10.909 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:10.920 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:10.924 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:10.930 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:10.939 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:10.951 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:10.960 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:10.982 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:10.991 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:10.993 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:10.996 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:10.999 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:11.009 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:11.036 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:11.042 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:11.048 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:11.056 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:11.060 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:11.063 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:11.066 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:11.071 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:11.075 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:11.081 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:11.087 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:11.091 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:11.097 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:11.104 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:11.112 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:11.122 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:11.132 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:11.145 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:11.151 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:11.161 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:11.165 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:11.171 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:11.190 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:11.194 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:11.198 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:11.204 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:11.207 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:11.210 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:11.218 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:11.227 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:11.260 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:11.263 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:11.286 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:11.294 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:11.298 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:11.304 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:11.319 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:11.321 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.342s)
+19:47:11.568 [Test worker] INFO com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle claimed=1 completed=0 blocked=0 retryScheduled=1 stale=0
+19:47:12.030 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:12.045 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:12.048 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:12.096 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:12.098 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:12.146 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:12.155 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:12.165 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:12.178 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:12.182 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:12.192 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:12.201 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:12.206 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:12.210 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:12.218 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:12.224 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:12.234 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:12.255 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:12.264 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:12.265 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:12.267 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:12.270 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:12.278 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:12.302 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:12.308 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:12.315 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:12.323 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:12.326 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:12.329 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:12.331 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:12.335 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:12.339 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:12.345 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:12.351 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:12.354 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:12.360 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:12.368 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:12.375 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:12.384 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:12.392 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:12.403 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:12.410 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:12.419 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:12.422 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:12.427 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:12.445 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:12.449 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:12.454 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:12.460 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:12.462 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:12.465 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:12.474 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:12.485 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:12.489 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:12.493 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:12.517 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:12.523 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:12.527 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:12.533 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:12.548 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:12.550 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.317s)
+19:47:12.955 [Test worker] INFO com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle claimed=1 completed=1 blocked=0 retryScheduled=0 stale=0
+19:47:13.303 [Test worker] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:postgresql://localhost:59561/postgres (PostgreSQL 16.13)
+19:47:13.318 [Test worker] INFO org.flywaydb.core.internal.database.base.Schema -- Creating schema "platform" ...
+19:47:13.321 [Test worker] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "platform"."flyway_schema_history" ...
+19:47:13.371 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "platform": null
+19:47:13.373 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "1 - platform core schema"
+19:47:13.422 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "2 - operational indexes"
+19:47:13.428 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "3 - oauth clients"
+19:47:13.437 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "4 - identity sessions"
+19:47:13.451 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "5 - application role governance"
+19:47:13.456 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "6 - platform role assignments"
+19:47:13.464 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "7 - step up security evidence"
+19:47:13.473 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "8 - audit read indexes"
+19:47:13.477 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "9 - server rate limits"
+19:47:13.481 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "10 - outbox delivery state"
+19:47:13.489 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "11 - user migration control"
+19:47:13.494 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "12 - legacy password activation grants"
+19:47:13.502 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "13 - entitlement lifecycle usage ledger"
+19:47:13.521 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "14 - platform bootstrap admin"
+19:47:13.529 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "15 - bootstrap super admin user"
+19:47:13.530 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "16 - grant admin client scopes"
+19:47:13.532 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "17 - grant admin client platform scopes"
+19:47:13.534 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "18 - qr login challenges"
+19:47:13.542 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "19 - commerce orders subscriptions payments"
+19:47:13.565 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "20 - application scoped identity email"
+19:47:13.570 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "21 - provider product bindings"
+19:47:13.576 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "22 - provider notification inbox"
+19:47:13.585 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "23 - provider subscription identity"
+19:47:13.589 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "24 - provider product binding terms"
+19:47:13.592 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "25 - provider notification attempts"
+19:47:13.595 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "26 - price option billing mode"
+19:47:13.599 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "27 - provider notification event snapshot"
+19:47:13.604 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "28 - provider registrations"
+19:47:13.610 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "29 - commerce idempotency and session snapshot"
+19:47:13.615 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "30 - commerce refund idempotency"
+19:47:13.618 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "31 - reconcile builtin application roles"
+19:47:13.624 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "32 - authentication diagnostics"
+19:47:13.631 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "33 - user data requests"
+19:47:13.638 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "34 - user data request processing"
+19:47:13.647 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "35 - identity challenges"
+19:47:13.654 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "36 - user devices"
+19:47:13.664 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "37 - incident read model"
+19:47:13.669 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "38 - controlled operation tasks"
+19:47:13.677 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "39 - commerce entitlement trace"
+19:47:13.680 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "40 - user consent governance"
+19:47:13.685 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "41 - engagement governance"
+19:47:13.701 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "42 - fenlengeat test member entitlement"
+19:47:13.704 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "43 - registration email challenges"
+19:47:13.708 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "44 - telemetry public context"
+19:47:13.712 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "45 - prepaid billing mode"
+19:47:13.715 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "46 - payment renewal agreement outcome"
+19:47:13.718 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "47 - subscription period ledger"
+19:47:13.726 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "48 - purchase agreement evidence"
+19:47:13.734 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "49 - store order provider"
+19:47:13.739 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "50 - apple dual environment registration"
+19:47:13.741 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "51 - apple transaction environment"
+19:47:13.763 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "52 - federated self deletion confirmations"
+19:47:13.770 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "53 - anonymous telemetry delivery"
+19:47:13.774 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "54 - verified mini recipients"
+19:47:13.779 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "55 - mini reminder plans"
+19:47:13.792 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "platform" to version "56 - wechat self deletion provider"
+19:47:13.795 [Test worker] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 56 migrations to schema "platform", now at version v56 (execution time 00:00.299s)
+19:47:14.012 [Test worker] ERROR com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle_failed failureType=IllegalStateException
+19:47:14.235 [Test worker] INFO com.fenleng.platform.bootstrap.ScheduledUserDataRequestProcessor -- user_data_request_cycle claimed=1 completed=1 blocked=0 retryScheduled=0 stale=0
+19:47:14.384 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.384 CST [2268] ???:  ????????? (fast) ??????
+19:47:14.384 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.384 CST [2268] ???:  ?ж??κμ???????
+19:47:14.388 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.388 CST [2268] ???:  ??????????? "logical replication launcher" (PID 49616) ?????, ??????? 1
+19:47:14.390 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.390 CST [52188] ???:  ??????
+19:47:14.390 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.390 CST [52188] ???:  checkpoint starting: shutdown immediate
+19:47:14.585 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.585 CST [52188] ???:  checkpoint complete: wrote 1131 buffers (6.9%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.034 s, sync=0.001 s, total=0.196 s; sync files=0, longest=0.000 s, average=0.000 s; distance=16698 kB, estimate=16698 kB; lsn=0/25C5FD8, redo lsn=0/25C5FD8
+19:47:14.612 [postgres:pid(54208)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- 2026-11-13 19:47:14.613 CST [2268] ???:  ???????????
+19:47:14.711 [pg_ctl:pid(51968)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- waiting for server to shut down.... done
+19:47:14.712 [pg_ctl:pid(51968)] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- server stopped
+19:47:14.714 [Test worker] INFO io.zonky.test.db.postgres.embedded.EmbeddedPostgres -- fdcae62b-467a-4a00-9e01-b34877c8e87d shut down postmaster in 00:00:00.356
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,6 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing fridge...                                             
+
+   info - Statements in an if should be enclosed in a block - test\global_online_layout_test.dart:99:15 - curly_braces_in_flow_control_structures
+
+1 issue found. (ran in 5.5s)

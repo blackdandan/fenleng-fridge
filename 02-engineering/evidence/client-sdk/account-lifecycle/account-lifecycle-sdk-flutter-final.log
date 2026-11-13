@@ -1,0 +1,10 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart
+00:00 +0: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/wechat_deletion_test.dart: WeChat deletion handshake and request preserve the original session and exact confirmation
+00:00 +1: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: federated deletion proof preserves session tokens and exact intent
+00:00 +2: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: registration stores atomic session and publishes authenticated without password login
+00:00 +3: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: registration without session tokens cannot publish authenticated
+00:00 +4: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: login stores only server-issued tokens and refresh is deduplicated
+00:00 +5: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: account deletion sends step-up confirmation header
+00:00 +6: D:/Development/WorkSpaces/CodeXWP/fenleng-client-sdk/packages/sdk-flutter/test/auth_test.dart: incompatible API and insecure transport fail closed
+00:00 +7: All tests passed!

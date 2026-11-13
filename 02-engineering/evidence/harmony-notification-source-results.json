@@ -1,0 +1,28 @@
+{
+  "status": "source-candidate-not-native-validated",
+  "hostTests": 28,
+  "hostTestsMethod": "Actual ETS sources transpiled by esbuild, native APIs replaced with explicit fakes; not ArkTS compilation",
+  "nativeBuild": "not-run",
+  "nativeRuntime": "not-run",
+  "environment": "not-ready: missing matching SDK,ohpm,hvigor,hdc",
+  "scope": "WP04 same approved three-platform feature; no new native plugin dependency",
+  "files": {
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderBridge.ets": "3dac4f8b8d53eb02617ec522e8e31ccc99ca04ba429092c2de2d401532e414d3",
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderCoordinator.ets": "7abb2538376d6b56ba05afe3c6b6f3555feded7bf9b083673e2490a722f31e5b",
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderNative.ets": "76c89ddb24ce98abbdd98fc502edb760fcc0535ee62b11ff7fc883314e872e00",
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/reminders/ReminderPlan.ets": "d09fc17c746a93dc77130243a90cd6a89ce8d8ade2e08692f5015066a9c188a7",
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/entryability/EntryAbility.ets": "d466ccf8f053e9b9e15860f068f6c8eec273181ee6d9540a3b4c094ab9aa734e",
+    "06-project/app/apps/fridge/ohos/entry/src/main/ets/entryability/BootstrapChannel.ets": "8c9cdb4e92712db5ed15f6602b8e84b0fe77207bb5ba5e894d625a2588acc4ef"
+  },
+  "testLog": "02-engineering/evidence/harmony/harmony-reminders-combined.log",
+  "environmentLog": "02-engineering/evidence/harmony/harmony-reminders-environment.log",
+  "handoff": "03-deployment/harmony-notification-verification.md",
+  "limitations": [
+    "No ArkTS type checking,HAP,signature,installation or device delivery proof",
+    "API17 atomic card update unavailable; explicit native failure instead of unsafe recreation",
+    "Permission eligibility/profile needs formal Huawei verification",
+    "OS cancellation interaction with same date card and time/zone/reboot behaviors need native verification"
+  ],
+  "goalComplete": false,
+  "knowledgeAudit": "passed: nextAction=none"
+}

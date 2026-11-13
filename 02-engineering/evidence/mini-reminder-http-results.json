@@ -1,0 +1,157 @@
+{
+  "stage": "mini-reminder-http-runtime-local-candidate",
+  "goalComplete": false,
+  "baseline": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "tests": [
+    {
+      "suite": "com.fenleng.platform.bootstrap.MiniReminderConfigurationTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.bootstrap.MiniReminderConfigurationTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.interfaces.http.SelfServiceSecurityTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.interfaces.http.SelfServiceSecurityTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.MiniReminderDispatchRaceTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.persistence.MiniReminderDispatchRaceTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.MiniReminderDispatchTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.persistence.MiniReminderDispatchTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.MiniReminderEligibilityTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.persistence.MiniReminderEligibilityTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.MiniReminderPlansTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/mini-reminder-http/TEST-com.fenleng.platform.persistence.MiniReminderPlansTest.xml"
+    }
+  ],
+  "total": 37,
+  "failures": 0,
+  "skipped": 0,
+  "testRuns": [
+    ".fenleng/mini-reminder-http-final-ledger.log",
+    ".fenleng/mini-reminder-http-final-boundary.log"
+  ],
+  "checks": {
+    "bootstrapCompile": "passed",
+    "contracts": "27 JSON /132 public operations /14 event channels passed",
+    "compatibility": "52 operations /14 schemas /9 events /25 error codes passed",
+    "runtime": "190 total /171 platform /19 edge; existing secret and approval rules unchanged",
+    "releaseEngineering": "passed",
+    "knowledgeAudits": [
+      ".fenleng/mini-reminder-http-fridge-audit.log",
+      ".fenleng/mini-reminder-http-platform-audit.log"
+    ]
+  },
+  "sources": [
+    {
+      "path": "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/MiniReminderApi.kt",
+      "sha256": "6cd82d3f79481e7b24ceebe8174e7587b4665108352f1c63aba56262042e2141"
+    },
+    {
+      "path": "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/MiniReminderPlans.kt",
+      "sha256": "eae8d76d9d1ce828f8bdfe6faa183830b7e598508b5813d99ce7d341b8b6f104"
+    },
+    {
+      "path": "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/MiniReminderConfiguration.kt",
+      "sha256": "8c6b958acdd0d6300e427a7af86e85f022da2119199f568365d70c7f3cc0d746"
+    },
+    {
+      "path": "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/MiniReminderSchedulingConfiguration.kt",
+      "sha256": "34b3d5c9538233369799453cce1e24f59e475ac6e7247d9ac73d120e44ca1640"
+    },
+    {
+      "path": "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/RegisteredMiniReminderPolicies.kt",
+      "sha256": "b3c679358bbf3ecc3cff60731218c7060accaca28f6a424573273402e3017909"
+    },
+    {
+      "path": "backend/platform-bootstrap/src/main/resources/application.yml",
+      "sha256": "d8b823b739d9ef7811f434289c0659b40e11a490bca17e4932f957e3899a15f8"
+    },
+    {
+      "path": "backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/MiniReminderConfigurationTest.kt",
+      "sha256": "03662b3c3c90aa8239425545af748d4caa9c6884581c08352fb4bddfa4cb384c"
+    },
+    {
+      "path": "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/MiniReminderHttpController.kt",
+      "sha256": "7760346a21a8b8f0efa45eaf89b4c0c617cc567e9f3f2406fc1d7e8f5b863215"
+    },
+    {
+      "path": "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/PlatformErrorHandler.kt",
+      "sha256": "b534fe0a8c50bd3799166237c9606b084bd713e45b8dd5652d8278ab2c9a9c1b"
+    },
+    {
+      "path": "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/SelfServiceSecurityConfiguration.kt",
+      "sha256": "f7b012e75d79a21f59fbc2a7a12dc138b955f2de1d12f44505f998ad7a77752c"
+    },
+    {
+      "path": "backend/platform-interfaces/src/test/kotlin/com/fenleng/platform/interfaces/http/MiniReminderHttpControllerTest.kt",
+      "sha256": "4d6d1537a5e15c986e6cf10ec556c5c14b6947f3ee0ea43eae5b0ba261dccedd"
+    },
+    {
+      "path": "backend/platform-persistence/src/main/kotlin/com/fenleng/platform/persistence/JdbcMiniReminderStore.kt",
+      "sha256": "4aec18b918a2417d93f96001f70e6423bf264d1b2a6324c24ab1a0b19ffb2487"
+    },
+    {
+      "path": "backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/MiniReminderDispatchTest.kt",
+      "sha256": "138f786f2cc9431f282ee4549a53fbba8bd63e5c48bf6c7f234b359215715ece"
+    },
+    {
+      "path": "backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/MiniReminderPlansTest.kt",
+      "sha256": "73f14145120ffac5be47d2367de3b96859f366eab4631a84b044ef79ce64d810"
+    },
+    {
+      "path": "deployment/environment/runtime-policy.json",
+      "sha256": "3f38c3fb212c965fd2b912e9145274691c8bec66b6144736296afdbc46544853"
+    },
+    {
+      "path": "docs/contracts/v1/openapi/platform-api.json",
+      "sha256": "832ffa7d32b369b03b2115a79c78d269fb34ce28faf8b89ee7524341be75d790"
+    },
+    {
+      "path": "docs/contracts/v1/schemas/mini-reminder.schema.json",
+      "sha256": "9171001186eeec1a90ba9414b205e06dffc46af3065fcd297e181cba4fd05652"
+    }
+  ],
+  "scopeLimits": [
+    "No production migration or deployment",
+    "No real WeChat authorization/quota/delivery proof",
+    "No new APK,website or mini build in this server stage",
+    "Official SDK and mini subscription integration still pending"
+  ]
+}

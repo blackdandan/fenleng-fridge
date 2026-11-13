@@ -1,0 +1,21 @@
+{
+  "scope": "Primary WeChat API protocol evidence; deterministic HTTPS read, not Provider calls or real message delivery",
+  "sources": [
+    {
+      "url": "https://developers.weixin.qq.com/miniprogram/dev/server/API/mp-message-management/subscribe-message/api_sendmessage.html",
+      "sourceMode": "direct-https",
+      "httpStatus": 200,
+      "capturedFile": ".fenleng/wechat-subscribe-official-decoded.html",
+      "sha256": "66024a710f5027303b28a7b45e6abeaaad8a9916849725d4eec7bb060698b876",
+      "recordedAt": "2026-11-13T02:45:49.555476+00:00"
+    },
+    {
+      "url": "https://developers.weixin.qq.com/miniprogram/dev/server/API/mp-access-token/api_getstableaccesstoken.html",
+      "sourceMode": "direct-https",
+      "httpStatus": 200,
+      "capturedFile": ".fenleng/wechat-stable-token-official.html",
+      "sha256": "dfb37ac315163614c345c762c6fd1eb8376e92bdce1c9e801ae26d2521af4d8b",
+      "recordedAt": "2026-11-13T02:45:49.575993+00:00"
+    }
+  ]
+}

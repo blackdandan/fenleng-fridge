@@ -1,0 +1,208 @@
+{
+  "colors": {
+    "page": {
+      "point": [
+        10,
+        630
+      ],
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "cabinet": {
+      "point": [
+        29,
+        350
+      ],
+      "reference": "#e5e9df",
+      "render": "#e5e9df",
+      "maxChannelDelta": 0
+    },
+    "cold": {
+      "point": [
+        40,
+        175
+      ],
+      "reference": "#eaf0e7",
+      "render": "#eaf0e7",
+      "maxChannelDelta": 0
+    },
+    "frozen": {
+      "point": [
+        39,
+        450
+      ],
+      "reference": "#e9eef0",
+      "render": "#e9eef0",
+      "maxChannelDelta": 0
+    },
+    "pantry": {
+      "point": [
+        225,
+        450
+      ],
+      "reference": "#f1ede2",
+      "render": "#f1ede2",
+      "maxChannelDelta": 0
+    },
+    "surface": {
+      "point": [
+        330,
+        66
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    }
+  },
+  "geometry": {
+    "cabinet": {
+      "referenceBounds": [
+        26,
+        131,
+        404,
+        584
+      ],
+      "renderBounds": [
+        25,
+        130,
+        405,
+        584
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "cold": {
+      "referenceBounds": [
+        34,
+        139,
+        396,
+        408
+      ],
+      "renderBounds": [
+        34,
+        139,
+        396,
+        407
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "frozen": {
+      "referenceBounds": [
+        34,
+        417,
+        210,
+        576
+      ],
+      "renderBounds": [
+        34,
+        417,
+        209,
+        575
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "pantry": {
+      "referenceBounds": [
+        220,
+        417,
+        396,
+        576
+      ],
+      "renderBounds": [
+        220,
+        418,
+        396,
+        575
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "icons": {
+    "bell": {
+      "referenceBounds": [
+        324,
+        73,
+        338,
+        90
+      ],
+      "renderBounds": [
+        325,
+        72,
+        339,
+        89
+      ],
+      "maxBoundaryDelta": 1,
+      "referenceInkSize": [
+        14,
+        17
+      ],
+      "renderInkSize": [
+        14,
+        17
+      ]
+    },
+    "settings": {
+      "referenceBounds": [
+        374,
+        72,
+        392,
+        90
+      ],
+      "renderBounds": [
+        375,
+        71,
+        393,
+        89
+      ],
+      "maxBoundaryDelta": 1,
+      "referenceInkSize": [
+        18,
+        18
+      ],
+      "renderInkSize": [
+        18,
+        18
+      ]
+    }
+  },
+  "typography": {
+    "title": {
+      "referenceBounds": [
+        26,
+        69,
+        125,
+        92
+      ],
+      "renderBounds": [
+        26,
+        69,
+        124,
+        93
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "normalization": {
+    "referenceSize": [
+      430,
+      710
+    ],
+    "nativeSize": [
+      1080,
+      2400
+    ],
+    "nativeDensity": 402,
+    "nativeStatusCropPx": 136,
+    "referenceStatusExcludedPx": 45,
+    "nativeFont": "Android platform CJK",
+    "figmaFont": "Microsoft YaHei",
+    "nativeScreenshot": "02-engineering/evidence/android/home-figma-430-proof-20261113.png"
+  },
+  "scope": "Home only. Content normalization excludes native status bar and the fake Figma 10:00. Not proof for other routes/platforms.",
+  "result": {
+    "allSixColorPointsExact": true,
+    "allFourPanelBoundsWithin1px": true,
+    "iconInkSizesMatch": true
+  },
+  "apkSha256": "e36623f180d9c132cd0d6e357a72527f4da80d6b951144492e2c4a915a818556"
+}

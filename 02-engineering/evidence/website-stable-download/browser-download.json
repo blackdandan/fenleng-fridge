@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Actual Chromium download through the current local website; not Android WeChat",
+  "bytes": 204147812,
+  "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+  "filename": "fenleng-fridge_latest.apk",
+  "url": "http://127.0.0.1:4817/downloads/fenleng-fridge_latest.apk",
+  "screenshot": ".fenleng/website-restored-download-390.png"
+}

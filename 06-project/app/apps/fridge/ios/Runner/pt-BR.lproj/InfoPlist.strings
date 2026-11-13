@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Fotografe alimentos e mantenha as fotos neste dispositivo. As fotos não são enviadas e nenhum áudio é gravado. Você também pode escolher fotos da galeria.";
+"NSPhotoLibraryUsageDescription" = "Galeria — Fotos e estoque apenas neste dispositivo";
+"CFBundleDisplayName" = "Minha geladeira";

@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Yiyecek fotoğraflarını çekin ve yalnızca bu cihazda saklayın. Fotoğraflar yüklenmez, ses kaydedilmez. Kitaplıktan fotoğraf da seçebilirsiniz.";
+"NSPhotoLibraryUsageDescription" = "Fotoğraf kitaplığı — Fotoğraflar ve stok yalnızca bu cihazda";
+"CFBundleDisplayName" = "Buzdolabım";

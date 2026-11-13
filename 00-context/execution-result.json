@@ -1,0 +1,143 @@
+{
+  "mode": "migrate-existing-project",
+  "status": "migrated",
+  "target_project_path": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge",
+  "migration_report": "00-context/migration-report.md",
+  "project_containers": [
+    "06-project/app",
+    "06-project/mini-program",
+    "06-project/web"
+  ],
+  "moved_paths": [
+    {
+      "from": "docs/mvp",
+      "to": "01-product/mvp"
+    },
+    {
+      "from": "docs/spec/knowledge-fetch-reliability.md",
+      "to": "05-knowledge/troubleshooting/knowledge-fetch-reliability.md"
+    },
+    {
+      "from": "preview/figma-qa",
+      "to": "01-product/references/figma-qa"
+    },
+    {
+      "from": "preview",
+      "to": "06-project/prototype"
+    },
+    {
+      "from": "scripts",
+      "to": "06-project/scripts"
+    }
+  ],
+  "central_registry_status": "registered-locally-not-pushed",
+  "domain": "fridge.fenlengtech.com",
+  "mini_program_platforms": [
+    "weapp"
+  ],
+  "pending": [
+    "wechat_app_id",
+    "app_guest_session_contract",
+    "wechat_external_reminder_contract",
+    "production_dns_tls_verification"
+  ],
+  "next_action": "complete",
+  "warnings": [
+    "existing prototype and Figma differ; no visual acceptance implied",
+    "central registry and project changes are local, not committed/pushed",
+    "code and SDK initialization deferred to coding"
+  ],
+  "created_directories": [
+    "00-context",
+    "01-product",
+    "02-engineering",
+    "03-deployment",
+    "04-operations",
+    "05-knowledge",
+    "06-project",
+    "06-project/app",
+    "06-project/mini-program",
+    "06-project/web"
+  ],
+  "created_files": [
+    "00-context/README.md",
+    "00-context/constraints.md",
+    "00-context/decisions.md",
+    "00-context/execution-result.json",
+    "00-context/glossary.md",
+    "00-context/links.md",
+    "00-context/migration-report.md",
+    "00-context/project.yaml",
+    "00-context/registry-entry.json",
+    "01-product/README.md",
+    "01-product/handoff.md",
+    "02-engineering/README.md",
+    "02-engineering/architecture.md",
+    "02-engineering/coding-guide.md",
+    "02-engineering/engineering-guide.md",
+    "02-engineering/integration.md",
+    "03-deployment/README.md",
+    "03-deployment/domain-and-ssl.md",
+    "04-operations/README.md",
+    "04-operations/compliance.md",
+    "05-knowledge/README.md",
+    "06-project/README.md",
+    "06-project/app/README.md",
+    "06-project/mini-program/README.md",
+    "06-project/web/README.md",
+    "fenleng.project.yaml",
+    "product-core-openapi.json"
+  ],
+  "updated_files": [
+    "docs/mvp/MVP.md",
+    "docs/mvp/surface-scope.md",
+    "docs/mvp/application-website-integration.md",
+    "docs/mvp/version-history.md"
+  ],
+  "preexisting_untracked_paths": [
+    "docs/spec/",
+    "preview/figma-qa/"
+  ],
+  "validation": {
+    "directory_readmes": "passed",
+    "top_level_mapping_count": 21,
+    "code_containers_readme_only": "passed",
+    "json_parsing": "passed",
+    "relative_markdown_links": "passed",
+    "git_diff_check": "passed",
+    "yaml_parsing": "not-run-parser-unavailable",
+    "code_builds": "not-applicable-no-engineering-code-created",
+    "source_inventory_files": 88,
+    "hashes_verified_before_adaptation": 88,
+    "all_source_files_present": "passed",
+    "preview_v2": "passed",
+    "preview_v3": "passed",
+    "website_validator": "passed",
+    "http_entrypoints_and_assets": 22,
+    "project_knowledge_manifest": "ready-no-findings",
+    "base_project_registry": "passed",
+    "three_confirmed_application_ids": "passed",
+    "old_source_directories_removed": "passed"
+  },
+  "application_identifiers": {
+    "android": "com.fenlengtech.fridge",
+    "ios": "com.fenlengtech.fridge",
+    "ohos": "com.fenlengtech.fridge"
+  },
+  "external_updated_files": [
+    "../fenlengtechbase/knowledge/project-matrix/projects.json"
+  ],
+  "path_adapted_files": [
+    "01-product/mvp/application-website-integration.md",
+    "01-product/mvp/fl-mvp-definition-summary.md",
+    "01-product/mvp/MVP.md",
+    "01-product/mvp/surface-scope.md",
+    "01-product/references/figma-qa/README.md",
+    "06-project/prototype/mvp/plans/preview_epic_plan.md",
+    "06-project/prototype/mvp/README.md",
+    "06-project/prototype/shared/legal-content.js",
+    "06-project/prototype/website/plans/preview_epic_plan.md",
+    "06-project/prototype/website/README.md",
+    "06-project/scripts/build-preview-legal.mjs"
+  ]
+}

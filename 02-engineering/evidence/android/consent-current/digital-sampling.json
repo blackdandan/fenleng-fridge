@@ -1,0 +1,46 @@
+{
+  "figmaFile": "b34I8tzPpU7tv1sHHdWLkq",
+  "node": "2:241",
+  "session": "efdbd4d6-3da8-40ae-a31d-b7ec17b005d2",
+  "scope": "Color,margin,centering and action geometry. Text/copy-driven total height is intentionally fluid.",
+  "density": 402,
+  "scale": 2.5125,
+  "dialogBackground": "#f8f8f3",
+  "ink": "#2c3c32",
+  "dialogFillBounds": [
+    40,
+    708,
+    1040,
+    1632
+  ],
+  "sideMarginsLogical": [
+    15.92,
+    15.92
+  ],
+  "centerErrorLogical": [
+    0.0,
+    0.0
+  ],
+  "actions": {
+    "agree": {
+      "exactFill": "#45654c",
+      "heightLogical": 44.179,
+      "figmaHeight": 44,
+      "heightDelta": 0.179,
+      "widthLogical": 350.249
+    },
+    "decline": {
+      "exactFill": "#fffefa",
+      "heightLogical": 45.771,
+      "figmaHeight": 45.6,
+      "heightDelta": 0.171,
+      "widthLogical": 350.249
+    }
+  },
+  "safeAreaProof": "dedicated32px top/24px bottom inset widget test plus native320 dark text2 screenshot review",
+  "intentionalDifferences": [
+    "Current product copy replaces prototype wording; shorter Chinese paragraphs produce a shorter centered dialog",
+    "No duplicate prototype buttons or simulated records in backdrop",
+    "System native fonts differ from Microsoft YaHei"
+  ]
+}

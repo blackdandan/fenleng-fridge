@@ -1,0 +1,11 @@
+{
+  "id": "fenleng-fridge",
+  "repository": {
+    "provider": "github",
+    "owner": "blackdandan",
+    "name": "fenleng-fridge"
+  },
+  "manifestPath": "fenleng.project.yaml",
+  "defaultRef": "main",
+  "status": "active"
+}

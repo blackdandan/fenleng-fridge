@@ -1,0 +1,42 @@
+schemaVersion: "1.0"
+project:
+  id: fenleng-fridge
+  name: 冰箱库存管理
+  description: 微信小程序、Android/iOS/HarmonyOS NEXT App 与静态官网；复用 Shared Platform。
+  type: app
+repository:
+  provider: github
+  owner: blackdandan
+  name: fenleng-fridge
+  defaultRef: main
+knowledge:
+  roots:
+    - "00-context/"
+    - "01-product/"
+    - "02-engineering/"
+    - "03-deployment/"
+    - "04-operations/"
+    - "05-knowledge/"
+  entrypoints:
+    overview: 00-context/README.md
+    spec: 01-product/handoff.md
+    architecture: 02-engineering/architecture.md
+    contracts: 02-engineering/integration.md
+    decisions: 00-context/decisions.md
+    runbooks: 03-deployment/domain-and-ssl.md
+exposure:
+  visibility: fenleng-matrix
+  allowedConsumers:
+    - "*"
+  deniedPaths:
+    - ".git/"
+    - ".fenleng/"
+    - ".env"
+ownership:
+  team: Fenleng Engineering
+  maintainers:
+    - "blackdandan"
+lifecycle:
+  status: active
+  version: "0.4.0-handoff"
+  lastReviewedAt: "2026-11-13"

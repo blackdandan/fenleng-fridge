@@ -1,0 +1,58 @@
+{
+  "status": "android-first-consent-visual-and-flow-validated-with-explicit-limits",
+  "goalComplete": false,
+  "latestApk": {
+    "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+    "bytes": 204147812,
+    "kind": "debug-preview",
+    "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+    "installed": "emulator-5582"
+  },
+  "widgetTests": {
+    "newTests": 3,
+    "layoutCombinations": 80,
+    "insets": "32top/24bottom keeps16margin",
+    "flow": "document/refusal/reconsider do not imply acceptance"
+  },
+  "appRegression": {
+    "passed": 168,
+    "skipped": 7,
+    "skipScope": "global-only tests in default channel"
+  },
+  "globalRegression": {
+    "passed": 26,
+    "skipped": 0
+  },
+  "analyze": "passed lib/test and changed feature source",
+  "locales": {
+    "languages": 20,
+    "keys": 200,
+    "canonicalAppMiniByteParity": true,
+    "packagedKeysVerified": true
+  },
+  "nativeFunctionalProof": {
+    "apk": "4093a74aa3a2e26593417c1a8a93facea53f5decd281420fcc4c2f535e7d7584",
+    "readerCancelWithdrawReconsentPreservesStock": true,
+    "uiaLimitation": "Second WebView opening exposed header but not body to UIA; rendered body/footer observed and footer clicked from current screenshot. Not claimed as screen-reader verification."
+  },
+  "nativeFinalVisualProof": {
+    "scope": "Visual-only unaccepted-record fixture on dedicated QA AVD; actual withdrawal/reconsent verified separately",
+    "completed": true,
+    "originalConsentBytesAndStockRestored": true,
+    "installedApkSha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac"
+  },
+  "sampling": "digital-sampling.json",
+  "mini": "200-key typecheck/weapp build passed; common.js574KiB warning remains",
+  "sourceHashes": {
+    "06-project/app/packages/features/feature_settings/lib/src/consent.dart": "47d9443a1726f000271bfc31e9e050faa26688c7634c2f83db5997d66ef03cef",
+    "06-project/app/apps/fridge/test/consent_screen_test.dart": "136b376809eadac18910f2ee6b451921c09646613c2ecb46a169386b7ad91062",
+    "06-project/contracts/design-tokens.json": "214f22db53103ad0231b516a7be26981644b7278227710237baaea50e9fc845f",
+    "06-project/contracts/locales/messages.json": "b68e4e347c5e1aedfe7b0720bcb52391355440cedebc0c21b501fdb2c0ccd777",
+    "06-project/scripts/add-consent-permission-locales.mjs": "a4beb054757c279bb1c82ad730cf5f6d5e8bed948ad995959e8659c8d8efe8c9"
+  },
+  "remaining": [
+    "Final source/artifact regeneration and handoff/efficiency audit",
+    "iOS/Harmony compile/device verification per handoff",
+    "Formal Provider/config/SDK/platform publication and release/device checks remain separate"
+  ]
+}

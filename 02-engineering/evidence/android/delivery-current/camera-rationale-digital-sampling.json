@@ -1,0 +1,157 @@
+{
+  "scope": "Exact-color raster bounds at natural430 reference; glyph geometry separated from container gates",
+  "figmaFile": "b34I8tzPpU7tv1sHHdWLkq",
+  "node": "2:262",
+  "session": "efdbd4d6-3da8-40ae-a31d-b7ec17b005d2",
+  "scale": 2.5125,
+  "nativeStatusBarPixels": 60,
+  "statusBarEvidence": "dumpsys window InsetsSource type=statusBars frame=[0,0][1080,60]",
+  "samples": {
+    "dialogBackground": {
+      "color": "#f8f8f3",
+      "referenceRasterBounds": [
+        17,
+        17,
+        413,
+        399
+      ],
+      "nativeRasterBounds": [
+        40,
+        100,
+        1040,
+        1063
+      ],
+      "normalizedNativeBounds": [
+        15.92,
+        15.92,
+        413.93,
+        399.204
+      ],
+      "edgeDeltaLogicalPixels": [
+        -1.08,
+        -1.08,
+        0.93,
+        0.204
+      ],
+      "maxAbsoluteDelta": 1.08
+    },
+    "primary": {
+      "color": "#45654c",
+      "referenceRasterBounds": [
+        41,
+        199,
+        389,
+        246
+      ],
+      "nativeRasterBounds": [
+        100,
+        560,
+        979,
+        681
+      ],
+      "normalizedNativeBounds": [
+        39.801,
+        199.005,
+        389.652,
+        247.164
+      ],
+      "edgeDeltaLogicalPixels": [
+        -1.199,
+        0.005,
+        0.652,
+        1.164
+      ],
+      "maxAbsoluteDelta": 1.199
+    },
+    "secondarySurfaces": {
+      "color": "#fffefa",
+      "referenceRasterBounds": [
+        42,
+        260,
+        388,
+        369
+      ],
+      "nativeRasterBounds": [
+        101,
+        713,
+        979,
+        988
+      ],
+      "normalizedNativeBounds": [
+        40.199,
+        259.9,
+        389.652,
+        369.353
+      ],
+      "edgeDeltaLogicalPixels": [
+        -1.801,
+        -0.1,
+        1.652,
+        0.353
+      ],
+      "maxAbsoluteDelta": 1.801
+    },
+    "closeBackground": {
+      "color": "#ecefe6",
+      "referenceRasterBounds": [
+        346,
+        40,
+        389,
+        83
+      ],
+      "nativeRasterBounds": [
+        869,
+        158,
+        979,
+        268
+      ],
+      "normalizedNativeBounds": [
+        345.871,
+        39.005,
+        389.652,
+        82.786
+      ],
+      "edgeDeltaLogicalPixels": [
+        -0.129,
+        -0.995,
+        0.652,
+        -0.214
+      ],
+      "maxAbsoluteDelta": 0.995
+    },
+    "closeGlyph": {
+      "color": "#8a967b",
+      "referenceRasterBounds": [
+        363,
+        59,
+        371,
+        67
+      ],
+      "nativeRasterBounds": [
+        913,
+        203,
+        935,
+        225
+      ],
+      "normalizedNativeBounds": [
+        363.383,
+        56.915,
+        372.139,
+        65.672
+      ],
+      "edgeDeltaLogicalPixels": [
+        0.383,
+        -2.085,
+        1.139,
+        -1.328
+      ],
+      "maxAbsoluteDelta": 2.085
+    }
+  },
+  "containerGate": "passed <=2 logical px",
+  "glyphStatus": "reported separately; native Noto/system glyph differs from Figma Microsoft YaHei",
+  "intentionalDifferences": [
+    "Real camera page behind rationale instead of prototype sample inventory",
+    "Album button uses shared localized album label"
+  ]
+}

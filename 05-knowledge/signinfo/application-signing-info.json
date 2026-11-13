@@ -1,0 +1,35 @@
+{
+  "projectId": "fenleng-fridge",
+  "applicationName": "冰箱库存管理",
+  "websiteDomain": "fridge.fenlengtech.com",
+  "android": {
+    "applicationId": "com.fenlengtech.fridge",
+    "keyAlias": "fenleng-fridge",
+    "keystorePath": "06-project/app/apps/fridge/android/signing/application-release.jks",
+    "credentialsPath": "06-project/app/apps/fridge/android/signing/credentials.properties",
+    "certificateFingerprintSha256": "84:4F:B2:A1:F3:68:A8:75:B7:9B:F5:4B:8E:98:59:12:0C:E8:0F:9E:CC:0F:BC:15:38:FF:41:71:8E:3F:86:E5",
+    "certificateFingerprintSha1": "67:4A:6C:53:A1:E6:8C:0A:29:9E:48:27:98:47:B8:21:BA:5A:60:74",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA7YbRP/QqQTeBz7EBI3Jt\nCIHyaLyHGvM8CciCtCKBUDxNaTUIoiNotjFkh8h7wckfm8pVmIgDgulw7v4rC2Sb\nx4uMCo07jsqkbnuhHibH3oKzfstN2cgLRZdthfMImleIrdIxA65v7dRxwIUklJ+A\nkpXmfrSmPITI2JUKiRo6HfgnvvCmi8+QSfvH7rIdVWlnoi1j3FqSOEtGjqYcPnNH\nq/wCXHgEDeeKWvGXWerGRP8OrGNZnbS40GrROsLTtW3lkh3qPBSEaUw3KytbcS08\nSJrRfF5mP1kVhdeWBxBeBWMt83pSa2difrVsALYBfPi8wxY9g7AryvYPgyTmu6AC\na2HBjWGnHN6XXW/AabQFCPl7+UEtRhw3xQFavPHtav2mT7nCgOagFFCvAfxPS0qI\nLAO8UoVDl6F+v4S0mlYgoAh2JbtGc1tyYA6Kj7RmWFWaRnJkEp+Lok47HUDDGkGi\nigP5MyO1I7IO6GtpH00LtNxwlH3SiTLW5sLqqDks0YLPAgMBAAE=\n-----END PUBLIC KEY-----\n",
+    "vaultNames": [
+      "fenleng-fridge-android-keystore",
+      "fenleng-fridge-android-store-password",
+      "fenleng-fridge-android-key-alias",
+      "fenleng-fridge-android-key-password"
+    ]
+  },
+  "ios": {
+    "bundleId": "com.fenlengtech.fridge",
+    "teamId": null,
+    "certificateId": null,
+    "certificateName": null,
+    "certificateFingerprintSha256": null,
+    "publicKeyPem": null,
+    "profileId": null,
+    "status": "owner-macos-signing-follow-up"
+  },
+  "harmonyos": {
+    "bundleName": "com.fenlengtech.fridge",
+    "appIdentifier": null,
+    "status": "owner-platform-registration-follow-up"
+  }
+}

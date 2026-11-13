@@ -1,0 +1,81 @@
+{
+  "status": "candidate-implemented-locally-verified-not-deployed",
+  "goalComplete": false,
+  "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "sourceMode": "local-worktree-candidate",
+  "tests": [
+    {
+      "name": "com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest",
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.MiniReminderDispatchRaceTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "totalPassed": 46,
+  "bootstrapCompile": "passed with configuration tests",
+  "scope": "Local HTTP OAuth signature/project/UID tests; actual temporary PostgreSQL processor/lifecycle tests; provider endpoint is local test server, not Google production",
+  "defaultManagedApplications": [],
+  "productTemplate": "03-deployment/config/firebase-cleanup-server.example.json",
+  "configurationFailure": "FIREBASE_CLEANUP_NOT_CONFIGURED uses existing bounded retry; no false completion",
+  "remoteDeletion": "not-run-no-real-service-account-no-production-approval",
+  "migrations": "none",
+  "remainingOwnerWork": [
+    "Product Firebase project and matching login registrations",
+    "Server service account credential injection using existing Vault/env channel",
+    "Approve and deploy platform candidate; preserve existing production deletion approval/holds",
+    "Verify real Firebase deletion with designated test account after seven-day eligibility"
+  ],
+  "sourceHashes": {
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/port/FirebaseAccountCleanup.kt": "6601bcff3e6a8fa77cdad570a419d9fd861bb3e57c2cda8f1289be6c9bd71394",
+    "backend/platform-infrastructure/src/main/kotlin/com/fenleng/platform/infrastructure/FirebaseAccountCleanupAdapter.kt": "b73fb3a97195bfa3c07fcc02ebeed4012f55edf9d357185374d083bd7fb22132",
+    "backend/platform-infrastructure/src/test/kotlin/com/fenleng/platform/infrastructure/FirebaseAccountCleanupAdapterTest.kt": "f62c960d9a82d12ed2da7d1aeba376b56c62005cb848012929311f4561b7d36b",
+    "backend/platform-persistence/src/main/kotlin/com/fenleng/platform/persistence/JdbcUserDataRequestProcessor.kt": "c73816b8a1de037e87e67a317d580782fa6881549e805b5dd1a58653ca449868",
+    "backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/JdbcFirebaseAccountCleanupTest.kt": "80d0403a27340b8c142b62e1a0a3f19ee90f0834243cc649889c3fd4a039c3dd",
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/FirebaseCleanupConfiguration.kt": "b6bf502a5a59efa04de2f54c8780613e77529b665fe582c2f64b69793382ee18",
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingConfiguration.kt": "0cc80bb4e0f467cbd34125eb737e920043aeb13a7a1f39098971b34276e2eb2e",
+    "backend/platform-bootstrap/src/main/resources/application.yml": "aec598ba7789d62e040824e85ce6546d54be21ab4faab1095e402db942ddbeea",
+    "backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/FirebaseCleanupConfigurationTest.kt": "47b655930c585df9016b220639a300dda62b8ead53accc204451d00c3f5bfab0",
+    "docs/spec/wp-fridge-firebase-account-cleanup.md": "e9d8642c234f1ca4320e0a4beb95c0fbc629815fd2176043bb63f7f720882112"
+  },
+  "technicalSources": [
+    "https://docs.cloud.google.com/identity-platform/docs/reference/rest/v1/projects.accounts/delete",
+    "https://developers.google.com/identity/protocols/oauth2/service-account"
+  ]
+}

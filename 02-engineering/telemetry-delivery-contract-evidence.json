@@ -1,0 +1,29 @@
+{
+  "project": "fenleng-fridge",
+  "publicBaseline": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "sources": [
+    {
+      "projectId": "fenleng-shared-platform",
+      "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+      "requestedRef": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "source": "docs/contracts/notification-feedback-contract.md",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T00:55:32.235Z"
+    },
+    {
+      "projectId": "fenleng-shared-platform",
+      "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+      "requestedRef": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+      "source": "docs/contracts/v1/schemas/engagement.schema.json",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T00:55:41.252Z"
+    }
+  ],
+  "candidateContract": "../fenleng-shared-platform/docs/contracts/v1/authenticated-telemetry.md",
+  "candidateSourceMode": "local-worktree",
+  "productionDeployed": false
+}

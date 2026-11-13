@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.application.usecase.WechatProfileHydrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-13T07:48:05.916Z" hostname="DESKTOP-PF7J11G" time="0.002">
+  <properties/>
+  <testcase name="preserves user customized profile()" classname="com.fenleng.platform.application.usecase.WechatProfileHydrationTest" time="0.002"/>
+  <testcase name="hydrates placeholder nickname and empty avatar()" classname="com.fenleng.platform.application.usecase.WechatProfileHydrationTest" time="0.0"/>
+  <testcase name="ignores empty nickname and unsafe avatar()" classname="com.fenleng.platform.application.usecase.WechatProfileHydrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

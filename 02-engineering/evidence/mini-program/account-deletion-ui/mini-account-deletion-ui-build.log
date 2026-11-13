@@ -1,0 +1,158 @@
+$ pnpm --filter @fridge/miniapp build:weapp
+$ taro build --type weapp
+👽 Taro v4.3.2
+
+Tips:
+1. 建议开启持久化缓存功能，能有效提升二次编译速度，详情请参考: https://docs.taro.zone/docs/config-detail#cache。
+
+
+
+● Webpack █████████████████████████  (0%)  
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (10%) 0/8 entries 8/8 dependencie
+s 0/8 modules 1 active 
+ babel-loader › src\app.config.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (10%) 0/8 entries 8/9 dependencie
+s 0/8 modules 8 active 
+ ...73baf4c520\node_modules\@tarojs\webpack5-runner\dist\template\custom-wrapp
+er.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 47/85 dependenc
+ies 2/25 modules 20 active 
+ ...+taro@4.3.2_89016b22f777b15d8f5ee6c39cfbd415\node_modules\@tarojs\taro\ind
+ex.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%)  
+ ...postcs_5e979d32a58c9ab28deff24f5070b737\node_modules\postcss-loader\dist\c
+js.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%)  
+ ..._sass@1.9_b0fa5ae9820a43760773a5119ec0db3f\node_modules\sass-loader\dist\c
+js.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 108/168 depende
+ncies 2/55 modules 38 active 
+ ...nleng-fridge\06-project\mini-program\apps\miniapp\src\assets\icons\setting
+s.svg
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 143/240 depende
+ncies 21/70 modules 37 active 
+ ...babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\classCallChe
+ck.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 231/259 depende
+ncies 25/121 modules 94 active 
+ ...\.pnpm\@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\type
+of.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 248/267 depende
+ncies 30/122 modules 92 active 
+ babel-loader › ..\..\packages\platform-adapters\weapp\src\index.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 431/478 depende
+ncies 43/138 modules 83 active 
+ ...@tarojs+runtime@4.3.2\node_modules\@tarojs\runtime\dist\dom-external\eleme
+nt.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 503/557 depende
+ncies 59/150 modules 91 active 
+ ...m\@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\toPrimiti
+ve.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 572/588 depende
+ncies 66/203 modules 130 active 
+ babel-loader › ..\..\packages\platform-adapters\weapp\src\storage.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 610/700 depende
+ncies 74/204 modules 129 active 
+ ...ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 726/819 depende
+ncies 92/217 modules 112 active 
+ ...@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\superPropBa
+se.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 805/855 depende
+ncies 110/243 modules 132 active 
+ ...\node_modules\react-reconciler\cjs\react-reconciler-constants.production.m
+in.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (30%) 3/8 entries 843/870 depende
+ncies 154/244 modules 89 active 
+ ...act@18.3.1\node_modules\react-reconciler\cjs\react-reconciler.production.m
+in.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 874/884 depende
+ncies 169/248 modules 78 active 
+ ...@tarojs+runtime@4.3.2_@tarojs+shared@4.3.2\node_modules\@tarojs\api\dist\e
+nv.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 905/911 depende
+ncies 181/263 modules 82 active 
+ ..\..\node_modules\.pnpm\scheduler@0.23.2\node_modules\scheduler\index.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 992/992 depende
+ncies 217/276 modules 58 active 
+ ...135cfa7f0b931df8a1e1d86272\node_modules\css-loader\dist\runtime\noSourceMa
+ps.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 1022/1024 depen
+dencies 231/286 modules 47 active 
+ ...solve-url-loader › sass-loader › ..\..\packages\ui-kit\src\feedback.scss|0
+|||}}
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (75%) chunk optimization 
+ RemoveEmptyChunksPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (88%)  
+ runtime requirements
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (92%) asset processing 
+ CssMinimizerPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (92%) asset processing 
+ RealContentHashPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+√ Webpack
+  Compiled successfully in 5.92s
+
+⚠️ Warnings: 
+
+AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  common.js (549 KiB)
+    at Generator.next (<anonymous>)
+
+NoAsyncChunksWarning: webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+    at Generator.next (<anonymous>)
+

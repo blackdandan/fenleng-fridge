@@ -1,0 +1,459 @@
+{
+  "files": [
+    {
+      "source": "docs/mvp/acceptance-criteria.md",
+      "sha256": "822ab5629038bd2309b0259e016f5e6a484b96b23a001ab4500185e97b710904",
+      "destination": "01-product/mvp/acceptance-criteria.md"
+    },
+    {
+      "source": "docs/mvp/application-website-integration.md",
+      "sha256": "875d83792f6a99086578b79c2897685d97f06363e7fb738c8c52f3faae731281",
+      "destination": "01-product/mvp/application-website-integration.md"
+    },
+    {
+      "source": "docs/mvp/audience-and-expectation.md",
+      "sha256": "303eeb0c7a4003885368525b154a54a29292fa51d963b378908c367a1419a794",
+      "destination": "01-product/mvp/audience-and-expectation.md"
+    },
+    {
+      "source": "docs/mvp/data-and-states.md",
+      "sha256": "c25189ed64823eab0142ea900d807e54879d34caddd8a27a5deb5017945f9b32",
+      "destination": "01-product/mvp/data-and-states.md"
+    },
+    {
+      "source": "docs/mvp/discovery-log.md",
+      "sha256": "e26524ea9ebbf03655f402b93cd9403cc515326c58c1bd3598aaae0259592c32",
+      "destination": "01-product/mvp/discovery-log.md"
+    },
+    {
+      "source": "docs/mvp/fl-mvp-definition-summary.md",
+      "sha256": "3dfe9846e5321e0538b8bd4ecc403c1cf7ac9a02e4018c88def0f67e4939f47d",
+      "destination": "01-product/mvp/fl-mvp-definition-summary.md"
+    },
+    {
+      "source": "docs/mvp/MVP.md",
+      "sha256": "5869095a87694990312d3ccbe079a97ddc4ff86c60245348b93ba54c1017f43b",
+      "destination": "01-product/mvp/MVP.md"
+    },
+    {
+      "source": "docs/mvp/privacy-policy.md",
+      "sha256": "b4be84bc11a1e653db12473fe7d4bbeb62b07560b996a351ee1077049523ca00",
+      "destination": "01-product/mvp/privacy-policy.md"
+    },
+    {
+      "source": "docs/mvp/shared-platform-integration.md",
+      "sha256": "163302dd1e5e475a30045e3d7c839c0a7f0088e3ef4838bcfe5e9d80a483d191",
+      "destination": "01-product/mvp/shared-platform-integration.md"
+    },
+    {
+      "source": "docs/mvp/surface-scope.md",
+      "sha256": "f8131f8ba8e6410fa1ffba509ca1abdede1c8458a555e209d07d87fabe70ee67",
+      "destination": "01-product/mvp/surface-scope.md"
+    },
+    {
+      "source": "docs/mvp/telemetry-events.json",
+      "sha256": "af1b62509f95915396a65c49e7b6f47e6a6dd4f01d030d2b4814822d3f06252a",
+      "destination": "01-product/mvp/telemetry-events.json"
+    },
+    {
+      "source": "docs/mvp/user-agreement.md",
+      "sha256": "6ea6e33919b659265016f03ea0380d63bc48a9418acedd80c93d062f7aa2d74a",
+      "destination": "01-product/mvp/user-agreement.md"
+    },
+    {
+      "source": "docs/mvp/user-flow.md",
+      "sha256": "e96002fb40491d19269e28920c42005bdd49d15b6fc5d41ef402e41be07e199d",
+      "destination": "01-product/mvp/user-flow.md"
+    },
+    {
+      "source": "docs/mvp/version-history.md",
+      "sha256": "3a7f62b8459e7647226df079824c844c18fa469ef7523151b7a8c1c298898096",
+      "destination": "01-product/mvp/version-history.md"
+    },
+    {
+      "source": "docs/spec/knowledge-fetch-reliability.md",
+      "sha256": "17cc8098599a4df839744b52a278c2c7dfcb587379aa70d7a167ff10521a1aed",
+      "destination": "05-knowledge/troubleshooting/knowledge-fetch-reliability.md"
+    },
+    {
+      "source": "preview/figma-qa/01-figma.png",
+      "sha256": "6aeceffc3232f2cd7ac908467a034deb826fc9054189cfada5ad27a93a3ed484",
+      "destination": "01-product/references/figma-qa/01-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/02-figma.png",
+      "sha256": "aeeb9d44d3e294d40796cbf1632ca4bb79a2d3bcb1a841cd1afa87d5183bb500",
+      "destination": "01-product/references/figma-qa/02-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/03-figma.png",
+      "sha256": "50bd7ddf4f40835934f6ec51b32792d201549901a13dfbf562892bcc7fe2e6e6",
+      "destination": "01-product/references/figma-qa/03-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/04-figma.png",
+      "sha256": "3258d69087c82f289e8e54a7fa45c076aa72e71a79ab28e38931fa2541fa4bf8",
+      "destination": "01-product/references/figma-qa/04-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/05-figma.png",
+      "sha256": "aa3e0c2e668e4096c391c451189186db429dade04d4929898a3134c5c4c854d2",
+      "destination": "01-product/references/figma-qa/05-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/06-figma.png",
+      "sha256": "0f9574c124c4c9e8c730e16cc4826d086ebab51fc5ab283c6a040e8918f3e3e6",
+      "destination": "01-product/references/figma-qa/06-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/07-figma.png",
+      "sha256": "1856ed1a3094f27db06affd4fd39af09389e4563dc91944b550a4d78fae599da",
+      "destination": "01-product/references/figma-qa/07-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/08-figma.png",
+      "sha256": "d0dc9f08deb0418243cab102d7d1f0ed7fa8176aaaf587ff4a6206f415fe2b5e",
+      "destination": "01-product/references/figma-qa/08-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/09-figma.png",
+      "sha256": "663ea6dde15a06bf904635d0920fa48f68fa020f458dcccf253edced67b70c3b",
+      "destination": "01-product/references/figma-qa/09-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/10-figma.png",
+      "sha256": "3fac1869069a7ce1a44df53422555b6561080559119e998460f6f6651e465f9b",
+      "destination": "01-product/references/figma-qa/10-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/11-figma.png",
+      "sha256": "52397af9cf3380cdde2f1dc9830a5c65f427d627fc273ffcc2dc9b6dc98bef62",
+      "destination": "01-product/references/figma-qa/11-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/12-figma.png",
+      "sha256": "2ac1b67a2dc694fae8cf54f3103e1bd70c6779d39747663a1f651ba78ea398e8",
+      "destination": "01-product/references/figma-qa/12-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/13-figma.png",
+      "sha256": "deeea547115461ae83bb9898d0bbe4bafeeb0ea48cff562664738b9ec8a7077c",
+      "destination": "01-product/references/figma-qa/13-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/14-figma.png",
+      "sha256": "fd42d34a65c8731496f31670e86f2191f35959345f1355221f684c9c9a0c376c",
+      "destination": "01-product/references/figma-qa/14-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/15-figma.png",
+      "sha256": "e5b13b7f15c6409d9e2205b318c7a963f34fe516371719032c14aa0101f9fcc0",
+      "destination": "01-product/references/figma-qa/15-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/16-figma.png",
+      "sha256": "4405eb9fc540972208476d745a9ca48e4d7fcb95dc7b5205e14fc70fbee33f31",
+      "destination": "01-product/references/figma-qa/16-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/17-figma.png",
+      "sha256": "d6a2bb8667a61652f5be556146c337f72f92b9fdf37d0ea867b1d9fdfe61d008",
+      "destination": "01-product/references/figma-qa/17-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/18-figma.png",
+      "sha256": "a68acddb0225c0fe7a9009f868edec62ae8308bfe41b9dc41df28697026a1ac0",
+      "destination": "01-product/references/figma-qa/18-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/19-figma.png",
+      "sha256": "24278a71c16e09961e9cf9a3b45edb2d45e32ca266a9dbf56ff0201b09434835",
+      "destination": "01-product/references/figma-qa/19-figma.png"
+    },
+    {
+      "source": "preview/figma-qa/contact-1.png",
+      "sha256": "14d41d6f6e8d055fc5d29f59d681e69ae072e8670e1155f5b17f393f23e61455",
+      "destination": "01-product/references/figma-qa/contact-1.png"
+    },
+    {
+      "source": "preview/figma-qa/contact-2.png",
+      "sha256": "431f9e5ade9e5ff4c96ec7a39a45af7521745572fa8ac20a688794ee3beaff82",
+      "destination": "01-product/references/figma-qa/contact-2.png"
+    },
+    {
+      "source": "preview/figma-qa/contact-3.png",
+      "sha256": "e9d6588be18e22d238961b0e0e1d87aa9a614fffd6c8e78a553e96d9b07860aa",
+      "destination": "01-product/references/figma-qa/contact-3.png"
+    },
+    {
+      "source": "preview/figma-qa/contact-4.png",
+      "sha256": "21a41896a541368307329c88e321dc4be2e7557aa07cc06b9a0f71eb7986542e",
+      "destination": "01-product/references/figma-qa/contact-4.png"
+    },
+    {
+      "source": "preview/figma-qa/margin-review.png",
+      "sha256": "acc4ccf133aab2e9f8a3b18a39f61b12507e1e47975aad7a1f7a69f38bafe6d6",
+      "destination": "01-product/references/figma-qa/margin-review.png"
+    },
+    {
+      "source": "preview/figma-qa/README.md",
+      "sha256": "d38154bc411d50174dd273665ff3832f8b4dafb3bd2a02d202355c74d0600dbb",
+      "destination": "01-product/references/figma-qa/README.md"
+    },
+    {
+      "source": "preview/mvp/.qa/check-home-refinement.cjs",
+      "sha256": "abf5c9c6e10290748d64fab031c771b82f4f7fea6e9defc78c1468420ccde5c1",
+      "destination": "06-project/prototype/mvp/.qa/check-home-refinement.cjs"
+    },
+    {
+      "source": "preview/mvp/.qa/check-home-review.cjs",
+      "sha256": "33e2319e7f47fc528a317e1f5c314b6d25b68df1df8be9958c8a92874cfdbfed",
+      "destination": "06-project/prototype/mvp/.qa/check-home-review.cjs"
+    },
+    {
+      "source": "preview/mvp/.qa/check-notification-id.cjs",
+      "sha256": "47a9fa86e018a980a0bba30b153252cfc45eb5251eaee3ea1290e38b70621e00",
+      "destination": "06-project/prototype/mvp/.qa/check-notification-id.cjs"
+    },
+    {
+      "source": "preview/mvp/.qa/check-route-scroll.cjs",
+      "sha256": "c0b768434b238470f1367f0b73cabbef63b3d84b6c637e792aab50e795712578",
+      "destination": "06-project/prototype/mvp/.qa/check-route-scroll.cjs"
+    },
+    {
+      "source": "preview/mvp/.qa/desktop.png",
+      "sha256": "aa2385ef945154a3af436995e22adc2416baaa2d6cd7c5a7b2e1541ea6080216",
+      "destination": "06-project/prototype/mvp/.qa/desktop.png"
+    },
+    {
+      "source": "preview/mvp/.qa/mobile-320.png",
+      "sha256": "f2a7229d27f3e967b85c07ba6a3930e40b7fa954337d059ff250454b636e70db",
+      "destination": "06-project/prototype/mvp/.qa/mobile-320.png"
+    },
+    {
+      "source": "preview/mvp/.qa/mobile-390.png",
+      "sha256": "135da00d6ded431e38afe79c862b6ff9b1397cef550a65ebfce1655525b80e82",
+      "destination": "06-project/prototype/mvp/.qa/mobile-390.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-all-review.png",
+      "sha256": "90e87928a1f90fc374380ba1982d61fe637d4f241d023942306da3a5377a21ad",
+      "destination": "06-project/prototype/mvp/.qa/v2-all-review.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-area.png",
+      "sha256": "5b589d3ce98a6315ddd667f5438507ddd3ec904cf8db1a874ea7b8118a61f497",
+      "destination": "06-project/prototype/mvp/.qa/v2-area.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-320.png",
+      "sha256": "d9c354b3569a0ac0b2d278ad1c88ba4ce4f54908b215548f66ff0c6943b27d35",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-320.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-390.png",
+      "sha256": "a805061371401c17fe1c6e08021795c93d6fc0700b48c13ba1cba418e6782e88",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-390.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-430.png",
+      "sha256": "fa3612d467a71fb89726dcc455ade92f5d6e028fa4c5909f2aaa8c1acf55b1a4",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-430.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-520.png",
+      "sha256": "309a00da018c0fd544f70a827d9d8765f017f2005c6230e9df4bcaf28ee1eb58",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-520.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-due.png",
+      "sha256": "1bb47d7bb0b1f4a2a60ce631d8e86e901a7056069d5afc161830479f6acab18a",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-due.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-home-inactivity.png",
+      "sha256": "4cbdbf67cbd605c445388f446dabc570812051ae97cd508cce34b69babab53f9",
+      "destination": "06-project/prototype/mvp/.qa/v2-home-inactivity.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-reminder.png",
+      "sha256": "ca46e14fa501f62f90ea529833a4624bcdbbaa10094634d9f7cf908bceb56713",
+      "destination": "06-project/prototype/mvp/.qa/v2-reminder.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-review.png",
+      "sha256": "9c3956691a200bc745b7eab83b8392976f1b8cfe1388705493f9550865c9b0ef",
+      "destination": "06-project/prototype/mvp/.qa/v2-review.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v2-settings.png",
+      "sha256": "0ad75fa58a508c129a7a6d280da30724224eedf1241a6146145100e02e318695",
+      "destination": "06-project/prototype/mvp/.qa/v2-settings.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v3-camera-explanation.png",
+      "sha256": "c9f824432fdef16137bc62b1aee0e3944a00aa596855f50ca4f00a6bdbc3fba2",
+      "destination": "06-project/prototype/mvp/.qa/v3-camera-explanation.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v3-consent.png",
+      "sha256": "7316810ab35b4f495856e350aef4ecb7afacb1234b2aabfe9d1355f22ba171b2",
+      "destination": "06-project/prototype/mvp/.qa/v3-consent.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v3-feedback.png",
+      "sha256": "50e0618a50873b924bd8cab876c9f7b15fc65bf4a574cf085ba503d8b9ed8680",
+      "destination": "06-project/prototype/mvp/.qa/v3-feedback.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v3-privacy-large.png",
+      "sha256": "a9c669828aa162753f865109a73421b057c65314d69511df2e0c2aac75e76518",
+      "destination": "06-project/prototype/mvp/.qa/v3-privacy-large.png"
+    },
+    {
+      "source": "preview/mvp/.qa/v3-settings.png",
+      "sha256": "8b9985fabda505d8890c74e601cfe0566893f466a2bcc60c9a2ea4e2d0a3c659",
+      "destination": "06-project/prototype/mvp/.qa/v3-settings.png"
+    },
+    {
+      "source": "preview/mvp/app.js",
+      "sha256": "c9f63d748e94db0e8defc788ac1a3d87b55b67b81d1384591762e89fc2365af4",
+      "destination": "06-project/prototype/mvp/app.js"
+    },
+    {
+      "source": "preview/mvp/assets/food-photos.png",
+      "sha256": "48c4a352dbecf1c7585afeb7915f780a0ac72c03bfd1193babee05bd0885e4ec",
+      "destination": "06-project/prototype/mvp/assets/food-photos.png"
+    },
+    {
+      "source": "preview/mvp/index.html",
+      "sha256": "9743d1c7f5dd2538e8e666e13421a8ee0182b0bda35d57c561f10fa58b767880",
+      "destination": "06-project/prototype/mvp/index.html"
+    },
+    {
+      "source": "preview/mvp/mock-data.js",
+      "sha256": "be9f32534fee30fce60d1c5048f858b2e5dd92eef586c8c25aeefceba8576c69",
+      "destination": "06-project/prototype/mvp/mock-data.js"
+    },
+    {
+      "source": "preview/mvp/package.json",
+      "sha256": "3adb77117ae5de81f1ee4a7869688936db4795fc6c52a403b66725a553dc59ad",
+      "destination": "06-project/prototype/mvp/package.json"
+    },
+    {
+      "source": "preview/mvp/plans/preview_epic_plan.md",
+      "sha256": "27b24275f5d889e2ba134cdf25ffddee7262e728e3543e1ca0239c50426fff06",
+      "destination": "06-project/prototype/mvp/plans/preview_epic_plan.md"
+    },
+    {
+      "source": "preview/mvp/privacy-flow.js",
+      "sha256": "7d33a70442dc69207485f142d37908bd7847ec46a44cad9d6ef500fa2e9659f1",
+      "destination": "06-project/prototype/mvp/privacy-flow.js"
+    },
+    {
+      "source": "preview/mvp/README.md",
+      "sha256": "bdf0118941bde9298d5c816a358769e6edee58bda55cfd52be3d4cd2f64835fe",
+      "destination": "06-project/prototype/mvp/README.md"
+    },
+    {
+      "source": "preview/mvp/server.js",
+      "sha256": "4cad7b3c4ba208f7558510a7d9379cb264b7cc1dffb5bd7c3a7fe5b1eb03303c",
+      "destination": "06-project/prototype/mvp/server.js"
+    },
+    {
+      "source": "preview/mvp/styles.css",
+      "sha256": "436c12be7b5b002f472ef252679ff0d60f35897e463d6b02592abbc678ca178f",
+      "destination": "06-project/prototype/mvp/styles.css"
+    },
+    {
+      "source": "preview/mvp/test-runtime.cjs",
+      "sha256": "56a03ce3e5779307ff590e88c2ffde283157d41a948b2d32fa36a7a9c0fd1f13",
+      "destination": "06-project/prototype/mvp/test-runtime.cjs"
+    },
+    {
+      "source": "preview/mvp/validate_preview.js",
+      "sha256": "6b26ea57414c03945ebb674ad8e9aee6840800043932dead4def3f7deaf0a189",
+      "destination": "06-project/prototype/mvp/validate_preview.js"
+    },
+    {
+      "source": "preview/mvp/validate_v3.cjs",
+      "sha256": "f3b671991d2058e28bdb35675e621bce2b26822b00063f623624fd7c336643f1",
+      "destination": "06-project/prototype/mvp/validate_v3.cjs"
+    },
+    {
+      "source": "preview/server.cjs",
+      "sha256": "842633af3e044af0120643f3fd3317da9a2b7b051bea94a0edf2590a229d2e18",
+      "destination": "06-project/prototype/server.cjs"
+    },
+    {
+      "source": "preview/shared/legal-content.js",
+      "sha256": "a32c5eae049983b32c05523ade25411edbf923f448f20b0a63ed3c532efc96e0",
+      "destination": "06-project/prototype/shared/legal-content.js"
+    },
+    {
+      "source": "preview/website/app/index.html",
+      "sha256": "c70041408250de0163b731e6b5023a2451e11c8178a02e643ee58c8ee7c06e91",
+      "destination": "06-project/prototype/website/app/index.html"
+    },
+    {
+      "source": "preview/website/index.html",
+      "sha256": "c553b2fc5061d0629357b3390f8431933303bf9a5fe930b049e555d18963706f",
+      "destination": "06-project/prototype/website/index.html"
+    },
+    {
+      "source": "preview/website/legal.js",
+      "sha256": "18207e6ed67ab13b6e5b1cfe695da1f70be1111f1a7fedb69f571b6246e24a3f",
+      "destination": "06-project/prototype/website/legal.js"
+    },
+    {
+      "source": "preview/website/plans/preview_epic_plan.md",
+      "sha256": "297f46d87ecffd121cd15bc78e94e4bd9a0e1190b101b2a5cf4d0bf03db0978e",
+      "destination": "06-project/prototype/website/plans/preview_epic_plan.md"
+    },
+    {
+      "source": "preview/website/privacy/index.html",
+      "sha256": "fee7823e34ca3e4447f0e012521e8a8f451a2409b437395eb7afc4cdd38d3964",
+      "destination": "06-project/prototype/website/privacy/index.html"
+    },
+    {
+      "source": "preview/website/README.md",
+      "sha256": "d8250c83349a84fdf5a2a18d4bfbaaa0f58f631c2b27c7349262da77a068a24e",
+      "destination": "06-project/prototype/website/README.md"
+    },
+    {
+      "source": "preview/website/styles.css",
+      "sha256": "f77b4014c126c3b55100ba5f884c60dbff3dc75400b4bdf3709b3bb021458f02",
+      "destination": "06-project/prototype/website/styles.css"
+    },
+    {
+      "source": "preview/website/terms/index.html",
+      "sha256": "d9787d421a0a55790821884ae08c664ea87e96a7065e24d0613cffcb08ebd150",
+      "destination": "06-project/prototype/website/terms/index.html"
+    },
+    {
+      "source": "preview/website/validate_website.js",
+      "sha256": "28b2303a6cd70f0c5aa6c6e776ebf7141ce192ce0ec9dfbf216151cdef22cdc8",
+      "destination": "06-project/prototype/website/validate_website.js"
+    },
+    {
+      "source": "scripts/build-preview-legal.mjs",
+      "sha256": "39a2f7863da745bcee66e0a61f56d9284e6151965f0516ea8590285a444ff046",
+      "destination": "06-project/scripts/build-preview-legal.mjs"
+    }
+  ],
+  "git_status_before": " M docs/mvp/MVP.md\n M docs/mvp/application-website-integration.md\n M docs/mvp/surface-scope.md\n M docs/mvp/version-history.md\n?? 00-context/\n?? 01-product/\n?? 02-engineering/\n?? 03-deployment/\n?? 04-operations/\n?? 05-knowledge/\n?? 06-project/\n?? docs/spec/\n?? fenleng.project.yaml\n?? preview/figma-qa/\n?? product-core-openapi.json\n",
+  "preview_processes_before": [
+    {
+      "port": 4173,
+      "pid": 22188,
+      "command": "node server.js",
+      "cwd": "preview/mvp"
+    },
+    {
+      "port": 4180,
+      "pid": 3084,
+      "command": "node server.cjs",
+      "cwd": "preview"
+    }
+  ]
+}

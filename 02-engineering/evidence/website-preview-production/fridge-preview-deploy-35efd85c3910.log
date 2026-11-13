@@ -1,0 +1,64 @@
+binding.json: OK
+deploy_preview.py: OK
+preview_bundle.py: OK
+website.zip: OK
+{"command": ["/usr/sbin/nginx", "-t"], "exitCode": 0, "output": "2026/11/13 20:08:39 [warn] 3312672#3312672: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat-official.conf:15\n2026/11/13 20:08:39 [warn] 3312672#3312672: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat.conf:16\n2026/11/13 20:08:39 [warn] 3312672#3312672: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/patent-admin.conf:8\n2026/11/13 20:08:39 [warn] 3312672#3312672: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/prompt.conf:28\n2026/11/13 20:08:39 [warn] 3312672#3312672: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/scan-api.conf:15\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n"}
+{"command": ["/usr/bin/systemctl", "reload", "nginx"], "exitCode": 0, "output": ""}
+{"command": ["/usr/bin/certbot", "certonly", "--non-interactive", "--webroot", "-w", "/var/www/html", "--preferred-challenges", "http", "--cert-name", "fridge.fenlengtech.com", "-d", "fridge.fenlengtech.com", "--keep-until-expiring"], "exitCode": 0, "output": "Requesting a certificate for fridge.fenlengtech.com\n\nSuccessfully received certificate.\nCertificate is saved at: /etc/letsencrypt/live/fridge.fenlengtech.com/fullchain.pem\nKey is saved at:         /etc/letsencrypt/live/fridge.fenlengtech.com/privkey.pem\nThis certificate expires on 2027-02-11.\nThese files will be updated when the certificate renews.\nCertbot has set up a scheduled task to automatically renew this certificate in the background.\n\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nIf you like Certbot, please consider supporting our work by:\n * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate\n * Donating to EFF:                    https://eff.org/donate-le\n- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\nSaving debug log to /var/log/letsencrypt/letsencrypt.log\n"}
+{"command": ["/usr/sbin/nginx", "-t"], "exitCode": 0, "output": "2026/11/13 20:09:01 [warn] 3312905#3312905: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat-official.conf:15\n2026/11/13 20:09:01 [warn] 3312905#3312905: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat.conf:16\n2026/11/13 20:09:01 [warn] 3312905#3312905: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/patent-admin.conf:8\n2026/11/13 20:09:01 [warn] 3312905#3312905: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/prompt.conf:28\n2026/11/13 20:09:01 [warn] 3312905#3312905: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/scan-api.conf:15\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n"}
+{"command": ["/usr/bin/systemctl", "reload", "nginx"], "exitCode": 0, "output": ""}
+{"command": ["/usr/sbin/nginx", "-t"], "exitCode": 0, "output": "2026/11/13 20:09:01 [warn] 3312909#3312909: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat-official.conf:15\n2026/11/13 20:09:01 [warn] 3312909#3312909: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat.conf:16\n2026/11/13 20:09:01 [warn] 3312909#3312909: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/patent-admin.conf:8\n2026/11/13 20:09:01 [warn] 3312909#3312909: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/prompt.conf:28\n2026/11/13 20:09:01 [warn] 3312909#3312909: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/scan-api.conf:15\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n"}
+{"command": ["/usr/bin/systemctl", "reload", "nginx"], "exitCode": 0, "output": ""}
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.12/http/client.py", line 1365, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1411, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1360, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1120, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1064, in send
+    self.connect()
+  File "/usr/lib/python3.12/http/client.py", line 1506, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.12/ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fridge.fenlengtech.com'. (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/fenleng-websites/fenleng-fridge/uploads/35efd85c3910/deploy_preview.py", line 154, in <module>
+    main()
+  File "/opt/fenleng-websites/fenleng-fridge/uploads/35efd85c3910/deploy_preview.py", line 140, in main
+    health(release)
+  File "/opt/fenleng-websites/fenleng-fridge/uploads/35efd85c3910/deploy_preview.py", line 68, in health
+    with urllib.request.urlopen('https://' + DOMAIN + path, timeout=20) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'fridge.fenlengtech.com'. (_ssl.c:1000)>

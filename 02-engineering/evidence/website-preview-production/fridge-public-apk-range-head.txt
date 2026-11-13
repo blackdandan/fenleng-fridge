@@ -1,0 +1,14 @@
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 206 Partial Content
+Server: nginx/1.24.0 (Ubuntu)
+Date: Fri, 13 Nov 2026 12:19:38 GMT
+Content-Type: application/vnd.android.package-archive
+Content-Length: 16
+Last-Modified: Fri, 13 Nov 2026 12:08:38 GMT
+Connection: keep-alive
+ETag: "6af6fdc6-c2b0c64"
+Cache-Control: no-cache
+Content-Disposition: attachment; filename="fenleng-fridge_latest.apk"
+Content-Range: bytes 0-15/204147812
+

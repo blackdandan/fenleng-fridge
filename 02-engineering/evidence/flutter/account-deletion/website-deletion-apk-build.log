@@ -1,0 +1,16 @@
+{
+  "status": "built-local-not-deployed",
+  "directory": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\06-project\\web\\dist",
+  "languages": 20,
+  "websiteKeys": 34,
+  "legalVersion": "V0.4",
+  "android": {
+    "url": "downloads/fridge-0.1.0-1-android-debug.apk",
+    "version": "0.1.0",
+    "build": "1",
+    "bytes": 184867411,
+    "sha256": "4348a6d3ced06e09df21f29d0d8671aece7ee00b9740b63605fde6ab23fb2f50",
+    "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+    "kind": "debug-preview"
+  }
+}

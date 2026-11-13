@@ -1,0 +1,93 @@
+{
+  "status": "locally-validated-native-provider-pending",
+  "goalComplete": false,
+  "scope": "Actual account page/runtime/application/SDK with browser DOM and fake native APIs; not WeChat-host or production",
+  "tests": {
+    "miniSource": 128,
+    "typecheck": "passed",
+    "boundaries": "passed",
+    "weappBuild": "passed",
+    "sourceCandidateHashesAndCompiledEvents": "passed",
+    "actualPageBrowserFlows": 9,
+    "componentLayouts": 800,
+    "localeCount": 20,
+    "sharedKeys": 193,
+    "localeCopiesAndPlaceholders": "passed",
+    "platformSuites": [
+      {
+        "name": "com.fenleng.platform.application.usecase.GuestLoginTest",
+        "tests": "7",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.fenleng.platform.application.usecase.RegisterIdentityTest",
+        "tests": "4",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.fenleng.platform.application.usecase.WechatDeletionProofTest",
+        "tests": "5",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.fenleng.platform.application.usecase.WechatProfileHydrationTest",
+        "tests": "3",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest",
+        "tests": "14",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      {
+        "name": "com.fenleng.platform.persistence.MiniRecipientAtomicityTest",
+        "tests": "9",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      }
+    ],
+    "platformTests": 42,
+    "bootstrapCompile": "passed",
+    "knowledgeAudits": {
+      "fridge": "pass",
+      "platform": "pass",
+      "nextAction": "none"
+    }
+  },
+  "fixes": [
+    "Hold accepted receipt and original session until durable save/local cleanup retries complete; no automatic 401 refresh before receipt persistence",
+    "Explicit new login retires unknown local intent and next deletion uses new key",
+    "WeChat login and confirmation consumption serialize using same account row lock; rollback preserves old intent"
+  ],
+  "sourceHashes": {
+    "apps/miniapp/src/pages/account/index.tsx": "ef2bfb3efe49bba187222fb6805b19e04134e3365b7b62b1bd38ac231e404bb1",
+    "apps/miniapp/src/online-runtime.ts": "f27bbb48215904aa5d7d9aca15319eb954b7501c31316ec822a55425a88ef6c3",
+    "packages/ui-kit/src/account-deletion-view.tsx": "fbea2ee2187dd4dbe7ff42df38b1e9191e3e87b3ae4791772238d898bf22ec7a",
+    "packages/ui-kit/src/account-deletion.scss": "8883cf8e7fddb01d7392cfd810a09dc836f159b8f275508b44ccd1b483fc0594",
+    "packages/ui-kit/src/strings.ts": "2e7b8032d61940764ec211301576ddd3d421982f75eb78bc086dee5bd35a36e3",
+    "packages/application/src/account-deletion.ts": "a7813f67129769ed019a30b432a50eaf48493aca46b6d9d7fb039ebd5935686f",
+    "packages/platform-contracts/src/account-deletion.ts": "2a5523965e4047510f252a3589e2880eca464c261eedb1cd2f57a92bd062e51c",
+    "scripts/check-account-deletion-ui.mjs": "adfb7fa9d1386706dfc53e1d2d23ae5cdc77312add6a7c83681240d07fa21448"
+  },
+  "evidenceDirectory": "02-engineering/evidence/mini-program/account-deletion-ui",
+  "limitations": [
+    "Browser native APIs and DOM components are substitutes; no WeChat-host or real provider evidence",
+    "Flutter account-deletion consumer remains to be implemented",
+    "common.js549KiB and NoAsyncChunks warnings; formal WeChat package/device checks pending",
+    "No production migrations or deployment; SDK immutable publication pending"
+  ],
+  "sourceAheadOfMiniDist": false,
+  "newApkBuilt": false,
+  "productionDeployed": false
+}

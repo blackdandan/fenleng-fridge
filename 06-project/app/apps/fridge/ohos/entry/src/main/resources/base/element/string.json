@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "fridge"
+    },
+    {
+      "name": "camera_reason",
+      "value": "用于拍摄食材照片并保存在本机，帮助你记录冰箱库存。不会上传食材照片，也不会录音。你也可以选择相册图片入库。"
+    }
+  ]
+}

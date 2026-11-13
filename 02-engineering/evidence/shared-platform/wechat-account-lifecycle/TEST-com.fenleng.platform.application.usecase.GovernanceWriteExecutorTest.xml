@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-13T06:00:24.284Z" hostname="DESKTOP-PF7J11G" time="0.013">
+  <properties/>
+  <testcase name="critical write rejects absent confirmation and fingerprint reuse()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.006"/>
+  <testcase name="federated confirmation never authorizes admin actions other users export or other scope()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.001"/>
+  <testcase name="missing strong evidence rejects sensitive write before action()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.0"/>
+  <testcase name="federated proof authorizes own deletion without password evidence and replay does not consume twice()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.001"/>
+  <testcase name="sensitive write requires strong authentication without consuming confirmation()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.001"/>
+  <testcase name="missing federation confirmation fails without falling back to password()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.001"/>
+  <testcase name="pending sensitive result reconciles while retaining authorization and fingerprint guard()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.001"/>
+  <testcase name="idempotent replay does not consume a second write allowance()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.0"/>
+  <testcase name="critical write consumes bound confirmation once and replays first result()" classname="com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

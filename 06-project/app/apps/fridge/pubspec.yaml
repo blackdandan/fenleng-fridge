@@ -1,0 +1,67 @@
+name: fridge
+version: 0.1.0+1
+publish_to: none
+resolution: workspace
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  camera: 0.12.0
+  image_picker: 1.2.4
+  firebase_core: 4.13.0
+  firebase_auth: 6.5.7
+  google_sign_in: 7.2.0
+  fenleng_sdk_flutter_firebase_identity:
+    git:
+      url: https://github.com/blackdandan/fenleng-client-sdk.git
+      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      path: packages/sdk-flutter-firebase-identity
+  fenleng_sdk_flutter:
+    git:
+      url: https://github.com/blackdandan/fenleng-client-sdk.git
+      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      path: packages/sdk-flutter
+  fenleng_sdk_flutter_native_identity:
+    git:
+      url: https://github.com/blackdandan/fenleng-client-sdk.git
+      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      path: packages/sdk-flutter-native-identity
+  camera_ohos:
+    git:
+      url: https://gitcode.com/openharmony-tpc/flutter_packages.git
+      ref: bddb2c981fcf826eaf19ed97f55113708aa55727
+      path: packages/camera/camera_ohos
+  image_picker_ohos:
+    git:
+      url: https://gitcode.com/openharmony-tpc/flutter_packages.git
+      ref: bddb2c981fcf826eaf19ed97f55113708aa55727
+      path: packages/image_picker/image_picker_ohos
+  permission_handler_ohos:
+    git:
+      url: https://gitcode.com/CPF-Flutter/flutter_permission_handler.git
+      ref: c93847f008e387647311f4036bc705a4fc0b9560
+      path: permission_handler_ohos
+  fenleng_sdk_flutter_china_permissions:
+    git:
+      url: https://github.com/blackdandan/fenleng-client-sdk.git
+      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      path: packages/sdk-flutter-china-permissions
+  fridge_core: any
+  fridge_navigation: any
+  fridge_ui_kit: any
+  fridge_inventory: any
+  fridge_settings: any
+dev_dependencies:
+  http: 1.6.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/i18n/messages.json
+    - assets/telemetry-events.json
+    - assets/legal/

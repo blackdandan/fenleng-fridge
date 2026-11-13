@@ -1,0 +1,105 @@
+{
+  "status": "locally-validated-sdk-runtime-and-ui-native-verification-pending",
+  "goalComplete": false,
+  "tests": {
+    "appFull": 144,
+    "sdkFlutterFull": 75,
+    "newModelAndFileStorage": 17,
+    "newGateway": 10,
+    "actualAccountPageFlows": 5,
+    "actualBootstrapFlows": 3,
+    "componentLayouts": 400,
+    "targetedAnalyze": "No issues found",
+    "baseline": "Fixed62357a93 verified",
+    "locales": 20,
+    "sharedKeys": 194,
+    "localeCopiesAndPlaceholders": "passed",
+    "existingGoldens": 14,
+    "knowledgeAudits": {
+      "fridge": "pass",
+      "sdk": "pass",
+      "nextAction": "none"
+    }
+  },
+  "scope": "Actual Flutter AccountPage/Bootstrap/model with official SDK, explicit mock HTTP and native-proof drivers, and real temp storage tests; not native Provider, device, production, iOS or Harmony verification",
+  "sourceHashes": {
+    "lib/application/account_deletion.dart": "2957dcce34f18f88e02f59c68f1e448c6b077f38a40bd55bd5bc9213975a21cf",
+    "lib/application/identity_session.dart": "d29ca52c6e667269a4c278e12f5b4a3f8ae7794c124b70d4f289793efcb2f891",
+    "lib/application/bootstrap.dart": "904b34e619dca85a8a4c5c8070fadf85c59ffbe96f561e681f80c18c0629e753",
+    "lib/application/online_sessions.dart": "5e99dc0655820a3ec21b9f71b8caa53c826a5813cad69c6103393d052426e41f",
+    "lib/application/privacy_actions.dart": "27ea9b2b8c4b63e2fde5e17694a44225e81878f7174448872d7df85a91a8e7f8",
+    "lib/infrastructure/platform_deletion.dart": "55f21506c05a1b0826fc38bbd9294eb637d091f6116996c699a854a1381116a5",
+    "lib/infrastructure/platform_identity.dart": "7ebc3d9164c117ca011fa1130eaa269157e8f007e2a596a6a24bb16cfa4594cc",
+    "lib/infrastructure/deletion_storage.dart": "699245c2bd2cc559b64413c891482f6099d8ad620939a2cd85056c94e5bdd3ac",
+    "lib/presentation/account_page.dart": "205d82b5ede93d012938f47bf2abc13aace9eeb4db4aa7b6133e7e245c6addb5",
+    "lib/presentation/account_deletion.dart": "839950133c28bc6966ca8e8908b79d1868d2060a2d6aef4c2434ffa22f9d9a64",
+    "lib/presentation/app_routes.dart": "d589a2286c55e8377116e4a5ba5da835d80981ca1f670e93d783239182e690fd",
+    "lib/main.dart": "aa9a012b23002d0fe3699d20c9e25e391bcac9b9b1a3252265c18eaefa208f3e",
+    "test/account_deletion_test.dart": "99ee5e6254120561f645c7e5d9fd06f3d97d345db941ecf36a9f99ca82a5d67f",
+    "test/deletion_storage_test.dart": "9911b0c995dda542e795ad17de516bd0024f44ad9561cb9f9f9d0aa865c7a46a",
+    "test/platform_deletion_test.dart": "83a317c57eb7fee5d538c784d525a468d903847eea01bb9696134a3c702401e0",
+    "test/account_deletion_page_test.dart": "26bbdf6ad271a03fd251eff1631c43d407576051521fb59ab099e8ad303f99b5",
+    "test/account_deletion_layout_test.dart": "29413b35403b0e184bd8c2f9bd10eb0c616383629fbaae52c8824a2bd911ec47",
+    "test/online_deletion_test.dart": "89772c287445e6d141ff73fb445176550c1470e1b4eaa0b4beafd6fcc51e9434",
+    "test/support/deletion_fixture.dart": "e135e64d70f3274a9cdb1f851787ead1d13d63111b567ed07d9afb3811e3b88f"
+  },
+  "sdkCandidate": {
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "published": false,
+    "mode": "local path override",
+    "sourceHashes": {
+      "packages/sdk-flutter/lib/src/auth.dart": "a3caefd211409c2ff02f7e403808c51d308a8f39a5197de2fd697ab0f1b0707d",
+      "packages/sdk-flutter/lib/src/auth_types.dart": "442586034d41bc8ab780187c982afcb9f64c72ce4ca6431718a22fbda6df667e",
+      "packages/sdk-flutter/test/account_lifecycle_consumer_test.dart": "6291c162f862e3e40dad5e10a4010f17fd57719654cdefd1aa12f7bd18b6b62c"
+    }
+  },
+  "androidBuild": {
+    "status": "passed",
+    "apk": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-debug.apk",
+    "sha256": "4348a6d3ced06e09df21f29d0d8671aece7ee00b9740b63605fde6ab23fb2f50",
+    "bytes": 184867411,
+    "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+    "certificateMatchesRegisteredIdentity": true,
+    "package": "com.fenlengtech.fridge",
+    "version": "0.1.0+1",
+    "channel": "china",
+    "kind": "debug-preview",
+    "hardened": false,
+    "sourceAheadOfApk": false,
+    "includes": "Latest account-deletion SDK/runtime/account-page and194-key locale assets; previous local business features/legal/consent retained. Identity/telemetry defines remain disabled.",
+    "finalFunctionalDeliverable": false,
+    "runtime": "Not installed or native-verified for this new build. Owner emulator retains prior installed preview.",
+    "build": "Standard script attempted; fixed OH auto-pub requires missing HMOS SDK. Same fixed Flutter --no-pub, existing fixed Gradle signing and per-command Gradle Java17 home succeeded. No global configuration or credential change."
+  },
+  "limitations": [
+    "Native Android screenshots for new page still pending",
+    "Real WeChat/Apple Provider configuration and authorization unverified",
+    "Global Firebase identity branch remains development work",
+    "SDK immutable publication/removal of ignored local overrides remains",
+    "iOS compile/device handoff and Harmony toolchain validation remain"
+  ],
+  "evidenceDirectory": "02-engineering/evidence/flutter/account-deletion",
+  "productionDeployed": false,
+  "ownerEmulatorChanged": false,
+  "apkPayload": {
+    "status": "passed",
+    "localeKeys": 194,
+    "kernelBytes": 55507552,
+    "symbols": {
+      "PlatformDeletionGateway": true,
+      "AccountDeletionSection": true,
+      "deletionReauthenticate": true,
+      "account_deletion.dart": true
+    },
+    "scope": "Exact APK ZIP payload, not device/runtime proof"
+  },
+  "websiteDownload": {
+    "status": "passed",
+    "scope": "Actual Chromium download through the current local website; not Android WeChat",
+    "bytes": 184867411,
+    "sha256": "4348a6d3ced06e09df21f29d0d8671aece7ee00b9740b63605fde6ab23fb2f50",
+    "filename": "fridge-0.1.0-1-android-debug.apk",
+    "url": "http://127.0.0.1:4817/downloads/fridge-0.1.0-1-android-debug.apk",
+    "screenshot": ".fenleng/website-restored-download-390.png"
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T10:02:50.041Z" hostname="DESKTOP-PF7J11G" time="0.709">
+  <properties/>
+  <testcase name="unmanaged products keep existing policy and missing registration is explicit()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.127"/>
+  <testcase name="ambiguous shared or mismatched Firebase projects are never guessed()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.027"/>
+  <testcase name="already missing Firebase user is an idempotent successful retry()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.111"/>
+  <testcase name="failed service account authorization never calls deletion()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.008"/>
+  <testcase name="signed OAuth exchange deletes exactly the configured Firebase project user()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.009"/>
+  <testcase name="provider permission and transport failures remain retryable()" classname="com.fenleng.platform.infrastructure.FirebaseAccountCleanupAdapterTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

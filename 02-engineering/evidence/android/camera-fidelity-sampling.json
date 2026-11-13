@@ -1,0 +1,323 @@
+{
+  "scope": "Figma2:81 camera chrome; real emulator sensor replaces demo photo. Real local-only label replaces demo badge, so badge width is not compared. Native system bars excluded; footer height compared in local coordinates because viewport heights differ.",
+  "colors": {
+    "page": {
+      "point": [
+        10,
+        400
+      ],
+      "reference": "#263c2c",
+      "render": "#263c2c",
+      "maxChannelDelta": 0
+    },
+    "selector": {
+      "point": [
+        30,
+        173
+      ],
+      "reference": "#354a3b",
+      "render": "#354a3b",
+      "maxChannelDelta": 0
+    },
+    "shutter": {
+      "point": [
+        215,
+        645
+      ],
+      "reference": "#f9faf3",
+      "render": "#f9faf3",
+      "maxChannelDelta": 0
+    },
+    "tagBorder": {
+      "referenceNearest": "#667865",
+      "renderNearest": "#687a66",
+      "maxChannelDelta": 2
+    },
+    "captionInk": {
+      "referenceNearest": "#aebe9f",
+      "renderNearest": "#abbb9d",
+      "maxChannelDelta": 3
+    }
+  },
+  "geometry": {
+    "selector": {
+      "referenceBounds": [
+        26,
+        154,
+        404,
+        196
+      ],
+      "renderBounds": [
+        25,
+        153,
+        405,
+        195
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "previewFrame": {
+      "referenceBounds": [
+        24,
+        210,
+        406,
+        592
+      ],
+      "renderBounds": [
+        24,
+        209,
+        406,
+        592
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "shutterFill": {
+      "referenceBounds": [
+        185,
+        617,
+        245,
+        677
+      ],
+      "renderBounds": [
+        185,
+        617,
+        245,
+        677
+      ],
+      "maxBoundaryDelta": 0
+    },
+    "shutterBorder": {
+      "referenceBounds": [
+        181,
+        613,
+        249,
+        681
+      ],
+      "renderBounds": [
+        182,
+        614,
+        248,
+        680
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "icons": {
+    "back": {
+      "referenceBounds": [
+        31,
+        65,
+        38,
+        79
+      ],
+      "renderBounds": [
+        29,
+        64,
+        36,
+        78
+      ],
+      "maxBoundaryDelta": 2
+    },
+    "selector": {
+      "referenceBounds": [
+        391,
+        172,
+        400,
+        177
+      ],
+      "renderBounds": [
+        391,
+        171,
+        400,
+        176
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "album": {
+      "referenceBounds": [
+        54,
+        628,
+        71,
+        645
+      ],
+      "renderBounds": [
+        53,
+        628,
+        70,
+        645
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "typography": {
+    "title": {
+      "referenceBounds": [
+        60,
+        58,
+        145,
+        77
+      ],
+      "renderBounds": [
+        60,
+        62,
+        145,
+        82
+      ],
+      "maxBoundaryDelta": 5,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "localTag": {
+      "referenceBounds": [
+        63,
+        125,
+        186,
+        133
+      ],
+      "renderBounds": [
+        94,
+        126,
+        116,
+        129
+      ],
+      "maxBoundaryDelta": 70,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "selector": {
+      "referenceBounds": [
+        43,
+        169,
+        108,
+        181
+      ],
+      "renderBounds": [
+        48,
+        169,
+        108,
+        180
+      ],
+      "maxBoundaryDelta": 5,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "guideCaption": {
+      "referenceBounds": [
+        183,
+        541,
+        272,
+        549
+      ],
+      "renderBounds": [
+        200,
+        543,
+        201,
+        544
+      ],
+      "maxBoundaryDelta": 71,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "albumLabel": {
+      "referenceBounds": [
+        44,
+        657,
+        82,
+        665
+      ],
+      "renderBounds": [
+        42,
+        659,
+        84,
+        667
+      ],
+      "maxBoundaryDelta": 2,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "count": {
+      "referenceBounds": [
+        345,
+        638,
+        379,
+        657
+      ],
+      "renderBounds": [
+        345,
+        638,
+        391,
+        654
+      ],
+      "maxBoundaryDelta": 12,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    },
+    "hint": {
+      "referenceBounds": [
+        102,
+        730,
+        319,
+        759
+      ],
+      "renderBounds": [
+        82,
+        731,
+        319,
+        760
+      ],
+      "maxBoundaryDelta": 20,
+      "note": "Native Noto CJK vs reference YaHei/Noto; text differs intentionally in local-only badge and saved count."
+    }
+  },
+  "coverage": {
+    "background": "flat color",
+    "header": "back SVG and title ink",
+    "localOnlyTag": "top/height from source-aligned Widget geometry; semantic content changed",
+    "selector": "surface, SVG, label",
+    "preview": "frame bounds; live texture is dynamic",
+    "guide": "Widget inset17/inner frame346.4 at430, caption ink; translucent border compositing depends on live pixels",
+    "controls": "shutter fill/border, original album SVG and label/count",
+    "hint": "two-line ink bounds and color",
+    "finish": "local surface size; native430/320 reachability"
+  },
+  "footer": {
+    "referenceBounds": [
+      26,
+      865,
+      404,
+      907
+    ],
+    "renderBounds": [
+      26,
+      855,
+      404,
+      896
+    ],
+    "maxBoundaryDelta": 11,
+    "referenceSize": [
+      378,
+      42
+    ],
+    "renderSize": [
+      378,
+      41
+    ],
+    "maxSizeDelta": 1
+  },
+  "permissionExplanation": {
+    "nativeDialogBounds": [
+      40,
+      176,
+      1040,
+      965
+    ],
+    "leftMarginLogical": 15.93,
+    "rightMarginLogical": 15.93,
+    "topMarginAfterStatusBarLogical": 15.93,
+    "evidenceApkSha256": "ea64ffb8ccf4927507525519ec7a7cfd7bb2851528b6825281beb0b03246da3a",
+    "scope": "Android rationale margin requirement only; not full2:373 visual parity"
+  },
+  "checks": {
+    "threeFlatColorsExact": true,
+    "twoRasterInkColorsMeasured": true,
+    "fourSurfacesWithin2px": true,
+    "threeSvgInkBoundsWithin2px": true,
+    "footerSizeWithin2px": true,
+    "sevenTypographyGroupsMeasured": true,
+    "permissionExplanationHas16pxTopAndSideMargins": true
+  },
+  "apkSha256": "f8b4b95188fa963a0907ba023909e87c054269ab1949466c23f2384d75d2f45d"
+}

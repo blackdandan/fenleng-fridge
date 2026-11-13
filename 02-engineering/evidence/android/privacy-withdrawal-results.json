@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "apkSha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+  "scope": "Own API35 AVD; real offline native WebView and Flutter confirmation; identity/network flags disabled; no real Provider login or simulated IO failure claimed",
+  "cancelKeepsConsent": true,
+  "confirmReturnsToGate": true,
+  "restartRequiresConsent": true,
+  "reconsentRestoresLocalStock": true,
+  "inventoryAndPhotoBytesPreserved": true,
+  "activeSessionAbsentOrEmpty": true,
+  "ownedWakeupAlarmAbsent": true,
+  "captures": {
+    "reader": "privacy-withdrawal-0dea646e952d-reader.png",
+    "confirmation": "privacy-withdrawal-0dea646e952d-confirmation.png",
+    "returnedGate": "privacy-withdrawal-0dea646e952d-gate.png",
+    "restartGate": "privacy-withdrawal-0dea646e952d-restart-gate.png"
+  },
+  "originalPreferenceBytesRestored": true
+}

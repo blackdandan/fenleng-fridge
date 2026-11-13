@@ -1,0 +1,10 @@
+
+> fenleng-client-sdk-monorepo@0.5.0 build
+> npm run check:openapi && node scripts/build.js
+
+
+> fenleng-client-sdk-monorepo@0.5.0 check:openapi
+> node scripts/generate-openapi-client.js --check
+
+[sdk-openapi] OK (126 operations)
+[sdk-build] OK (6 package entries importable)

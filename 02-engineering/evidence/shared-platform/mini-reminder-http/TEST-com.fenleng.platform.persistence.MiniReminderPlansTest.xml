@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderPlansTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:56:40.720Z" hostname="DESKTOP-PF7J11G" time="11.049">
+  <properties/>
+  <testcase name="partial replan failure rolls back plan and all job mutations()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.874"/>
+  <testcase name="ten year product intervals remain representable in the remote plan()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.975"/>
+  <testcase name="API status is owner scoped and malformed input has stable nonsecret errors()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.899"/>
+  <testcase name="cancellation tombstones an unknown plan and rejects all later puts()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.913"/>
+  <testcase name="same day catch up is allowed and replay after midnight cannot recreate delivery()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.273"/>
+  <testcase name="revision replay grant replay and changed fingerprints cannot duplicate observations or reset jobs()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.689"/>
+  <testcase name="independent installations have independent day slots and cancellation keys are never stored()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.172"/>
+  <testcase name="status retains accepted owner day slot when a new cancellation capability replaces the plan()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.216"/>
+  <testcase name="pending removals and changed dates are reconciled atomically while a removed day can be restored()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.037"/>
+  <testcase name="invalid days and stale template observations leave the persisted plan untouched()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.998"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

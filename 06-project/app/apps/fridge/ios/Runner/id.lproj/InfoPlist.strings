@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Ambil foto makanan dan simpan hanya di perangkat ini. Foto tidak diunggah dan suara tidak direkam. Anda juga dapat memilih foto dari galeri.";
+"NSPhotoLibraryUsageDescription" = "Galeri foto — Foto dan persediaan hanya di perangkat ini";
+"CFBundleDisplayName" = "Kulkas saya";

@@ -1,0 +1,8 @@
+.website-privacy[hidden]{display:none}
+.website-privacy{position:fixed;z-index:50;inset-inline:16px;bottom:calc(16px + env(safe-area-inset-bottom));max-width:680px;margin-inline:auto;max-height:70vh;overflow:auto;padding:var(--space-6);border:1px solid var(--line);border-radius:16px;background:var(--surface);box-shadow:0 8px 32px #0002;font-size:var(--label);line-height:1.6;overflow-wrap:anywhere}
+.website-privacy h2{font-size:var(--title);margin:0 0 var(--space-3)}
+.website-privacy p{margin:var(--space-3) 0}
+.website-privacy-actions{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-4)}
+.website-privacy-actions button{font:inherit;min-height:44px;flex:1 1 160px;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+.website-privacy-secondary{background:var(--surface)!important;color:var(--action)!important;border:1px solid var(--line)}
+.website-privacy-choice{font:inherit;color:inherit;background:none;border:0;padding:8px 0;min-height:44px;text-decoration:underline;cursor:pointer;text-align:start}

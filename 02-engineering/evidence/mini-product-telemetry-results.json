@@ -1,0 +1,120 @@
+{
+  "stage": "mini7-event product telemetry plus legal draft factual refresh",
+  "goalComplete": false,
+  "consumerTests": 102,
+  "relatedSdkTests": 71,
+  "failures": 0,
+  "skipped": 0,
+  "events": 7,
+  "sdkCandidates": {
+    "candidate": {
+      "archive": "fenleng-sdk-taro-0.5.0-fridge-telemetry-candidate.tgz",
+      "sha256": "c4f25272a60c85e516ae4206046a2f17b4d22c7ae58cccb6733086d1aa610ac5",
+      "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+      "sourceMode": "local-worktree-candidate",
+      "published": false
+    },
+    "coreCandidate": {
+      "archive": "fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz",
+      "sha256": "820a23864c9aebff356d06c8bb73b0829bd55b5c38353f2a70d7cbbdcc8cdb88",
+      "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+      "sourceMode": "local-worktree-candidate",
+      "published": false
+    }
+  },
+  "checks": {
+    "typescript": "passed",
+    "boundaries": "passed",
+    "weappBuild": "passed",
+    "eventCatalogAndInstalledSdkSources": "passed",
+    "knowledgeAudits": "both passed",
+    "websiteBuildAndCheck": "Website binding/legal source checks passed; APK check was skipped because android=null. The old unconditional success log overstated its scope; corrected by the later download-recovery stage.",
+    "legalBrowserViewports": 4,
+    "previewSession": 77243
+  },
+  "flags": {
+    "FRIDGE_TELEMETRY_ENABLED": "default false; no production collection enabled",
+    "separateAnalyticsToggle": false
+  },
+  "warning": "common.js458KiB exceeds244KiB recommendation and NoAsyncChunks; no build failure",
+  "sources": [
+    {
+      "path": "06-project/mini-program/packages/api-client/src/product-telemetry.ts",
+      "sha256": "6999218aa2c32425c362183151aac11a4ad72ab2167f370b85e8e6519e803efe"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/product-events.ts",
+      "sha256": "cd9adef099d27dfb474284a70786f37ad256e158ee3918abd748019ca45325c2"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/fridge-controller.ts",
+      "sha256": "93fc1413a8ac6613f81522d129ab0083337f5bf5393e4cf516164465b71c942d"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/capture-session.ts",
+      "sha256": "5f57495627d304d545955dc1e92bec9d8b52a6222d7e0fea54983bbecf6277ed"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/feedback-session.ts",
+      "sha256": "533cb381d3122e982cb0e54e2a183d75e479e091bea4581254e32fdc39242b21"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/mini-reminder-session.ts",
+      "sha256": "68be76f22572e31f7f2aadb389f63ecb2d9dbcf9efce6112f2d34db20263556f"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/telemetry-runtime.ts",
+      "sha256": "664f431a162ff2f339e27426c1032ca417d78f8034d6913081dae202a29964ec"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/online-runtime.ts",
+      "sha256": "5f37e6bad6836ba4fd2696b772bd13d23666823cc91f93d9b3329761d4e49c82"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/presentation/camera-page.tsx",
+      "sha256": "6907be18b32cf285237755176079438a3085a522294a6036964498f270f638c7"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/pages/index/index.tsx",
+      "sha256": "aafb4f01e309d64898160fa97ecf682d35530867d26e2c312de4cbd9721307ef"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/config/index.ts",
+      "sha256": "f795ddb4ecdfd475db46e4f4b05070ca170b0a1ce32a4e4cbdb14adbcf4b5a13"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/config/telemetry-events.json",
+      "sha256": "a73c08efcf74cc9e57be4eac7aa8e93b8c3ee6db20bbcb08d9bf609202d3b43b"
+    },
+    {
+      "path": "06-project/mini-program/pnpm-workspace.yaml",
+      "sha256": "92dd9365fc92f604ef46aa32426e57735f44a03403055748538e679fe6e036a1"
+    },
+    {
+      "path": "06-project/mini-program/pnpm-lock.yaml",
+      "sha256": "fc62041aa623dc13bd52d370901ff9a8dccd8ff48a68065d0d0cbd4eaaef90ad"
+    },
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/index.d.ts",
+      "sha256": "3ecb9fc69a35dfc8ab0ec438fd182e256b17222b9501843adcd621a61f63da37"
+    },
+    {
+      "path": "01-product/mvp/privacy-policy.md",
+      "sha256": "f97056e7c66bf530d3da3e44901dce77c2b5b5a8107f6730e840993d803a7e82"
+    },
+    {
+      "path": "01-product/mvp/user-agreement.md",
+      "sha256": "980ac17561a3f49bf0281bb45e8ff706865af1911dede6e3ad6e1271b330bd91"
+    }
+  ],
+  "evidenceDirectory": "02-engineering/evidence/mini-product-telemetry",
+  "scopeLimits": [
+    "Native WeChat and production analytics not verified; tests use transport/provider doubles",
+    "Website anonymous analytics not implemented yet",
+    "No new APK; installed emulator still uses prior offline legal draft",
+    "No SDK push,platform deploy or formal legal effective-date change",
+    "Legal retention promises remain draft requirements,not proof of deployed retention jobs"
+  ],
+  "legalReference": "https://shca.miit.gov.cn/zwgk/zcwj/flfg/art/2022/art_ed935fe2807e4787bfb8ca8e659e5524.html",
+  "correction": "Routine build omitted APK because flags were absent; original log preserved. See website/download-recovery-http.json and website-download-recovery-results.json for actual restored download proof."
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderPlansTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:32:34.215Z" hostname="DESKTOP-PF7J11G" time="8.352">
+  <properties/>
+  <testcase name="partial replan failure rolls back plan and all job mutations()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.648"/>
+  <testcase name="ten year product intervals remain representable in the remote plan()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.994"/>
+  <testcase name="cancellation tombstones an unknown plan and rejects all later puts()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.966"/>
+  <testcase name="revision replay grant replay and changed fingerprints cannot duplicate observations or reset jobs()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.73"/>
+  <testcase name="independent installations have independent day slots and cancellation keys are never stored()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.029"/>
+  <testcase name="pending removals and changed dates are reconciled atomically while a removed day can be restored()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="1.057"/>
+  <testcase name="invalid days and stale template observations leave the persisted plan untouched()" classname="com.fenleng.platform.persistence.MiniReminderPlansTest" time="0.927"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

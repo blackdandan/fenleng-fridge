@@ -1,0 +1,11 @@
+{
+  "name": "fenleng_sdk_flutter_native_identity",
+  "version": "0.2.0",
+  "description": "Fenleng native identity bridge",
+  "main": "index.ets",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/flutter_ohos": "file:./har/flutter.har",
+    "@tencent/wechat_open_sdk": "1.0.23"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "fenleng-fridge contract index",
+    "version": "0.4.0-handoff",
+    "description": "本产品无自有后端；此文件为接口索引骨架，不是部署服务或 Shared Platform 合同副本。"
+  },
+  "paths": {},
+  "x-backend-owner": "fenleng-shared-platform",
+  "x-client-sdk": "fenleng-client-sdk",
+  "x-contract-status": "external-contracts-to-pin"
+}

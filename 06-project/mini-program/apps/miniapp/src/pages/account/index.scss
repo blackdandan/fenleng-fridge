@@ -1,0 +1,3 @@
+.account-content { padding-top: var(--fridge-space-page); display: flex; flex-direction: column; gap: var(--fridge-space-page); overflow-wrap: anywhere; }
+.account-status { font-size: calc(var(--fridge-font-title) * var(--fridge-text-scale, 1)); }
+.account-error { color: var(--fridge-danger); }

@@ -1,0 +1,42 @@
+group = 'com.fenleng.sdk.nativeidentity'
+version = '0.1.0'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.3'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.fenleng.sdk.nativeidentity'
+    compileSdk 35
+
+    defaultConfig {
+        minSdk 21
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // The host's package-specific WXEntryActivity implements Tencent callback
+    // interfaces, so these types are intentionally part of the plugin API.
+    // Identity and payment share the same official Android artifact to avoid duplicate namespaces.
+    api 'com.tencent.mm.opensdk:wechat-sdk-android:6.8.34'
+}

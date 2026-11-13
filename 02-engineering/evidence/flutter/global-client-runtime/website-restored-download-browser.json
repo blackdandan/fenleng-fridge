@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Actual Chromium download through the current local website; not Android WeChat",
+  "bytes": 184913722,
+  "sha256": "eaff8aaedd85dc026fca4f320d2b9a8234b9b923ab044e8bf6be6a3518b6adf3",
+  "filename": "fridge-0.1.0-1-android-debug.apk",
+  "url": "http://127.0.0.1:4817/downloads/fridge-0.1.0-1-android-debug.apk",
+  "screenshot": ".fenleng/website-restored-download-390.png"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-13T11:46:36.497Z" hostname="DESKTOP-PF7J11G" time="2.027">
+  <properties/>
+  <testcase name="exports user-owned data without credentials and anonymizes only after explicit policy approval()" classname="com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest" time="2.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

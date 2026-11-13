@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Photographiez les aliments et gardez les photos sur cet appareil. Aucune photo n’est envoyée et aucun son n’est enregistré. Vous pouvez aussi choisir des photos existantes.";
+"NSPhotoLibraryUsageDescription" = "Photothèque — Photos et stock uniquement sur cet appareil";
+"CFBundleDisplayName" = "Mon réfrigérateur";

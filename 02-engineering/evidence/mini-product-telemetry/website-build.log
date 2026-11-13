@@ -1,0 +1,12 @@
+
+> fenleng-fridge-website@0.1.0 build
+> node scripts/build.mjs
+
+{
+  "status": "built-local-not-deployed",
+  "directory": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\06-project\\web\\dist",
+  "languages": 20,
+  "websiteKeys": 31,
+  "legalVersion": "V0.4",
+  "android": null
+}

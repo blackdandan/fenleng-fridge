@@ -1,0 +1,98 @@
+schema_version: "1.0"
+project:
+  name: fenleng-fridge
+  type: app-mini-program-website
+  stage: implementation
+  tech_stack: [Flutter-OH, Taro, React, TypeScript, static-web, fenleng-client-sdk]
+  asset_structure: [00-context, 01-product, 02-engineering, 03-deployment, 04-operations, 05-knowledge, 06-project]
+  project_containers: [app, mini-program, web]
+  mini_program_platforms: [weapp]
+  custom_backend: false
+flutterBaseline:
+  source: .agents/skills/fl-ai-coding-delivery/assets/flutter-oh-baseline.json
+  platforms: [android, ios, ohos]
+  day1PlatformsRequired: true
+  sharedFeatureContract: true
+  fvmVersion: 4.1.2
+  sdkTag: 3.41.9+ohos-1.0.2
+  sdkCommit: 62357a93d653bf844f730bb1f4b7cc9e2139d14e
+appRegistration:
+  number: ""
+  placeholder: 备案号待补充
+  queryUrl: https://beian.miit.gov.cn
+releaseChannels:
+  available: [china, global]
+  default: china
+privacyConsent:
+  releaseChannels: [china]
+  policyVersion: V0.4
+  legalSourceDirectory: 01-product/mvp
+  implementationStatus: android-verified-ios-ohos-source-awaiting-platform-verification
+  consentRecordPath: "Native bootstrap privacyConsent record; read via fenleng.fridge/bootstrap privacy.read"
+  offlineTermsPath: 06-project/app/apps/fridge/assets/legal/terms.html
+  offlinePrivacyPath: 06-project/app/apps/fridge/assets/legal/privacy.html
+  postConsentBootstrapPath: 06-project/app/apps/fridge/lib/application/bootstrap.dart
+  preConsentAllowlist: [flutter-rendering, consent-record, bundled-legal-documents, accessibility-display-state, native-notification-callback-routing-in-memory]
+globalOnlineConsent:
+  releaseChannel: global
+  firstHomeGate: false
+  triggers: [account, feedback]
+  policyVersion: V0.4
+  recordPath: "Native privacyConsent record with releaseChannel=global"
+  separateAnalyticsConsent: false
+accountLifecycle:
+  passwordRegistration: false
+  optionalLoginProviders: [wechat, apple-ios]
+  globalLoginProviders: [google-via-firebase, apple-ios-via-firebase]
+  miniProgramLoginProvider: wechat
+  subscriptionMessages: implement-configure-later
+  emailVerificationRequiredBeforeRegistration: null
+  emailVerificationApplicability: only-if-registration-added
+  deletionGracePeriodDays: 7
+  identityContractStatus: local-candidates-validated-production-registration-pending
+localization:
+  appStringsDirectory: 06-project/app/apps/fridge/assets/i18n
+  webStringsDirectory: 06-project/web/src/locales
+  miniProgramStringsDirectory: 06-project/mini-program/apps/miniapp/src/locales
+  implementationStatus: app-mini-web-ui-20-languages-legal-chinese-draft
+  defaultLocale: zh-CN
+  preferenceOverridesDeviceLocale: true
+  requiredLocales: [zh-CN, zh-TW, en, es, fr, de, pt-BR, it, ja, ko, ar, hi, id, ru, tr, vi, th, nl, pl, uk]
+telemetry:
+  sdk: fenleng-client-sdk
+  eventCatalogPath: 01-product/mvp/telemetry-events.json
+  consentSourcePath: 06-project/app/apps/fridge/lib/application/bootstrap.dart
+  contextProviderPath: 06-project/app/apps/fridge/lib/application/online_sessions.dart
+  implementationStatus: app-mini-web-local-candidates-default-disabled
+  separateAnalyticsConsent: false
+  batchSize: 50
+  maxQueueSize: 100
+day0Infrastructure:
+  domains:
+    official: fridge.fenlengtech.com
+    officialStatus: owner-confirmed-dns-unverified
+    workspace: ""
+    workspaceStatus: not-applicable
+    api: ""
+    apiStatus: reuse-shared-platform-environment-pending
+  objectStorage:
+    status: not-applicable-local-photos-only
+    bucket: ""
+    region: ""
+    ramRole: ""
+    policyName: ""
+  applicationIds:
+    androidPackageName: com.fenlengtech.fridge
+    iosBundleId: com.fenlengtech.fridge
+    ohosBundleName: com.fenlengtech.fridge
+    proposedSharedId: com.fenlengtech.fridge
+    status: owner-confirmed
+    wechatAppId: ""
+  matrixGovernance:
+    rootManifestPath: fenleng.project.yaml
+    centralRegistryProjectId: fenleng-fridge
+    centralRegistryStatus: registered-locally
+    sameMachineUpstreamSyncAllowed: true
+migration:
+  status: completed
+  reportPath: 00-context/migration-report.md

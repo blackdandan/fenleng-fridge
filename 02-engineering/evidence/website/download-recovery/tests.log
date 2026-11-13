@@ -1,0 +1,13 @@
+✔ ordinary build defaults to the verified artifact and inspects version and fixed signature (13.1465ms)
+✔ mismatched or missing recorded artifact fails before inspecting or replacing website output (6.5621ms)
+✔ intentional source-only preview is explicit and cannot be combined with an APK override (4.4297ms)
+✔ a different signing identity is not published under the recorded download identity (5.2806ms)
+✔ projects without a verified APK still produce a no-download plan without toolchain probes (4.7383ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 90.6902

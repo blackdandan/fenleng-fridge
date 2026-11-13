@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "scope": "SDK archive and installed source integrity, UI source/locale/compiled-feature contracts only",
+  "sdk": "fenleng-sdk-taro-0.5.0-fridge-telemetry-candidate.tgz",
+  "sdkSha256": "c4f25272a60c85e516ae4206046a2f17b4d22c7ae58cccb6733086d1aa610ac5",
+  "sdkPublished": false,
+  "sdkBaseline": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+  "installedSdkFiles": 22,
+  "locales": 20,
+  "nodes": [
+    "2:289",
+    "2:303",
+    "2:317"
+  ],
+  "nativeVisual": "not-run-no-WeChat-developer-tools",
+  "productionProvider": "not-run"
+}

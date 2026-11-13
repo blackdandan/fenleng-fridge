@@ -1,0 +1,3 @@
+promptmanager=200
+scanister=200
+eat-official=200

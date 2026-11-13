@@ -1,0 +1,124 @@
+{
+  "status": "platform-local-candidate-consumers-pending",
+  "goalComplete": false,
+  "baseline": {
+    "projectId": "fenleng-shared-platform",
+    "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+    "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "source": "docs/runbooks/account-lifecycle-operations.md",
+    "sourceMode": "github",
+    "retrievedAt": "2026-11-13T05:52:08.210Z"
+  },
+  "tests": [
+    {
+      "suite": "com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.application.usecase.FederatedDeletionProofTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.FederatedDeletionProofTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.GovernanceWriteExecutorTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.application.usecase.ProcessUserDataRequestsTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.ProcessUserDataRequestsTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.application.usecase.WechatDeletionProofTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.application.usecase.WechatDeletionProofTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.persistence.MiniRecipientAtomicityTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.persistence.MiniRecipientAtomicityTest.xml"
+    },
+    {
+      "suite": "com.fenleng.platform.bootstrap.WechatLoginConfigurationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "02-engineering/evidence/shared-platform/wechat-account-lifecycle/TEST-com.fenleng.platform.bootstrap.WechatLoginConfigurationTest.xml"
+    }
+  ],
+  "testsPassed": 57,
+  "files": {
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/port/FederatedDeletionConfirmationPort.kt": "546b8999dfa78ee7900e355518c7edb1aec42c7cba64eca301cba0255c0f006b",
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FederatedDeletionProof.kt": "818b18eb9d22bb4a22c2be95a201ac86f0e15949f37c05eef552002da66fbdc4",
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FederatedDeletionReauthentication.kt": "fd07715fc15d2705be5499c99a199491af04ee1401e96b680de68f03ee807bad",
+    "backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/FederatedDeletionReauthenticationHttpController.kt": "f511c59ee244bd9570f321874c8ad86f9b80ccd7caeecb72e18032a4e93e5c65",
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/WechatLogin.kt": "f19b2ae2e61a626b452b70931241a051c46673a4b056adcfd09b864f8cc53f5e",
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/StepUpConfiguration.kt": "90a5a0fd6ca9cf54aa8c464f67d254d2ca84b0ba70e5f395922cb44f580f48b9",
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WechatLoginConfiguration.kt": "75b08156d3670cbe7d970d1ebd7eb46671c31a0a556062f2c350309484abd411",
+    "backend/platform-persistence/src/main/resources/db/migration/V56__wechat_self_deletion_provider.sql": "b914237849f11d1ad623d6dcf4f0b66fbefb42da6f3a535f8742524066e4eacc",
+    "docs/contracts/v1/schemas/identity.schema.json": "bff86fab0ae3d7a89d07a733667e5531bd8a05981426c19feed2c13bfd1ec030"
+  },
+  "contracts": {
+    "validation": "passed:132 operations,14 events",
+    "compatibility": "passed",
+    "releaseManifest": "passed:1.9.0,34 files"
+  },
+  "bootstrapCompile": "passed",
+  "migration": "V56 passed in ephemeral local PostgreSQL; not run in production",
+  "productionDeployed": false,
+  "productionDeleteApprovedChanged": false,
+  "sdkAndConsumers": "not yet integrated",
+  "providerProof": "Local provider substitutes only; WeChat exchange verification time does not prove auth_time or signed nonce",
+  "firstAttempt": "HTTP test exposed missing provider domain allowance; corrected and final targeted suites passed",
+  "next": "Official SDK lifecycle methods and product account UI, receipts, consent/identity fencing and20 languages",
+  "knowledgeAudits": {
+    "fridge": "passed:nextAction=none",
+    "sharedPlatform": "passed:nextAction=none"
+  },
+  "sharedPlatformBranch": "main"
+}

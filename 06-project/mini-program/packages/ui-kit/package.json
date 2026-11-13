@@ -1,0 +1,13 @@
+{
+  "name": "@fridge/ui-kit",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@fridge/domain": "workspace:*",
+    "@fridge/application": "workspace:*",
+    "@tarojs/components": "4.3.2",
+    "react": "18.3.1"
+  }
+}

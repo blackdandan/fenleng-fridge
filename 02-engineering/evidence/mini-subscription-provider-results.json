@@ -1,0 +1,46 @@
+{
+  "completedProviderSubstage": true,
+  "wp06Complete": false,
+  "scope": "Real local HTTP protocol tests; not production WeChat delivery, persistent scheduler or client integration",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "results": [
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatMiniSubscriptionDeliveryAdapterTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest.xml",
+      "sha256": "ce00bfb0f6022fa9b61ae8bbfa87ec33a89d269a919e7f77802826db3a87325c"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatMiniSubscriptionTokenProviderTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest.xml",
+      "sha256": "c1f95ea8516e4f6978e6134e102699c87212ef310e015b84efb3cdc6eecc24af"
+    }
+  ],
+  "sources": [
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatMiniSubscriptionDeliveryAdapter.kt",
+      "sha256": "27fe2ab4e9e3850d48d2f776afa19ad33517258e1b0457c4b079e997784fcb21"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatMiniSubscriptionTokenProvider.kt",
+      "sha256": "3b446824065dde98d113a8f31822981da2c44411bb7f424f8d5a40ffcd85a8e1"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatSubscriptionHttp.kt",
+      "sha256": "09f5ee507cfeea20a10b9b4c567a956b732f31ee784015a23e5018e3a8e9a906"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\port\\MiniSubscriptionDeliveryPort.kt",
+      "sha256": "384cbb75231c3654e14f6ddc34c5db2838e111cfb41d80f62eb5271f1cef79e8"
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+diff --git a/packages/sdk-flutter-native-identity/android/src/main/java/com/fenleng/sdk/nativeidentity/FenlengNativeIdentityPlugin.java b/packages/sdk-flutter-native-identity/android/src/main/java/com/fenleng/sdk/nativeidentity/FenlengNativeIdentityPlugin.java
+index 913aef3..bdb4f66 100644
+--- a/packages/sdk-flutter-native-identity/android/src/main/java/com/fenleng/sdk/nativeidentity/FenlengNativeIdentityPlugin.java
++++ b/packages/sdk-flutter-native-identity/android/src/main/java/com/fenleng/sdk/nativeidentity/FenlengNativeIdentityPlugin.java
+@@ -1,6 +1,8 @@
+ package com.fenleng.sdk.nativeidentity;
+ 
+ import android.content.Context;
++import android.os.Handler;
++import android.os.Looper;
+ import androidx.annotation.NonNull;
+ import com.tencent.mm.opensdk.modelbase.BaseResp;
+ import com.tencent.mm.opensdk.modelmsg.SendAuth;
+@@ -26,6 +28,9 @@ public final class FenlengNativeIdentityPlugin
+   private String wechatScope = "snsapi_userinfo";
+   private String expectedState;
+   private MethodChannel.Result pendingResult;
++  private final Handler handler = new Handler(Looper.getMainLooper());
++  private Runnable timeout;
++  private final java.util.ArrayDeque<String> retiredStates = new java.util.ArrayDeque<>();
+ 
+   @Override
+   public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
+@@ -76,6 +81,10 @@ public final class FenlengNativeIdentityPlugin
+   }
+ 
+   private void configureWechat(Map<String, Object> arguments, MethodChannel.Result result) {
++    if (pendingResult != null) {
++      result.error("IDENTITY_AUTH_IN_PROGRESS", "Identity authorization is in progress", null);
++      return;
++    }
+     String appId = stringValue(arguments, "appId");
+     if (appId == null || appId.isEmpty()) {
+       result.error("IDENTITY_CONFIG_INVALID", "微信 AppID 不能为空", null);
+@@ -110,8 +119,14 @@ public final class FenlengNativeIdentityPlugin
+     request.scope = wechatScope;
+     request.state = expectedState;
+     pendingResult = result;
+-    if (!wechat.sendReq(request)) {
+-      finishError("WECHAT_SEND_FAILED", "无法打开微信授权", null);
++    timeout = () -> {
++      if (pendingResult == result) finishError("WECHAT_AUTH_TIMEOUT", "WeChat authorization timed out", null);
++    };
++    handler.postDelayed(timeout, 120000);
++    try {
++      if (!wechat.sendReq(request)) finishError("WECHAT_SEND_FAILED", "无法打开微信授权", null);
++    } catch (RuntimeException ignored) {
++      finishError("WECHAT_SEND_FAILED", "WeChat authorization could not be opened", null);
+     }
+   }
+ 
+@@ -123,6 +138,7 @@ public final class FenlengNativeIdentityPlugin
+   private void handleWechatResponse(BaseResp response) {
+     if (!(response instanceof SendAuth.Resp)) return;
+     SendAuth.Resp auth = (SendAuth.Resp) response;
++    if (pendingResult == null || retiredStates.contains(auth.state)) return;
+     if (expectedState == null || !expectedState.equals(auth.state)) {
+       finishError("WECHAT_STATE_MISMATCH", "微信授权校验失败", null);
+       return;
+@@ -151,16 +167,25 @@ public final class FenlengNativeIdentityPlugin
+ 
+   private void finishSuccess(String code) {
+     MethodChannel.Result result = pendingResult;
+-    pendingResult = null;
+-    expectedState = null;
++    clearPending();
+     if (result != null) result.success(code);
+   }
+ 
+   private void finishError(String code, String message, Object details) {
+     MethodChannel.Result result = pendingResult;
++    clearPending();
++    if (result != null) result.error(code, message, details);
++  }
++
++  private void clearPending() {
++    if (timeout != null) handler.removeCallbacks(timeout);
++    timeout = null;
++    if (expectedState != null) {
++      retiredStates.addLast(expectedState);
++      if (retiredStates.size() > 8) retiredStates.removeFirst();
++    }
+     pendingResult = null;
+     expectedState = null;
+-    if (result != null) result.error(code, message, details);
+   }
+ 
+   private static boolean isWechat(Map<String, Object> arguments) {
+diff --git a/packages/sdk-flutter-native-identity/ios/Classes/FenlengNativeIdentityPlugin.swift b/packages/sdk-flutter-native-identity/ios/Classes/FenlengNativeIdentityPlugin.swift
+index a5b6d25..6afbe01 100644
+--- a/packages/sdk-flutter-native-identity/ios/Classes/FenlengNativeIdentityPlugin.swift
++++ b/packages/sdk-flutter-native-identity/ios/Classes/FenlengNativeIdentityPlugin.swift
+@@ -9,6 +9,8 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
+   private var scope = "snsapi_userinfo"
+   private var expectedState: String?
+   private var pendingResult: FlutterResult?
++  private var timeout: DispatchWorkItem?
++  private var retiredStates: [String] = []
+ 
+   public static func register(with registrar: FlutterPluginRegistrar) {
+     let channel = FlutterMethodChannel(
+@@ -38,6 +40,7 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
+   }
+ 
+   private func configureWechat(_ arguments: [String: Any]?, result: @escaping FlutterResult) {
++    guard pendingResult == nil else { fail(result, "IDENTITY_AUTH_IN_PROGRESS", "Identity authorization is in progress"); return }
+     guard let appId = arguments?["appId"] as? String, !appId.isEmpty else {
+       fail(result, "IDENTITY_CONFIG_INVALID", "微信 AppID 不能为空")
+       return
+@@ -67,14 +70,25 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
+     request.state = state
+     expectedState = state
+     pendingResult = result
++    let timeout = DispatchWorkItem { [weak self] in
++      guard let self = self, self.expectedState == state else { return }
++      self.finishError("WECHAT_AUTH_TIMEOUT", "WeChat authorization timed out")
++    }
++    self.timeout = timeout
++    DispatchQueue.main.asyncAfter(deadline: .now() + 120, execute: timeout)
+     WXApi.send(request) { [weak self] success in
+       guard !success else { return }
+-      DispatchQueue.main.async { self?.finishError("WECHAT_SEND_FAILED", "无法打开微信授权") }
++      DispatchQueue.main.async {
++        guard self?.expectedState == state else { return }
++        self?.finishError("WECHAT_SEND_FAILED", "无法打开微信授权")
++      }
+     }
+   }
+ 
+   public func onResp(_ response: BaseResp) {
+     guard let auth = response as? SendAuthResp else { return }
++    guard pendingResult != nil else { return }
++    if let state = auth.state, retiredStates.contains(state) { return }
+     guard expectedState != nil, auth.state == expectedState else {
+       finishError("WECHAT_STATE_MISMATCH", "微信授权校验失败")
+       return
+@@ -111,16 +125,25 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
+ 
+   private func finishSuccess(_ code: String) {
+     let result = pendingResult
+-    pendingResult = nil
+-    expectedState = nil
++    clearPending()
+     result?(code)
+   }
+ 
+   private func finishError(_ code: String, _ message: String, _ details: Any? = nil) {
+     let result = pendingResult
++    clearPending()
++    fail(result, code, message, details)
++  }
++
++  private func clearPending() {
++    timeout?.cancel()
++    timeout = nil
++    if let state = expectedState {
++      retiredStates.append(state)
++      if retiredStates.count > 8 { retiredStates.removeFirst() }
++    }
+     pendingResult = nil
+     expectedState = nil
+-    fail(result, code, message, details)
+   }
+ 
+   private func fail(_ result: FlutterResult?, _ code: String, _ message: String, _ details: Any? = nil) {
+diff --git a/packages/sdk-flutter/lib/src/auth.dart b/packages/sdk-flutter/lib/src/auth.dart
+index 8416786..83f648f 100644
+--- a/packages/sdk-flutter/lib/src/auth.dart
++++ b/packages/sdk-flutter/lib/src/auth.dart
+@@ -2,32 +2,9 @@ import 'dart:async';
+ import 'client.dart';
+ import 'qr_auth.dart';
+ 
+-enum FlutterSessionStatus {
+-  unauthenticated,
+-  authenticating,
+-  authenticated,
+-  sessionExpired
+-}
+-
+-abstract interface class FlutterIdentityExtension {
+-  String get provider;
+-  Future<Map<String, dynamic>> authenticate(Map<String, dynamic> challenge);
+-}
+-
+-/// Stable application context shared by all FL client SDKs.
+-class FenlengAuthConfig {
+-  const FenlengAuthConfig({
+-    required this.applicationCode,
+-    this.clientTarget = 'mobile',
+-    this.clientId,
+-  });
+-
+-  final String applicationCode;
+-  final String clientTarget;
+-  final String? clientId;
+-
+-  String get resolvedClientId => clientId ?? '$applicationCode-$clientTarget';
+-}
++part 'apple_auth.dart';
++part 'auth_types.dart';
++part 'auth_storage.dart';
+ 
+ class FlutterAuthSDK {
+   final FenlengFlutterClient client;
+@@ -311,14 +288,7 @@ class FlutterAuthSDK {
+           method: 'POST',
+           body: <String, dynamic>{},
+           idempotencyKey: idempotencyKey);
+-  Future<void> _store(Map<String, dynamic> tokens) async {
+-    final access = tokens['accessToken'], refresh = tokens['refreshToken'];
+-    if (access is! String || refresh is! String)
+-      throw const FenlengSdkException(
+-          'TOKEN_RESPONSE_INVALID', 'Invalid token response');
+-    await client.options.storage.setItem(client.options.tokenKey, access);
+-    await client.options.storage.setItem(_refreshKey, refresh);
+-  }
++  Future<void> _store(Map<String, dynamic> tokens) => _storeTokenPair(this, tokens);
+ 
+   void dispose() => _sessionController.close();
+ }
+diff --git a/packages/sdk-flutter/lib/src/apple_auth.dart b/packages/sdk-flutter/lib/src/apple_auth.dart
+new file mode 100644
+index 0000000..ef0e186
+--- /dev/null
++++ b/packages/sdk-flutter/lib/src/apple_auth.dart
+@@ -0,0 +1,30 @@
++part of 'auth.dart';
++
++/// China-channel native Apple proof is verified by Shared Platform, not Firebase.
++extension FlutterAppleAuth on FlutterAuthSDK {
++  Future<Map<String, dynamic>> loginWithAppleIdentityToken(String identityToken,
++      {Map<String, dynamic>? device}) async {
++    if (identityToken.trim().isEmpty || identityToken.length > 16384) {
++      throw const FenlengSdkException(
++          'VALIDATION_FAILED', 'Apple identity token is invalid');
++    }
++    _sessionController.add(FlutterSessionStatus.authenticating);
++    try {
++      final tokens = await client.request(
++          '/api/platform/v1/auth/federated/apple/login',
++          method: 'POST',
++          body: {
++            'applicationCode': applicationCode,
++            'clientId': clientId,
++            'identityToken': identityToken,
++            if (device != null) 'device': device,
++          });
++      await _store(tokens);
++      _sessionController.add(FlutterSessionStatus.authenticated);
++      return tokens;
++    } catch (_) {
++      _sessionController.add(FlutterSessionStatus.unauthenticated);
++      rethrow;
++    }
++  }
++}
+diff --git a/packages/sdk-flutter/lib/src/auth_types.dart b/packages/sdk-flutter/lib/src/auth_types.dart
+new file mode 100644
+index 0000000..94c2160
+--- /dev/null
++++ b/packages/sdk-flutter/lib/src/auth_types.dart
+@@ -0,0 +1,26 @@
++part of 'auth.dart';
++
++enum FlutterSessionStatus {
++  unauthenticated,
++  authenticating,
++  authenticated,
++  sessionExpired,
++}
++
++abstract interface class FlutterIdentityExtension {
++  String get provider;
++  Future<Map<String, dynamic>> authenticate(Map<String, dynamic> challenge);
++}
++
++/// Stable application context shared by all FL client SDKs.
++class FenlengAuthConfig {
++  const FenlengAuthConfig({
++    required this.applicationCode,
++    this.clientTarget = 'mobile',
++    this.clientId,
++  });
++  final String applicationCode;
++  final String clientTarget;
++  final String? clientId;
++  String get resolvedClientId => clientId ?? '$applicationCode-$clientTarget';
++}
+diff --git a/packages/sdk-flutter/lib/src/auth_storage.dart b/packages/sdk-flutter/lib/src/auth_storage.dart
+new file mode 100644
+index 0000000..58ee0c4
+--- /dev/null
++++ b/packages/sdk-flutter/lib/src/auth_storage.dart
+@@ -0,0 +1,25 @@
++part of 'auth.dart';
++
++Future<void> _storeTokenPair(
++    FlutterAuthSDK auth, Map<String, dynamic> tokens) async {
++  final access = tokens['accessToken'], refresh = tokens['refreshToken'];
++  if (access is! String ||
++      refresh is! String ||
++      access.trim().isEmpty ||
++      refresh.trim().isEmpty ||
++      RegExp(r'[\r\n]').hasMatch(access + refresh)) {
++    throw const FenlengSdkException(
++        'TOKEN_RESPONSE_INVALID', 'Invalid token response');
++  }
++  try {
++    await auth.client.options.storage
++        .setItem(auth.client.options.tokenKey, access);
++    await auth.client.options.storage.setItem(auth._refreshKey, refresh);
++  } catch (_) {
++    await Future.wait([
++      auth.client.options.storage.removeItem(auth.client.options.tokenKey),
++      auth.client.options.storage.removeItem(auth._refreshKey),
++    ]);
++    rethrow;
++  }
++}
+diff --git a/packages/sdk-flutter/test/apple_auth_test.dart b/packages/sdk-flutter/test/apple_auth_test.dart
+new file mode 100644
+index 0000000..33981d9
+--- /dev/null
++++ b/packages/sdk-flutter/test/apple_auth_test.dart
+@@ -0,0 +1,94 @@
++import 'dart:convert';
++import 'package:fenleng_sdk_flutter/fenleng_sdk_flutter.dart';
++import 'package:flutter_test/flutter_test.dart';
++import 'package:http/http.dart' as http;
++import 'package:http/testing.dart';
++
++class FailingRefreshStorage extends FenlengMemoryStorageAdapter {
++  @override
++  Future<void> setItem(String key, String value) async {
++    if (key.endsWith(':refresh')) throw StateError('Disk full');
++    await super.setItem(key, value);
++  }
++}
++
++void main() {
++  test('native Apple proof uses platform verifier and shared session storage',
++      () async {
++    final storage = FenlengMemoryStorageAdapter();
++    var requests = 0;
++    final client = FenlengFlutterClient(
++        options: FenlengClientOptions(
++      baseUrl: 'http://localhost:8080',
++      storage: storage,
++      httpClient: MockClient((request) async {
++        requests++;
++        expect(request.url.path, '/api/platform/v1/auth/federated/apple/login');
++        expect(jsonDecode(request.body), {
++          'applicationCode': 'fenleng-fridge',
++          'clientId': 'fenleng-fridge-ios',
++          'identityToken': 'signed-apple-proof',
++        });
++        return http.Response(
++            jsonEncode({
++              'accessToken': 'session-access',
++              'refreshToken': 'session-refresh'
++            }),
++            200);
++      }),
++    ));
++    final auth = FlutterAuthSDK(
++        client: client,
++        applicationCode: 'fenleng-fridge',
++        clientId: 'fenleng-fridge-ios');
++    await expectLater(auth.loginWithAppleIdentityToken(''),
++        throwsA(isA<FenlengSdkException>()));
++    expect(requests, 0);
++    await auth.loginWithAppleIdentityToken('signed-apple-proof');
++    expect(await storage.getItem(client.options.tokenKey), 'session-access');
++    expect(await storage.getItem('${client.options.tokenKey}:refresh'),
++        'session-refresh');
++    auth.dispose();
++  });
++
++  test('partial token persistence cannot leave an authenticated access token',
++      () async {
++    final storage = FailingRefreshStorage();
++    final client = FenlengFlutterClient(
++        options: FenlengClientOptions(
++      baseUrl: 'http://localhost:8080',
++      storage: storage,
++      httpClient: MockClient((_) async => http.Response(
++          jsonEncode({
++            'accessToken': 'platform-access',
++            'refreshToken': 'platform-refresh',
++          }),
++          200)),
++    ));
++    final auth =
++        FlutterAuthSDK(client: client, applicationCode: 'fenleng-fridge');
++    await expectLater(
++        auth.loginWithWechatCode('temporary-code'), throwsStateError);
++    expect(await storage.getItem(client.options.tokenKey), null);
++    expect(await storage.getItem('${client.options.tokenKey}:refresh'), null);
++    auth.dispose();
++  });
++
++  test('malformed successful response does not become an authenticated session',
++      () async {
++    final storage = FenlengMemoryStorageAdapter();
++    final client = FenlengFlutterClient(
++        options: FenlengClientOptions(
++      baseUrl: 'http://localhost:8080',
++      storage: storage,
++      httpClient: MockClient((_) async =>
++          http.Response('{"accessToken":"","refreshToken":""}', 200)),
++    ));
++    final auth =
++        FlutterAuthSDK(client: client, applicationCode: 'fenleng-fridge');
++    await expectLater(auth.loginWithWechatCode('temporary-code'),
++        throwsA(isA<FenlengSdkException>()));
++    expect(await storage.getItem(client.options.tokenKey), null);
++    auth.dispose();
++  });
++}
+diff --git a/docs/spec/wp-fridge-identity-reliability.md b/docs/spec/wp-fridge-identity-reliability.md
+new file mode 100644
+index 0000000..60333b3
+--- /dev/null
++++ b/docs/spec/wp-fridge-identity-reliability.md
+@@ -0,0 +1,11 @@
++# Fridge 原生身份契约补齐 · 2026-11-13
++
++分类：work-package。Owner 已在 fenleng-fridge 完整交付任务明确授权必要 Shared Platform/官方 SDK 联动，并追加微信登录、允许按已确认计划持续实现；不重复要求内部步骤审批。当前为本地候选，没有提交、推送或生产部署。
++
++问题：Flutter SDK 缺少既有平台原生 Apple proof 交换方法；微信 Android/iOS 授权无超时，用户无回调时 pending 锁长期保留，过期回调还可能干扰下一次授权；TokenPair 空值及部分存储失败可能遗留伪会话。
++
++实现：公开 `FlutterAppleAuth.loginWithAppleIdentityToken` 扩展，使用既有 `/auth/federated/apple/login`、applicationCode/clientId/identityToken 以及统一会话存储。Android/iOS 原生授权加入120秒有界等待、终止后清计时器、过期 state 隔离、重复 configure 保护。平台响应校验非空 TokenPair，部分写入失败清理两项。为了每文件小于300行，把身份公共类型和存储助手按 Dart library part 分文件，保留原有类/方法的公开类型身份。
++
++验收：在固定 Flutter-OH 消费 App 环境执行 `apple_auth_test.dart`、`wechat_auth_test.dart`、`auth_test.dart`，10项通过；Android官方原生模块已随 fenleng-fridge 固定签名 debug APK 成功编译安装。取消/重复点击/迟到 exchange 另由消费 App 6项控制器测试覆盖。iOS/鸿蒙真实渠道与正式AppID验证未执行，不能以本地夹具或构建代替。
++
++无新平台 HTTP 契约、无凭据创建/轮换或日志输出。后续须发布一个完整 Git commit，消费者核心/原生/权限包同一 ref、无本机 path override 重验，再更新消费者知识。平台知识基线 `0ec42a11af95c0121784939d5cce80aa67c6d9ee`，SDK修改前基线 `334611afbd9ae4be95771159a5cd00dc6f0ba31f`。真实授权及账户注销生命周期仍由消费项目分别验收。

@@ -1,0 +1,22 @@
+[
+  {
+    "forcedHttp1": false,
+    "protocol": "h2",
+    "error": "AbortError:signal is aborted without reason"
+  },
+  {
+    "forcedHttp1": true,
+    "protocol": "http/1.1",
+    "status": 206,
+    "bytes": 1048576,
+    "range": "bytes 0-1048575/204147812"
+  },
+  {
+    "forcedHttp1": false,
+    "directOriginMapping": true,
+    "protocol": "h2",
+    "status": 206,
+    "bytes": 1048576,
+    "range": "bytes 0-1048575/204147812"
+  }
+]

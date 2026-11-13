@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/blackdandan/fenleng-client-sdk.git",
+  "resolvedCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+  "webCandidate": {
+    "archive": "fenleng-sdk-web-0.5.0-fridge-anonymous-candidate.tgz",
+    "sha256": "cd7755c47fd078e838224b4629e1533ed58f91fbb2813e8066a51fce5fe3a5b9",
+    "sourceMode": "local-worktree-candidate",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "published": false,
+    "sourceFiles": {
+      "README.md": "0485e0b602d42b2f1e6dc59d6bdd43f6469d0f39054c6a387169847414b7c388",
+      "index.js": "33a0c680379f2875da11b1735bb5a77fe0c59b73ccdff673c2bc03d7e156ad0d",
+      "package.json": "80cc4bfc58737769a4607a276dc3987948d49edaef9541f1c32bf35a794fcbf6",
+      "src/ai.js": "ccf853b393922cfdf02a5e0f25910ef609dec1eb4b4fd2dec1694434f566df08",
+      "src/anonymous-telemetry.js": "5d9193fb2170ead25e8493df7284806c76a3e99fc1c3ee3ccc52987bfe470e9c",
+      "src/auth.js": "a827314110d48b3d17c0840c113736810ff912a128a997f929b28120f9d67bc5",
+      "src/commerce.js": "c084a78b0dbed38578de2de238aa1a1ebed8a28ccc44a8ea23e3aba8246b9890",
+      "src/entitlements.js": "43ff9006a7d8d03d8a2859a3cc05e0957a47077621f90950803d0bae6c743ded",
+      "src/flags.js": "f048e311471823db1a986ce5c3295387d2b0a2a57ea697a185dc475402645a3a",
+      "src/notifications.js": "1f6250b14e61473fb71ae05a21b9d105246289738938df09724a11103c52d2be",
+      "src/payment.js": "acea8aaca5068f679022b756bf756c49107cb52891887958c29ea5a79c73d8a3",
+      "src/session.js": "de40dcd5f03e93cd2db7fce177f0610a1555b7df79c4c38870aebdfee204b5cd",
+      "src/storage.js": "adcb99ed29ee72fc6b21a7fbf6e3204801c628ae692fea380791aef4ade84659",
+      "src/telemetry.js": "fd8653445cc511aa5015012592b7fe8fabf9d9c8be3fb7263865d5ace45debdb",
+      "tests/anonymous-telemetry.test.js": "531d6465c0c6b9fde88fdec2197ea4d48ddf7340ef0d00f10596442d86390c5a",
+      "tests/capabilities.test.js": "d90d25ef59502b4905510d83ca060dcda30d960c7e6229589aeed491d1bbbf7e",
+      "tests/web.test.js": "ae98daa4626562ef1ab2edbe582e76a2e5fa6cbdec6f01abe04d4fb8c1d648b9"
+    }
+  },
+  "coreCandidate": {
+    "archive": "fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz",
+    "sha256": "820a23864c9aebff356d06c8bb73b0829bd55b5c38353f2a70d7cbbdcc8cdb88",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "sourceMode": "local-worktree-candidate",
+    "published": false,
+    "sourceFiles": {
+      "README.md": "9195322a7997701d94ba670b030aac3c603a6a3efff03dfa748493f616d920d2",
+      "index.js": "3c54a71fcf5f2a34c088c8e8f8c7b632aba349ecbc47c7df676f71fef0d64740",
+      "package.json": "beca0257cbaa347170ecc4cd3823d6dcef6647a70e1506c664706e3115397266",
+      "src/auth-config.js": "5defe914b7acfc486a4948ecad383abdee6b746f3fc54d1ce76d2d0310cdca4a",
+      "src/client.js": "5e421ec2da2734f5a56cc2f149297961428b25df3ca6844540850541b65fd7f5",
+      "src/flags.js": "bd9af88b03c5323d8d854fc003ab1be6232406586fd0fb653c0ab419dedf0f01",
+      "src/generated/platform-api.js": "ad9eabbcba39a8787cfb77a3ab3a4b0b5d259dd3f7e6ac1b1968c3fccd19f782",
+      "src/sse.js": "44701c4f96960207bb583acb167397b2b219bf78d1a766c380ccbaf9e49e4b0a",
+      "src/storage.js": "1c4b795af7c1a048367d20f924f4265bf856c447158ed44326c4518858e34788",
+      "src/telemetry.js": "c228cd1a3f8eca8b9398b1b705f664921a5dabe3454a01b3520a68949a50adf0",
+      "tests/core.test.js": "88bbb6f65e9037734ec04a43a4a6109db6c996a2d297f0aa75e389f302d3b469",
+      "tests/telemetry-concurrency.test.js": "22ff51cf7d65232367dd38fae7db14e8857af15a0a154b22038b4ac0c3fa4439"
+    }
+  }
+}

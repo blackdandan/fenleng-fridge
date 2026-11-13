@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-13T06:00:24.235Z" hostname="DESKTOP-PF7J11G" time="0.043">
+  <properties/>
+  <testcase name="non public and cross application clients are uniformly rejected()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.026"/>
+  <testcase name="internal diagnostics distinguish stages while public failures stay uniform()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.008"/>
+  <testcase name="login binds explicit client and issues exact token claims()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.004"/>
+  <testcase name="inactive user application membership and wrong password are uniformly rejected()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.001"/>
+  <testcase name="successful login during deletion grace period cancels deletion()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.001"/>
+  <testcase name="refresh revalidates membership and revokes family after suspension()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.001"/>
+  <testcase name="unknown email performs dummy password verification and creates no session()" classname="com.fenleng.platform.application.usecase.AuthenticationOrchestrationTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

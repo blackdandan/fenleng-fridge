@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "startupCollectedOnlyUnreferencedManagedPhotos": true,
+  "twoRealCapturesPersistedWithSequentialNumbersAndIndependentZones": true,
+  "capturedPhotosAndInventorySurvivedRestart": true,
+  "camera430And320Captured": true,
+  "explanationPrecededSystemPermissionAndDeclineKeptAlbum": true,
+  "originalInventoryPhotosPermissionAndDensityRestored": true,
+  "apkSha256": "ea64ffb8ccf4927507525519ec7a7cfd7bb2851528b6825281beb0b03246da3a"
+}

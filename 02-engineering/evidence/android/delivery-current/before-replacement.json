@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "nextNumber": 2,
+  "foods": [
+    {
+      "id": "001",
+      "photoPath": "/data/user/0/com.fenlengtech.fridge/files/fridge/photos/1794565099552734-717eb5e9.image",
+      "zone": "cold",
+      "remaining": "full",
+      "addedAt": "2026-11-13T10:18:19.562071",
+      "confirmedAt": null,
+      "dueAt": "2026-11-16T17:30:00.000",
+      "intervalDays": 3,
+      "cycle": 0
+    }
+  ],
+  "reminders": [],
+  "defaults": {
+    "cold": 3,
+    "frozen": 14,
+    "pantry": 3
+  },
+  "lastOrganizedAt": null,
+  "reminderHour": 17,
+  "reminderMinute": 30
+}

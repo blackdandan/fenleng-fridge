@@ -1,0 +1,31 @@
+name: fridge_ui_kit
+version: 0.1.0
+publish_to: none
+resolution: workspace
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: 2.2.4
+  fenleng_tokens:
+    git:
+      url: https://github.com/blackdandan/fenleng-app-ui-kit.git
+      ref: 2036816e23cb11a09de494ee5b976fbb58eb516a
+      path: packages/fenleng_tokens
+  fenleng_theme:
+    git:
+      url: https://github.com/blackdandan/fenleng-app-ui-kit.git
+      ref: 2036816e23cb11a09de494ee5b976fbb58eb516a
+      path: packages/fenleng_theme
+  fenleng_ui:
+    git:
+      url: https://github.com/blackdandan/fenleng-app-ui-kit.git
+      ref: 2036816e23cb11a09de494ee5b976fbb58eb516a
+      path: packages/fenleng_ui
+dev_dependencies:
+  test: 1.30.0
+
+flutter:
+  assets:
+    - assets/icons/

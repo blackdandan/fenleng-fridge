@@ -1,0 +1,6 @@
+{
+  "scope": "Visual-only unaccepted-record fixture on dedicated QA AVD; actual withdrawal/reconsent verified separately",
+  "completed": true,
+  "originalConsentBytesAndStockRestored": true,
+  "installedApkSha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac"
+}

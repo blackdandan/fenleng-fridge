@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Fotografuj żywność i przechowuj zdjęcia tylko na tym urządzeniu. Zdjęcia nie są przesyłane, dźwięk nie jest nagrywany. Możesz też wybrać zdjęcia z biblioteki.";
+"NSPhotoLibraryUsageDescription" = "Biblioteka zdjęć — Zdjęcia i zapasy tylko na tym urządzeniu";
+"CFBundleDisplayName" = "Moja lodówka";

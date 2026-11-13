@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T06:08:31.515Z" hostname="DESKTOP-PF7J11G" time="0.199">
+  <properties/>
+  <testcase name="parses client registrations without sharing credentials across clients()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.174"/>
+  <testcase name="explicit clients replace a matching legacy client id()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.004"/>
+  <testcase name="explicit clients overlay matching legacy registration and preserve the others()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.002"/>
+  <testcase name="duplicate explicit client ids fail without exposing credentials()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.016"/>
+  <testcase name="legacy registrations work without clients json()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.001"/>
+  <testcase name="blank fields and unknown exchange modes fail with redacted errors()" classname="com.fenleng.platform.bootstrap.WechatLoginConfigurationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

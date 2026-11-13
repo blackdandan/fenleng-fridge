@@ -1,0 +1,36 @@
+{
+  "project": "fenleng-fridge",
+  "priorBaseline": "02-engineering/design-system-evidence.json",
+  "sources": [
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/design-system/content.md",
+      "sourceMode": "github",
+      "cacheHit": false,
+      "retrievedAt": "2026-11-13T00:45:38.806Z"
+    },
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/design-system/text-scale-contract.md",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T00:45:39.625Z"
+    },
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/mini-program/README.md",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T00:45:37.535Z"
+    }
+  ]
+}

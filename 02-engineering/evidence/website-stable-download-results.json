@@ -1,0 +1,23 @@
+{
+  "status": "stable-download-local-browser-verified-not-deployed",
+  "url": "downloads/fenleng-fridge_latest.apk",
+  "artifactFilename": "fridge-0.1.0-1-android-debug.apk",
+  "testsPassed": 5,
+  "staticCheck": "passed20language/legal/link/fullAPKhash",
+  "browser": {
+    "status": "passed",
+    "scope": "Actual Chromium download through the current local website; not Android WeChat",
+    "bytes": 204147812,
+    "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+    "filename": "fenleng-fridge_latest.apk",
+    "url": "http://127.0.0.1:4817/downloads/fenleng-fridge_latest.apk",
+    "screenshot": ".fenleng/website-restored-download-390.png"
+  },
+  "sourceHashes": {
+    "06-project/web/scripts/android-download.mjs": "638668f2a8f733395144d64cfa863856effa8e69b7f2650504d155b59d76c740",
+    "06-project/web/scripts/android-download.test.mjs": "1b0fc2c81a3f13273199d821b5592fca77f64b784bf1f8fb63264e72d0e25371",
+    "06-project/web/scripts/check.mjs": "71e678d02282989377f782e7f12ad993a608262ba288918be1e829502276ca3b"
+  },
+  "ownerApproval": "pending-public-preview-deployment",
+  "realWechat": "not-run"
+}

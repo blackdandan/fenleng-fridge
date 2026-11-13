@@ -1,0 +1,55 @@
+{
+  "status": "login-atomicity-validated-firebase-remote-cleanup-incomplete",
+  "goalComplete": false,
+  "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "sourceMode": "local-worktree-candidate",
+  "knowledgeEvidence": {
+    "resolvedCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "source": "@git-tree",
+    "sourceMode": "cache",
+    "query": "Firebase"
+  },
+  "tests": [
+    {
+      "name": "JdbcFederatedDeletionConfirmationRepositoryTest",
+      "tests": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "FederatedDeletionProofTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "ProcessUserDataRequestsTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "addedParameterizedCases": 10,
+  "limitations": [
+    "Provider verification and signing are explicit test ports",
+    "No production deployment or policy change",
+    "Remote Firebase Auth user deletion remains Agent implementation work",
+    "Existing newer-session confirmation retirement rule remains WeChat-only"
+  ],
+  "sourceHashes": {
+    "backend/platform-application/src/main/kotlin/com/fenleng/platform/application/usecase/FirebaseLogin.kt": "1c7995a94e43b745aa0e99541e26dcf5f731af08027d82b09d6992576a333def",
+    "backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/JdbcFederatedDeletionConfirmationRepositoryTest.kt": "13f559850e95347d7d600345dd35cb89e6d43c35b2a25425ecc186404598d28c",
+    "docs/spec/wp-fridge-federated-login-atomicity.md": "b36ee0c5a24d30bf2d2251bae00af29597917b58b512d98d902b3b993047d77b"
+  }
+}

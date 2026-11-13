@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Chụp ảnh thực phẩm và chỉ lưu trên thiết bị này. Ảnh không được tải lên và không ghi âm. Bạn cũng có thể chọn ảnh từ thư viện.";
+"NSPhotoLibraryUsageDescription" = "Thư viện ảnh — Ảnh và thực phẩm chỉ lưu trên thiết bị này";
+"CFBundleDisplayName" = "Tủ lạnh của tôi";

@@ -1,0 +1,246 @@
+Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897
+Starting a Gradle Daemon, 3 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Configure project :gradle
+w: History based incremental compilation approach for JVM platform is deprecated and will be removed soon in favor of approach based on ABI snapshots.
+Please remove 'kotlin.incremental.useClasspathSnapshot=false' from 'gradle.properties' file.
+
+
+> Task :gradle:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :gradle:compileKotlin UP-TO-DATE
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy NO-SOURCE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources
+> Task :gradle:classes
+> Task :gradle:jar
+> Task :gradle:inspectClassesForKotlinIC UP-TO-DATE
+
+> Configure project :app
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :app:compileFlutterBuildDebug
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+
+> Task :app:packJniLibsflutterBuildDebug
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :camera_android_camerax:preBuild UP-TO-DATE
+> Task :camera_android_camerax:preDebugBuild UP-TO-DATE
+> Task :camera_android_camerax:writeDebugAarMetadata UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:preBuild UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:preDebugBuild UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_auth:preBuild UP-TO-DATE
+> Task :firebase_auth:preDebugBuild UP-TO-DATE
+> Task :firebase_core:preBuild UP-TO-DATE
+> Task :firebase_core:preDebugBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:preDebugBuild UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:writeDebugAarMetadata UP-TO-DATE
+> Task :firebase_auth:writeDebugAarMetadata
+> Task :google_sign_in_android:preBuild UP-TO-DATE
+> Task :firebase_core:writeDebugAarMetadata
+> Task :google_sign_in_android:preDebugBuild UP-TO-DATE
+> Task :image_picker_android:preBuild UP-TO-DATE
+> Task :image_picker_android:preDebugBuild UP-TO-DATE
+> Task :google_sign_in_android:writeDebugAarMetadata
+> Task :image_picker_android:writeDebugAarMetadata UP-TO-DATE
+> Task :permission_handler_android:preBuild UP-TO-DATE
+> Task :permission_handler_android:preDebugBuild UP-TO-DATE
+> Task :permission_handler_android:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata
+> Task :app:cleanMergeDebugAssets
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :camera_android_camerax:mergeDebugShaders UP-TO-DATE
+> Task :camera_android_camerax:compileDebugShaders NO-SOURCE
+> Task :camera_android_camerax:generateDebugAssets UP-TO-DATE
+> Task :camera_android_camerax:mergeDebugAssets UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:mergeDebugShaders UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:compileDebugShaders NO-SOURCE
+> Task :fenleng_sdk_flutter_native_identity:generateDebugAssets UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:mergeDebugAssets UP-TO-DATE
+> Task :firebase_auth:mergeDebugShaders
+> Task :firebase_auth:compileDebugShaders NO-SOURCE
+> Task :firebase_auth:generateDebugAssets UP-TO-DATE
+> Task :firebase_auth:mergeDebugAssets
+> Task :firebase_core:mergeDebugShaders
+> Task :firebase_core:compileDebugShaders NO-SOURCE
+> Task :firebase_core:generateDebugAssets UP-TO-DATE
+> Task :firebase_core:mergeDebugAssets
+> Task :flutter_plugin_android_lifecycle:mergeDebugShaders UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:compileDebugShaders NO-SOURCE
+> Task :flutter_plugin_android_lifecycle:generateDebugAssets UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:mergeDebugAssets UP-TO-DATE
+> Task :google_sign_in_android:mergeDebugShaders
+> Task :google_sign_in_android:compileDebugShaders NO-SOURCE
+> Task :google_sign_in_android:generateDebugAssets UP-TO-DATE
+> Task :google_sign_in_android:mergeDebugAssets
+> Task :image_picker_android:mergeDebugShaders UP-TO-DATE
+> Task :image_picker_android:compileDebugShaders NO-SOURCE
+> Task :image_picker_android:generateDebugAssets UP-TO-DATE
+> Task :image_picker_android:mergeDebugAssets UP-TO-DATE
+> Task :permission_handler_android:mergeDebugShaders UP-TO-DATE
+> Task :permission_handler_android:compileDebugShaders NO-SOURCE
+> Task :permission_handler_android:generateDebugAssets UP-TO-DATE
+> Task :permission_handler_android:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:copyFlutterAssetsDebug
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :camera_android_camerax:generateDebugResValues UP-TO-DATE
+> Task :camera_android_camerax:generateDebugResources UP-TO-DATE
+> Task :camera_android_camerax:packageDebugResources UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:generateDebugResValues UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:generateDebugResources UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:packageDebugResources UP-TO-DATE
+> Task :firebase_auth:generateDebugResValues
+> Task :firebase_auth:generateDebugResources
+> Task :firebase_auth:packageDebugResources
+> Task :firebase_core:generateDebugResValues
+> Task :firebase_core:generateDebugResources
+> Task :firebase_core:packageDebugResources
+> Task :flutter_plugin_android_lifecycle:generateDebugResValues UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:generateDebugResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:packageDebugResources UP-TO-DATE
+> Task :google_sign_in_android:generateDebugResValues
+> Task :google_sign_in_android:generateDebugResources
+> Task :google_sign_in_android:packageDebugResources
+> Task :image_picker_android:generateDebugResValues UP-TO-DATE
+> Task :image_picker_android:generateDebugResources UP-TO-DATE
+> Task :image_picker_android:packageDebugResources UP-TO-DATE
+> Task :permission_handler_android:generateDebugResValues UP-TO-DATE
+> Task :permission_handler_android:generateDebugResources UP-TO-DATE
+> Task :permission_handler_android:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :camera_android_camerax:extractDeepLinksDebug UP-TO-DATE
+> Task :camera_android_camerax:processDebugManifest UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:extractDeepLinksDebug UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:processDebugManifest UP-TO-DATE
+> Task :firebase_auth:extractDeepLinksDebug
+> Task :firebase_core:extractDeepLinksDebug
+> Task :flutter_plugin_android_lifecycle:extractDeepLinksDebug UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:processDebugManifest UP-TO-DATE
+> Task :google_sign_in_android:extractDeepLinksDebug
+> Task :image_picker_android:extractDeepLinksDebug UP-TO-DATE
+> Task :image_picker_android:processDebugManifest UP-TO-DATE
+> Task :permission_handler_android:extractDeepLinksDebug UP-TO-DATE
+> Task :permission_handler_android:processDebugManifest UP-TO-DATE
+> Task :camera_android_camerax:compileDebugLibraryResources UP-TO-DATE
+> Task :camera_android_camerax:parseDebugLocalResources UP-TO-DATE
+> Task :camera_android_camerax:generateDebugRFile UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:compileDebugLibraryResources UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:parseDebugLocalResources UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:generateDebugRFile UP-TO-DATE
+> Task :firebase_auth:compileDebugLibraryResources
+
+> Task :firebase_core:processDebugManifest
+package="io.flutter.plugins.firebase.core" found in source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\firebase_core-4.13.0\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.firebase.core" from the source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\firebase_core-4.13.0\android\src\main\AndroidManifest.xml.
+
+> Task :google_sign_in_android:processDebugManifest
+package="io.flutter.plugins.googlesignin" found in source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\google_sign_in_android-7.2.11\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.googlesignin" from the source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\google_sign_in_android-7.2.11\android\src\main\AndroidManifest.xml.
+
+> Task :firebase_auth:processDebugManifest
+package="io.flutter.plugins.firebase.auth" found in source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\firebase_auth-6.5.7\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="io.flutter.plugins.firebase.auth" from the source AndroidManifest.xml: C:\Users\Admin\AppData\Local\Pub\Cache\hosted\pub.flutter-io.cn\firebase_auth-6.5.7\android\src\main\AndroidManifest.xml.
+
+> Task :firebase_auth:parseDebugLocalResources
+> Task :app:mergeDebugResources
+> Task :app:processDebugMainManifest
+> Task :app:outputDebugAppLinkSettings
+> Task :app:processDebugManifest
+> Task :firebase_core:compileDebugLibraryResources
+> Task :flutter_plugin_android_lifecycle:compileDebugLibraryResources UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:parseDebugLocalResources UP-TO-DATE
+> Task :firebase_core:parseDebugLocalResources
+> Task :flutter_plugin_android_lifecycle:generateDebugRFile UP-TO-DATE
+> Task :google_sign_in_android:compileDebugLibraryResources
+> Task :google_sign_in_android:parseDebugLocalResources
+> Task :firebase_auth:generateDebugRFile
+> Task :firebase_core:generateDebugRFile
+> Task :app:processDebugManifestForPackage
+> Task :image_picker_android:compileDebugLibraryResources UP-TO-DATE
+> Task :image_picker_android:parseDebugLocalResources UP-TO-DATE
+> Task :image_picker_android:generateDebugRFile UP-TO-DATE
+> Task :permission_handler_android:compileDebugLibraryResources UP-TO-DATE
+> Task :permission_handler_android:parseDebugLocalResources UP-TO-DATE
+> Task :permission_handler_android:generateDebugRFile UP-TO-DATE
+> Task :camera_android_camerax:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :google_sign_in_android:generateDebugRFile
+> Task :camera_android_camerax:compileDebugKotlin UP-TO-DATE
+> Task :camera_android_camerax:javaPreCompileDebug UP-TO-DATE
+> Task :camera_android_camerax:compileDebugJavaWithJavac UP-TO-DATE
+> Task :camera_android_camerax:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:javaPreCompileDebug UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:compileDebugJavaWithJavac UP-TO-DATE
+> Task :fenleng_sdk_flutter_native_identity:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :firebase_auth:generateDebugBuildConfig
+> Task :firebase_auth:javaPreCompileDebug
+> Task :firebase_core:generateDebugBuildConfig
+> Task :firebase_core:javaPreCompileDebug
+> Task :flutter_plugin_android_lifecycle:javaPreCompileDebug UP-TO-DATE
+> Task :app:processDebugResources
+
+> Task :firebase_core:compileDebugJavaWithJavac
+Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897
+
+Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897
+
+Picked up JAVA_TOOL_OPTIONS: -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897
+
+
+> Task :flutter_plugin_android_lifecycle:compileDebugJavaWithJavac UP-TO-DATE
+> Task :flutter_plugin_android_lifecycle:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :google_sign_in_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :firebase_core:bundleLibCompileToJarDebug
+> Task :google_sign_in_android:compileDebugKotlin
+
+> Task :firebase_auth:compileDebugJavaWithJavac
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+
+> Task :image_picker_android:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :google_sign_in_android:javaPreCompileDebug
+> Task :firebase_auth:bundleLibCompileToJarDebug
+> Task :image_picker_android:compileDebugKotlin UP-TO-DATE
+> Task :google_sign_in_android:compileDebugJavaWithJavac
+> Task :image_picker_android:javaPreCompileDebug UP-TO-DATE
+> Task :image_picker_android:compileDebugJavaWithJavac UP-TO-DATE
+> Task :image_picker_android:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :permission_handler_android:javaPreCompileDebug UP-TO-DATE
+> Task :google_sign_in_android:bundleLibCompileToJarDebug
+> Task :permission_handler_android:compileDebugJavaWithJavac UP-TO-DATE
+> Task :permission_handler_android:bundleLibCompileToJarDebug UP-TO-DATE
+
+> Task :app:compileDebugKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/LegalActivity.kt:96:20 'fun setDecorFitsSystemWindows(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/android/app/src/main/kotlin/com/fenlengtech/fridge/LocalReminders.kt:74:35 Java type mismatch: inferred type is 'String?', but 'String' was expected.
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 1s
+143 actionable tasks: 61 executed, 82 up-to-date

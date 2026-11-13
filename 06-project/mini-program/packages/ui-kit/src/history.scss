@@ -1,0 +1,13 @@
+.fridge-history-tabs { display: flex; padding: 4px; gap: 4px; margin-top: var(--fridge-space-history-tabs); background: var(--fridge-dialog-close); border-radius: var(--fridge-radius-tabs); }
+.fridge-history-tab { flex: 1; min-width: 0; min-height: 44Px; padding: 6px !important; color: var(--fridge-editor-label) !important; border-radius: var(--fridge-radius-tab); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)) !important; }
+.fridge-history-tab--selected { background: var(--fridge-surface) !important; color: var(--fridge-primary) !important; box-shadow: var(--fridge-shadow-photo); }
+.fridge-history-hint { display: block; margin-top: var(--fridge-space-page); color: var(--fridge-muted); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale,1)); line-height: 1.8; }
+.fridge-history-list { display: flex; flex-direction: column; gap: var(--fridge-space-history-cards); margin-top: var(--fridge-space-history-cards-top); }
+.fridge-history-card { display: flex; gap: var(--fridge-space-history-card); align-items: center; padding: var(--fridge-space-history-card); border: .8px solid var(--fridge-line); border-radius: var(--fridge-radius-history-card); background: var(--fridge-surface); }
+.fridge-history-photo { width: var(--fridge-size-history-photo); flex-shrink: 0; border: 1.6px solid var(--fridge-photo-border); border-radius: 50%; box-shadow: var(--fridge-shadow-photo); }
+.fridge-history-info { flex: 1; min-width: 0; text-align: start; min-height: 44Px; font-size: calc(var(--fridge-font-label) * var(--fridge-text-scale,1)) !important; }
+.fridge-history-meta { display: block; color: var(--fridge-muted); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale,1)); margin-top: 6px; }
+.fridge-history-info>text:first-child .fridge-history-meta { display: inline; margin: 0; }
+.fridge-history-restore { min-height: 44Px; max-width: 32%; color: var(--fridge-primary) !important; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)) !important; }
+.fridge-history-empty { display: block; text-align: center; padding: var(--fridge-space-section) 0; color: var(--fridge-muted); }
+.fridge-history-error { color: var(--fridge-danger); padding-top: var(--fridge-space-row); }

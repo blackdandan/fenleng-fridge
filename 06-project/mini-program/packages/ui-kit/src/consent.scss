@@ -1,0 +1,10 @@
+.fridge-welcome-caption { display: block; margin-top: var(--fridge-space-section); color: var(--fridge-muted); }
+.fridge-consent .fridge-dialog-title { font-size: calc(var(--fridge-font-dialog-title) * var(--fridge-text-scale,1)); line-height: 1.4; }
+.fridge-consent-body { display: block; margin-top: 16px; font-size: calc(var(--fridge-font-dialog-body) * var(--fridge-text-scale,1)); line-height: 1.6; }
+.fridge-consent-body--first { margin-top: 22px; }
+.fridge-consent .fridge-action { font-size: calc(var(--fridge-font-dialog-body) * var(--fridge-text-scale,1)) !important; }
+.fridge-document-links { display: flex; gap: var(--fridge-space-small); flex-wrap: wrap; justify-content: center; margin-top: 16px; }
+.fridge-document-links button { min-height: 44Px; padding: 8px !important; color: var(--fridge-primary); font-size: calc(var(--fridge-font-body) * var(--fridge-text-scale,1)); }
+.fridge-dialog-actions { display: grid; gap: 12px; margin-top: 16px; }
+.fridge-inline-error { display: block; padding-top: var(--fridge-space-row); color: var(--fridge-danger); font-size: calc(var(--fridge-font-label) * var(--fridge-text-scale,1)); }
+.fridge-consent { padding-bottom: 6px; }

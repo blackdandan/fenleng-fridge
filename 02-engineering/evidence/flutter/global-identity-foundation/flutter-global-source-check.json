@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "scope": "Android compiled merged manifest and Android/iOS source registration inventories; not native runtime/iOS compile",
+  "androidPluginClasses": [
+    "com.baseflow.permissionhandler.PermissionHandlerPlugin",
+    "com.fenleng.sdk.nativeidentity.FenlengNativeIdentityPlugin",
+    "io.flutter.plugins.camerax.CameraAndroidCameraxPlugin",
+    "io.flutter.plugins.firebase.auth.FlutterFirebaseAuthPlugin",
+    "io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin",
+    "io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin",
+    "io.flutter.plugins.googlesignin.GoogleSignInPlugin",
+    "io.flutter.plugins.imagepicker.ImagePickerPlugin"
+  ],
+  "iosPluginClasses": [
+    "CameraPlugin",
+    "FLTFirebaseAuthPlugin",
+    "FLTFirebaseCorePlugin",
+    "FLTImagePickerPlugin",
+    "FenlengNativeIdentityPlugin",
+    "GoogleSignInPlugin",
+    "PermissionHandlerPlugin"
+  ],
+  "firebaseAutoInitializerAbsent": true,
+  "iosMinimum": "15.0",
+  "defaultFirebaseEnabled": false
+}

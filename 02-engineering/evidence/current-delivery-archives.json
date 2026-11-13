@@ -1,0 +1,79 @@
+{
+  "status": "current-archives-integrity-verified",
+  "goalComplete": false,
+  "source": {
+    "status": "prepared-not-clean-consumer-validated",
+    "contentId": "e17d162433f2fe7e4b4cfaaa34119638589bec9a9673088a263a3dad4f5e4659",
+    "staging": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\s-z8lqu4tt",
+    "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-source-candidate-e17d162433f2.zip",
+    "sha256": "d6c8ef2ccf9f757b026261025cc9ab809d507501076acaf2ad371176b6756bb6",
+    "bytes": 43485998,
+    "sourceFiles": 1608,
+    "sdkCandidateFiles": 68
+  },
+  "builtArtifacts": [
+    {
+      "kind": "weapp",
+      "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-weapp-candidate-1ef4addbe307.zip",
+      "sha256": "c5c67c988581c0d81747f8bb835e77d9835c71f85386aceb2340117ed351cf6f",
+      "bytes": 239234,
+      "files": 28,
+      "contentId": "1ef4addbe3077376d1eab24f7a975ddcee2d6bbaccf5c7580351325d4c989a2b",
+      "status": "archive-content-verified-not-production-deployed"
+    },
+    {
+      "kind": "website",
+      "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-website-candidate-803b142ee82c.zip",
+      "sha256": "c98769754dcbb75f52798792bc8a545bbcf67f0bbeb0bfd23abda4496e0ff5c9",
+      "bytes": 81452968,
+      "files": 20,
+      "contentId": "803b142ee82cf076fa60541acec0c0f0d0165e86d8ad072b76dceff172fb70e6",
+      "status": "archive-content-verified-not-production-deployed"
+    }
+  ],
+  "sourceVerification": {
+    "files": 1608,
+    "integrity": "passed SHA256/contentId/CRC",
+    "independentConsumer": "e17d fixed FVM dependency resolution and vendor package paths verified",
+    "app": {
+      "passed": 168,
+      "skipped": 7
+    },
+    "global": {
+      "passed": 26,
+      "skipped": 0
+    },
+    "core": {
+      "passed": 17
+    },
+    "analyze": "lib/test no issues",
+    "mini": {
+      "testsPassed": 128,
+      "skipped": 0,
+      "install": "offline frozen lockfile using existing cache",
+      "typecheck": "passed",
+      "boundaries": "passed",
+      "build": "passed",
+      "compiledFiles": 28,
+      "byteDifferences": []
+    },
+    "website": {
+      "install": "npm ci offline using existing cache",
+      "build": "passed",
+      "check": "passed full APK hash/signature and legal/locales",
+      "compiledFiles": 20,
+      "byteDifferences": []
+    }
+  },
+  "knowledgeAudit": {
+    "status": "pass",
+    "base": "HEAD",
+    "nextAction": "none"
+  },
+  "installation": "cancelled at Owner request; no further installation authorized this turn",
+  "remaining": [
+    "Final archive including decision and audit documentation",
+    "Final WP consistency review",
+    "Explicit deployment/configuration and platform device follow-ups per completion-audit.md"
+  ]
+}

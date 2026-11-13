@@ -1,0 +1,17 @@
+✔ lifecycle methods use authenticated native transport with exact scoped body, intent and confirmation headers (1.5438ms)
+✔ invalid provider challenge proof type intent and missing DELETE confirmation never dispatch (0.4399ms)
+✔ export reuses authentication but does not require a deletion confirmation (0.125ms)
+✔ current user is an authenticated read without creating or replacing a session (0.1762ms)
+✔ unknown-write network failure and revoked session are not retried or cleared by native lifecycle calls (0.383ms)
+✔ abort prevents late confirmation delivery without replacing original session (0.2565ms)
+✔ explicit anonymous request option cannot bypass lifecycle authentication (0.1208ms)
+✔ actual local HTTP confirms wire headers, unchanged identity and server receipt forwarding (20.8111ms)
+✔ actual method dispatch matches frozen public operation catalog and platform candidate provider schema (0.2983ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.1618

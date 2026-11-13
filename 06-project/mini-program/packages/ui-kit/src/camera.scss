@@ -1,0 +1,18 @@
+.fridge-camera { background: var(--fridge-camera); min-height: calc(100vh - var(--fridge-host-top,0px)); color: var(--fridge-camera-ink,var(--fridge-camera-ink)); --fridge-ink: var(--fridge-camera-ink); --fridge-primary: var(--fridge-camera-ink); --fridge-surface: var(--fridge-camera-control); --fridge-line: var(--fridge-camera-control-border); }
+.fridge-camera .fridge-page { display: flex; flex-direction: column; min-height: calc(100vh - var(--fridge-host-top,0px)); }
+.fridge-camera-local { display: block; align-self: flex-start; margin-top: 28px; font-size: calc(var(--fridge-font-caption) * var(--fridge-text-scale,1)); color: var(--fridge-camera-tag); border: .8px solid var(--fridge-camera-tag-border); border-radius: 5px; padding: 3px 6px; }
+.fridge-camera-selector { margin-top: 12px; border: .8px solid var(--fridge-camera-selector-border); background: var(--fridge-camera-control); border-radius: 10px; min-height: 44Px; display: flex; align-items: center; padding: 10px 15px; }
+.fridge-camera-selector picker { flex: 1; min-width: 0; }
+.fridge-camera-preview { position: relative; margin-top: 14px; width: 100%; border: .8px solid var(--fridge-camera-preview-border); border-radius: 17px; overflow: hidden; background: var(--fridge-camera-control); }
+.fridge-camera-native { position: absolute; inset: 0; }
+.fridge-native-camera { width: 100%; height: 100%; }
+.fridge-camera-guide { position: absolute; inset: 17px; border: .8px solid var(--fridge-camera-guide-border); border-radius: 10px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 16px; }
+.fridge-camera-guide-caption { color: var(--fridge-camera-guide-ink); font-size: 11px; padding: 6px 9px; border-radius: 6px; background: var(--fridge-camera-guide-scrim); }
+.fridge-camera-unavailable { position: absolute; inset: 0; padding: var(--fridge-space-page); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--fridge-space-row); font-size: calc(var(--fridge-font-label) * var(--fridge-text-scale,1)); text-align: center; }
+.fridge-camera-controls { display: flex; align-items: center; justify-content: space-between; margin-top: 22px; }
+.fridge-camera-album { width: 75px; min-height: 44Px; display: flex !important; flex-direction: column; align-items: center; gap: 5px; color: var(--fridge-camera-muted) !important; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)) !important; }
+.fridge-shutter { width: 69px; height: 69px; border: 4px solid var(--fridge-camera-shutter-border) !important; border-radius: 50%; background: var(--fridge-camera-ink) !important; }
+.fridge-camera-count { width: 75px; display: flex; flex-direction: column; align-items: center; color: var(--fridge-camera-caption); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale,1)); text-align: center; }
+.fridge-camera-caption { display: block; white-space: pre-line; margin-top: 38px; color: var(--fridge-camera-caption); text-align: center; font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale,1)); line-height: 1.8; }
+.fridge-camera-finish { margin-top: auto; padding-top: 90px; }
+.fridge-camera .fridge-overlay { --fridge-ink: var(--fridge-dialog-ink); --fridge-primary: var(--fridge-dialog-primary); --fridge-on-primary: var(--fridge-dialog-on-primary); --fridge-surface: var(--fridge-dialog-surface); --fridge-line: var(--fridge-dialog-line); }

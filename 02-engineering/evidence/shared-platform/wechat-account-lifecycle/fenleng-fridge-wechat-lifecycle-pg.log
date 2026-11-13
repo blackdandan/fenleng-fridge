@@ -1,0 +1,175 @@
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-persistence:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-persistence:processResources UP-TO-DATE
+> Task :platform-persistence:processTestResources UP-TO-DATE
+> Task :platform-bootstrap:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:processResources NO-SOURCE
+> Task :platform-interfaces:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-interfaces:processResources NO-SOURCE
+> Task :platform-application:compileKotlin
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar
+
+> Task :platform-persistence:compileKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/main/kotlin/com/fenleng/platform/persistence/JdbcEngagementRepository.kt:11:415 Unchecked cast of 'Map<*, *>!' to 'Map<String, Any?>'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/main/kotlin/com/fenleng/platform/persistence/JdbcEngagementRepository.kt:36:783 Unchecked cast of 'Map<*, *>!' to 'Map<String, Any?>'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/main/kotlin/com/fenleng/platform/persistence/JdbcEngagementRepository.kt:37:690 Unchecked cast of 'Map<*, *>!' to 'Map<String, Any?>'.
+
+> Task :platform-persistence:compileJava NO-SOURCE
+> Task :platform-persistence:classes UP-TO-DATE
+> Task :platform-persistence:jar UP-TO-DATE
+> Task :platform-infrastructure:compileKotlin
+> Task :platform-infrastructure:compileJava NO-SOURCE
+> Task :platform-infrastructure:classes UP-TO-DATE
+> Task :platform-infrastructure:jar UP-TO-DATE
+
+> Task :platform-interfaces:compileKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminCommerceOperationsHttpController.kt:24:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:37:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:38:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:39:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:40:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:41:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:42:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:43:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:44:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:45:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AdminOperationsStatusHttpController.kt:46:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/AppleLoginHttpController.kt:35:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/EngagementHttpController.kt:31:33 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/EngagementHttpController.kt:31:180 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/EngagementHttpController.kt:31:320 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/src/main/kotlin/com/fenleng/platform/interfaces/http/FirebaseLoginHttpController.kt:34:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+
+> Task :platform-interfaces:compileJava NO-SOURCE
+> Task :platform-interfaces:classes UP-TO-DATE
+> Task :platform-interfaces:jar UP-TO-DATE
+
+> Task :platform-persistence:compileTestKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/JdbcAnonymousTelemetryTest.kt:23:27 'constructor(ptm: PlatformTransactionManager, tas: TransactionAttributeSource): TransactionInterceptor' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/MiniReminderDispatchRaceTest.kt:16:41 The corresponding parameter in the supertype 'MiniReminderStore' is named 'planId'. This may cause problems when calling this function with named arguments.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/MiniReminderDispatchRaceTest.kt:16:51 The corresponding parameter in the supertype 'MiniReminderStore' is named 'ownerScope'. This may cause problems when calling this function with named arguments.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:41:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:42:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:44:17 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:47:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:50:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:52:17 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:55:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:64:24 Check for instance is always 'true'.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-persistence/src/test/kotlin/com/fenleng/platform/persistence/PlatformPersistenceConfigurationTest.kt:66:17 Check for instance is always 'true'.
+
+> Task :platform-persistence:compileTestJava NO-SOURCE
+> Task :platform-persistence:testClasses UP-TO-DATE
+
+> Task :platform-bootstrap:compileKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:80:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:81:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:82:139 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:78:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:79:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:81:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:67:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:68:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:70:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:81:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:82:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:84:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:77:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:78:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:82:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:80:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:81:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:82:139 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:77:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:78:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:80:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+
+> Task :platform-persistence:test
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 55s
+15 actionable tasks: 8 executed, 7 up-to-date

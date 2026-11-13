@@ -1,0 +1,20 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart
+00:00 +0: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/deletion_storage_test.dart: exact server receipt survives new storage instance; no unrelated file changes
+00:00 +1: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/deletion_storage_test.dart: corrupt existing journal is preserved even when saving new state
+00:00 +2: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/deletion_storage_test.dart: duplicate owner and invalid accepted receipt never replace committed journal
+00:00 +3: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/deletion_storage_test.dart: unfinished pending file cannot replace the last committed intent
+00:00 +4: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: cancel has no persisted intent, proof, reminder stop or DELETE
+00:00 +5: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: genuine receipt is durable before local cleanup
+00:00 +6: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: known ACK storage failure retains memory and retries locally only
+00:00 +7: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: local cleanup failure does not resend DELETE
+00:00 +8: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: unknown transport retries original persisted key
+00:00 +9: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: explicit new login retires unknown intent and creates a new key
+00:00 +10: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: restart after submitting never silently retries or logs in
+00:00 +11: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: different owner never overwrites previous owner receipt
+00:00 +12: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: page freeze before native proof returns prevents DELETE
+00:00 +13: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: withdrawal during DELETE preserves durable submitting marker
+00:00 +14: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: concurrent session invalidation does not discard genuine ACK
+00:00 +15: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: duplicate submit shares operation and only calls provider once
+00:00 +16: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/account_deletion_test.dart: timestamps reject normalization and require genuine seven-day window
+00:00 +17: All tests passed!

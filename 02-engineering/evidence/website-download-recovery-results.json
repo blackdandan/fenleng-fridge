@@ -1,0 +1,60 @@
+{
+  "stage": "website default APK retention and honest checks",
+  "goalComplete": false,
+  "tests": 5,
+  "failures": 0,
+  "skipped": 0,
+  "defaultBuild": "passed,actual aapt and apksigner,without --android-apk",
+  "negativeBuild": "missing explicit APK failed before replacing current release/APK",
+  "httpDownload": {
+    "status": "passed",
+    "scope": "Actual local HTTP full body with WeChat user-agent string,not native WeChat",
+    "failedBuildPreservedReleaseAndApk": true,
+    "httpStatus": 200,
+    "bytes": 184867411,
+    "sha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+    "headers": {
+      "Content-Type": "application/vnd.android.package-archive",
+      "Content-Length": "184867411",
+      "Content-Disposition": "attachment; filename=\"fridge-0.1.0-1-android-debug.apk\"",
+      "X-Content-Type-Options": null
+    },
+    "download": "downloads/fridge-0.1.0-1-android-debug.apk"
+  },
+  "browserDownload": {
+    "status": "passed",
+    "scope": "Actual Chromium download through the current local website; not Android WeChat",
+    "bytes": 184867411,
+    "sha256": "0dea646e952d9e1f34a6d0d3fff486fa5f2040f5ccf63ca2ed0bbcd061cf7235",
+    "filename": "fridge-0.1.0-1-android-debug.apk",
+    "url": "http://127.0.0.1:4817/downloads/fridge-0.1.0-1-android-debug.apk",
+    "screenshot": ".fenleng/website-restored-download-390.png"
+  },
+  "knowledgeAudit": "passed",
+  "sources": [
+    {
+      "path": "06-project/web/scripts/android-download.mjs",
+      "sha256": "3d2c24a0e755a1785a6d989369684eccc3790261ccf2ab7438f99b89b51a47f6"
+    },
+    {
+      "path": "06-project/web/scripts/android-download.test.mjs",
+      "sha256": "a358bbd11d471a2e9007ecde6b4f005cfd951cdb99319c33d88a42c53b0a2760"
+    },
+    {
+      "path": "06-project/web/scripts/build.mjs",
+      "sha256": "c786d99104fc258d1039b2d88416d3bb92d2060cd39007b8c07dcec2248e2de8"
+    },
+    {
+      "path": "06-project/web/scripts/check.mjs",
+      "sha256": "bb1f8f3f2fc34b0ea2de79298006286d6857bf6126c26eed3e6706cd8a9b4684"
+    }
+  ],
+  "evidenceDirectory": "02-engineering/evidence/website/download-recovery",
+  "scopeLimits": [
+    "No actual Android WeChat download or installation proof",
+    "No production domain/TLS deployment",
+    "Existing debug APK unchanged and source ahead of it",
+    "Website anonymous analytics still pending; contract discovery completed"
+  ],
+  "priorClaimCorrection": "Earlier website legal build omitted APK and skipped the APK branch while the old checker printed an unconditional success message. Previous stage report/spec corrected; logs retained."
+}

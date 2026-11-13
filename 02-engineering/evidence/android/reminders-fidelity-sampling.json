@@ -1,0 +1,165 @@
+{
+  "scope": "Figma2:216. Native system bars excluded. Removed demo badge34.4px; live day has no invented delivery time. Production adds pending/status row and minimum44px action. Fonts Noto CJK vs reference YaHei; no whole-screen pixel parity claim.",
+  "colors": {
+    "page": {
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "card": {
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "date": {
+      "referenceNearest": "#aab19c",
+      "renderNearest": "#abb39f",
+      "maxChannelDelta": 3
+    },
+    "title": {
+      "referenceNearest": "#2c3c32",
+      "renderNearest": "#17281d",
+      "maxChannelDelta": 21
+    },
+    "body": {
+      "referenceNearest": "#879084",
+      "renderNearest": "#879084",
+      "maxChannelDelta": 0
+    },
+    "action": {
+      "referenceNearest": "#45654c",
+      "renderNearest": "#47674e",
+      "maxChannelDelta": 2
+    }
+  },
+  "card": {
+    "referenceBounds": [
+      26,
+      211,
+      404,
+      373
+    ],
+    "renderBounds": [
+      25,
+      177,
+      405,
+      368
+    ],
+    "topDeltaAfterDemoBadgeRemoval": 0.4,
+    "widthDelta": 2,
+    "heightDifference": 29
+  },
+  "typography": {
+    "date": {
+      "referenceBounds": [
+        43,
+        235,
+        93,
+        243
+      ],
+      "renderBounds": [
+        42,
+        199,
+        68,
+        207
+      ],
+      "relativeCardTopDelta": -2,
+      "inkHeightDelta": 0
+    },
+    "title": {
+      "referenceBounds": [
+        43,
+        263,
+        154,
+        277
+      ],
+      "renderBounds": [
+        42,
+        230,
+        155,
+        244
+      ],
+      "relativeCardTopDelta": 1,
+      "inkHeightDelta": 0
+    },
+    "body": {
+      "referenceBounds": [
+        43,
+        299,
+        302,
+        311
+      ],
+      "renderBounds": [
+        43,
+        264,
+        309,
+        276
+      ],
+      "relativeCardTopDelta": -1,
+      "inkHeightDelta": 0
+    },
+    "action": {
+      "referenceBounds": [
+        44,
+        329,
+        140,
+        341
+      ],
+      "renderBounds": [
+        42,
+        332,
+        140,
+        345
+      ],
+      "relativeCardTopDelta": 37,
+      "inkHeightDelta": 1
+    }
+  },
+  "coverage": {
+    "background": "flat page and card colors",
+    "header": "original back SVG bounds; production title differs",
+    "caption": "same translated copy,12px line1.8; demo badge removed",
+    "card": "surface bounds/radius14/border.8 source tokens; no nested container",
+    "date": "10px ink and relative position; actual day only",
+    "title": "14px medium ink and relative position",
+    "body": "12px original count11 and ink",
+    "pendingAndStatus": "production-only row; partial/handled/empty native screenshots and widget matrix",
+    "action": "primary ink; complete localized label; monochrome north_east substitutes text glyph; minimum44px touch target"
+  },
+  "backSvg": {
+    "referenceBounds": [
+      30,
+      74,
+      37,
+      87
+    ],
+    "renderBounds": [
+      29,
+      74,
+      36,
+      86
+    ],
+    "maxBoundaryDelta": 1
+  },
+  "checks": {
+    "twoFlatColorsExact": true,
+    "cardWidthAndAdjustedTopWithin2px": true,
+    "backSvgWithin2px": true,
+    "dateTitleBodyRelativeTopWithin3px": true,
+    "fourRasterTextColorsMeasured": true,
+    "explanation16pxMargins": true
+  },
+  "apkSha256": "c9c8e32b75ba1d706648dcf88b852ff400602eb8fb95f486c7e733d28a95fa5f",
+  "permissionExplanation": {
+    "bounds": [
+      40,
+      176,
+      1040,
+      789
+    ],
+    "leftLogical": 15.93,
+    "rightLogical": 15.93,
+    "topLogical": 15.93,
+    "apkSha256": "f50ee291500a2a92caea93d52463919f3994abe56b43d21bf80779d4fa3d4c37"
+  }
+}

@@ -1,0 +1,12 @@
+✔ Windows CRLF checkout preserves the committed OpenAPI source identity (11.5212ms)
+✔ generated SDK operation catalog exactly matches the platform OpenAPI snapshot (1.8122ms)
+✔ SDK distribution policy uses no Registry and requires full Git SHA pinning (0.5776ms)
+✔ all five Taro reminder methods match the pinned unreleased server operation and request shapes (2.3403ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 73.7222

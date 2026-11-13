@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "apkSha256": "88fcdb076e3eb9fe8e1f40af5d20237bcde4998081bcd09a88132c01102d6639",
+  "scope": "Own API35 AVD cold-home compatibility smoke after Flutter guest/session/product telemetry integration; not a repeated full notification delivery run",
+  "screenshot": "product-telemetry-smoke-88fcdb076e3e-20261113-painted.png",
+  "uiTree": "product-telemetry-smoke-88fcdb076e3e-20261113.xml",
+  "paintedCabinetVisible": true,
+  "apkCatalogV04MatchesSource": true,
+  "compiledTelemetryAndTimeoutMarkers": true,
+  "installedHashMatches": true,
+  "homeWithoutPermissionPrompt": true,
+  "originalInventoryPhotoBytesNotificationFlagsAndOSPermissionUnchanged": true
+}

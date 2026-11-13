@@ -1,0 +1,13 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/global_firebase_identity_test.dart
+00:00 +0: disabled placeholders china foreign project or unsupported platform cannot initialize
+00:00 +1: no persisted online consent prevents even SDK initialization
+00:00 +2: explicit login returns fresh proof without owning a platform session
+00:00 +3: deletion reauth uses existing same Firebase user and never regular sign-in
+00:00 +4: missing or different reauthenticated user cannot produce deletion proof
+00:00 +5: withdrawn native callback clears local provider state and returns no proof
+00:00 +6: concurrent user action does not open duplicate native authorization
+00:00 +7: timeout keeps native lease until late callback cleanup before allowing a new owner
+00:00 +8: Apple cannot be accidentally launched from Android Firebase configuration
+00:00 +9: failed local withdrawal cleanup retries; successful close stays idempotent
+00:00 +10: All tests passed!

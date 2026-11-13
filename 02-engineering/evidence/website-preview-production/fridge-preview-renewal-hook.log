@@ -1,0 +1,8 @@
+binding.json: OK
+deploy_preview.py: OK
+fridge-certificate-renewed.sh: OK
+preview_bundle.py: OK
+website.zip: OK
+{"command": ["/bin/sh", "-n", "/opt/fenleng-websites/fenleng-fridge/uploads/35efd85c3910-r3/fridge-certificate-renewed.sh"], "exitCode": 0, "output": ""}
+{"command": ["/usr/bin/env", "RENEWED_LINEAGE=/etc/letsencrypt/live/fridge.fenlengtech.com", "/bin/sh", "/etc/letsencrypt/renewal-hooks/deploy/fenleng-fridge.sh"], "exitCode": 0, "output": "2026/11/13 20:12:49 [warn] 3316309#3316309: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat-official.conf:15\n2026/11/13 20:12:49 [warn] 3316309#3316309: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/fenlengeat.conf:16\n2026/11/13 20:12:49 [warn] 3316309#3316309: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/patent-admin.conf:8\n2026/11/13 20:12:49 [warn] 3316309#3316309: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/prompt.conf:28\n2026/11/13 20:12:49 [warn] 3316309#3316309: protocol options redefined for 0.0.0.0:443 in /etc/nginx/conf.d/scan-api.conf:15\nnginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n"}
+{"status": "renewal-hook-installed-and-verified", "path": "/etc/letsencrypt/renewal-hooks/deploy/fenleng-fridge.sh", "healthAttempts": 1}

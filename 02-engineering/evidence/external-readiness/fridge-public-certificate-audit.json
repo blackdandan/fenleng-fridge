@@ -1,0 +1,13 @@
+{
+  "host": "fridge.fenlengtech.com",
+  "proxy": "127.0.0.1:7897",
+  "subject": "CN=apple-sandbox-api.fenlengtech.com",
+  "issuer": "CN=YE2, O=Let's Encrypt, C=US",
+  "notAfter": "2027-01-10T06:53:56.0000000Z",
+  "errors": "RemoteCertificateNameMismatch",
+  "subjectAlternativeNames": [
+    "DNS Name=apple-sandbox-api.fenlengtech.com"
+  ],
+  "trusted": false,
+  "inspectionOnly": true
+}

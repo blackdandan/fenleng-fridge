@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Maak foto’s van voedsel en bewaar ze alleen op dit apparaat. Foto’s worden niet geüpload en geluid wordt niet opgenomen. U kunt ook foto’s uit de bibliotheek kiezen.";
+"NSPhotoLibraryUsageDescription" = "Fotobibliotheek — Foto’s en voorraad alleen op dit apparaat";
+"CFBundleDisplayName" = "Mijn koelkast";

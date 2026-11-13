@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:57:53.745Z" hostname="DESKTOP-PF7J11G" time="1.596">
+  <properties/>
+  <testcase name="replace uses authenticated identity and returns only public plan fields()" classname="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" time="1.37"/>
+  <testcase name="configuration describes observed allowances and delivery status does not expose storage rows()" classname="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" time="0.039"/>
+  <testcase name="authenticated reminder routes require bearer while capability cancellation stays public()" classname="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" time="0.033"/>
+  <testcase name="public cancellation ignores expired bearer and capability is redacted from DTO diagnostics()" classname="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" time="0.03"/>
+  <testcase name="typed domain errors retain stable HTTP statuses()" classname="com.fenleng.platform.interfaces.http.MiniReminderHttpControllerTest" time="0.122"/>
+  <system-out><![CDATA[11:57:54.502 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 9.0.1.Final
+11:57:54.707 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:54.708 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:54.710 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+11:57:55.126 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.126 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.127 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+11:57:55.138 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.139 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.139 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+11:57:55.183 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.183 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.183 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+11:57:55.208 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.209 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.209 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+11:57:55.225 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.225 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.225 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

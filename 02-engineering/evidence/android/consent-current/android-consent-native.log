@@ -1,0 +1,7 @@
+Native privacy reader ready
+Cancel withdrawal preserved complete inventory and consent
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+  File "D:\Development\WorkSpaces\CodeXWP\fenleng-fridge\.fenleng\delivery_qa.py", line 44, in reach
+    raise RuntimeError('TARGET_NOT_REACHABLE:'+label)
+RuntimeError: TARGET_NOT_REACHABLE:����ͳһ��˽��Ȩ

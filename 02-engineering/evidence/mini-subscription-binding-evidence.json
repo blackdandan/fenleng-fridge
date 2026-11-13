@@ -1,0 +1,211 @@
+{
+  "stage": "provider-and-verified-recipient-binding",
+  "completeWp06": false,
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "tests": 31,
+  "failures": 0,
+  "skipped": 0,
+  "scope": "Real local HTTP and isolated PostgreSQL; not production migration, real WeChat delivery, persistent reminder scheduler or SDK/client integration",
+  "results": [
+    {
+      "module": "platform-persistence",
+      "class": "MiniRecipientAtomicityTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.persistence.MiniRecipientAtomicityTest.xml",
+      "sha256": "7510d48ba3a634ce716ad43f7cd5047f125ec83375d56d390159e40742d3307d"
+    },
+    {
+      "module": "platform-persistence",
+      "class": "JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest.xml",
+      "sha256": "188e78c2e4a7694c7bf59660dd65b26f9007794765dc6fd35977a0209ad82711"
+    },
+    {
+      "module": "platform-persistence",
+      "class": "PlatformPersistenceConfigurationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.persistence.PlatformPersistenceConfigurationTest.xml",
+      "sha256": "938006174064185e676a1efee1ce2df4c368518a7c0a4f13213643a7acd0ed10"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatMiniSubscriptionDeliveryAdapterTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatMiniSubscriptionDeliveryAdapterTest.xml",
+      "sha256": "ce00bfb0f6022fa9b61ae8bbfa87ec33a89d269a919e7f77802826db3a87325c"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatMiniSubscriptionTokenProviderTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest.xml",
+      "sha256": "c1f95ea8516e4f6978e6134e102699c87212ef310e015b84efb3cdc6eecc24af"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatIdentityProviderAdapterTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest.xml",
+      "sha256": "1d12d8a5cc04dd35827e036f1ccb21e688a7746bc24fbfe19d0426169cdf1eb2"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "WechatMiniAppIdentityProviderAdapterTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.WechatMiniAppIdentityProviderAdapterTest.xml",
+      "sha256": "e4cbbc5cbec60c2904a297d5f623ce874d830f78ed14909de7404a84d7dc3ee9"
+    },
+    {
+      "module": "platform-infrastructure",
+      "class": "ClientBoundWechatIdentityProviderTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.infrastructure.ClientBoundWechatIdentityProviderTest.xml",
+      "sha256": "4204f29a530a1f005a97203e54e0bd985f016153902d92d09c7877a0848f58c7"
+    },
+    {
+      "module": "platform-bootstrap",
+      "class": "WechatLoginConfigurationTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-subscription-provider-binding\\TEST-com.fenleng.platform.bootstrap.WechatLoginConfigurationTest.xml",
+      "sha256": "c4808b3918b175dda713e90c25d03a41711bfa44daa03d31fe602d204f650881"
+    }
+  ],
+  "productionSources": [
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\port\\MiniSubscriptionDeliveryPort.kt",
+      "sha256": "384cbb75231c3654e14f6ddc34c5db2838e111cfb41d80f62eb5271f1cef79e8"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\port\\MiniRecipientRepository.kt",
+      "sha256": "7cfff8a0f32423ef52e05f7a8316600ac7c0cad48b4f56a5346bdcd8c722c79d"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\port\\WechatIdentityPort.kt",
+      "sha256": "63029f8eb1717bba1b90eeab01a8b31697c6927d636dc69956c6bf6e68213724"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\usecase\\WechatLogin.kt",
+      "sha256": "5a29c939afd473ce123400fa505f14ea34dbdbf21ba7fb20d95ae04ad2f68e46"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatMiniSubscriptionDeliveryAdapter.kt",
+      "sha256": "27fe2ab4e9e3850d48d2f776afa19ad33517258e1b0457c4b079e997784fcb21"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatMiniSubscriptionTokenProvider.kt",
+      "sha256": "3b446824065dde98d113a8f31822981da2c44411bb7f424f8d5a40ffcd85a8e1"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatSubscriptionHttp.kt",
+      "sha256": "09f5ee507cfeea20a10b9b4c567a956b732f31ee784015a23e5018e3a8e9a906"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatIdentityProviderAdapter.kt",
+      "sha256": "e755cf0d07c0300e8b5c3a22a14f70d593431146b268442b17c55fb5d0dc89a2"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-infrastructure\\src\\main\\kotlin\\com\\fenleng\\platform\\infrastructure\\WechatMiniAppIdentityProviderAdapter.kt",
+      "sha256": "9e86e77bec047cc564a896b56d684e6e303fca8c08c1ab06010b5c715bb9382e"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\JdbcMiniRecipientRepository.kt",
+      "sha256": "f74212811085c02b8830d492841f6dcb15438fdd8e2a043a1c911b70ebe1a55c"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\PlatformPersistenceConfiguration.kt",
+      "sha256": "4a9389a7c4fd06c7d3e0539a1af3094cc38c67c5708c6f4e736a78fde4a318f6"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\JdbcUserDataRequestProcessor.kt",
+      "sha256": "263fe896ff91fa1daa78132df5176e9624d40389c616d6155b1c6a7feed586a8"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-bootstrap\\src\\main\\kotlin\\com\\fenleng\\platform\\bootstrap\\WechatLoginConfiguration.kt",
+      "sha256": "d731b7f20a047bc36cb7e89b9f574a40276bf29fa020459e55b9622d3fc95c63"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\resources\\db\\migration\\V54__verified_mini_recipients.sql",
+      "sha256": "d5733444d644174d70be210676a1331e439d589254eec077f68b4b1c5ae32a71"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\deployment\\environment\\runtime-policy.json",
+      "sha256": "e4362ebd32c9499be98743e323b82a36ba40749b87782cda8a3518a115b309f6"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\scripts\\release\\runtime_environment.test.mjs",
+      "sha256": "0e55031865f5b2f3711b0276dfbfa3db6502ed8255df7e174aef73da40c6d58c"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\scripts\\release\\single_host_preflight.mjs",
+      "sha256": "f18e172d1ecebdff319325b87d5d5020e0dc01bc8651cfd2e0a3b14b576241f8"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\scripts\\release\\single_host_preflight.test.mjs",
+      "sha256": "41269a50f569b7e4ab6d45a062a3a8917cf869ac06d3b1a9efdaeb2b43f65534"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\scripts\\release\\verify_release_engineering.mjs",
+      "sha256": "d21add53c1788c70b8923c6a343643f89e7c85e70dee20c1d5a338f25fcc3250"
+    }
+  ],
+  "additionalRuntimeChecks": [
+    {
+      "name": "runtime-schema",
+      "result": "pass",
+      "log": ".fenleng/mini-subscribe-runtime-schema.log",
+      "sha256": "639d9a51593d7582fc99e83b9828828989f4a74bf756c602c94238b13061ce4a"
+    },
+    {
+      "name": "schema-preflight",
+      "result": "pass",
+      "log": ".fenleng/mini-subscribe-schema-preflight.log",
+      "sha256": "f966dfa8002b57d6a5c37478b0175381efa39ce17b7605297c822dbbabf46b8d"
+    },
+    {
+      "name": "release-engineering",
+      "result": "pass",
+      "log": ".fenleng/mini-subscribe-release-engineering.log",
+      "sha256": "1716b4da2376943dccaa85c1a41edc840c2539738cd1ff0edf217219b041f7df"
+    }
+  ],
+  "audits": {
+    "platform": {
+      "status": "pass",
+      "nextAction": "none",
+      "log": ".fenleng/mini-subscribe-binding-platform-audit.log"
+    },
+    "fridge": {
+      "status": "pass",
+      "nextAction": "none",
+      "log": ".fenleng/mini-subscribe-binding-fridge-audit.log"
+    }
+  }
+}

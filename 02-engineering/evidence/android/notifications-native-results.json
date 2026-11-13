@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "noNotificationPermissionRequestOnHome": true,
+  "explanationCancelDidNotRequestOSPermission": true,
+  "explicitSystemPermissionAndOneFutureAlarm": true,
+  "applicationProcessExitedBeforeAlarm": true,
+  "realBackgroundAlarmPostedOneMergedSystemNotification": true,
+  "coldNotificationTapOpenedPendingDayRecords": true,
+  "partialAndCompleteKeepOriginalCountAndDoNotRepeatCycles": true,
+  "deviceRebootRebuiltFutureAlarmWithoutRepeatingDeliveredCycles": true,
+  "explicitDisableCancelledSchedules": true,
+  "pendingPartialHandledEmptyAnd320Captured": true,
+  "originalInventoryNotificationPreferencePermissionAndDensityRestored": true,
+  "apkSha256": "f50ee291500a2a92caea93d52463919f3994abe56b43d21bf80779d4fa3d4c37"
+}

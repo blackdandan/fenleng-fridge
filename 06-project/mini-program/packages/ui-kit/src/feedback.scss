@@ -1,0 +1,10 @@
+.fridge-feedback { padding-top: var(--fridge-space-settings-first-section); padding-bottom: var(--fridge-space-bottom); font-size: calc(var(--fridge-font-feedback-body) * var(--fridge-text-scale,1)); line-height: 1.6; overflow-wrap: anywhere; }
+.fridge-feedback-label { display: block; margin-bottom: var(--fridge-space-row); }
+.fridge-feedback-input { box-sizing: border-box; display: block; width: 100%; min-height: var(--fridge-size-feedback-input); height: calc(var(--fridge-font-feedback-body) * var(--fridge-text-scale,1) * 8 + var(--fridge-space-settings-card) + var(--fridge-space-settings-card)); padding: var(--fridge-space-settings-card); border: .8px solid var(--fridge-line); border-radius: var(--fridge-radius-control); background: var(--fridge-surface); color: var(--fridge-ink); font-size: calc(var(--fridge-font-feedback-body) * var(--fridge-text-scale,1)); line-height: 1.6; }
+.fridge-feedback-placeholder { color: var(--fridge-feedback-placeholder); }
+.fridge-feedback-help { display: block; margin-top: var(--fridge-space-settings-card); color: var(--fridge-muted); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale,1)); }
+.fridge-feedback-error { margin: var(--fridge-space-row) 0; color: var(--fridge-danger); }
+.fridge-feedback-actions { margin-top: var(--fridge-space-feedback-action-top); }
+.fridge-feedback-success { display: block; font-size: calc(var(--fridge-font-feedback-success) * var(--fridge-text-scale,1)); font-weight: 600; }
+.fridge-feedback-receipt { display: block; margin-top: var(--fridge-space-settings-card); }
+.fridge-feedback .fridge-action { margin-top: var(--fridge-space-settings-card); }

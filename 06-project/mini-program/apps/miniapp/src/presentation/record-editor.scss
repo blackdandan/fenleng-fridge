@@ -1,0 +1,27 @@
+.fridge-editor-dialog { padding: 0; max-width: 600Px; }
+.fridge-editor-scroll { height: var(--fridge-size-dialog-height); max-height: calc(100vh - var(--fridge-host-top, 0px) - 32Px - env(safe-area-inset-bottom)); }
+.fridge-editor-content { padding: var(--fridge-space-dialog-handle-top) var(--fridge-space-page) var(--fridge-space-editor-bottom); }
+.fridge-editor-handle { width: var(--fridge-size-dialog-handle-width); height: var(--fridge-size-dialog-handle-height); background: var(--fridge-dialog-handle); border-radius: 5px; margin: 0 auto; }
+.fridge-editor-header { display: flex; align-items: center; justify-content: space-between; margin-top: var(--fridge-space-dialog-header-top); }
+.fridge-editor-title { font-size: calc(var(--fridge-font-dialog-title) * var(--fridge-text-scale,1)); }
+.fridge-editor-close { display: flex; align-items: center; justify-content: center; min-width: 44Px; min-height: 44Px; border-radius: 50%; background: var(--fridge-dialog-close) !important; color: var(--fridge-dialog-close-ink) !important; font-size: calc(var(--fridge-font-dialog-close) * var(--fridge-text-scale,1)) !important; }
+.fridge-editor-photo { width: var(--fridge-size-editor-photo); height: var(--fridge-size-editor-photo); border: 1.6px solid var(--fridge-photo-border); border-radius: 50%; margin: var(--fridge-space-dialog-photo-top) auto 0; box-shadow: var(--fridge-shadow-photo); }
+.fridge-editor-photo-link { color: var(--fridge-editor-photo-link) !important; min-height: 44Px; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)) !important; margin: 0 auto !important; }
+.fridge-editor-fields { margin-top: var(--fridge-space-editor-form-top); display: flex; flex-direction: column; gap: var(--fridge-space-editor-row); }
+.fridge-editor-field { min-width: 0; display: flex; flex-direction: column; gap: var(--fridge-space-small); }
+.fridge-editor-label { color: var(--fridge-editor-label); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); line-height: 1.4; }
+.fridge-editor-columns { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: var(--fridge-space-row); }
+.fridge-editor-control,.fridge-editor-datetime,.fridge-editor-number { min-height: 44Px; background: var(--fridge-surface); border: .8px solid var(--fridge-line); border-radius: var(--fridge-radius-choice); color: var(--fridge-editor-label); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); }
+.fridge-editor-control { display: flex; align-items: center; justify-content: space-between; padding: var(--fridge-space-field-padding); gap: var(--fridge-space-small); }
+.fridge-editor-control text { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.fridge-editor-number { box-sizing: border-box; padding: var(--fridge-space-field-padding); height: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1) * 1.5 + var(--fridge-space-field-padding) + var(--fridge-space-field-padding)); }
+.fridge-editor-datetime { display: flex; flex-wrap: wrap; align-items: stretch; color: var(--fridge-ink); font-size: calc(var(--fridge-font-body) * var(--fridge-text-scale,1)); }
+.fridge-editor-datetime picker:first-child { flex: 1; min-width: 0; }
+.fridge-editor-date-control,.fridge-editor-time-control { min-height: 44Px; display: flex; align-items: center; gap: var(--fridge-space-small); padding: var(--fridge-space-field-padding); }
+.fridge-editor-date-control { justify-content: space-between; }
+.fridge-editor-calendar-slot { width: var(--fridge-size-field-icon); height: var(--fridge-size-field-icon); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.fridge-editor-hint { margin-top: var(--fridge-space-row); color: var(--fridge-muted); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); line-height: 1.8; }
+.fridge-editor-hint text { display: block; }
+.fridge-editor-status { min-height: 30px; margin-top: var(--fridge-space-row); margin-bottom: var(--fridge-space-editor-save-top); color: var(--fridge-danger); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); }
+.fridge-editor-delete { min-height: 44Px; padding: var(--fridge-space-row) !important; margin: var(--fridge-space-small) auto 0 !important; color: var(--fridge-editor-delete) !important; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)) !important; }
+.fridge-editor-confirm { display: flex; flex-direction: column; gap: var(--fridge-space-section); padding-top: var(--fridge-space-section); }

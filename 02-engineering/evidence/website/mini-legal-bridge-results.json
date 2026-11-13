@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "scope": "Local Chromium bridge contract with mocked WeChat JS SDK; not real WeChat WebView/native message delivery",
+  "locales": [
+    "zh-CN",
+    "zh-TW",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt-BR",
+    "it",
+    "ja",
+    "ko",
+    "ar",
+    "hi",
+    "id",
+    "ru",
+    "tr",
+    "vi",
+    "th",
+    "nl",
+    "pl",
+    "uk"
+  ],
+  "guards": [
+    "privacy/",
+    "privacy/?mini=1&withdraw=0&nonce=legal-local-contract",
+    "terms/?mini=1&withdraw=1&nonce=legal-local-contract",
+    "privacy/?mini=1&withdraw=1&nonce=bad",
+    "sdk-error-disabled-with-translated-error",
+    "outside-mini-disabled-with-translated-error"
+  ],
+  "screenshots": [
+    "mini-privacy-bridge-zh-CN-320.png",
+    "mini-privacy-bridge-ar-320.png"
+  ]
+}

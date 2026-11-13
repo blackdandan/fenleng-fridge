@@ -1,0 +1,136 @@
+{
+  "stage": "persistent-core-only",
+  "wp06Complete": false,
+  "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "milestoneTests": 29,
+  "failures": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "class": "com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest.xml",
+      "sha256": "c8685620dfd885fa69e1dd4aa8db58d9b14fe594dc80200a458c0f768801f274"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.MiniRecipientAtomicityTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.MiniRecipientAtomicityTest.xml",
+      "sha256": "83b1803f6039b407b1dcd25c53991c582a1bbcdfa424b028cc7a704ebacce7af"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.MiniReminderDispatchRaceTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.MiniReminderDispatchRaceTest.xml",
+      "sha256": "6abcac64351a0e33d1847ff09e6c1f871becec12c9bfb26d1e6635bc47bcf71c"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.MiniReminderDispatchTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.MiniReminderDispatchTest.xml",
+      "sha256": "c8fd1e8a240a111c10dac55d7c609f724dbfc21e1e3b6753e289cfad993dfbe7"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.MiniReminderEligibilityTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.MiniReminderEligibilityTest.xml",
+      "sha256": "dc30f92f150feebef5468a7851ed76fc4ab2c74bed5f0d8326c6fe360ef602d3"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.MiniReminderPlansTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.MiniReminderPlansTest.xml",
+      "sha256": "cc8633a9dc930ca6c8dae45a2d5a2e188d696a0e21f9ed5c6759726e9b771afc"
+    },
+    {
+      "class": "com.fenleng.platform.persistence.PlatformPersistenceConfigurationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\TEST-com.fenleng.platform.persistence.PlatformPersistenceConfigurationTest.xml",
+      "sha256": "80c7acb5071585ec79232b05af020da7801ec9d51aad18e99b5960ee3aa2bf3f"
+    }
+  ],
+  "laterTargeted": {
+    "tests": 7,
+    "scope": "Removed arbitrary future-year cutoff; only plan tests repeated,not a fresh29-test full run",
+    "xml": "02-engineering\\evidence\\shared-platform\\mini-reminder-ledger\\horizon-TEST-com.fenleng.platform.persistence.MiniReminderPlansTest.xml",
+    "sha256": "28502466b7c42f356694ecdca3caac9d865b80080f3c6f3e732ee4a1c82677fc"
+  },
+  "scope": "Isolated PostgreSQL and simulated Provider outcomes; not public HTTP,periodic composition,SDK/mini or real WeChat delivery",
+  "sources": [
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\port\\MiniReminderPorts.kt",
+      "sha256": "85a233735955709d52355e25a8efd4db822c4cae29e0ccecbdef14874c210549"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\usecase\\MiniReminderPlans.kt",
+      "sha256": "91a784cf8a2c3b379f32a3693c585afa1b96b182f88e89138385e71981315853"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\usecase\\DispatchMiniReminders.kt",
+      "sha256": "4eae5d0c1861a390f0b23306ea7fea8df9317aa50fb9537d4813b33277ac61cc"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-application\\src\\main\\kotlin\\com\\fenleng\\platform\\application\\usecase\\CurrentMiniReminderEligibility.kt",
+      "sha256": "f25daa530c23084ce7f6b3f071b83fbaf85ad967e76cb04abfcf5b567917462c"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\JdbcMiniReminderStore.kt",
+      "sha256": "6ba11b348e42ba65fbb8d3b80469ecc986c5933f9da38e3841f2966cad219d16"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\JdbcUserDataRequestProcessor.kt",
+      "sha256": "f09a6a2f53f0f7974d0cedebeb430c2657635c8cbc67959a767c0bba7f5eb965"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\kotlin\\com\\fenleng\\platform\\persistence\\PlatformPersistenceConfiguration.kt",
+      "sha256": "9c5474665f1c7a4eac4c3d3625ab4fdb9df90b8fdf5a793316506d142ef620bb"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\backend\\platform-persistence\\src\\main\\resources\\db\\migration\\V55__mini_reminder_plans.sql",
+      "sha256": "e1c237dfce02cec6b675eb89a59a3cd0fb537ba811e531f5f54b47aa738703d6"
+    },
+    {
+      "path": "..\\fenleng-shared-platform\\scripts\\release\\single_host_preflight.mjs",
+      "sha256": "f6a903ca727953b66a8b21c69c0f8c5b2d834fdcb3e8a44937e96a39fc8971a3"
+    }
+  ],
+  "runtimeChecks": {
+    "preflight": "PASS single-host preflight tests: roots, local images, ports and environment isolation",
+    "runtime-schema": "PASS runtime environment tests: completeness, conditional requirements, secret isolation, formats and env parsing",
+    "release-engineering": "PASS release engineering: 3 local OCI targets, single-host Compose, loopback isolation, runtime Admin config and security headers"
+  },
+  "audits": {
+    "platform": {
+      "status": "pass",
+      "nextAction": "none",
+      "log": ".fenleng/mini-reminder-ledger-platform-audit.log"
+    },
+    "fridge": {
+      "status": "pass",
+      "nextAction": "none",
+      "log": ".fenleng/mini-reminder-ledger-fridge-audit.log"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T02:55:48.138Z" hostname="DESKTOP-PF7J11G" time="6.697">
+  <properties/>
+  <testcase name="lookup is user application and client scoped and database rejects cross-application client()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="1.402"/>
+  <testcase name="recipient write failure rolls back new identity and membership before issuing session()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="0.966"/>
+  <testcase name="mini login retains unified UnionID and stores actual OpenID separately()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="1.443"/>
+  <testcase name="blocked account cannot update its recipient while a valid provider code is exchanged()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="1.166"/>
+  <testcase name="non-mini provider does not derive an OpenID binding from its subject()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="0.968"/>
+  <testcase name="provider rejection cannot create a recipient or user()" classname="com.fenleng.platform.persistence.MiniRecipientAtomicityTest" time="0.751"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+{
+  "status": "prepared-not-clean-consumer-validated",
+  "contentId": "aa706dd122a9f61b0c95320de5383e76defd980800bb73114b7a4b74efb3bae1",
+  "staging": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\s-mwvqrqkp",
+  "archive": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\.fenleng\\deliveries\\fenleng-fridge-source-candidate-aa706dd122a9.zip",
+  "sha256": "2b013cc3245a3beef288c29ed22481a31c026061ee5a33a99cac8bc2a9a0cf73",
+  "bytes": 40495350,
+  "sourceFiles": 1528,
+  "sdkCandidateFiles": 68
+}

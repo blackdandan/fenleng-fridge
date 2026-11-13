@@ -1,0 +1,45 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.5/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-infrastructure:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:processResources NO-SOURCE
+> Task :platform-infrastructure:processTestResources NO-SOURCE
+> Task :platform-application:compileKotlin
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar
+> Task :platform-infrastructure:compileKotlin
+> Task :platform-infrastructure:compileJava NO-SOURCE
+> Task :platform-infrastructure:classes UP-TO-DATE
+> Task :platform-infrastructure:jar
+
+> Task :platform-infrastructure:compileTestKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-infrastructure/src/test/kotlin/com/fenleng/platform/infrastructure/AppleNativeSessionIntegrationTest.kt:33:33 The corresponding parameter in the supertype 'CommerceOrderRepository' is named 'order'. This may cause problems when calling this function with named arguments.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-infrastructure/src/test/kotlin/com/fenleng/platform/infrastructure/AppleNativeSessionIntegrationTest.kt:40:31 The corresponding parameter in the supertype 'PaymentAttemptRepository' is named 'attempt'. This may cause problems when calling this function with named arguments.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-infrastructure/src/test/kotlin/com/fenleng/platform/infrastructure/PaymentProviderAdapterContractTest.kt:74:83 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-infrastructure/src/test/kotlin/com/fenleng/platform/infrastructure/WechatPayPaymentProviderAdapterTest.kt:236:118 'fun asText(): String!' is deprecated. Deprecated in Java.
+
+> Task :platform-infrastructure:compileTestJava NO-SOURCE
+> Task :platform-infrastructure:testClasses UP-TO-DATE
+> Task :platform-infrastructure:test
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 33s
+8 actionable tasks: 6 executed, 2 up-to-date

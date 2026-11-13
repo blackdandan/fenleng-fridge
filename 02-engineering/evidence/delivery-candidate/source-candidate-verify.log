@@ -1,0 +1,11 @@
+{
+  "status": "archive-integrity-verified",
+  "contentId": "aa706dd122a9f61b0c95320de5383e76defd980800bb73114b7a4b74efb3bae1",
+  "files": 1528,
+  "consumer": "three-official-SDK-candidates-resolve-inside-bundle",
+  "sdkPackages": {
+    "fenleng_sdk_flutter": "06-project\\app\\vendor\\flsdk\\sdk-flutter",
+    "fenleng_sdk_flutter_firebase_identity": "06-project\\app\\vendor\\flsdk\\sdk-flutter-firebase-identity",
+    "fenleng_sdk_flutter_native_identity": "06-project\\app\\vendor\\flsdk\\sdk-flutter-native-identity"
+  }
+}

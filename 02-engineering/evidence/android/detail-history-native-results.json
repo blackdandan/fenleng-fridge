@@ -1,0 +1,9 @@
+{
+  "editPersistedWithoutChangingCurrentReminderOrOtherRecords": true,
+  "restorePersistedNewCycleAndLeftEditedRecordUnchanged": true,
+  "deleteCancelPreservedRecord": true,
+  "permanentDeleteRemovedOnlySelectedRecordBackupAndPhoto": true,
+  "narrowDetailDeleteAccessible": true,
+  "originalThreeRecordsAndDensityRestored": true,
+  "apkSha256": "b55d3d40344bdf591d33982d046110406150f81e8ecd52de78dde23ea2b6374e"
+}

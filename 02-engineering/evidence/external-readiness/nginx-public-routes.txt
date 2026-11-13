@@ -1,0 +1,142 @@
+1:# configuration file /etc/nginx/nginx.conf:
+86:# configuration file /etc/nginx/mime.types:
+190:# configuration file /etc/nginx/conf.d/apple-sandbox-api.conf:
+193:    listen 443 ssl;
+194:    server_name apple-sandbox-api.fenlengtech.com;
+195:    ssl_certificate /etc/letsencrypt/live/apple-sandbox-api.fenlengtech.com/fullchain.pem;
+214:# configuration file /etc/letsencrypt/options-ssl-nginx.conf:
+230:# configuration file /etc/nginx/conf.d/bypass.conf:
+247:    listen 8001 ssl; 
+250:    server_name _;
+253:    ssl_certificate /etc/letsencrypt/live/www.fenlengtech.com/fullchain.pem;
+262:        root /usr/share/nginx/html/web;
+286:    listen 8002 ssl;
+287:    server_name _;
+290:    ssl_certificate /etc/letsencrypt/live/www.fenlengtech.com/fullchain.pem;
+297:        root /usr/share/nginx/html/official;
+303:# configuration file /etc/nginx/conf.d/eat-web.conf:
+305:    listen 443 ssl http2;
+306:    server_name eat.fenlengtech.com;
+308:    ssl_certificate /etc/letsencrypt/live/eat.fenlengtech.com/fullchain.pem;
+313:    root /usr/share/nginx/fenlengeat;
+346:    listen 80;
+347:    server_name eat.fenlengtech.com;
+351:# configuration file /etc/nginx/conf.d/fenleng-pat.conf:
+353:    listen 80;
+354:    server_name pat.fenlengtech.com;
+357:        root /var/www/html;
+366:    listen 443 ssl;
+367:    server_name pat.fenlengtech.com;
+369:    ssl_certificate /etc/letsencrypt/live/pat.fenlengtech.com/fullchain.pem;
+380:    root /usr/share/nginx/fenleng-patent-official;
+407:# configuration file /etc/nginx/conf.d/fenleng-patent-api.conf:
+413:    listen 80;
+414:    server_name patent-api.fenlengtech.com;
+417:        root /var/www/html;
+426:    listen 443 ssl;
+427:    server_name patent-api.fenlengtech.com;
+429:    ssl_certificate /etc/letsencrypt/live/patent-api.fenlengtech.com/fullchain.pem;
+464:# configuration file /etc/nginx/conf.d/fenleng-patent-official.conf:
+466: listen 80;
+467: server_name patent-official.fenlengtech.com;
+472: listen 443 ssl;
+473: server_name patent-official.fenlengtech.com;
+474: ssl_certificate /etc/letsencrypt/live/patent-official.fenlengtech.com/fullchain.pem;
+483:# configuration file /etc/nginx/conf.d/fenleng-patent-workspace.conf:
+485:    listen 80;
+486:    server_name zhuanli.fenlengtech.com;
+489:        root /var/www/html;
+498:    listen 443 ssl;
+499:    server_name zhuanli.fenlengtech.com;
+501:    ssl_certificate /etc/letsencrypt/live/zhuanli.fenlengtech.com/fullchain.pem;
+512:    root /usr/share/nginx/fenleng-patent-workspace;
+555:# configuration file /etc/nginx/conf.d/fenleng-shared-platform.conf:
+557:    server_name admin.fenlengtech.com;
+582:    listen 443 ssl;
+583:    ssl_certificate /etc/letsencrypt/live/admin.fenlengtech.com/fullchain.pem;
+590:    server_name platform-api.fenlengtech.com;
+603:    listen 443 ssl;
+604:    ssl_certificate /etc/letsencrypt/live/admin.fenlengtech.com/fullchain.pem;
+614:    listen 80;
+615:    server_name admin.fenlengtech.com;
+623:    listen 80;
+624:    server_name platform-api.fenlengtech.com;
+628:# configuration file /etc/nginx/conf.d/fenlengeat-official.conf:
+630:    listen 80;
+631:    server_name eat-official.fenlengtech.com;
+634:        root /var/www/html;
+643:    listen 443 ssl http2;
+644:    server_name eat-official.fenlengtech.com;
+646:    ssl_certificate /opt/fenleng-shared-platform/production/secrets/ssl/eat-official.fenlengtech.com.crt;
+654:    root /usr/share/nginx/fenlengeat-official;
+674:# configuration file /etc/nginx/conf.d/fenlengeat.conf:
+676:    server_name eat-api.fenlengtech.com;
+690:    listen 443 ssl;
+691:    ssl_certificate /etc/letsencrypt/live/eat-api.fenlengtech.com/fullchain.pem;
+701:    listen 80;
+702:    server_name eat-api.fenlengtech.com;
+706:# configuration file /etc/nginx/conf.d/patent-admin.conf:
+708:    listen 80;
+709:    server_name pat-admin.fenlengtech.com;
+714:    listen 443 ssl http2;
+715:    server_name pat-admin.fenlengtech.com;
+716:    ssl_certificate /etc/letsencrypt/live/pat-admin.fenlengtech.com/fullchain.pem;
+731:# configuration file /etc/nginx/conf.d/patent.conf:
+734:    listen 80;
+735:    server_name patent.fenlengtech.com;
+741:    listen 443 ssl http2;
+742:    server_name patent.fenlengtech.com;
+743:    ssl_certificate /etc/letsencrypt/live/patent.fenlengtech.com/fullchain.pem;
+759:# configuration file /etc/nginx/conf.d/prompt.conf:
+774:    listen 80;
+775:    server_name www.fenlengtech.com fenlengtech.com;
+778:        root /var/www/html;
+787:    listen 443 ssl;
+788:    server_name www.fenlengtech.com fenlengtech.com;
+790:    ssl_certificate /etc/letsencrypt/live/www.fenlengtech.com/fullchain.pem;
+797:        root /usr/share/nginx/html/fenlengtech-offsite;
+807:    listen 80;
+808:    server_name promptmanager.fenlengtech.com;
+811:        root /var/www/html;
+820:    listen 443 ssl;
+821:    server_name promptmanager.fenlengtech.com;
+823:    ssl_certificate /etc/letsencrypt/live/promptmanager.fenlengtech.com/fullchain.pem;
+829:        root /usr/share/nginx/html/official;
+839:    listen 80;
+840:    server_name web.fenlengtech.com;
+843:        root /var/www/html;
+852:    listen 443 ssl;
+853:    server_name web.fenlengtech.com;
+855:    ssl_certificate /etc/letsencrypt/live/www.fenlengtech.com/fullchain.pem;
+861:        root /usr/share/nginx/html/web-releases/03d4000;
+871:    listen 80;
+872:    server_name api.fenlengtech.com;
+875:        root /var/www/html;
+884:    listen 443 ssl;
+885:    server_name api.fenlengtech.com;
+887:    ssl_certificate /etc/letsencrypt/live/www.fenlengtech.com/fullchain.pem;
+921:# configuration file /etc/nginx/snippets/promptmanager-universal-links.conf:
+926:    root /usr/share/nginx/html/official;
+932:    root /usr/share/nginx/html/official;
+938:    root /usr/share/nginx/html/official;
+943:    root /usr/share/nginx/html/official;
+947:# configuration file /etc/nginx/conf.d/scan-api.conf:
+949:    listen 80;
+950:    server_name scan-api.fenlengtech.com;
+953:        root /var/www/html;
+962:    listen 443 ssl http2;
+963:    server_name scan-api.fenlengtech.com;
+965:    ssl_certificate /opt/fenleng-shared-platform/production/secrets/ssl/scan-api.fenlengtech.com.crt;
+985:# configuration file /etc/nginx/conf.d/scanister.conf:
+987:    listen 80;
+988:    server_name scanister.fenlengtech.com;
+991:        root /var/www/html;
+1000:    listen 443 ssl http2;
+1001:    server_name scanister.fenlengtech.com;
+1003:    ssl_certificate /opt/fenleng-shared-platform/production/secrets/ssl/scanister.fenlengtech.com.crt;
+1011:    root /usr/share/nginx/scanister;
+1036:# configuration file /etc/nginx/sites-enabled/default:
+1058:	listen 80 default_server;
+1059:	listen [::]:80 default_server;
+1077:	root /var/www/html;
+1082:	server_name _;

@@ -1,0 +1,4 @@
+page { min-height: 100%; background: var(--surface-page, #f8f8f3); }
+.fridge-app--camera { background: var(--fridge-camera); }
+.fridge-initial-state { display: flex; flex-direction: column; gap: var(--fridge-space-section); align-items: center; padding: 64px 0; }
+.fridge-offline-legal { padding-top: var(--fridge-space-section); line-height: 1.8; overflow-wrap: anywhere; }

@@ -1,0 +1,122 @@
+{
+  "figmaFile": "b34I8tzPpU7tv1sHHdWLkq",
+  "source": "Original Figma MCP SVGs: unchanged mini copies and detail/settings node downloads; asset bytes unchanged",
+  "assets": [
+    {
+      "asset": "album.svg",
+      "width": "22",
+      "height": "22",
+      "sha256": "c00c62820d71771d2c887fda78cf7177b59313aae9dad31a45be05328986fa37",
+      "cameraSourceNode": "52:18",
+      "cameraVerification": "Downloaded again from exact2:81 MCP asset URLs; SHA256 matches existing asset byte-for-byte; no asset edits"
+    },
+    {
+      "asset": "back.svg",
+      "width": "20",
+      "height": "20",
+      "sha256": "cd377cbc1fd450d8c4e1a2ec8c2a5f8651ebad01d1a20184fa2451d7a0837b24",
+      "reminderSourceNode": "30:163",
+      "reminderVerification": "Exact2:216 MCP asset downloaded; SHA256 matches existing back.svg byte-for-byte"
+    },
+    {
+      "asset": "bell.svg",
+      "width": "22",
+      "height": "22",
+      "sha256": "1b204ca613bdfb0f73af15a379a581715fd2e43190bcded0f712a71c4385d72b"
+    },
+    {
+      "asset": "camera-back.svg",
+      "width": "22",
+      "height": "22",
+      "sha256": "5f1392573521030a82f3635e385a5902bc740627e592ef6fb2a73332b2a7d6e6",
+      "cameraSourceNode": "52:32",
+      "cameraVerification": "Downloaded again from exact2:81 MCP asset URLs; SHA256 matches existing asset byte-for-byte; no asset edits"
+    },
+    {
+      "asset": "camera.svg",
+      "width": "18",
+      "height": "18",
+      "sha256": "f03798144550514fb66424cbf3d8df019a66b3c6132fa3f6e74877c820a64af2"
+    },
+    {
+      "asset": "chevron-down.svg",
+      "width": "10",
+      "height": "6",
+      "sha256": "dc225e8f7f16328e1c96832fb470fc521609538db0cda53b8c7bd6fa6f8d0959",
+      "cameraSourceNode": "52:9",
+      "cameraVerification": "Downloaded again from exact2:81 MCP asset URLs; SHA256 matches existing asset byte-for-byte; no asset edits"
+    },
+    {
+      "asset": "cold.svg",
+      "width": "15",
+      "height": "15",
+      "sha256": "2647984b491adf91956b338a0ff8eb8fe74aee085a281934719599cb8c837c63"
+    },
+    {
+      "asset": "frozen.svg",
+      "width": "15",
+      "height": "15",
+      "sha256": "68c95979a91a0fc99e59997cad0830ed83c15c1bcadd14f4e46381a6de49c437"
+    },
+    {
+      "asset": "pantry.svg",
+      "width": "15",
+      "height": "15",
+      "sha256": "f2b0b696ac85cd45c50064e0b645d95229e002bc251db26377666dc3474b55ee"
+    },
+    {
+      "asset": "settings.svg",
+      "width": "22",
+      "height": "22",
+      "sha256": "cf271b72b7f0d77a95e86423ff918664c9a983e7b5f79d99d903ba34f6ebdbab"
+    },
+    {
+      "asset": "calendar.svg",
+      "width": "11.6667",
+      "height": "12.5",
+      "sha256": "84b99e833e93134df3a2e86df22d041ad07d1531b74217bde91ef32938cd58de",
+      "sourceNode": "54:4",
+      "sourceMode": "figma-mcp-original-download"
+    },
+    {
+      "asset": "editor-chevron.svg",
+      "width": "10",
+      "height": "6",
+      "sha256": "5ad61631046c0fb0a2352c1708393c91c737da203643d1833407fe9f1884be3f",
+      "sourceNode": "53:22",
+      "sourceMode": "figma-mcp-original-download"
+    },
+    {
+      "asset": "settings-cold.svg",
+      "width": "16",
+      "height": "16",
+      "sha256": "405cf21d9448f924c8b18febde831649eaafce0853031c8422318d8e68757325",
+      "sourceNode": "30:52",
+      "sourceMode": "figma-mcp-original-download"
+    },
+    {
+      "asset": "settings-frozen.svg",
+      "width": "16",
+      "height": "16",
+      "sha256": "d4fc9fe7078046cf477ee0b8df6576ae2a0e795a5261473af349d2cf7d0a204e",
+      "sourceNode": "30:61",
+      "sourceMode": "figma-mcp-original-download"
+    },
+    {
+      "asset": "settings-pantry.svg",
+      "width": "16",
+      "height": "16",
+      "sha256": "d919f43c897dbc129ecac24db750de454e20460e7252f872271ec9acd10e9343",
+      "sourceNode": "30:70",
+      "sourceMode": "figma-mcp-original-download"
+    },
+    {
+      "asset": "clock.svg",
+      "width": "11.375",
+      "height": "11.375",
+      "sha256": "3655ccdfbaa48597919dc39e093484db38719c0164dec02096581390f1c8a16c",
+      "sourceNode": "41:14",
+      "sourceMode": "figma-mcp-original-download"
+    }
+  ]
+}

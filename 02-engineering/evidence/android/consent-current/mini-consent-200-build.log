@@ -1,0 +1,222 @@
+$ pnpm --filter @fridge/miniapp build:weapp
+$ taro build --type weapp
+👽 Taro v4.3.2
+
+Tips:
+1. 建议开启持久化缓存功能，能有效提升二次编译速度，详情请参考: https://docs.taro.zone/docs/config-detail#cache。
+
+
+
+● Webpack █████████████████████████  (0%)  
+ 
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ setup (9%) compilation 
+ CssMinimizerPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (10%) 0/8 entries 8/8 dependencie
+s 0/8 modules 1 active 
+ babel-loader › src\app.config.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (10%)  
+ import loader @tarojs\taro-loader\lib\page
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (10%) 0/8 entries 8/8 dependencie
+s 1/8 modules 7 active 
+ ...73baf4c520\node_modules\@tarojs\webpack5-runner\dist\template\custom-wrapp
+er.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 16/62 dependenc
+ies 2/13 modules 11 active 
+ babel-loader › src\runtime.tsx
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 38/85 dependenc
+ies 2/21 modules 18 active 
+ ..\..\node_modules\.pnpm\react@18.3.1\node_modules\react\index.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 49/85 dependenc
+ies 2/25 modules 20 active 
+ ...3cafafefe02f3e339bf\node_modules\@tarojs\plugin-framework-react\dist\runti
+me.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%)  
+ ...postcs_5e979d32a58c9ab28deff24f5070b737\node_modules\postcss-loader\dist\c
+js.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%)  
+ ...modules\.pnpm\resolve-url-loader@5.0.0\node_modules\resolve-url-loader\ind
+ex.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%)  
+ ..._sass@1.9_b0fa5ae9820a43760773a5119ec0db3f\node_modules\sass-loader\dist\c
+js.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 76/127 dependen
+cies 2/33 modules 27 active 
+ ...ostcss-loader › resolve-url-loader › sass-loader › src\pages\account\index
+.scss
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 108/129 depende
+ncies 2/55 modules 32 active 
+ ...@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\slicedToArr
+ay.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 119/169 depende
+ncies 3/63 modules 54 active 
+ ...ostcss-loader › resolve-url-loader › sass-loader › src\pages\account\index
+.scss
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 140/224 depende
+ncies 21/65 modules 43 active 
+ babel-loader › src\config\identity.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 152/232 depende
+ncies 21/74 modules 50 active 
+ ...loader › resolve-url-loader › sass-loader › src\presentation\record-editor
+.scss
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 241/265 depende
+ncies 28/117 modules 64 active 
+ ...s\.pnpm\@tarojs+runtime@4.3.2\node_modules\@tarojs\runtime\dist\bom\docume
+nt.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 259/288 depende
+ncies 36/125 modules 89 active 
+ ...\.pnpm\@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\type
+of.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 276/300 depende
+ncies 37/130 modules 88 active 
+ ...\.pnpm\@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\type
+of.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 441/514 depende
+ncies 54/145 modules 88 active 
+ ...@tarojs+runtime@4.3.2\node_modules\@tarojs\runtime\dist\dom-external\eleme
+nt.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 511/560 depende
+ncies 64/183 modules 87 active 
+ babel-loader › ..\..\packages\application\src\inventory-repository.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 539/571 depende
+ncies 70/186 modules 114 active 
+ ...les\.pnpm\@babel+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\g
+et.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 571/580 depende
+ncies 74/201 modules 120 active 
+ babel-loader › ..\..\packages\platform-adapters\weapp\src\storage.ts
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 746/817 depende
+ncies 93/217 modules 111 active 
+ ...el+runtime@7.29.13\node_modules\@babel\runtime\helpers\esm\regeneratorValu
+es.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 787/832 depende
+ncies 96/241 modules 139 active 
+ ...es\.pnpm\@tarojs+shared@4.3.2\node_modules\@tarojs\shared\dist\event-chann
+el.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (23%) 2/8 entries 825/870 depende
+ncies 121/243 modules 121 active 
+ ...act@18.3.1\node_modules\react-reconciler\cjs\react-reconciler.production.m
+in.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 870/873 depende
+ncies 167/246 modules 79 active 
+ ...e+vend_cdb9c520c467be8bef4d4ddf9f0b744b\node_modules\@fenleng\sdk-taro\ind
+ex.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 890/903 depende
+ncies 181/251 modules 70 active 
+ ...e@4.3.2_@tarojs+shared@4.3.2\node_modules\@tarojs\api\dist\interceptor\ind
+ex.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 963/973 depende
+ncies 186/264 modules 78 active 
+ ...time@7.29.13\node_modules\@babel\runtime\helpers\esm\objectWithoutProperti
+es.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 987/988 depende
+ncies 197/274 modules 77 active 
+ ...56290aaee08cc2ade1e051ce285c543\node_modules\@fenleng\sdk-core\src\telemet
+ry.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 992/992 depende
+ncies 217/276 modules 58 active 
+ ...135cfa7f0b931df8a1e1d86272\node_modules\css-loader\dist\runtime\noSourceMa
+ps.js
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ building (37%) 4/8 entries 1023/1023 depen
+dencies 234/285 modules 44 active 
+ ...oader › resolve-url-loader › sass-loader › ..\..\packages\ui-kit\src\theme
+.scss
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (71%)  
+ dependencies optimization
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (78%)  
+ chunk modules optimization
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (88%)  
+ runtime requirements
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (92%) asset processing 
+ CssMinimizerPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+● Webpack █████████████████████████ sealing (92%) asset processing 
+ RealContentHashPlugin
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+√ Webpack
+  Compiled successfully in 19.64s
+
+⚠️ Warnings: 
+
+AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  common.js (579 KiB)
+    at Generator.next (<anonymous>)
+
+NoAsyncChunksWarning: webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+    at Generator.next (<anonymous>)
+

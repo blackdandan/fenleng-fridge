@@ -1,0 +1,4 @@
+lrwxrwxrwx 1 root root 48 Oct 13 13:14 /usr/share/nginx/fenlengeat-official -> /opt/fenlengeat/official-web/releases/0.1.0-rc.6
+lrwxrwxrwx 1 root root 44 Sep  3 01:14 /usr/share/nginx/html/fenlengtech-offsite -> /opt/fenlengtech-offsite/releases/0.1.0-rc.2
+lrwxrwxrwx 1 root root 56 Sep  3 01:15 /usr/share/nginx/html/official -> /opt/fenleng-websites/prompt-manager/releases/0.1.0-rc.2
+lrwxrwxrwx 1 root root 39 Oct 13 21:12 /usr/share/nginx/scanister -> /opt/scanister/web/releases/0.1.0-rc.10

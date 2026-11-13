@@ -1,0 +1,35 @@
+{
+  "scope": "Unified privacy withdrawal UI and native legal return",
+  "evidence": [
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/design-system/legal-documents.md",
+      "sourceMode": "github",
+      "cacheHit": false,
+      "retrievedAt": "2026-11-13T01:42:18.806Z"
+    },
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/design-system/interaction.md",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T01:42:18.303Z"
+    },
+    {
+      "projectId": "fenlengtechbase",
+      "repository": "https://github.com/blackdandan/fenlengtechbase",
+      "requestedRef": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+      "source": "knowledge/design-system/accessibility.md",
+      "sourceMode": "cache",
+      "cacheHit": true,
+      "retrievedAt": "2026-11-13T01:42:24.675Z"
+    }
+  ]
+}

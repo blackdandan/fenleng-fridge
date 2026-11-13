@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderDispatchTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:28:00.799Z" hostname="DESKTOP-PF7J11G" time="10.265">
+  <properties/>
+  <testcase name="explicit retryable rejections have delayed bounded attempts and refund observations()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.527"/>
+  <testcase name="rejecting permission and losing eligibility cannot silently keep dispatching()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.24"/>
+  <testcase name="unknown outcome survives replanning revocation and a fresh plan on the same installation without replay()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.43"/>
+  <testcase name="cancellation acknowledgement waits for the bounded in-flight call then stops future sends()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.212"/>
+  <testcase name="database failure after provider acceptance leaves durable sending which cannot automatically replay()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.212"/>
+  <testcase name="two workers reading the same candidate only send once()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.028"/>
+  <testcase name="crashed sending reservation becomes unconfirmed instead of consuming another allowance()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.111"/>
+  <testcase name="no observation means no send and provider permission failure waits for a fresh gesture()" classname="com.fenleng.platform.persistence.MiniReminderDispatchTest" time="1.504"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

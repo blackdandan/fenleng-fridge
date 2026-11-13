@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T02:55:28.478Z" hostname="DESKTOP-PF7J11G" time="0.252">
+  <properties/>
+  <testcase name="exchanges code and prefers stable union id()" classname="com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest" time="0.231"/>
+  <testcase name="unknown application client pair fails closed()" classname="com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest" time="0.011"/>
+  <testcase name="mini program registration exchanges code with jscode2session()" classname="com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest" time="0.004"/>
+  <testcase name="provider error fails closed without exposing response details()" classname="com.fenleng.platform.infrastructure.WechatIdentityProviderAdapterTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

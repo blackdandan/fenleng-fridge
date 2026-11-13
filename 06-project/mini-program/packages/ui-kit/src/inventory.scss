@@ -1,0 +1,29 @@
+.fridge-cabinet { margin-top: 27px; padding: var(--fridge-space-cabinet); background: var(--fridge-cabinet); border: .8px solid var(--fridge-cabinet-border); border-radius: var(--fridge-radius-cabinet-top) var(--fridge-radius-cabinet-top) var(--fridge-radius-cabinet-bottom) var(--fridge-radius-cabinet-bottom); display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: var(--fridge-gap-cabinet); position: relative; box-shadow: var(--fridge-shadow-cabinet); }
+.fridge-door { display: flex !important; flex-direction: column; min-width: 0; border: .8px solid var(--fridge-line) !important; padding: 17px 14px 14px !important; border-radius: var(--fridge-radius-door); text-align: start; position: relative; box-shadow: var(--fridge-shadow-door); }
+.fridge-door--cold { grid-column: 1 / 3; min-height: var(--fridge-size-cold); border-radius: var(--fridge-radius-cold-top) var(--fridge-radius-cold-top) var(--fridge-radius-door) var(--fridge-radius-door); background: var(--fridge-cold) !important; }
+.fridge-door--frozen { min-height: var(--fridge-size-lower); border-bottom-left-radius: var(--fridge-radius-outer); background: var(--fridge-frozen) !important; }
+.fridge-door--pantry { min-height: var(--fridge-size-lower); border-bottom-right-radius: var(--fridge-radius-outer); background: var(--fridge-pantry) !important; }
+.fridge-door-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--fridge-space-tiny); padding-bottom: 15px; min-height: 31px; width: 100%; }
+.fridge-door-label { display: flex; gap: 5px; align-items: center; min-width: 0; font-size: calc(var(--fridge-font-label) * var(--fridge-text-scale, 1)); line-height: 1.25; }
+.fridge-door-count { color: var(--fridge-count); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale, 1)); flex-shrink: 0; }
+.fridge-door-photos { flex: 1; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--fridge-gap-photo-rows) var(--fridge-gap-small-photos); min-height: var(--fridge-size-small-grid); width: 100%; }
+.fridge-door--cold .fridge-door-photos { min-height: var(--fridge-size-home-grid); column-gap: var(--fridge-gap-photos); }
+.fridge-photo-slot { display: flex; flex-direction: column; align-items: center; min-width: 0; width: 100%; }
+.fridge-door-photo,.fridge-more-photo { width: 100%; border-radius: 50%; border: 1.6px solid var(--fridge-photo-border); box-shadow: var(--fridge-shadow-photo); position: relative; overflow: hidden; }
+.fridge-door--cold .fridge-door-photo,.fridge-door--cold .fridge-more-photo { max-width: var(--fridge-size-home-photo); }
+.fridge-photo-number { display: block; width: 100%; padding-top: 5px; text-align: center; color: var(--fridge-caption); font-size: calc(var(--fridge-font-photo-number) * var(--fridge-text-scale,1)); line-height: 1.3; overflow-wrap: anywhere; }
+.fridge-more-photo { border: .8px dashed var(--fridge-more-border); color: var(--fridge-more); background: var(--fridge-more-surface); }
+.fridge-door-photos--empty { display: flex; align-items: center; justify-content: center; }
+.fridge-empty-plus { font-size: 34px; font-weight: 300; color: var(--fridge-more-border); }
+.fridge-door-footer { display: block; width: 100%; padding-top: 15px; text-align: center; color: var(--fridge-caption); font-size: calc(var(--fridge-font-caption) * var(--fridge-text-scale,1)); line-height: 1.2; }
+.fridge-door-handle { position: absolute; top: 43px; right: 4px; width: 3px; height: 28px; border-radius: 5px; background: var(--fridge-handle); }
+.fridge-feet { position: absolute; left: 22px; right: 22px; bottom: -6px; height: 6px; background: linear-gradient(90deg,var(--fridge-handle) 0 9%,transparent 9% 91%,var(--fridge-handle) 91%); border-radius: 0 0 2px 2px; }
+.fridge-home-hint { display: flex; align-items: center; gap: var(--fridge-space-small); margin-top: var(--fridge-space-section); padding: var(--fridge-space-row); border-radius: var(--fridge-radius-control); border: 1px solid var(--fridge-line); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); }
+.fridge-home-hint text { flex: 1; min-width: 0; }
+.fridge-home-hint button { flex-shrink: 0; min-height: 44Px; padding: var(--fridge-space-small) !important; color: var(--fridge-primary); }
+.fridge-records-hint { display: block; margin-top: var(--fridge-space-row); font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale,1)); line-height: 1.8; color: var(--fridge-muted); }
+.fridge-record-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--fridge-gap-record-rows) var(--fridge-gap-records); margin-top: var(--fridge-space-section); }
+.fridge-record { display: flex !important; flex-direction: column; align-items: center; min-width: 0; }
+.fridge-record-photo { width: 100%; border-radius: 50%; border: 2.4px solid var(--fridge-photo-border); box-shadow: var(--fridge-shadow-photo); }
+.fridge-record-number { display: block; margin-top: 10px; font-size: calc(var(--fridge-font-record-number) * var(--fridge-text-scale,1)); color: var(--fridge-primary); line-height: 1.4; }
+.fridge-record-date { display: block; margin-top: 5px; font-size: calc(var(--fridge-font-caption) * var(--fridge-text-scale,1)); color: var(--fridge-caption); line-height: 1.4; text-align: center; overflow-wrap: anywhere; }

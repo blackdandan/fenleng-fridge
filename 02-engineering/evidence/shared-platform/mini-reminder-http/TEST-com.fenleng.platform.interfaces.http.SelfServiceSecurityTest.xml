@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.interfaces.http.SelfServiceSecurityTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:57:55.342Z" hostname="DESKTOP-PF7J11G" time="0.027">
+  <properties/>
+  <testcase name="valid bearer establishes actor while unrelated route remains untouched()" classname="com.fenleng.platform.interfaces.http.SelfServiceSecurityTest" time="0.017"/>
+  <testcase name="profile write route joins the bearer boundary only when explicitly enabled()" classname="com.fenleng.platform.interfaces.http.SelfServiceSecurityTest" time="0.0"/>
+  <testcase name="missing bearer receives stable unauthorized response with request id()" classname="com.fenleng.platform.interfaces.http.SelfServiceSecurityTest" time="0.008"/>
+  <testcase name="only qr scan and confirm join the bearer boundary when qr login is enabled()" classname="com.fenleng.platform.interfaces.http.SelfServiceSecurityTest" time="0.001"/>
+  <system-out><![CDATA[11:57:55.345 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.346 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.346 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+11:57:55.354 [Test worker] WARN org.springframework.web.servlet.PageNotFound -- No mapping for GET /api/platform/v1/admin/not-implemented
+11:57:55.365 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+11:57:55.365 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+11:57:55.365 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

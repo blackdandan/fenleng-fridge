@@ -1,0 +1,29 @@
+✔ lifecycle methods use authenticated native transport with exact scoped body, intent and confirmation headers (1.593ms)
+✔ invalid provider challenge proof type intent and missing DELETE confirmation never dispatch (0.4655ms)
+✔ export reuses authentication but does not require a deletion confirmation (0.1335ms)
+✔ unknown-write network failure and revoked session are not retried or cleared by native lifecycle calls (0.4029ms)
+✔ abort prevents late confirmation delivery without replacing original session (0.2823ms)
+✔ explicit anonymous request option cannot bypass lifecycle authentication (0.1338ms)
+✔ actual local HTTP confirms wire headers, unchanged identity and server receipt forwarding (24.8694ms)
+✔ actual method dispatch matches frozen public operation catalog and platform candidate provider schema (0.2925ms)
+✔ host transport reads current token, preserves intent, and uses no browser fetch (1.1022ms)
+✔ unauthorized and unknown-write network errors are never automatically replayed (0.3901ms)
+✔ abort cancels host task and discards late response (0.2067ms)
+✔ cancelled before dispatch and malformed JSON fail without exposing private data (0.1931ms)
+✔ capability-only requests never read session storage or forward supplied Authorization variants (0.2766ms)
+✔ Web AuthSDK stores real platform tokens and deduplicates concurrent refresh (13.4898ms)
+✔ Web CommerceSDK trusts only final platform state (0.8526ms)
+✔ Web AuthSDK performs WeChat QR OAuth with state validation and server-only code exchange (1.5564ms)
+✔ Web AuthSDK rejects a forged WeChat callback before exchanging its code (0.4837ms)
+✔ Web AuthSDK verifies email before registration and exposes account deletion (0.7012ms)
+✔ federated deletion challenge and proof keep existing tokens and bind exact deletion intent (0.8191ms)
+✔ invalid federated deletion input never dispatches a request (0.2814ms)
+✔ Web official auth accepts WeChat deletion code without creating a login session (0.481ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 106.151

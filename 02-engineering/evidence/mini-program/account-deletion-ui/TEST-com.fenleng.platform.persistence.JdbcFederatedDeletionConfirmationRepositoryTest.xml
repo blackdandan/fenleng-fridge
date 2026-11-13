@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-11-13T07:46:42.073Z" hostname="DESKTOP-PF7J11G" time="18.833">
+  <properties/>
+  <testcase name="foreign scope wrong intent and exact expiry are rejected without consuming()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.911"/>
+  <testcase name="login-first race prevents a late DELETE from the original confirmed intent()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.277"/>
+  <testcase name="concurrent consumption succeeds exactly once()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="0.949"/>
+  <testcase name="service rejects foreign sessions and revoked client before verifying identity()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.235"/>
+  <testcase name="service issues persisted challenge verifies same account and makes dedicated confirmation consumable()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.771"/>
+  <testcase name="failed new WeChat token issuance does not retire the old confirmation()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.121"/>
+  <testcase name="revoked binding or session blocks consumption and namespace is literal()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.114"/>
+  <testcase name="new successful WeChat login retires old intent but permits a fresh challenge()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.274"/>
+  <testcase name="actual deletion transaction rolls back consumed proof user sessions and request then retries with seven day window()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.771"/>
+  <testcase name="deletion-first race lets successful login restore the committed pending request()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.217"/>
+  <testcase name="WeChat proof uses original atomic deletion path with seven days and rollback()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.559"/>
+  <testcase name="WeChat confirmed challenge retry never exchanges an already spent code and revoked binding remains blocked()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.566"/>
+  <testcase name="rollback restores confirmation for same deletion intent retry()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="0.97"/>
+  <testcase name="unverified challenge cannot authorize deletion and verification is one-time()" classname="com.fenleng.platform.persistence.JdbcFederatedDeletionConfirmationRepositoryTest" time="1.094"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

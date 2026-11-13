@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-11-13T11:57:01.275545+00:00",
+  "scope": "Owner-requested read-only existing production website layout and fridge routing diagnosis",
+  "host": "root@121.199.10.6",
+  "knowledgeEvidence": {
+    "repository": "https://github.com/blackdandan/fenlengtechbase",
+    "resolvedCommit": "069718f51642df16e5c80c757943ce03621fd4a0",
+    "source": "knowledge/operations/production-host-inventory.md",
+    "sourceMode": "cache"
+  },
+  "nginxMatchingFridgeServerNames": [],
+  "publicCertificate": "fridge-public-certificate-audit.json",
+  "existingWebsiteRoots": {
+    "promptmanager": "/opt/fenleng-websites/prompt-manager/releases/0.1.0-rc.2",
+    "fenlengeat": "/opt/fenlengeat/official-web/releases/0.1.0-rc.6",
+    "scanister": "/opt/scanister/web/releases/0.1.0-rc.10"
+  },
+  "interpretation": "No fridge named server in active nginx configuration; observed certificate matches first loaded443 server apple-sandbox-api. Do not confuse DNS setup with deployed website.",
+  "harmonyInstallation": "Owner explicitly deferred installation and Huawei login",
+  "productionWrites": false,
+  "downloadPublished": false
+}

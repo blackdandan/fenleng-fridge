@@ -1,0 +1,36 @@
+✔ synchronous engine configuration forwards cold-start day once (1.1835ms)
+✔ deferred engine configuration retains cold-start URI until engine is actually available (0.0924ms)
+✔ latest want is retained before engine, hot wants still forward through Flutter superclass (0.1316ms)
+✔ constructor and early tap do not access preferences, permissions, plugins or channel before authorize (1.4702ms)
+✔ actual bridge decodes Flutter codec maps and publishes calendar with day-only click URI (10.4368ms)
+✔ native status reflects actual denial separately from requested and enabled (0.2998ms)
+✔ native storage preserves corrupt ledger and rolls back in-memory write on flush failure (0.3138ms)
+✔ native list scopes cancellation to this feature and recovers intent after publish-before-ACK crash (0.6572ms)
+✔ revocation cancels native requests/cards and rejects future channel calls (0.5126ms)
+✔ unknown channel method and malformed sync fail without native publication (0.2165ms)
+✔ existing card is updated silently and atomically; dismissed or unchanged card is not recreated (0.2253ms)
+✔ real calendar validation rejects normalization, missing values and duplicate cycles (0.8778ms)
+✔ same day separate instants share card ID with cumulative counts, no early trigger (0.5471ms)
+✔ overdue cycles coalesce per day; visited cycles count without being re-alerted (0.1846ms)
+✔ formatting is supplied by native locale formatter; click metadata is calendar only (8.9301ms)
+✔ consent fence and full validation precede every native mutation (0.5715ms)
+✔ ordinary identical sync preserves exact native requests without duplicate publication (0.8448ms)
+✔ OS-consumed old cycle is ledgered and undo does not republish it (0.4804ms)
+✔ removing a future cycle cancels it without marking it delivered; restore can schedule (0.5193ms)
+✔ window capacity bounds native requests and flags deferred items (0.7725ms)
+✔ disabled OS cancels requests but retains app preference, requested flag and ledger (0.8653ms)
+✔ durable intent write failure never publishes; native failure retains recovery intent (0.4758ms)
+✔ uncertain publication ACK is adopted instead of publishing twice (0.4341ms)
+✔ withdrawal during native publish cancels late ACK; explicit revoke preserves ledger (0.2747ms)
+✔ unconfirmed due intent is handed off once, not replayed after crash (0.2531ms)
+✔ tap claim is durable and consumed once; invalid day does not overwrite (0.2263ms)
+✔ partial handling updates only remaining due count; future cycles do not count early (0.4811ms)
+✔ disable still attempts native cancellation on local write failure and reports failure for retry (0.6958ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 103.4069

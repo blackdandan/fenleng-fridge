@@ -1,0 +1,86 @@
+{
+  "status": "sdk-local-candidate-installed-consumer-ui-pending",
+  "goalComplete": false,
+  "sdk": {
+    "repository": "https://github.com/blackdandan/fenleng-client-sdk.git",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "sourceMode": "local-worktree-candidate",
+    "published": false
+  },
+  "platformContract": {
+    "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+    "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+    "openApiSha256": "9c6e6ae719679f8e7b95bdcd2e5586d7faba4be2d380bc073b0f1b637dfc35d1",
+    "schemaSha256": "bff86fab0ae3d7a89d07a733667e5531bd8a05981426c19feed2c13bfd1ec030",
+    "selfDataHeader": "X-Action-Confirmation",
+    "controlledOperationsHeaderUnchanged": "Action-Confirmation-Id"
+  },
+  "tests": {
+    "javascriptRelatedSdk": 97,
+    "flutterSdk": 72,
+    "candidateContract": 1,
+    "platformHttpHeaderAndChallenge": 5,
+    "miniConsumer": 102,
+    "taroTypes": "passed",
+    "miniTypes": "passed",
+    "miniBoundaries": "passed",
+    "miniWeappBuild": "passed",
+    "installedArchiveAndFiles": "passed",
+    "knowledgeAudits": "fridge,SDK,platform all passed; nextAction=none"
+  },
+  "candidate": {
+    "archive": "fenleng-sdk-taro-0.5.0-fridge-account-lifecycle-candidate.tgz",
+    "sha256": "7ab076a953d7f570ecac50c1a5194b7e1d17698693da57f1783ecfc17f47cf00",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "sourceMode": "local-worktree-candidate",
+    "published": false,
+    "sourceFiles": {
+      "tests/account-lifecycle.test.js": "e9a21d12b6c9bc6f6bc005cbf7e6490b0645f443d1e72ece3e284d9e19f75284",
+      "src/auth.js": "e706c2ee17f9a7374de9a7d6343d34b7bd3351aa4a45c62128fa4d3a1785e107",
+      "src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+      "tests/client.test.js": "cc66716701064611cffc741c602d3b8f5b774f7e4b1d68f3c47bc375d40aca74",
+      "src/commerce.js": "bb4b0b8e73e95c1fb58349750be13bfc0cd9197059c4539e6b4881a550727875",
+      "tests/commerce.test.js": "74c224c7c1b142ad19c6facb9ad0c2754b16f9211f8897662ace7b4e7decee58",
+      "src/feedback.js": "767f3937cfdd3913daa28852944357de7ad80f1640d9e462190e896dbb538271",
+      "tests/guest-feedback.test.js": "0025a9fa1f2df940f422e4001158a2867f7e0abdcb6b1acd13d62d16c19ec571",
+      "index.js": "1fe5f7ac2c3a80904b09364254891f0e197ca34dd6ee9cfb2e951148ae382fa7",
+      "src/mini-reminder-plan.js": "9c65c0bcf95915e7d572e41399d6f6cbd251a0579a88228e94c3b45a79622004",
+      "tests/mini-reminder-plan.test.js": "b6a7bfae71f80edb1da8ef8867c871de43e91f391b822712b4037ff0a634f706",
+      "src/mini-reminders.js": "2efdbf75b2178995959b91af8649f4267bc9118681ab54335d6345c0621ce470",
+      "tests/mini-reminders.test.js": "77df0c848638d6201d9240abf4f97a08345ad5df13d003fae99708ac49023ed6",
+      "src/payment-session.js": "4453835c40f11c9c392506c21f96fce7985981cb36449fdef8f171ee8d05ed4b",
+      "tests/payment-session.test.js": "510f2550bc4495d1c731e1a066172fe92e61630f0b3ef51a91fea905f2e95fcb",
+      "src/session.js": "e41ca7a7311a26ea82bb0abdb8a653dca01b8edb1984c446e2371663a9bf49a0",
+      "tests/session.test.js": "c9ce070afbdae9d081604fbab7efc5de10630f5cc7e66f519f0df5ee6bc3a799",
+      "src/storage.js": "d3d517e0c6224419aa9d02e12c9c0f54892a754bb08404940811b445fcf8e631",
+      "tests/taro.test.js": "74ac574b408ecf69823dae5371944174c837e9e93e5801367ea97fb098de4083",
+      "src/telemetry.js": "ecfffcce2d0dc4a8c281e97b13b5a1493818c8d867f0e75a09ad58c728c16c8c",
+      "fixtures/account-lifecycle-contract.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c",
+      "package.json": "53b37a891b2c8642e7f6e77a807237ff066542a3f9d2d978b38bbb9c8f2fb36e",
+      "README.md": "017c96041ecb96b797b0e45c05d0c350cf26af7754797ac6b9fd410d3db77814",
+      "index.d.ts": "a1ea0f0b51fb9b119666d942f4bf044a72939bdabc9f500119605f644109cba5"
+    },
+    "lifecycleContract": "fixtures/account-lifecycle-contract.json"
+  },
+  "sourceHashes": {
+    "packages/sdk-taro/src/auth.js": "e706c2ee17f9a7374de9a7d6343d34b7bd3351aa4a45c62128fa4d3a1785e107",
+    "packages/sdk-taro/src/client.js": "013a0d75c7cb295508e27a8847b87280f5e4eaa47558f0a7101da95fc40dcde5",
+    "packages/sdk-taro/index.d.ts": "a1ea0f0b51fb9b119666d942f4bf044a72939bdabc9f500119605f644109cba5",
+    "packages/sdk-flutter/lib/src/auth.dart": "28e82d8b815f9ae1cf4a690e5a06f8bbd9cf04a03ccf752c9fc652c6b0f9f153",
+    "packages/sdk-web/src/auth.js": "7d6fa5e247594f34dc13e4acb82240fb1d07c855efc3c260af0f4c03159401dc",
+    "contract/fridge-account-lifecycle-candidate.json": "43d819109b3a80a479ed4d98b04d6bde5a4cad3a5ad2c6c55e42355393f07d6c"
+  },
+  "notes": [
+    "Initial Flutter test resolution referenced cached stock Flutter3.44.5; refreshed dependency resolution with fixed FVM Dart without mutating global cache; fixed fork3.41.9/OH used for final72 tests",
+    "Initial SDK test exposed an assumed incorrect confirmation header; cross-check then found self-service OpenAPI incorrectly reused admin header. Corrected scoped OpenAPI definition and verified actual Spring HTTP controller and local native-transport HTTP test",
+    "Mini common.js458KiB/NoAsyncChunks warnings persist; no claim of native WeChat validation"
+  ],
+  "remaining": [
+    "App/mini account deletion UI, unified confirmation and20 languages",
+    "Durable intent/receipt and unknown outcome handling; no automatic login after unconfirmed DELETE",
+    "Cancellation/identity/consent fencing and reminder lifecycle integration",
+    "Immutable upstream SDK publication and formal platform configuration/deployment/provider verification"
+  ],
+  "productionDeployed": false,
+  "productionDeletionExecuted": false
+}

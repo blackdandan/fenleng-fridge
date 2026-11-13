@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.bootstrap.MiniReminderConfigurationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:57:56.312Z" hostname="DESKTOP-PF7J11G" time="1.503">
+  <properties/>
+  <testcase name="policy needs dispatch enabled exact application and mini code registration()" classname="com.fenleng.platform.bootstrap.MiniReminderConfigurationTest" time="0.544"/>
+  <testcase name="invalid template mapping disables configuration without guessing provider fields()" classname="com.fenleng.platform.bootstrap.MiniReminderConfigurationTest" time="0.004"/>
+  <testcase name="enabled runtime wires real dispatcher and dedicated scheduler with no configured product()" classname="com.fenleng.platform.bootstrap.MiniReminderConfigurationTest" time="0.9"/>
+  <testcase name="both runtime switches are opt in and API alone allows cancellation without scheduling()" classname="com.fenleng.platform.bootstrap.MiniReminderConfigurationTest" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

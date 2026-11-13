@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.application.usecase.GuestLoginTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-13T07:48:05.844Z" hostname="DESKTOP-PF7J11G" time="0.055">
+  <properties/>
+  <testcase name="default disabled application creates no user or session()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.047"/>
+  <testcase name="token issuer failure exits through the transaction failure path()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.004"/>
+  <testcase name="guest registration cannot inherit the ordinary member role()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.0"/>
+  <testcase name="anonymous identity has application origin and guest role without personal credentials()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.0"/>
+  <testcase name="client belonging to another application cannot create a guest()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.0"/>
+  <testcase name="retired guest role cannot authorize new guests()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.001"/>
+  <testcase name="confidential clients cannot use the public anonymous entry()" classname="com.fenleng.platform.application.usecase.GuestLoginTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

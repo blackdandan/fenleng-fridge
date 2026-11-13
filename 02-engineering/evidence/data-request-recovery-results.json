@@ -1,0 +1,75 @@
+{
+  "status": "candidate-transactional-recovery-verified-not-deployed",
+  "goalComplete": false,
+  "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "sourceMode": "local-worktree-candidate",
+  "tests": [
+    {
+      "name": "com.fenleng.platform.application.usecase.ProcessUserDataRequestsTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcUserDataRequestRepositoryTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcUserDataRequestProcessorTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.bootstrap.UserDataRequestProcessingTransactionTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "totalPassed": 20,
+  "sourceHashes": {
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingConfiguration.kt": "f798ab9c546fc343ee9ec3326aff649edd57f3285002c89853fca16741dfd033",
+    "backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt": "477b2ad3a0dbe5a3c5ec88a45d748fb40732b74470319740f213bf90f2b659a3",
+    "docs/spec/wp-fridge-firebase-account-cleanup.md": "11d0c12b0978260764974bb6738430d92af25e69e52b695c649debe8fe52cca0"
+  },
+  "productionChanges": false,
+  "scope": "One transaction per task covers claim,processor,progress and outbox. PostgreSQL simulation covers interruption after remote acknowledgement, failed completion write, CAS conflict, concurrent worker skip, prior committed task isolation and ordinary failure backoff.",
+  "limits": [
+    "No production deployment or real Firebase deletion",
+    "Simulated termination inside transaction, not a physical OS process kill",
+    "No repair or migration of pre-existing stranded production IN_PROGRESS rows",
+    "Original policy approval, holds, cooling period and default disabled processing preserved"
+  ],
+  "knowledgeAudits": {
+    "platform": {
+      "status": "pass",
+      "nextAction": "none"
+    },
+    "fridge": {
+      "status": "pass",
+      "nextAction": "none"
+    }
+  }
+}

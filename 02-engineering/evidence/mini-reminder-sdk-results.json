@@ -1,0 +1,97 @@
+{
+  "stage": "official SDK and WeChat adapters; UI/runtime not integrated",
+  "goalComplete": false,
+  "sdkRepository": "https://github.com/blackdandan/fenleng-client-sdk.git",
+  "sdkBaseline": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+  "candidate": {
+    "archive": "fenleng-sdk-taro-0.5.0-fridge-reminders-candidate.tgz",
+    "sha256": "9f278ce7dbba194a7ed332b0ad6106b147d4988d0c84e15f0dd5465d5c71e6f9",
+    "sourceMode": "local-worktree-candidate",
+    "baselineCommit": "334611afbd9ae4be95771159a5cd00dc6f0ba31f",
+    "published": false
+  },
+  "sdkTests": 55,
+  "contractTests": 4,
+  "consumerTests": 74,
+  "totalTests": 133,
+  "failures": 0,
+  "skipped": 0,
+  "checks": {
+    "typescript": "passed",
+    "domainBoundaries": "passed",
+    "weappBuild": "passed",
+    "installedArchiveIntegrity": "passed,22 source files",
+    "sdkBuild": "passed,126 published operations and6 package entries; reminder5 remain unreleased overlay",
+    "knowledgeAudits": "both passed",
+    "warnings": [
+      "common.js401KiB exceeds244KiB recommendation",
+      "NoAsyncChunks recommendation"
+    ]
+  },
+  "sources": [
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/src/mini-reminders.js",
+      "sha256": "2efdbf75b2178995959b91af8649f4267bc9118681ab54335d6345c0621ce470"
+    },
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/src/mini-reminder-plan.js",
+      "sha256": "9c65c0bcf95915e7d572e41399d6f6cbd251a0579a88228e94c3b45a79622004"
+    },
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/src/client.js",
+      "sha256": "1ba3902303c7a7fe38c424cf41db3514d28bd46455c85846e4b0dc877bf1b1cc"
+    },
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/index.js",
+      "sha256": "1fe5f7ac2c3a80904b09364254891f0e197ca34dd6ee9cfb2e951148ae382fa7"
+    },
+    {
+      "path": "../fenleng-client-sdk/packages/sdk-taro/index.d.ts",
+      "sha256": "5f35f5bc30bf9152a02e1e01f2326aaac48f59feaed9afd5ef9949d650d6e952"
+    },
+    {
+      "path": "../fenleng-client-sdk/scripts/generate-openapi-client.js",
+      "sha256": "d7296bf2093babf8f69cbf15068eb5abdaa4f28d633452b62eb09da8c6decb7b"
+    },
+    {
+      "path": "../fenleng-client-sdk/contract/fridge-mini-reminder-candidate.json",
+      "sha256": "3c9fd1625224d894de22081b62f9315d80ec5b4e0f928b7ab81f95ce3c3d2dbb"
+    },
+    {
+      "path": "../fenleng-client-sdk/contract/fridge-mini-reminder.test.js",
+      "sha256": "f042bbd49fc929aa3ea8cb5c31398c9edf8953ff28ca929ec026a763cb5e62fb"
+    },
+    {
+      "path": "../fenleng-client-sdk/contract/codegen.test.js",
+      "sha256": "cf9aa8081b2097323b19e60dca8b0f197a03503d26c0e4c8acad1f20a2a1ad45"
+    },
+    {
+      "path": "06-project/mini-program/packages/api-client/src/reminders.ts",
+      "sha256": "8fa70c45ae519e1aee9e893aa4684a7baf03ec33fb099b04dafcdbf2f9f77efe"
+    },
+    {
+      "path": "06-project/mini-program/packages/platform-adapters/weapp/src/reminders.ts",
+      "sha256": "75384321c3c20db980b275c266b9d8e19354f58b49d625bd19efe983950b8065"
+    },
+    {
+      "path": "06-project/mini-program/packages/platform-adapters/weapp/src/subscription-permission.ts",
+      "sha256": "b4f6ccaacc1d4db66f9c19af54d74342c8d4576cd8de35b498bc1575f949edc3"
+    },
+    {
+      "path": "06-project/mini-program/pnpm-lock.yaml",
+      "sha256": "395ee5c229a5cc64d84fba1d3575f7fa31e7db40750c10a8d875d31b6fac787c"
+    },
+    {
+      "path": "06-project/mini-program/vendor/provenance.json",
+      "sha256": "283bc21d783c40b2dfc798ff03ea229b98e6acca4abeaf2a98968552b95d7305"
+    }
+  ],
+  "evidenceDirectory": "02-engineering/evidence/mini-reminder-sdk",
+  "scopeLimits": [
+    "No business UI,inventory calendar,identity/withdrawal lifecycle or deep link integration yet",
+    "No real WeChat host/authorization/delivery proof",
+    "No new APK or simulator interactions during SDK work",
+    "No SDK publication/push or platform deployment",
+    "sdk-core archive remains original pinned baseline; this phase does not claim vendored telemetry upgrade"
+  ]
+}

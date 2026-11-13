@@ -1,0 +1,24 @@
+✔ ordinary build defaults to the verified artifact and inspects version and fixed signature (14.1783ms)
+✔ mismatched or missing recorded artifact fails before inspecting or replacing website output (6.9613ms)
+✔ intentional source-only preview is explicit and cannot be combined with an APK override (4.0497ms)
+✔ a different signing identity is not published under the recorded download identity (5.243ms)
+✔ projects without a verified APK still produce a no-download plan without toolchain probes (4.4039ms)
+✔ official SDK sends a minimal anonymous event with no credentials and keepalive (18.0549ms)
+✔ network failure and bad ACK preserve the exact batch event IDs timestamp and dedupe key (1.7532ms)
+✔ no consent records nothing and close discards old delivery without a replay after a late ACK (1.0051ms)
+✔ no consent or an explicit decline loads no SDK and never replays an earlier entry (1.6797ms)
+✔ version mismatch and corrupt storage never imply consent or silently overwrite evidence (0.1553ms)
+✔ durable acceptance precedes SDK creation and failed saving leaves browsing possible without collection (0.1186ms)
+✔ withdraw stops collection immediately and cannot claim success if the local preference was not cleared (0.1832ms)
+✔ cross-tab withdrawal is checked before an event even before a storage event handler runs (0.136ms)
+✔ late SDK load after withdrawal is closed and never receives a queued entry (0.1751ms)
+✔ SDK failure is isolated from privacy preference and subsequent explicit retries (0.2028ms)
+✔ anonymous endpoint config is opt in, public only, and reports no raw configuration data on invalid input (0.3636ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.6721

@@ -1,0 +1,56 @@
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-bootstrap:bootBuildInfo
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-bootstrap:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:processResources NO-SOURCE
+> Task :platform-interfaces:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-interfaces:processResources NO-SOURCE
+> Task :platform-persistence:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-persistence:processResources UP-TO-DATE
+> Task :platform-bootstrap:processResources UP-TO-DATE
+> Task :platform-bootstrap:processTestResources UP-TO-DATE
+> Task :platform-application:compileKotlin
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar UP-TO-DATE
+> Task :platform-infrastructure:compileKotlin UP-TO-DATE
+> Task :platform-infrastructure:compileJava NO-SOURCE
+> Task :platform-infrastructure:classes UP-TO-DATE
+> Task :platform-infrastructure:jar UP-TO-DATE
+> Task :platform-interfaces:compileKotlin UP-TO-DATE
+> Task :platform-interfaces:compileJava NO-SOURCE
+> Task :platform-interfaces:classes UP-TO-DATE
+> Task :platform-interfaces:jar UP-TO-DATE
+> Task :platform-persistence:compileKotlin UP-TO-DATE
+> Task :platform-persistence:compileJava NO-SOURCE
+> Task :platform-persistence:classes UP-TO-DATE
+> Task :platform-persistence:jar UP-TO-DATE
+> Task :platform-bootstrap:compileKotlin UP-TO-DATE
+> Task :platform-bootstrap:compileJava NO-SOURCE
+> Task :platform-bootstrap:classes
+> Task :platform-bootstrap:jar
+> Task :platform-bootstrap:compileTestKotlin
+> Task :platform-bootstrap:compileTestJava NO-SOURCE
+> Task :platform-bootstrap:testClasses UP-TO-DATE
+> Task :platform-bootstrap:test
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 10s
+18 actionable tasks: 5 executed, 13 up-to-date

@@ -1,0 +1,13 @@
+{
+  "name": "@fridge/weapp",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "dependencies": {
+    "@fridge/api-client": "workspace:*",
+    "@fridge/domain": "workspace:*",
+    "@fridge/platform-contracts": "workspace:*",
+    "@tarojs/taro": "4.3.2"
+  }
+}

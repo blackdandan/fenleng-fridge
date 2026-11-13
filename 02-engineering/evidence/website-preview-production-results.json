@@ -1,0 +1,68 @@
+{
+  "status": "public-development-preview-deployed-and-http-download-verified",
+  "observedAt": "2026-11-13T12:21:44.822411+00:00",
+  "ownerApproval": "2026-11-13 spec approved，发布开发预览站",
+  "site": "https://fridge.fenlengtech.com/",
+  "download": "https://fridge.fenlengtech.com/downloads/fenleng-fridge_latest.apk",
+  "contentId": "35efd85c391078f069deed7cc29b1c31866809a17debb6048ae8de3608457d7c",
+  "archiveSha256": "311ccae0e63ad7a83bec7a3bbdf07e9814fb6ad63ff99f9ed78262f52dfe54b3",
+  "apk": {
+    "kind": "debug-preview-not-hardened",
+    "bytes": 204147812,
+    "sha256": "0b19e47a4d33aa11e92b179a921cc32c8cebefae1ae7fd7907b49a9385ec06ac",
+    "fullPublicHttpDownload": "passed HTTP200"
+  },
+  "certificate": {
+    "domain": "fridge.fenlengtech.com",
+    "expires": "2027-02-11",
+    "hostnameVerification": "enabled and passed",
+    "renewal": "existing certbot timer plus tested domain-only deploy hook"
+  },
+  "deployment": "35efd85c3910-r2",
+  "backup": "/opt/fenleng-websites/fenleng-fridge/backups/35efd85c3910-r2",
+  "renewalHookInstall": "35efd85c3910-r3",
+  "localSafetyTestsPassed": 11,
+  "otherWebsites": "promptmanager/scanister/eat-official200 before and after",
+  "browser": {
+    "status": "passed",
+    "origin": "https://fridge.fenlengtech.com",
+    "tlsValidation": "default enabled; no ignoreHTTPSErrors",
+    "transport": "direct to actual121.199.10.6; temporary browser-only DNS mapping avoids local fake DNS; default HTTP2",
+    "filename": "fenleng-fridge_latest.apk",
+    "downloadUrl": "https://fridge.fenlengtech.com/downloads/fenleng-fridge_latest.apk",
+    "downloadStarted": true,
+    "completeBrowserDownloadVerified": false,
+    "fullHttpDownload": "separate curl verification still pending",
+    "pages": [
+      {
+        "route": "/terms/",
+        "status": 200
+      },
+      {
+        "route": "/privacy/",
+        "status": 200
+      },
+      {
+        "route": "/app/",
+        "status": 200
+      }
+    ],
+    "narrowGermanOverflow": false,
+    "scope": "Actual public Chromium pages and download initiation; explicit test cancellation. Not real Android WeChat or physical device installation."
+  },
+  "limitations": [
+    "Not a hardened China release or app-store publication",
+    "Real Android WeChat handoff and physical installation not run",
+    "Proxy Chromium HTTP2 path stalled; direct-origin Chromium HTTP2 and proxyHTTP1 ranges passed; complete external HTTP download passed separately"
+  ],
+  "sourceHashes": {
+    "03-deployment/scripts/deploy_preview.py": "139a526364d73c225e196bc9b2cc9839a42d32e5539dd31bb6f1cd76f775ea6b",
+    "03-deployment/scripts/fridge-certificate-renewed.sh": "9c8a0f9b41309e74f288d5d53dab8ea4a8fdc2f3ae2c8e28bab611141d28ab75",
+    "03-deployment/scripts/preview_bundle.py": "bcfefa243469aab55601702ad33d9276f4f42ed62c309f34efeaba992b05f768",
+    "03-deployment/scripts/test_preview_bundle.py": "1a40e3509b6d2a382f7f97f6d8ff004be2a8011f8bcc7113880882b33d58076d"
+  },
+  "knowledgeAudit": {
+    "status": "pass",
+    "nextAction": "none"
+  }
+}

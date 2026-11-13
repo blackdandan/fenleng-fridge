@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.application.usecase.WechatDeletionProofTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-13T07:48:05.909Z" hostname="DESKTOP-PF7J11G" time="0.007">
+  <properties/>
+  <testcase name="scope expiry and malformed code reject before calling the provider()" classname="com.fenleng.platform.application.usecase.WechatDeletionProofTest" time="0.001"/>
+  <testcase name="foreign subject revoked binding provider and application cannot authorize deletion()" classname="com.fenleng.platform.application.usecase.WechatDeletionProofTest" time="0.003"/>
+  <testcase name="missing provider rejected provider and expired exchange never verify()" classname="com.fenleng.platform.application.usecase.WechatDeletionProofTest" time="0.0"/>
+  <testcase name="fresh WeChat code verifies only the original bound identity and current client()" classname="com.fenleng.platform.application.usecase.WechatDeletionProofTest" time="0.0"/>
+  <testcase name="legacy fenlengeat UnionID requirement is unchanged without applying it to Fridge()" classname="com.fenleng.platform.application.usecase.WechatDeletionProofTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

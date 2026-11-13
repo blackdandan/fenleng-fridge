@@ -1,0 +1,18 @@
+{
+  "templateOnly": true,
+  "productionEnabled": false,
+  "PLATFORM_FIREBASE_CLEANUP_APPLICATIONS": "fenleng-fridge",
+  "PLATFORM_FIREBASE_CLEANUP_REGISTRATIONS_JSON": "",
+  "registrationShape": {
+    "applicationCode": "fenleng-fridge",
+    "projectId": "OWNER_PRODUCT_FIREBASE_PROJECT",
+    "serviceAccountEmail": "OWNER_SERVICE_ACCOUNT_EMAIL",
+    "privateKeyPem": "SERVER_SECRET_INJECTION_ONLY"
+  },
+  "notes": [
+    "Do not place real private key values in this template or client defines.",
+    "Use existing server secret/Vault injection; same project as all registered fridge Firebase clients.",
+    "Existing processing enabled, production deletion approval and retention holds still apply.",
+    "This file neither deploys nor enables production deletion."
+  ]
+}

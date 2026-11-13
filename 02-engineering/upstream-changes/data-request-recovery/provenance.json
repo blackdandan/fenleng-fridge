@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/blackdandan/fenleng-shared-platform",
+  "baselineCommit": "777c6ba4d87be940b3cc91d1167f173e5e25ef49",
+  "sourceMode": "local-worktree-candidate",
+  "sourceHashes": {
+    "backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingConfiguration.kt": "f798ab9c546fc343ee9ec3326aff649edd57f3285002c89853fca16741dfd033",
+    "backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt": "477b2ad3a0dbe5a3c5ec88a45d748fb40732b74470319740f213bf90f2b659a3",
+    "docs/spec/wp-fridge-firebase-account-cleanup.md": "11d0c12b0978260764974bb6738430d92af25e69e52b695c649debe8fe52cca0"
+  },
+  "standaloneBuild": false
+}

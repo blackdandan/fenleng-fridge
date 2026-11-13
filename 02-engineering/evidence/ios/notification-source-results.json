@@ -1,0 +1,51 @@
+{
+  "scope": "Tree-sitter syntax and Xcode source membership only; not typechecking, linking, XCTest or device evidence",
+  "tools": {
+    "tree-sitter": "0.25.2",
+    "tree-sitter-swift": "0.7.4"
+  },
+  "sources": [
+    {
+      "path": "06-project/app/apps/fridge/ios/Runner/AppDelegate.swift",
+      "lines": 257,
+      "sha256": "0b6e3c8a7d38f59f935d8a9a7556983d7555baecb898d9da27a304f08110d14e",
+      "syntaxErrors": []
+    },
+    {
+      "path": "06-project/app/apps/fridge/ios/Runner/ReminderPlan.swift",
+      "lines": 93,
+      "sha256": "29f41c136f67f8672e189976925c263f56674c82317ede4b6c6968e1f770993d",
+      "syntaxErrors": []
+    },
+    {
+      "path": "06-project/app/apps/fridge/ios/Runner/ReminderStore.swift",
+      "lines": 63,
+      "sha256": "717dd7bcc83f78b15afa6f8a0fdefee1c08864e8bf9305ed5a5b076ad7f43bb8",
+      "syntaxErrors": []
+    },
+    {
+      "path": "06-project/app/apps/fridge/ios/Runner/ReminderScheduler.swift",
+      "lines": 148,
+      "sha256": "3f035dc8652796a34164e1d9318a0566f69f98398fbb1455613c148309bc6182",
+      "syntaxErrors": []
+    },
+    {
+      "path": "06-project/app/apps/fridge/ios/Runner/ReminderBridge.swift",
+      "lines": 160,
+      "sha256": "55f3f8978c6a23e675d986f56113114e1aa3691b708b826b0d0722f5f9294db0",
+      "syntaxErrors": []
+    },
+    {
+      "path": "06-project/app/apps/fridge/ios/RunnerTests/RunnerTests.swift",
+      "lines": 156,
+      "sha256": "3bac14ce51740be4a52d74e64ee18e11a5f0423a15f2f4c58564baf94cafdeb8",
+      "syntaxErrors": []
+    }
+  ],
+  "sourceMembership": "pass",
+  "nativeTestsDefined": 13,
+  "xcodeBuild": "not-run-Windows-no-Xcode",
+  "xctest": "not-run-Windows-no-Xcode",
+  "device": "not-run",
+  "syntax": "pass"
+}

@@ -1,0 +1,47 @@
+✔ actual identity+SDK+durable model completes native proof to accepted receipt before local-only cleanup (4.8168ms)
+✔ guest cannot start account deletion or trigger implicit WeChat login (0.9586ms)
+✔ authorization is only a proof and leaves current platform tokens unchanged until finish (0.5693ms)
+✔ owner revision fences stale cleanup after a newer login (0.6022ms)
+✔ cancellation before dispatch and late native proof do not submit DELETE (0.7347ms)
+✔ malformed profile, foreign receipt and mismatched confirmation are never accepted (0.535ms)
+✔ an authentic original ACK remains available after a concurrent401 invalidates that session (3.4137ms)
+✔ local cleanup write failure retries locally without another DELETE or loss of accepted receipt (0.8295ms)
+✔ official Taro SDK crosses real local HTTP for guest feedback, restore and optional WeChat (44.022ms)
+✔ guest ensure is single flight, while disabled guest never invokes wx.login (0.4176ms)
+✔ 401 feedback invalidates the session without replay; next user retry recovers (0.869ms)
+✔ transient restore failure preserves credentials and cannot create a replacement guest (0.3981ms)
+✔ closing during guest creation fences late tokens and receipt publication (2.2594ms)
+✔ page cancellation fences late native code without replacing the existing guest (0.3215ms)
+✔ disabled configuration cannot create a platform session (1.0317ms)
+✔ initial anonymous restore does not invoke wx.login or a network call (1.181ms)
+✔ duplicate taps obtain one code and persist only platform tokens across page close (1.7464ms)
+✔ late native code after leaving the page does not exchange or persist tokens (0.4212ms)
+✔ login waits for initial restore, even when its caller did not await start (0.4523ms)
+✔ logout during native login prevents a late code from signing back in (0.4882ms)
+✔ failed code exchange retries using a fresh native code (0.5798ms)
+✔ native and SDK failures expose translated keys instead of raw messages (0.1812ms)
+✔ reopening restores persisted tokens and logout clears them without another wx.login (0.5962ms)
+✔ visible cancellation issues no challenge, proof, reminder cancellation or DELETE (1.8485ms)
+✔ intent is durable before challenge; submitting marker precedes DELETE; receipt precedes local cleanup (1.2708ms)
+✔ network/401 unknown outcome survives restart and reuses the same intent without automatic login (0.7724ms)
+✔ crash marker is displayed unknown on restore and never silently submitted (0.1685ms)
+✔ initial intent persistence failure prevents every remote write (0.3326ms)
+✔ receipt save failure retains known ACK in memory and retry never resubmits DELETE (0.4995ms)
+✔ cleanup failure keeps accepted receipt and retries only local cleanup (0.4155ms)
+✔ late native proof after page cancellation cannot reach platform confirmation or DELETE (3.887ms)
+✔ privacy withdrawal during DELETE retains durable uncertainty without a late receipt write (1.7761ms)
+✔ identity changes during explicit confirmation prevent proof or DELETE (0.3682ms)
+✔ malformed successful response is unknown and never clears credentials (0.3323ms)
+✔ concurrent taps join one operation (0.8477ms)
+✔ subsequent active owner marks accepted request cancelled and a new intent is used for a new application (0.4153ms)
+✔ switching accounts selects only that owner and preserves the previous journal entry (0.264ms)
+✔ journal writes and restores owner-scoped receipt in one replacement without credentials (1.8267ms)
+✔ malformed dates, premature eligibility, duplicate owners and corrupt state fail without overwriting (0.5552ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 305.8627

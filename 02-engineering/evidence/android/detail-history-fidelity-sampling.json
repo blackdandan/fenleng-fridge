@@ -1,0 +1,594 @@
+{
+  "scope": "Detail2:149 and42:95 local dialog coordinates; history2:227 Android430 top viewport. No claim of whole-screen pixel identity.",
+  "dialog": {
+    "referencePaintBounds": [
+      17,
+      53,
+      413,
+      738
+    ],
+    "nativePaintBounds": [
+      17,
+      150,
+      413,
+      836
+    ],
+    "translationY": -97,
+    "referenceSize": [
+      396,
+      685
+    ],
+    "nativeSize": [
+      396,
+      686
+    ]
+  },
+  "bottomDialog": {
+    "referencePaintBounds": [
+      17,
+      53,
+      413,
+      738
+    ],
+    "nativePaintBounds": [
+      17,
+      150,
+      413,
+      836
+    ],
+    "translationY": -97,
+    "referenceSize": [
+      396,
+      685
+    ],
+    "nativeSize": [
+      396,
+      686
+    ]
+  },
+  "colors": {
+    "dialog": {
+      "point": [
+        80,
+        320
+      ],
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "field": {
+      "point": [
+        65,
+        373
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "close": {
+      "point": [
+        370,
+        99
+      ],
+      "reference": "#ecefe6",
+      "render": "#ecefe6",
+      "maxChannelDelta": 0
+    },
+    "handle": {
+      "point": [
+        211,
+        67
+      ],
+      "reference": "#d6ddcc",
+      "render": "#d6ddcc",
+      "maxChannelDelta": 0
+    },
+    "save": {
+      "point": [
+        60,
+        630
+      ],
+      "reference": "#45654c",
+      "render": "#45654c",
+      "maxChannelDelta": 0
+    },
+    "historyPage": {
+      "point": [
+        10,
+        400
+      ],
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "tabs": {
+      "point": [
+        34,
+        151
+      ],
+      "reference": "#ecefe6",
+      "render": "#ecefe6",
+      "maxChannelDelta": 0
+    },
+    "selectedTab": {
+      "point": [
+        240,
+        150
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "historyCard": {
+      "point": [
+        100,
+        244
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    }
+  },
+  "detailGeometry": {
+    "addedField": {
+      "referenceBounds": [
+        42,
+        363,
+        388,
+        403
+      ],
+      "renderBounds": [
+        41,
+        362,
+        389,
+        404
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "zoneField": {
+      "referenceBounds": [
+        42,
+        447,
+        208,
+        487
+      ],
+      "renderBounds": [
+        41,
+        446,
+        208,
+        488
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "intervalField": {
+      "referenceBounds": [
+        222,
+        447,
+        388,
+        487
+      ],
+      "renderBounds": [
+        222,
+        446,
+        389,
+        488
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "nextField": {
+      "referenceBounds": [
+        42,
+        531,
+        388,
+        571
+      ],
+      "renderBounds": [
+        41,
+        530,
+        389,
+        572
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "closeCircle": {
+      "referenceBounds": [
+        346,
+        90,
+        389,
+        133
+      ],
+      "renderBounds": [
+        346,
+        89,
+        389,
+        133
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "handle": {
+      "referenceBounds": [
+        197,
+        66,
+        233,
+        69
+      ],
+      "renderBounds": [
+        198,
+        66,
+        232,
+        69
+      ],
+      "maxBoundaryDelta": 1,
+      "method": "largest 4-connected near-RGB surface; excludes isolated glyph resampling overshoot"
+    },
+    "saveBottom": {
+      "referenceBounds": [
+        41,
+        611,
+        389,
+        656
+      ],
+      "renderBounds": [
+        41,
+        612,
+        389,
+        655
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "photoGreenInk": {
+      "referenceBounds": [
+        167,
+        166,
+        258,
+        255
+      ],
+      "renderBounds": [
+        169,
+        167,
+        258,
+        254
+      ],
+      "maxBoundaryDelta": 2
+    }
+  },
+  "historyGeometry": {
+    "tabs": {
+      "referenceBounds": [
+        25,
+        130,
+        405,
+        175
+      ],
+      "renderBounds": [
+        24,
+        129,
+        406,
+        174
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "selectedTab": {
+      "referenceBounds": [
+        215,
+        134,
+        401,
+        170
+      ],
+      "renderBounds": [
+        215,
+        133,
+        402,
+        170
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "recordCard": {
+      "referenceBounds": [
+        26,
+        238,
+        404,
+        318
+      ],
+      "renderBounds": [
+        25,
+        237,
+        405,
+        317
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "typography": {
+    "detailTitle": {
+      "referenceBounds": [
+        41,
+        104,
+        87,
+        118
+      ],
+      "renderBounds": [
+        41,
+        104,
+        82,
+        118
+      ],
+      "maxBoundaryDelta": 5,
+      "maxChannelThreshold": 120
+    },
+    "photoLink": {
+      "referenceBounds": [
+        192,
+        287,
+        238,
+        299
+      ],
+      "renderBounds": [
+        192,
+        287,
+        238,
+        299
+      ],
+      "maxBoundaryDelta": 0,
+      "maxChannelThreshold": 210
+    },
+    "addedLabel": {
+      "referenceBounds": [
+        41,
+        339,
+        88,
+        350
+      ],
+      "renderBounds": [
+        41,
+        340,
+        87,
+        352
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 210
+    },
+    "addedValue": {
+      "referenceBounds": [
+        54,
+        377,
+        163,
+        391
+      ],
+      "renderBounds": [
+        52,
+        378,
+        163,
+        389
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 160
+    },
+    "zoneLabel": {
+      "referenceBounds": [
+        41,
+        423,
+        88,
+        435
+      ],
+      "renderBounds": [
+        41,
+        424,
+        88,
+        436
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 210
+    },
+    "intervalLabel": {
+      "referenceBounds": [
+        221,
+        423,
+        297,
+        434
+      ],
+      "renderBounds": [
+        221,
+        424,
+        297,
+        436
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 210
+    },
+    "nextLabel": {
+      "referenceBounds": [
+        41,
+        507,
+        112,
+        518
+      ],
+      "renderBounds": [
+        41,
+        508,
+        111,
+        520
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 210
+    },
+    "editorHint": {
+      "referenceBounds": [
+        41,
+        589,
+        388,
+        623
+      ],
+      "renderBounds": [
+        40,
+        591,
+        387,
+        625
+      ],
+      "maxBoundaryDelta": 2,
+      "maxChannelThreshold": 210
+    },
+    "lastOrganized": {
+      "referenceBounds": [
+        41,
+        632,
+        161,
+        643
+      ],
+      "renderBounds": [
+        41,
+        635,
+        162,
+        647
+      ],
+      "maxBoundaryDelta": 4,
+      "maxChannelThreshold": 210
+    },
+    "deleteAction": {
+      "referenceBounds": [
+        168,
+        683,
+        262,
+        694
+      ],
+      "renderBounds": [
+        168,
+        683,
+        262,
+        695
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 210
+    },
+    "historyTitle": {
+      "referenceBounds": [
+        63,
+        71,
+        150,
+        91
+      ],
+      "renderBounds": [
+        63,
+        71,
+        147,
+        92
+      ],
+      "maxBoundaryDelta": 3,
+      "maxChannelThreshold": 120
+    },
+    "historyHint": {
+      "referenceBounds": [
+        32,
+        203,
+        370,
+        214
+      ],
+      "renderBounds": [
+        31,
+        203,
+        369,
+        214
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 210
+    },
+    "historyMetadata": {
+      "referenceBounds": [
+        107,
+        264,
+        197,
+        295
+      ],
+      "renderBounds": [
+        107,
+        261,
+        199,
+        294
+      ],
+      "maxBoundaryDelta": 3,
+      "maxChannelThreshold": 210
+    },
+    "restoreAction": {
+      "referenceBounds": [
+        368,
+        273,
+        388,
+        283
+      ],
+      "renderBounds": [
+        367,
+        273,
+        389,
+        284
+      ],
+      "maxBoundaryDelta": 1,
+      "maxChannelThreshold": 170
+    }
+  },
+  "icons": {
+    "calendarAdded": {
+      "referenceBounds": [
+        365,
+        377,
+        377,
+        390
+      ],
+      "renderBounds": [
+        365,
+        377,
+        377,
+        390
+      ],
+      "maxBoundaryDelta": 0
+    },
+    "calendarNext": {
+      "referenceBounds": [
+        365,
+        545,
+        377,
+        558
+      ],
+      "renderBounds": [
+        365,
+        545,
+        377,
+        558
+      ],
+      "maxBoundaryDelta": 0
+    },
+    "dropdown": {
+      "referenceBounds": [
+        195,
+        464,
+        204,
+        469
+      ],
+      "renderBounds": [
+        195,
+        465,
+        205,
+        470
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "result": {
+    "flatColorsExact": true,
+    "detailFieldsWithin1px": true,
+    "historyBlocksWithin1px": true,
+    "saveBottomWithin1px": true,
+    "allStaticIconBoundsWithin1px": true,
+    "allVisibleTypographyMeasured": true
+  },
+  "notes": [
+    "Detail controls have at least44px touch height versus43px source fields. Field deltas are reported explicitly, not hidden as exact fidelity.",
+    "Dialog is centered in the native safe viewport; local dialog alignment removes only the viewport-height difference.",
+    "Native font glyphs can differ from Microsoft YaHei; typography values are observations, not a pixel-identity gate."
+  ],
+  "apkSha256": "d264e7335f0b579d7da217ac8b7d68edac6220378d4eeece876bf144ec713800"
+}

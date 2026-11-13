@@ -1,0 +1,4 @@
+// Valid inactive URL schemes. Set the applicable public value in the product's
+// Xcode build settings before enabling that channel's identity configuration.
+FRIDGE_WECHAT_APP_ID = fridge-wechat-unconfigured
+FRIDGE_GOOGLE_REVERSED_CLIENT_ID = fridge-google-unconfigured

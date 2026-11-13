@@ -1,0 +1,434 @@
+{
+  "scope": "Figma2:172 default-settings cohort only; demo/reset/time-simulation sections intentionally excluded from production. Additional real account/display rows and footer are tested separately.",
+  "colors": {
+    "page": {
+      "point": [
+        10,
+        500
+      ],
+      "reference": "#f8f8f3",
+      "render": "#f8f8f3",
+      "maxChannelDelta": 0
+    },
+    "card": {
+      "point": [
+        30,
+        200
+      ],
+      "reference": "#fffefa",
+      "render": "#fffefa",
+      "maxChannelDelta": 0
+    },
+    "numberField": {
+      "point": [
+        300,
+        190
+      ],
+      "reference": "#f5f7ef",
+      "render": "#f5f7ef",
+      "maxChannelDelta": 0
+    },
+    "timeField": {
+      "point": [
+        297,
+        400
+      ],
+      "reference": "#f5f7ef",
+      "render": "#f5f7ef",
+      "maxChannelDelta": 0
+    },
+    "primary": {
+      "point": [
+        40,
+        530
+      ],
+      "reference": "#45654c",
+      "render": "#45654c",
+      "maxChannelDelta": 0
+    }
+  },
+  "geometry": {
+    "defaultsCard": {
+      "referenceBounds": [
+        26,
+        158,
+        404,
+        441
+      ],
+      "renderBounds": [
+        25,
+        157,
+        405,
+        440
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "coldInput": {
+      "referenceBounds": [
+        296,
+        176,
+        369,
+        209
+      ],
+      "renderBounds": [
+        296,
+        175,
+        370,
+        208
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "frozenInput": {
+      "referenceBounds": [
+        296,
+        246,
+        369,
+        279
+      ],
+      "renderBounds": [
+        296,
+        245,
+        370,
+        279
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "pantryInput": {
+      "referenceBounds": [
+        296,
+        317,
+        369,
+        350
+      ],
+      "renderBounds": [
+        296,
+        316,
+        370,
+        349
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "timeInput": {
+      "referenceBounds": [
+        291,
+        387,
+        386,
+        423
+      ],
+      "renderBounds": [
+        292,
+        386,
+        387,
+        422
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "save": {
+      "referenceBounds": [
+        25,
+        509,
+        405,
+        554
+      ],
+      "renderBounds": [
+        24,
+        510,
+        406,
+        553
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "icons": {
+    "cold": {
+      "referenceBounds": [
+        47,
+        187,
+        54,
+        198
+      ],
+      "renderBounds": [
+        46,
+        186,
+        53,
+        197
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "frozen": {
+      "referenceBounds": [
+        44,
+        256,
+        57,
+        270
+      ],
+      "renderBounds": [
+        44,
+        255,
+        56,
+        269
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "pantry": {
+      "referenceBounds": [
+        45,
+        327,
+        56,
+        340
+      ],
+      "renderBounds": [
+        44,
+        326,
+        56,
+        339
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "clock": {
+      "referenceBounds": [
+        363,
+        399,
+        374,
+        411
+      ],
+      "renderBounds": [
+        363,
+        398,
+        374,
+        410
+      ],
+      "maxBoundaryDelta": 1
+    },
+    "back": {
+      "referenceBounds": [
+        30,
+        75,
+        37,
+        87
+      ],
+      "renderBounds": [
+        30,
+        74,
+        36,
+        86
+      ],
+      "maxBoundaryDelta": 1
+    }
+  },
+  "typography": {
+    "title": {
+      "referenceBounds": [
+        63,
+        71,
+        105,
+        91
+      ],
+      "renderBounds": [
+        62,
+        72,
+        104,
+        91
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 120
+    },
+    "section": {
+      "referenceBounds": [
+        25,
+        132,
+        144,
+        143
+      ],
+      "renderBounds": [
+        25,
+        132,
+        144,
+        144
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 210
+    },
+    "cold": {
+      "referenceBounds": [
+        66,
+        187,
+        91,
+        198
+      ],
+      "renderBounds": [
+        66,
+        186,
+        90,
+        198
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 130
+    },
+    "frozen": {
+      "referenceBounds": [
+        67,
+        257,
+        91,
+        269
+      ],
+      "renderBounds": [
+        66,
+        257,
+        90,
+        269
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 130
+    },
+    "pantry": {
+      "referenceBounds": [
+        67,
+        328,
+        91,
+        339
+      ],
+      "renderBounds": [
+        66,
+        327,
+        90,
+        339
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 130
+    },
+    "reminderLabel": {
+      "referenceBounds": [
+        44,
+        390,
+        93,
+        402
+      ],
+      "renderBounds": [
+        43,
+        390,
+        93,
+        402
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 130
+    },
+    "reminderRule": {
+      "referenceBounds": [
+        43,
+        411,
+        218,
+        421
+      ],
+      "renderBounds": [
+        43,
+        411,
+        217,
+        421
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 210
+    },
+    "defaultsHint": {
+      "referenceBounds": [
+        28,
+        457,
+        285,
+        488
+      ],
+      "renderBounds": [
+        27,
+        457,
+        284,
+        488
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 210
+    },
+    "coldValue": {
+      "referenceBounds": [
+        330,
+        188,
+        335,
+        197
+      ],
+      "renderBounds": [
+        329,
+        187,
+        334,
+        196
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 150
+    },
+    "frozenValue": {
+      "referenceBounds": [
+        327,
+        259,
+        338,
+        267
+      ],
+      "renderBounds": [
+        326,
+        258,
+        338,
+        266
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 150
+    },
+    "pantryValue": {
+      "referenceBounds": [
+        330,
+        329,
+        335,
+        338
+      ],
+      "renderBounds": [
+        329,
+        328,
+        334,
+        337
+      ],
+      "maxBoundaryDelta": 1,
+      "threshold": 150
+    },
+    "timeValue": {
+      "referenceBounds": [
+        305,
+        401,
+        333,
+        410
+      ],
+      "renderBounds": [
+        304,
+        400,
+        333,
+        408
+      ],
+      "maxBoundaryDelta": 2,
+      "threshold": 150
+    }
+  },
+  "result": {
+    "flatColorsExact": true,
+    "defaultBlocksWithin1px": true,
+    "staticIconsWithin1px": true,
+    "allTypographyMeasured": true
+  },
+  "normalization": {
+    "native": [
+      1080,
+      2400
+    ],
+    "density": 402,
+    "statusCrop": 136,
+    "referenceSystemRegion": 45,
+    "output": [
+      430,
+      900
+    ],
+    "surfaces": "largest4-connected component, per-channel tolerance2"
+  },
+  "apkSha256": "74781b70c9f6464b99b0240728bb73aeb3dcecbc3368682e3b52e732aa733e05"
+}

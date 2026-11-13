@@ -1,0 +1,24 @@
+✔ visible cancellation issues no challenge, proof, reminder cancellation or DELETE (1.5051ms)
+✔ intent is durable before challenge; submitting marker precedes DELETE; receipt precedes local cleanup (1.0663ms)
+✔ network/401 unknown outcome survives restart and reuses the same intent without automatic login (0.5493ms)
+✔ crash marker is displayed unknown on restore and never silently submitted (0.1106ms)
+✔ initial intent persistence failure prevents every remote write (0.2813ms)
+✔ receipt save failure retains known ACK in memory and retry never resubmits DELETE (0.3679ms)
+✔ cleanup failure keeps accepted receipt and retries only local cleanup (0.2607ms)
+✔ late native proof after page cancellation cannot reach platform confirmation or DELETE (2.503ms)
+✔ privacy withdrawal during DELETE retains durable uncertainty without a late receipt write (1.0833ms)
+✔ identity changes during explicit confirmation prevent proof or DELETE (0.2039ms)
+✔ malformed successful response is unknown and never clears credentials (0.1941ms)
+✔ concurrent taps join one operation (1.0152ms)
+✔ subsequent active owner marks accepted request cancelled and a new intent is used for a new application (0.2495ms)
+✔ switching accounts selects only that owner and preserves the previous journal entry (0.2068ms)
+✔ journal writes and restores owner-scoped receipt in one replacement without credentials (1.5824ms)
+✔ malformed dates, premature eligibility, duplicate owners and corrupt state fail without overwriting (0.4331ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 220.1066

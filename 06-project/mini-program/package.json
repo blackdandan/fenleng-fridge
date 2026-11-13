@@ -1,0 +1,29 @@
+{
+  "name": "fenleng-fridge-mini-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "build:weapp": "pnpm --filter @fridge/miniapp build:weapp",
+    "typecheck": "tsc --noEmit",
+    "test:domain": "tsx --test packages/domain/test/*.test.ts",
+    "check:boundaries": "node scripts/check-boundaries.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "7.28.5",
+    "@babel/preset-react": "7.28.5",
+    "@babel/preset-typescript": "7.28.5",
+    "@tarojs/cli": "4.3.2",
+    "@tarojs/plugin-framework-react": "4.3.2",
+    "@tarojs/plugin-platform-weapp": "4.3.2",
+    "@tarojs/webpack5-runner": "4.3.2",
+    "@types/node": "22.19.0",
+    "@types/react": "18.3.27",
+    "babel-preset-taro": "4.3.2",
+    "less": "4.4.2",
+    "sass": "1.94.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "webpack": "5.91.0"
+  }
+}

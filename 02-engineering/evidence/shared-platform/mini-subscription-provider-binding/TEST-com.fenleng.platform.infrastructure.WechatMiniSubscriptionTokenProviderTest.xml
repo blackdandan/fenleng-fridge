@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T02:55:29.441Z" hostname="DESKTOP-PF7J11G" time="0.542">
+  <properties/>
+  <testcase name="stable token uses POST credentials only on backend and expires cache early()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest" time="0.009"/>
+  <testcase name="concurrent readers share one token fetch()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest" time="0.006"/>
+  <testcase name="invalid provider replies do not cache or expose raw errors()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest" time="0.008"/>
+  <testcase name="token deadline includes a stalled body and makes no send request()" classname="com.fenleng.platform.infrastructure.WechatMiniSubscriptionTokenProviderTest" time="0.518"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

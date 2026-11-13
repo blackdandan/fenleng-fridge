@@ -1,0 +1,21 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart
+00:00 +0: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: unconfigured optional login never authorizes or contacts backend
+00:00 +1: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: repeated taps share one authorization and one exchange
+00:00 +2: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: cancellation ends loading and permits retry
+00:00 +3: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: closing from a busy listener prevents native authorization starting
+00:00 +4: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: withdrawal during native authorization prevents token exchange
+00:00 +5: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: close during exchange waits and removes late session before disposal
+00:00 +6: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/identity_session_test.dart: withdrawal during restore clears the restored platform session
+00:00 +7: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/guest_feedback_contract_test.dart: real HTTP guest feedback, durable restore, then optional WeChat exchange
+00:00 +8: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: SDK challenge proof confirmation and DELETE preserve credentials until local-only cleanup
+00:00 +9: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: signed-out guest busy and disabled contexts never call profile or provider
+00:00 +10: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: server non-human or pending profile cannot create challenge
+00:00 +11: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: Apple proof follows selected channel without opening Apple login session
+00:00 +12: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: expired challenge cannot ask native provider for proof
+00:00 +13: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: mismatched confirmation key cannot submit DELETE
+00:00 +14: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: cancel during native proof prevents confirmation and preserves session
+00:00 +15: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: old context cleanup never removes a newer successful identity
+00:00 +16: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: local cleanup failure retries its own revision without another DELETE
+00:00 +17: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/platform_deletion_test.dart: foreign user ACK cannot be presented as a deletion receipt
+00:00 +18: All tests passed!

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderEligibilityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:56:33.021Z" hostname="DESKTOP-PF7J11G" time="1.428">
+  <properties/>
+  <testcase name="dispatch eligibility reads current user client application and membership state()" classname="com.fenleng.platform.persistence.MiniReminderEligibilityTest" time="1.428"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/file_storage_test.dart
+00:00 +0: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/file_storage_test.dart: real disk snapshots reload and keep a recoverable previous commit
+00:00 +1: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/file_storage_test.dart: corrupt latest commit recovers backup and preserves corrupt evidence
+00:00 +2: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/file_storage_test.dart: no usable backup fails without replacing corrupt data with an empty fridge
+00:00 +3: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/file_storage_test.dart: corrupt main cannot resurrect a permanently deleted record
+00:00 +4: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: first install has no fictional inventory; defaults preserve calendar schedule
+00:00 +5: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: same-day incremental due records merge once; missed days stay separate
+00:00 +6: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: partial/full resolution updates pending without rewriting original quantity
+00:00 +7: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: absolute remaining values, movement and interval edits preserve pending cycle
+00:00 +8: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: reschedule terminates old cycle; restore creates new cycle; delete resolves pending
+00:00 +9: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: new cycle notifies while old reminder stays completed after restart
+00:00 +10: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: inactivity priority does not get reset by adding or moving inventory
+00:00 +11: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/inventory_test.dart: invalid data never silently replaces existing inventory
+00:00 +12: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/notification_plan_test.dart: notification plan uses local wall time and unique cycle keys without photos or content
+00:00 +13: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/repository_test.dart: serialized concurrent capture never loses a record; failed write is retryable
+00:00 +14: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/notification_plan_test.dart: move and interval preserve schedule; handling, retime and restore replace cycle identity; gone excluded
+00:00 +15: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/repository_test.dart: undo restores prior cycle and recalculates red dot; failure retains undo
+00:00 +16: D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/.fenleng/deliveries/s-z8lqu4tt/06-project/app/packages/core/test/repository_test.dart: stale undo cannot erase a newer capture; numbers stay monotonic
+00:00 +17: All tests passed!

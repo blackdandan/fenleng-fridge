@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "apkSha256": "c700b67354356dcc9d3b2522236a18fc7b261610b37b2648d9244c06ee4c0eee",
+  "scope": "Own API35 AVD cold-home compatibility smoke after shared iOS capacity status addition; not a repeated full notification delivery run",
+  "installedHashMatches": true,
+  "homeWithoutPermissionPrompt": true,
+  "originalInventoryPhotoBytesNotificationFlagsAndOSPermissionUnchanged": true,
+  "artifactNote": "Historical JSON restored from the original successful command log after a QA filename collision. Original PNG/XML were overwritten; current telemetry captures moved to product-telemetry-smoke-20261113.*. No original screenshot is claimed recoverable."
+}

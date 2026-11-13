@@ -1,0 +1,49 @@
+Scope: all 8 workspace projects
+✓ Lockfile passes supply-chain policies (verified 4h ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: D:\.pnpm-store\v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 283, reused 283, downloaded 0, added 272
+Progress: resolved 506, reused 506, downloaded 0, added 495
+Progress: resolved 681, reused 681, downloaded 0, added 670
+Progress: resolved 820, reused 820, downloaded 0, added 809
+Progress: resolved 1034, reused 1034, downloaded 0, added 1025
+Progress: resolved 1076, reused 1076, downloaded 0, added 1072
+Progress: resolved 1076, reused 1076, downloaded 0, added 1073
+Progress: resolved 1076, reused 1076, downloaded 0, added 1074
+Packages: +1076
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1076, reused 1076, downloaded 0, added 1076, done
+.../node_modules/@parcel/watcher install$ node scripts/build-from-source.js
+.../node_modules/@swc/core postinstall$ node postinstall.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.21.5/node_modules/esbuild postinstall$ node install.js
+.../node_modules/@tarojs/binding postinstall$ node postinstall.js
+.../node_modules/@parcel/watcher install: Done
+.../node_modules/@swc/core postinstall: Done
+.../node_modules/@tarojs/binding postinstall: Done
+.../esbuild@0.21.5/node_modules/esbuild postinstall: Done
+.../node_modules/@tarojs/cli postinstall$ node postinstall.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../node_modules/@tarojs/cli postinstall: Done
+
+devDependencies:
++ @babel/core 7.28.5
++ @babel/preset-react 7.28.5
++ @babel/preset-typescript 7.28.5
++ @tarojs/cli 4.3.2
++ @tarojs/plugin-framework-react 4.3.2
++ @tarojs/plugin-platform-weapp 4.3.2
++ @tarojs/webpack5-runner 4.3.2
++ @types/node 22.19.0
++ @types/react 18.3.27
++ babel-preset-taro 4.3.2
++ less 4.4.2
++ sass 1.94.2
++ tsx 4.23.15
++ typescript 5.9.3
++ webpack 5.91.0
+
+Done in 22.1s using pnpm v12.15.0

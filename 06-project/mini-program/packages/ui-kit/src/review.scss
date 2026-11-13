@@ -1,0 +1,17 @@
+.fridge-review-hint { display: block; padding-top: 12px; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale, 1)); line-height: 1.8; color: var(--fridge-muted); }
+.fridge-review-list { display: flex; flex-direction: column; gap: 13px; padding-top: 20px; }
+.fridge-review-card { background: var(--fridge-surface); border: .8px solid var(--fridge-line); border-radius: var(--fridge-radius-card); padding: var(--fridge-space-card); }
+.fridge-review-row { display: flex; gap: 15px; align-items: center; }
+.fridge-review-photo { width: var(--fridge-size-home-photo); flex-shrink: 0; }
+.fridge-review-info { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow-wrap: anywhere; font-size: calc(var(--fridge-font-body) * var(--fridge-text-scale, 1)); }
+.fridge-review-meta { color: var(--fridge-muted); font-size: calc(var(--fridge-font-metadata) * var(--fridge-text-scale, 1)); line-height: 1.8; }
+.fridge-review-info > text:nth-child(2) { padding-top: 5px; }
+.fridge-review-detail { flex-shrink: 0; max-width: 30%; color: var(--fridge-primary) !important; min-width: 44Px; min-height: 44Px; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale, 1)) !important; display: flex; align-items: center; justify-content: center; overflow-wrap: anywhere; }
+.fridge-review-choices { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 5px; margin-top: 16px; }
+.fridge-review-choice { background: var(--fridge-choice-surface) !important; border: .8px solid var(--fridge-choice-line) !important; color: var(--fridge-choice-ink) !important; border-radius: var(--fridge-radius-choice); font-size: calc(var(--fridge-font-choice) * var(--fridge-text-scale, 1)) !important; min-height: 43px; min-height: 44Px; padding: 6px 2px !important; display: flex; align-items: center; justify-content: center; overflow-wrap: anywhere; }
+.fridge-review-choice--selected { background: var(--fridge-selected-surface) !important; border-color: var(--fridge-selected-line) !important; color: var(--fridge-selected-ink) !important; }
+.fridge-review-choice--gone { background: var(--fridge-gone-surface) !important; border-color: var(--fridge-gone-line) !important; color: var(--fridge-gone-ink) !important; }
+.fridge-undo { display: flex; justify-content: space-between; align-items: center; gap: var(--fridge-space-row); padding-top: var(--fridge-space-row); }
+.fridge-undo button { color: var(--fridge-primary); min-height: 44Px; min-width: 44Px; }
+.fridge-review-error { color: var(--fridge-danger); padding-top: var(--fridge-space-row); }
+.fridge-review-empty { display: flex; flex-direction: column; gap: var(--fridge-space-page); padding: 40px 0; text-align: center; }

@@ -1,0 +1,90 @@
+{
+  "stage": "mini reminders client UI/calendar/lifecycle/deep link local implementation",
+  "goalComplete": false,
+  "tests": 91,
+  "failures": 0,
+  "skipped": 0,
+  "checks": {
+    "typescript": "passed",
+    "boundaries": "passed",
+    "weappBuild": "passed",
+    "compiledCapabilities": "passed",
+    "archiveAndInstalledSource": "passed; same candidate as SDK stage",
+    "locales": "20 locales /171 keys /canonical-App-mini exact /placeholders equal",
+    "knowledgeAudit": "passed",
+    "componentProxy": "720 cases /320px /20 locales /light-dark /1x-2x text /9 states; actual component+SCSS with DOM shims, not native WeChat"
+  },
+  "build": {
+    "fileCount": 28,
+    "bytes": 895168,
+    "commonJsWarning": "446KiB exceeds244KiB recommendation",
+    "noAsyncChunksRecommendation": true
+  },
+  "sources": [
+    {
+      "path": "06-project/mini-program/packages/domain/src/mini-reminder-calendar.ts",
+      "sha256": "432b3cbab19d335f05838489fe61edd421d9250b0018d898a204160ad3cd1c97"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/mini-reminder-session.ts",
+      "sha256": "a88dd57df6cc5461702069a0c5fc26a29a754b8ff9e3f8b95f59548f54a101a2"
+    },
+    {
+      "path": "06-project/mini-program/packages/application/src/fridge-controller.ts",
+      "sha256": "fab41b122a94b2e4be2aa4b3aba6c507bb2c2be1466fcda4f7da97ef5f28e9c2"
+    },
+    {
+      "path": "06-project/mini-program/packages/api-client/src/reminders.ts",
+      "sha256": "67891c6a9b6e232c4820047c26718167bc7ef0e186722200214beacebc7ae832"
+    },
+    {
+      "path": "06-project/mini-program/packages/platform-adapters/weapp/src/reminders.ts",
+      "sha256": "91f28498e964d95322740b4c6906a4fc74b7cc14d83e150adb96f75b4ee577b4"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/reminder-runtime.ts",
+      "sha256": "92e2590e41102f18cb35437035cd39056b14a28de9d61407476c4f8056c3478e"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/online-runtime.ts",
+      "sha256": "4546183f61c7bab8e59bb1ffa34d10a87f4d438c191582ffe15baace50b7efd6"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/presentation/subscription-settings.tsx",
+      "sha256": "9dbbf65db6930f088ca8ba0dcf034923fcb5bdca1d7005877c11deed95d6545d"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/pages/account/index.tsx",
+      "sha256": "a9a4b07230e05833d88a22db007a835779208fa64c6f75fd592ea866e6f2c1b7"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/pages/index/index.tsx",
+      "sha256": "e1d1581ebb1e0a13ea3b32de8972e5484c69ac2bc8b88f3d428071a03669c425"
+    },
+    {
+      "path": "06-project/mini-program/apps/miniapp/src/app.tsx",
+      "sha256": "65b2cdc0d5882c5fa55d5a09bd6b224a64877c9addfb4aa933406425c82efe89"
+    },
+    {
+      "path": "06-project/mini-program/packages/ui-kit/src/settings-view.tsx",
+      "sha256": "54580ac0ecf003cc415dfce4f88f4044e5190821c3257cbbaea9728e40d8c143"
+    },
+    {
+      "path": "06-project/mini-program/packages/ui-kit/src/settings.scss",
+      "sha256": "6578664e7e87d1f432d3d0e1df564121a291c4e805925ec26be2ba3a7b962cc3"
+    },
+    {
+      "path": "06-project/contracts/locales/messages.json",
+      "sha256": "8a645d61b7278aaea6ca50c9be9b984c4f06af41bde605c1ddb83990fc5e0c87"
+    }
+  ],
+  "evidenceDirectory": "02-engineering/evidence/mini-reminder-client",
+  "scopeLimits": [
+    "No production platform migration/deployment or SDK push",
+    "No real WeChat AppID/template/host permission/delivery/cancellation proof",
+    "No complete settings-page or native Figma visual claim",
+    "No new APK and no simulator interactions; user preview remains available",
+    "SDK full immutable Git commit closure remains"
+  ],
+  "reproBrowserProxy": "Copy component-build.cjs/check.cjs to .fenleng/mini-subscription-qa/build.cjs/check.cjs; use existing mini pnpm install and .fenleng/web-qa playwright1.56.1, then node build.cjs and check.cjs."
+}

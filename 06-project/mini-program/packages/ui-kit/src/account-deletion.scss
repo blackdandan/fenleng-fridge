@@ -1,0 +1,11 @@
+.fridge-deletion { display: grid; gap: var(--fridge-space-row); border-top: .8px solid var(--fridge-line); padding-top: var(--fridge-space-section); overflow-wrap: anywhere; min-width: 0; }
+.fridge-deletion-title { display: block; font-size: calc(var(--fridge-font-dialog-title) * var(--fridge-text-scale,1)); font-weight: 600; line-height: 1.4; }
+.fridge-deletion-record { display: grid; gap: var(--fridge-space-small); border: .8px solid var(--fridge-line); border-radius: var(--fridge-radius-card); background: var(--fridge-surface); padding: var(--fridge-space-page); min-width: 0; }
+.fridge-deletion-status { font-weight: 600; }
+.fridge-deletion-meta { display: block; font-size: calc(var(--fridge-font-label) * var(--fridge-text-scale,1)); }
+.fridge-deletion-time { display: block; unicode-bidi: plaintext; overflow-wrap: anywhere; }
+.fridge-deletion-error { color: var(--fridge-danger); }
+.fridge-deletion-start .fridge-action { color: var(--fridge-danger) !important; border-color: var(--fridge-danger) !important; }
+.fridge-deletion-confirm { display: grid; gap: var(--fridge-space-page); overflow-wrap: anywhere; }
+.fridge-deletion-confirm-actions { display: grid; gap: var(--fridge-space-row); }
+.fridge-deletion-dialog { max-height: calc(100vh - var(--fridge-host-top,0px) - 32Px - env(safe-area-inset-bottom)); }

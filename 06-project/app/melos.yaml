@@ -1,0 +1,6 @@
+# Workspace membership and scripts are authoritative in pubspec.yaml (Melos 7).
+name: fenleng_fridge_workspace
+packages:
+  - apps/*
+  - packages/*
+  - packages/features/*

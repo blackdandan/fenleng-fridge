@@ -1,0 +1,21 @@
+{
+  "name": "fenleng-fridge-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fenleng/sdk-core": "file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz",
+    "@fenleng/sdk-web": "file:vendor/fenleng-sdk-web-0.5.0-fridge-anonymous-candidate.tgz"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

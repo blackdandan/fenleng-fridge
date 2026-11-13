@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T06:00:25.274Z" hostname="DESKTOP-PF7J11G" time="1.534">
+  <properties/>
+  <testcase name="new exact routes stay under authenticated step-up matcher()" classname="com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest" time="0.075"/>
+  <testcase name="challenge and confirmation expose only scoped fields and no-store()" classname="com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest" time="1.286"/>
+  <testcase name="invalid provider short deletion key and blank proof reject before service()" classname="com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest" time="0.159"/>
+  <testcase name="WeChat challenge retains scoped no-store response without exposing binding()" classname="com.fenleng.platform.interfaces.http.FederatedDeletionReauthenticationHttpControllerTest" time="0.011"/>
+  <system-out><![CDATA[14:00:25.801 [Test worker] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 9.0.1.Final
+14:00:26.222 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+14:00:26.223 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+14:00:26.224 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+14:00:26.644 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+14:00:26.644 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+14:00:26.644 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+14:00:26.803 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+14:00:26.803 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+14:00:26.803 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

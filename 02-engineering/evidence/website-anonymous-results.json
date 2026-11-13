@@ -1,0 +1,32 @@
+{
+  "status": "validated-with-follow-up",
+  "scope": "Local official SDK candidate, real Chromium with intercepted local provider; no production collection",
+  "tests": {
+    "targeted": 16,
+    "browserLifecycle": 9,
+    "localizedLayouts": 80,
+    "build": "passed",
+    "staticAndApkCheck": "passed",
+    "knowledgeAudit": "passed; nextAction=none",
+    "candidateProvenance": "archive SHA and installed source bytes: core12,web17 passed"
+  },
+  "evidence": "02-engineering/evidence/website/anonymous/results.json",
+  "defaultEnabled": false,
+  "anonymous": {
+    "credentials": "omit",
+    "authorization": false,
+    "cookie": false,
+    "identityStorageRead": false,
+    "event": "fridge.website.preview.opened.v1",
+    "properties": {
+      "target": "app"
+    }
+  },
+  "sdkProvenance": "06-project/web/vendor/provenance.json",
+  "remaining": [
+    "Production platform deployment, public website client registration and CORS configuration",
+    "Production domain/TLS and real WeChat download/install validation",
+    "Immutable upstream SDK publication and final delivery archives"
+  ],
+  "goalComplete": false
+}

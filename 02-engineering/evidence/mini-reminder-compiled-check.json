@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "scope": "locale equality/placeholders and compiled capability presence only; not native runtime proof",
+  "locales": 20,
+  "keys": 171,
+  "compiledScripts": 9
+}

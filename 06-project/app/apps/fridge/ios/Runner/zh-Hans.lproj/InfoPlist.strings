@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "用于拍摄食材照片并保存在本机，帮助你记录冰箱库存。不会上传食材照片，也不会录音。你也可以选择相册图片入库。";
+"NSPhotoLibraryUsageDescription" = "本地相册 — 照片与库存仅存本机";
+"CFBundleDisplayName" = "我的冰箱";

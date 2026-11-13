@@ -1,0 +1,112 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.5/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-bootstrap:bootBuildInfo
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:compileKotlin UP-TO-DATE
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar UP-TO-DATE
+> Task :platform-bootstrap:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:compileKotlin UP-TO-DATE
+> Task :platform-infrastructure:compileJava NO-SOURCE
+> Task :platform-infrastructure:processResources NO-SOURCE
+> Task :platform-infrastructure:classes UP-TO-DATE
+> Task :platform-infrastructure:jar UP-TO-DATE
+> Task :platform-interfaces:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-interfaces:compileKotlin UP-TO-DATE
+> Task :platform-interfaces:compileJava NO-SOURCE
+> Task :platform-interfaces:processResources NO-SOURCE
+> Task :platform-interfaces:classes UP-TO-DATE
+> Task :platform-interfaces:jar UP-TO-DATE
+> Task :platform-persistence:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-persistence:compileKotlin UP-TO-DATE
+> Task :platform-persistence:compileJava NO-SOURCE
+> Task :platform-persistence:processResources UP-TO-DATE
+> Task :platform-persistence:classes UP-TO-DATE
+> Task :platform-persistence:jar UP-TO-DATE
+> Task :platform-bootstrap:processResources UP-TO-DATE
+> Task :platform-bootstrap:processTestResources UP-TO-DATE
+
+> Task :platform-bootstrap:compileKotlin
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:80:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:81:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatOfficialWebDeployControlledOperationHandler.kt:82:139 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:78:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:79:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatReleaseControlledOperationHandler.kt:81:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:67:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:68:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatRuntimeConfigControlledOperationHandler.kt:70:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:81:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:82:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/EatWebDeployControlledOperationHandler.kt:84:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:77:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:78:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ReleaseDeployControlledOperationHandler.kt:82:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:80:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:81:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/ScanisterWebDeployControlledOperationHandler.kt:82:139 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:77:35 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:78:96 'fun asText(): String!' is deprecated. Deprecated in Java.
+w: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/main/kotlin/com/fenleng/platform/bootstrap/WebsiteDeployControlledOperationHandler.kt:80:66 'fun asText(): String!' is deprecated. Deprecated in Java.
+
+> Task :platform-bootstrap:compileJava NO-SOURCE
+> Task :platform-bootstrap:classes
+> Task :platform-bootstrap:jar
+
+> Task :platform-bootstrap:compileTestKotlin FAILED
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:15:22 Unresolved reference 'module'.
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:27:26 Unresolved reference 'jacksonObjectMapper'.
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:65:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:85:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:99:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:115:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:129:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+e: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-bootstrap/src/test/kotlin/com/fenleng/platform/bootstrap/UserDataRequestProcessingTransactionTest.kt:141:6 Overload resolution ambiguity between candidates:
+annotation class Test : Any, Annotation
+typealias Test = Test
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':platform-bootstrap:compileTestKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 30s
+17 actionable tasks: 4 executed, 13 up-to-date

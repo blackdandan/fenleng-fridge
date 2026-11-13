@@ -1,0 +1,3 @@
+"NSCameraUsageDescription" = "Fotografa gli alimenti e conserva le immagini su questo dispositivo. Le foto non vengono caricate e non viene registrato audio. Puoi anche scegliere foto dalla libreria.";
+"NSPhotoLibraryUsageDescription" = "Libreria foto — Foto e scorte solo su questo dispositivo";
+"CFBundleDisplayName" = "Il mio frigorifero";

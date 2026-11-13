@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-13T11:46:16.304Z" hostname="DESKTOP-PF7J11G" time="10.507">
+  <properties/>
+  <testcase name="approval cooling period and retention holds prevent remote calls()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="3.934"/>
+  <testcase name="remote success followed by local rollback retries the same UID without losing deletion intent()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="1.868"/>
+  <testcase name="remote failure retains pending state and a successful retry finishes anonymization()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="1.313"/>
+  <testcase name="multiple bound UIDs are retried after partial remote success before local deletion()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="1.213"/>
+  <testcase name="missing managed configuration preserves account and binding without completion()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="1.055"/>
+  <testcase name="account lifecycle readers wait until remote cleanup and anonymization have committed()" classname="com.fenleng.platform.persistence.JdbcFirebaseAccountCleanupTest" time="1.122"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

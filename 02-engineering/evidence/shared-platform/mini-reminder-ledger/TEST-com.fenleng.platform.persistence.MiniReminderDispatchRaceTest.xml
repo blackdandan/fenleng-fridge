@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:27:47.306Z" hostname="DESKTOP-PF7J11G" time="6.903">
+  <properties/>
+  <testcase name="cancel after lost acceptance persistence retains uncertain day dedupe across a new plan()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.286"/>
+  <testcase name="postponement and new count between reservation and send replace the old delivery intent()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.348"/>
+  <testcase name="a template change does not refund the old reservation into a new observed allowance()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.453"/>
+  <testcase name="removal after reservation prevents send and refunds only this never-sent reservation()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.476"/>
+  <testcase name="approved data deletion between reservation and send purges the calendar without resurrecting it()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.338"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

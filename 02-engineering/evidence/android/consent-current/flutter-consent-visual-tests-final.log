@@ -1,0 +1,6 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading D:/Development/WorkSpaces/CodeXWP/fenleng-fridge/06-project/app/apps/fridge/test/consent_screen_test.dart
+00:00 +0: large consent keeps16 margin inside real system insets
+00:00 +1: first consent and declined states support20 locales themes and narrow large text
+00:02 +2: document reads and refusal never imply acceptance, and reconsider is distinct
+00:02 +3: All tests passed!

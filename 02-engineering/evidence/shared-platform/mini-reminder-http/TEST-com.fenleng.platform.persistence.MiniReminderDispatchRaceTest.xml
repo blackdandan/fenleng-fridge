@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-13T03:56:00.362Z" hostname="DESKTOP-PF7J11G" time="7.993">
+  <properties/>
+  <testcase name="cancel after lost acceptance persistence retains uncertain day dedupe across a new plan()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="2.061"/>
+  <testcase name="postponement and new count between reservation and send replace the old delivery intent()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.483"/>
+  <testcase name="a template change does not refund the old reservation into a new observed allowance()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.499"/>
+  <testcase name="removal after reservation prevents send and refunds only this never-sent reservation()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.524"/>
+  <testcase name="approved data deletion between reservation and send purges the calendar without resurrecting it()" classname="com.fenleng.platform.persistence.MiniReminderDispatchRaceTest" time="1.424"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

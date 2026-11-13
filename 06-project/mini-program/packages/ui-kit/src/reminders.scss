@@ -1,0 +1,8 @@
+.fridge-reminders-list { display: flex; flex-direction: column; gap: 12px; padding-top: 27px; }
+.fridge-reminder { display: flex; flex-direction: column; gap: 12px; padding: 20px 17px 8px; background: var(--fridge-surface); border: .8px solid var(--fridge-line); border-radius: 14px; }
+.fridge-reminder-date { font-size: calc(var(--fridge-font-caption) * var(--fridge-text-scale, 1)); color: var(--fridge-muted); }
+.fridge-reminder-title { font-size: calc(var(--fridge-font-body) * var(--fridge-text-scale, 1)); }
+.fridge-reminder-count,.fridge-reminder-status { font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale, 1)); color: var(--fridge-muted); }
+.fridge-reminder-status { display: flex; flex-wrap: wrap; gap: var(--fridge-space-row); justify-content: space-between; }
+.fridge-reminder-open { align-self: flex-start; min-height: 44Px; padding: 8px 0 !important; color: var(--fridge-primary) !important; font-size: calc(var(--fridge-font-secondary) * var(--fridge-text-scale, 1)) !important; }
+.fridge-reminders-empty { display: flex; flex-direction: column; gap: var(--fridge-space-section); align-items: center; padding: 64px 0; }

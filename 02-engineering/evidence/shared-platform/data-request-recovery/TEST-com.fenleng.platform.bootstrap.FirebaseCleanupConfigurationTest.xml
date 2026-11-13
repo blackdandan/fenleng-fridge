@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-13T11:46:59.945Z" hostname="DESKTOP-PF7J11G" time="0.27">
+  <properties/>
+  <testcase name="malformed secret JSON emits a fixed error without input or cause()" classname="com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest" time="0.072"/>
+  <testcase name="cleanup is opt in and does not inspect unrelated disabled credentials()" classname="com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest" time="0.157"/>
+  <testcase name="server configuration parses credentials with redacted diagnostic representation()" classname="com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest" time="0.037"/>
+  <testcase name="enrolled product with no credentials reports unconfigured()" classname="com.fenleng.platform.bootstrap.FirebaseCleanupConfigurationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

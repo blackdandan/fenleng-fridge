@@ -1,0 +1,14 @@
+name: fridge_inventory
+version: 0.1.0
+publish_to: none
+resolution: workspace
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  fridge_core: any
+  fridge_navigation: any
+  fridge_ui_kit: any
+dev_dependencies:
+  test: 1.30.0

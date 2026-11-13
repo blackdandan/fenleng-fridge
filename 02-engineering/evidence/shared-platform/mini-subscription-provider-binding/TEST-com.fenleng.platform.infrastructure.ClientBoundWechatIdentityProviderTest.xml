@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.fenleng.platform.infrastructure.ClientBoundWechatIdentityProviderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-13T02:55:28.451Z" hostname="DESKTOP-PF7J11G" time="0.025">
+  <properties/>
+  <testcase name="routes Fenleng Eat clients to their isolated configured providers()" classname="com.fenleng.platform.infrastructure.ClientBoundWechatIdentityProviderTest" time="0.025"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
