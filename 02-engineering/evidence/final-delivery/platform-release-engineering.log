@@ -1,0 +1,1 @@
+PASS release engineering: 3 local OCI targets, single-host Compose, loopback isolation, runtime Admin config and security headers

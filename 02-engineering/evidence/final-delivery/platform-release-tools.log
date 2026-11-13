@@ -1,0 +1,16 @@
+PASS candidate manifest tests: immutable registry triplet and RC version gate
+✔ scripts\release\create_candidate_manifest.test.mjs (150.6996ms)
+PASS release assets: 25 deterministic deployment files
+✔ scripts\release\release_assets.test.mjs (47.6545ms)
+PASS runtime environment tests: completeness, conditional requirements, secret isolation, formats and env parsing
+✔ scripts\release\runtime_environment.test.mjs (54.3914ms)
+PASS single-host preflight tests: roots, local images, ports and environment isolation
+✔ scripts\release\single_host_preflight.test.mjs (54.3549ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 156.7401

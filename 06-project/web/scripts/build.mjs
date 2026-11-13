@@ -48,7 +48,7 @@ if(androidArtifact){
 const publicMetadata={releaseStatus:'development',android,ios:{status:'unreleased'},harmonyos:{status:'unreleased'},wechat:{status:'unreleased'},legalVersion:'V0.4'};
 fs.writeFileSync(path.join(dist,'release.json'),JSON.stringify(publicMetadata,null,2)+'\n');
 function cards(prefix=''){
- const androidCard=android?`<a class="button android-download" data-i18n="androidDownload" href="${prefix}${android.url}" download>下载 Android 开发预览</a><div class="artifact-meta"><p>Android ${escape(android.version)} (${escape(android.build)}) · ${(android.bytes/1048576).toFixed(1)} MiB</p><p data-i18n="androidPreviewKind">Debug APK · 未加固 · 仅供开发预览</p><span class="hash-label">SHA-256</span><code dir="ltr">${android.sha256}</code><p data-i18n="preview">开发预览，尚未正式发布</p></div>`:`<div class="channel"><strong>Android</strong><span data-i18n="unreleased">尚未发布</span></div>`;
+ const androidCard=android?`<a class="button android-download" data-i18n="androidDownload" href="${prefix}${android.url}" download>下载 Android 开发预览</a><div class="artifact-meta"><p>Android ${android.architecture?escape(android.architecture)+' · ':''}${escape(android.version)} (${escape(android.build)}) · ${(android.bytes/1048576).toFixed(1)} MiB</p><p data-i18n="androidPreviewKind">Debug APK · 未加固 · 仅供开发预览</p><span class="hash-label">SHA-256</span><code dir="ltr">${android.sha256}</code><p data-i18n="preview">开发预览，尚未正式发布</p></div>`:`<div class="channel"><strong>Android</strong><span data-i18n="unreleased">尚未发布</span></div>`;
  return androidCard+['iPhone / iPad','HarmonyOS NEXT','WeChat Mini Program'].map(name=>`<div class="channel"><strong>${name}</strong><span data-i18n="unreleased">尚未发布</span></div>`).join('');
 }
 function footer(prefix=''){

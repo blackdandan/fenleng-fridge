@@ -5,12 +5,28 @@ import stat
 import tempfile
 import unittest
 import zipfile
-from preview_bundle import atomic_write, restore, sha256, snapshot, verify_bundle, verify_release_tree, wait_healthy
+from preview_bundle import atomic_write, restore, sha256, snapshot, verify_bundle, verify_release_tree, verify_active_release, wait_healthy
 
 WORKSPACE = Path(__file__).resolve().parents[2]
 
 
 class PreviewBundleTest(unittest.TestCase):
+    def test_update_requires_the_exact_previous_content(self):
+        releases = self.root / 'releases'
+        releases.mkdir()
+        content = 'a' * 64
+        target = releases / content[:12]
+        target.mkdir()
+        manifest = {'contentId': content, 'files': {}}
+        (target / 'ARTIFACT-MANIFEST.json').write_text(json.dumps(manifest))
+        link = self.root / 'active'
+        link.symlink_to(target, target_is_directory=True)
+        self.assertEqual(verify_active_release(link, releases, content), target)
+        with self.assertRaisesRegex(ValueError, 'IDENTITY_MISMATCH'):
+            verify_active_release(link, releases, 'b' * 64)
+        with self.assertRaisesRegex(ValueError, 'PREVIOUS_CONTENT_ID_REQUIRED'):
+            verify_active_release(link, releases, '')
+
     def setUp(self):
         parent = WORKSPACE / '.fenleng/publish-tests'
         parent.mkdir(parents=True, exist_ok=True)

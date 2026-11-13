@@ -49,6 +49,41 @@ void main() {
         'accepted': (jsonDecode(requests[index].body)['events'] as List).length
       }),
       200));
+  test('registered events carry a stable UUID through a lost reply', () async {
+    var generated = 0;
+    telemetry = FlutterTelemetrySDK(
+        client: telemetry.client,
+        hasConsent: () => true,
+        catalog: {'test.event.v1'},
+        context: telemetry.context,
+        deliveryIdFactory: () {
+          generated++;
+          return '0b9c3fc2-3e97-4ead-a4b6-f28384c4a6b8';
+        });
+    track('a');
+    final first = telemetry.flush('first');
+    await waitRequest(1);
+    responses[0].completeError(StateError('reply lost'));
+    await expectLater(first, throwsA(anything));
+    final retry = telemetry.flush('different');
+    await waitRequest(2);
+    expect(requests[1].body, requests[0].body);
+    expect(jsonDecode(requests[1].body)['events'][0]['deliveryId'],
+        '0b9c3fc2-3e97-4ead-a4b6-f28384c4a6b8');
+    expect(generated, 1);
+    complete(1);
+    expect(await retry, 1);
+  });
+  test('invalid delivery ID is rejected before queuing', () {
+    telemetry = FlutterTelemetrySDK(
+        client: telemetry.client,
+        hasConsent: () => true,
+        catalog: {'test.event.v1'},
+        context: telemetry.context,
+        deliveryIdFactory: () => 'invalid');
+    expect(() => track('a'), throwsA(isA<FenlengSdkException>()));
+    expect(telemetry.pendingCount, 0);
+  });
   test('overflow preserves events added during a flush', () async {
     track('a');
     track('b');

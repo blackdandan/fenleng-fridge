@@ -17,17 +17,17 @@ dependencies:
   fenleng_sdk_flutter_firebase_identity:
     git:
       url: https://github.com/blackdandan/fenleng-client-sdk.git
-      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
       path: packages/sdk-flutter-firebase-identity
   fenleng_sdk_flutter:
     git:
       url: https://github.com/blackdandan/fenleng-client-sdk.git
-      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
       path: packages/sdk-flutter
   fenleng_sdk_flutter_native_identity:
     git:
       url: https://github.com/blackdandan/fenleng-client-sdk.git
-      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
       path: packages/sdk-flutter-native-identity
   camera_ohos:
     git:
@@ -47,7 +47,7 @@ dependencies:
   fenleng_sdk_flutter_china_permissions:
     git:
       url: https://github.com/blackdandan/fenleng-client-sdk.git
-      ref: 334611afbd9ae4be95771159a5cd00dc6f0ba31f
+      ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
       path: packages/sdk-flutter-china-permissions
   fridge_core: any
   fridge_navigation: any

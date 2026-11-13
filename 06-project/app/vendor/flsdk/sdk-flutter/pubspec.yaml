@@ -1,6 +1,6 @@
 name: fenleng_sdk_flutter
 description: Official Fenleng Client SDK for Flutter (Auth, Commerce, Storage, and AI Stream)
-version: 0.5.0
+version: 0.6.0
 homepage: https://github.com/blackdandan/fenleng-client-sdk
 
 environment:

@@ -1,3 +1,7 @@
+# 当前状态补充（2026-11-13最终交接）
+
+Shared Platform rc138/V63与独立HTTPS官网已实际部署，旧“未部署/证书不匹配”诊断是首次绑定前的历史记录。最新证据见02-engineering/evidence/final-delivery；剩余真实配置与端侧验收由Owner接续。
+
 # 外部验收当前状态
 
 当前更新：Owner随后明确批准开发预览发布，独立站点和匹配证书已上线，完整外网APK下载哈希通过。最新事实见preview-website-runbook.md及02-engineering/evidence/website-preview-production-results.json；下文保留发布前诊断过程，不代表当前仍缺证书或server_name。真实微信手机验收与正式发行仍待办。

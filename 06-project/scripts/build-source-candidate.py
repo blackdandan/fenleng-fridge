@@ -1,4 +1,4 @@
-"""Build a content-addressed, self-contained source candidate without publishing SDKs."""
+"""Build a content-addressed, self-contained source candidate using the published, hash-frozen official SDK."""
 import hashlib
 import json
 import os
@@ -9,8 +9,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / '.fenleng/deliveries'
-SDK = ROOT.parent / 'fenleng-client-sdk'
-BASELINE = '334611afbd9ae4be95771159a5cd00dc6f0ba31f'
+SDK = ROOT / '06-project/app/vendor/flsdk'
 PACKAGES = ['sdk-flutter', 'sdk-flutter-native-identity', 'sdk-flutter-firebase-identity']
 SKIP_DIRS = {'.git', '.fenleng', 'node_modules', '.dart_tool', '.fvm', 'build', 'dist', '.gradle', '__pycache__', '.idea', '.swc', '.cache'}
 SKIP_NAMES = {'pubspec_overrides.yaml', 'local.properties', 'key.properties', 'credentials.properties',
@@ -49,7 +48,7 @@ def digest(path):
 def main():
     OUTPUT.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix='s-', dir=OUTPUT))
-    for name in ['00-context', '01-product', '02-engineering', '03-deployment', '04-operations', '05-knowledge', '06-project', '.agents', 'docs/ai-coding-audits']:
+    for name in ['00-context', '01-product', '02-engineering', '03-deployment', '04-operations', '05-knowledge', '06-project', '.agents', 'docs/ai-coding-audits', 'docs/ip']:
         if (ROOT / name).is_dir():
             copy_tree(ROOT / name, staging / name)
     for name in ['AGENTS.md', 'README.md', '.gitignore', 'fenleng.project.yaml']:
@@ -57,30 +56,23 @@ def main():
             shutil.copyfile(ROOT / name, staging / name)
     # Keep paths below the Windows MAX_PATH limit, including native Java names.
     vendor = staging / '06-project/app/vendor/flsdk'
-    for package in PACKAGES:
-        copy_tree(SDK / 'packages' / package, vendor / package)
-        if not (vendor / package / 'pubspec.yaml').is_file():
-            raise RuntimeError('Missing official SDK candidate package: ' + package)
-    if (SDK / 'LICENSE').is_file():
-        shutil.copyfile(SDK / 'LICENSE', vendor / 'UPSTREAM-LICENSE')
-    sdk_files = {str(p.relative_to(vendor)).replace('\\', '/'): digest(p)
-                 for p in sorted(vendor.rglob('*')) if p.is_file()}
-    (vendor / 'candidate-provenance.json').write_text(json.dumps({
-        'repository': 'https://github.com/blackdandan/fenleng-client-sdk', 'baselineCommit': BASELINE,
-        'sourceMode': 'local-worktree-candidate', 'published': False, 'sourceFiles': sdk_files,
-    }, indent=2) + '\n', encoding='utf-8')
-    overrides = ['# Delivery candidate only; official SDK publication remains separate.', 'dependency_overrides:']
+    provenance = json.loads((vendor / 'candidate-provenance.json').read_text(encoding='utf-8'))
+    assert provenance['published'] is True
+    sdk_files = provenance['sourceFiles']
+    for name, expected in sdk_files.items():
+        assert digest(vendor / name) == expected, name
+    overrides = ['# Published official SDK snapshot, recorded by immutable commit.', 'dependency_overrides:']
     for package in PACKAGES:
         key = 'fenleng_' + package.replace('-', '_')
         overrides += ['  ' + key + ':', '    path: vendor/flsdk/' + package]
     (staging / '06-project/app/pubspec_overrides.yaml').write_text('\n'.join(overrides) + '\n', encoding='utf-8')
-    readme = '''# Source candidate\n\nThis archive contains the current product source and three unpublished official SDK candidates, each identified by file hashes. It is not an official SDK release or a production deployment.\n\nFrom `06-project/app`, run `fvm use --skip-pub-get --skip-setup --force`, then `fvm dart pub get`. The archive-only pubspec_overrides.yaml resolves the bundled SDK packages without a sibling checkout. Use the project Android packaging entry; restore the existing fixed signing identity through the documented Vault workflow before building a signed package. Do not generate another key.\n\nThe fixed Flutter-OH SDK may require Harmony tooling for automatic Flutter pub/platform generation. The maintained `06-project/scripts/refresh-mobile-plugins.dart` supports the documented Android/iOS-only refresh; it does not validate Harmony compilation.\n\nSee 02-engineering/plans/full-implementation.md, 03-deployment/identity-configuration.md, 04-operations/owner-follow-ups.md and 05-knowledge/signinfo/application-signing-info.json. Provider credentials, production registrations, deployment, SDK publication and device validation remain explicitly recorded follow-ups.\n\nNo signing keystore/password, provisioning profile, local device data, dependency cache or build output is included.\n'''
+    readme = '''# Source candidate\n\nThis archive contains the current product source and three official SDK packages frozen from published commit b5e529f, each identified by file hashes. It is not an official SDK release or a production deployment.\n\nFrom `06-project/app`, run `fvm use --skip-pub-get --skip-setup --force`, then `fvm dart pub get`. The archive-only pubspec_overrides.yaml resolves the bundled SDK packages without a sibling checkout. Use the project Android packaging entry; restore the existing fixed signing identity through the documented Vault workflow before building a signed package. Do not generate another key.\n\nThe fixed Flutter-OH SDK may require Harmony tooling for automatic Flutter pub/platform generation. The maintained `06-project/scripts/refresh-mobile-plugins.dart` supports the documented Android/iOS-only refresh; it does not validate Harmony compilation.\n\nSee 02-engineering/plans/full-implementation.md, 03-deployment/identity-configuration.md, 04-operations/owner-follow-ups.md and 05-knowledge/signinfo/application-signing-info.json. Production platform and preview deployment are verified; provider registration and device validation remain Owner follow-ups.\n\nNo signing keystore/password, provisioning profile, local device data, dependency cache or build output is included.\n'''
     (staging / 'SOURCE-CANDIDATE.md').write_text(readme, encoding='utf-8')
     files = {str(p.relative_to(staging)).replace('\\', '/'): digest(p)
              for p in sorted(staging.rglob('*')) if p.is_file()}
     content_id = hashlib.sha256(''.join(f'{value}  {name}\n' for name, value in sorted(files.items())).encode()).hexdigest()
     manifest = {'kind': 'self-contained-source-candidate', 'contentId': content_id, 'goalComplete': False,
-                'sdkPublished': False, 'files': files}
+                'sdkPublished': True, 'files': files}
     (staging / 'CANDIDATE-MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     archive = OUTPUT / ('fenleng-fridge-source-candidate-' + content_id[:12] + '.zip')
     if archive.exists():

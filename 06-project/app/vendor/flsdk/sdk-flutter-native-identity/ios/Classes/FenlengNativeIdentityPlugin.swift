@@ -1,14 +1,22 @@
 import Flutter
 import UIKit
+import AuthenticationServices
 import WechatOpenSDK
 
-public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDelegate, FlutterSceneLifeCycleDelegate {
+public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDelegate, FlutterSceneLifeCycleDelegate, ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding {
   public static let shared = FenlengNativeIdentityPlugin()
 
   private var appId: String?
   private var scope = "snsapi_userinfo"
   private var expectedState: String?
   private var pendingResult: FlutterResult?
+  private var pendingAppleResult: FlutterResult?
+  private var appleState: String?
+  private var appleController: ASAuthorizationController?
+  private var appleAnchor: UIWindow?
+  private var appleTokenOnly = false
+
+
   private var timeout: DispatchWorkItem?
   private var retiredStates: [String] = []
 
@@ -26,10 +34,14 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
     switch call.method {
     case "configureWechat": configureWechat(arguments, result: result)
     case "isAvailable":
-      guard provider(arguments) == "wechat" else { result(false); return }
-      guard appId != nil else { fail(result, "IDENTITY_NOT_CONFIGURED", "微信身份渠道尚未配置"); return }
-      result(WXApi.isWXAppInstalled())
+      switch provider(arguments) {
+      case "apple": result(true)
+      case "wechat": result(WXApi.isWXAppInstalled())
+      default: result(false)
+      }
+    case "authorizeApple": authorizeApple(result, tokenOnly: false)
     case "authorize":
+      if provider(arguments) == "apple" { authorizeApple(result, tokenOnly: true); return }
       guard provider(arguments) == "wechat" else {
         fail(result, "IDENTITY_PROVIDER_UNSUPPORTED", "当前身份渠道尚未接入", provider(arguments))
         return
@@ -63,7 +75,7 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
   private func authorizeWechat(_ result: @escaping FlutterResult) {
     guard appId != nil else { fail(result, "IDENTITY_NOT_CONFIGURED", "微信身份渠道尚未配置"); return }
     guard WXApi.isWXAppInstalled() else { fail(result, "WECHAT_NOT_INSTALLED", "请先安装微信"); return }
-    guard pendingResult == nil else { fail(result, "IDENTITY_AUTH_IN_PROGRESS", "身份授权正在进行"); return }
+    guard pendingResult == nil && pendingAppleResult == nil else { fail(result, "IDENTITY_AUTH_IN_PROGRESS", "身份授权正在进行"); return }
     let state = "fenleng_\(UUID().uuidString.replacingOccurrences(of: "-", with: ""))"
     let request = SendAuthReq()
     request.scope = scope
@@ -83,6 +95,76 @@ public final class FenlengNativeIdentityPlugin: NSObject, FlutterPlugin, WXApiDe
         self?.finishError("WECHAT_SEND_FAILED", "无法打开微信授权")
       }
     }
+  }
+
+  private func authorizeApple(_ result: @escaping FlutterResult, tokenOnly: Bool) {
+    guard pendingResult == nil && pendingAppleResult == nil else {
+      fail(result, "IDENTITY_AUTH_IN_PROGRESS", "身份授权正在进行"); return
+    }
+    let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+    guard let window = scenes.filter({ $0.activationState == .foregroundActive })
+      .flatMap({ $0.windows }).first(where: { $0.isKeyWindow }) else {
+      fail(result, "IDENTITY_UNAVAILABLE", "当前无法展示 Apple 授权"); return
+    }
+    let request = ASAuthorizationAppleIDProvider().createRequest()
+    let state = "fenleng_apple_\(UUID().uuidString)"
+    request.state = state
+    request.requestedScopes = [.fullName, .email]
+    appleState = state
+    appleAnchor = window
+    pendingAppleResult = result
+    appleTokenOnly = tokenOnly
+    let controller = ASAuthorizationController(authorizationRequests: [request])
+    appleController = controller
+    controller.delegate = self
+    controller.presentationContextProvider = self
+    controller.performRequests()
+  }
+
+  public func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+    appleAnchor ?? ASPresentationAnchor()
+  }
+
+  public func authorizationController(controller: ASAuthorizationController,
+                                      didCompleteWithAuthorization authorization: ASAuthorization) {
+    guard pendingAppleResult != nil else { return }
+    guard let credential = authorization.credential as? ASAuthorizationAppleIDCredential,
+          credential.state == appleState,
+          let data = credential.identityToken,
+          let token = String(data: data, encoding: .utf8), !token.isEmpty else {
+      finishAppleError("APPLE_IDENTITY_TOKEN_MISSING", "Apple 未返回有效身份凭据"); return
+    }
+    var payload = ["identityToken": token]
+    if let components = credential.fullName {
+      let name = PersonNameComponentsFormatter().string(from: components)
+        .trimmingCharacters(in: .whitespacesAndNewlines)
+      if !name.isEmpty { payload["displayName"] = String(name.prefix(120)) }
+    }
+    let result = pendingAppleResult
+    let tokenOnly = appleTokenOnly
+    clearApple()
+    if tokenOnly { result?(token) } else { result?(payload) }
+  }
+
+  public func authorizationController(controller: ASAuthorizationController,
+                                      didCompleteWithError error: Error) {
+    let cancelled = (error as? ASAuthorizationError)?.code == .canceled
+    finishAppleError(cancelled ? "APPLE_AUTH_CANCELLED" : "APPLE_AUTH_FAILED",
+                     cancelled ? "已取消 Apple 授权" : "Apple 身份授权未完成")
+  }
+
+  private func clearApple() {
+    pendingAppleResult = nil
+    appleState = nil
+    appleController = nil
+    appleAnchor = nil
+    appleTokenOnly = false
+  }
+
+  private func finishAppleError(_ code: String, _ message: String) {
+    let result = pendingAppleResult
+    clearApple()
+    fail(result, code, message)
   }
 
   public func onResp(_ response: BaseResp) {

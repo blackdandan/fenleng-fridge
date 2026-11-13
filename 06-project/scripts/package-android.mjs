@@ -8,6 +8,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const app = path.join(root, '06-project/app/apps/fridge');
 const standard = path.join(root, '.agents/skills/fl-ai-coding-delivery/scripts/package-flutter-android.mjs');
 const args = process.argv.slice(2);
+const splitPreview = args.includes('--split-preview');
+if (splitPreview && (args[args.indexOf('--mode')+1] !== 'debug' || args[args.indexOf('--channel')+1] !== 'china')) {
+  throw new Error('--split-preview is only for the explicitly authorized China Debug preview');
+}
 if (!args.includes('--mode') || !args.includes('--channel')) throw new Error('Pass explicit --mode debug|release and --channel china|global');
 const environment = {...process.env};
 // Upstream OH repositories include missing LFS objects in unused example apps.
@@ -67,11 +71,37 @@ if (process.platform === 'win32') {
   environment.FVM_CACHE_PATH = path.dirname(versions);
 }
 try {
-  const result = spawnSync(process.execPath, [standard, '--project', app, ...args], {
-    cwd: root, env: environment, stdio: 'inherit',
-  });
-  if (result.error) throw result.error;
-  process.exitCode = result.status ?? 1;
+  if (splitPreview) {
+    // Rebuild a compact ZIP from clean outputs and one Flutter engine per APK.
+    // Formal Release packaging continues through the standard hardening workflow.
+    const probe = spawnSync('where.exe', ['fvm.exe'], {encoding:'utf8'});
+    if (probe.status !== 0) throw new Error('FVM executable is required');
+    const fvm = probe.stdout.trim().split(/\r?\n/)[0];
+    const flutterRoot = fs.realpathSync(path.join(root, '06-project/app/.fvm/flutter_sdk'));
+    const run = (command, parameters, cwd=app) => {
+      const result=spawnSync(command, parameters, {cwd,env:environment,stdio:'inherit'});
+      if(result.error)throw result.error;
+      if(result.status!==0)throw new Error(`Preview packaging failed (${result.status})`);
+    };
+    const previous=path.join(app,'build/app/outputs/flutter-apk/app-debug.apk');
+    if(fs.existsSync(previous)) {
+      const backup=path.join(root,'.fenleng/android-before-size-optimization.apk');
+      if(!fs.existsSync(backup))fs.copyFileSync(previous,backup);
+    }
+    run(fvm,['flutter','clean']);
+    run(fvm,['dart','pub','get']);
+    const dart=path.join(flutterRoot,'bin/cache/dart-sdk/bin',process.platform==='win32'?'dart.exe':'dart');
+    run(dart,[`--packages=${path.join(flutterRoot,'packages/flutter_tools/.dart_tool/package_config.json')}`,
+      path.join(root,'06-project/scripts/refresh-mobile-plugins.dart'),app,flutterRoot]);
+    run(fvm,['flutter','build','apk','--debug','--no-pub','--split-per-abi',
+      '--target-platform','android-arm,android-arm64,android-x64','--dart-define=APP_RELEASE_CHANNEL=china']);
+  } else {
+    const result = spawnSync(process.execPath, [standard, '--project', app, ...args], {
+      cwd: root, env: environment, stdio: 'inherit',
+    });
+    if (result.error) throw result.error;
+    process.exitCode = result.status ?? 1;
+  }
 } finally {
   if (isolated) {
     const actual = fs.realpathSync(isolated);

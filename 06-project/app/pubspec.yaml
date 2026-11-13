@@ -11,8 +11,8 @@ workspace:
   - packages/features/feature_settings
 dev_dependencies:
   melos: 7.8.2
-# Exact official SDK candidates already verified in the delivery archive.
-# Remove these overrides only when the same changes have an immutable upstream release.
+# Frozen official SDK commit b5e529f; byte hashes are recorded in vendor/flsdk.
+# Keep local reproducible resolution independent of a sibling workspace.
 dependency_overrides:
   fenleng_sdk_flutter:
     path: vendor/flsdk/sdk-flutter

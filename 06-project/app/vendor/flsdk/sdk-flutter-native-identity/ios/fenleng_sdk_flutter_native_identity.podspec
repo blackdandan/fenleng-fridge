@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'fenleng_sdk_flutter_native_identity'
-  s.version          = '0.1.0'
+  s.version          = '0.3.0'
   s.summary          = 'Optional native identity providers for Fenleng Flutter clients.'
   s.homepage         = 'https://github.com/blackdandan/fenleng-client-sdk'
   s.license          = { :type => 'Proprietary', :text => 'Copyright Fenleng Engineering' }

@@ -21,6 +21,12 @@ android {
     namespace = "com.fenlengtech.fridge"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "29.0.14206865"
+    packaging {
+        jniLibs {
+            // Optional GPU validation tooling is unnecessary in downloadable previews.
+            excludes += "**/libVkLayer_khronos_validation.so"
+        }
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17

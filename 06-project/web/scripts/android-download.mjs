@@ -41,6 +41,7 @@ export function prepareAndroidDownload({root,args=[],environment=process.env,ins
   const artifactFilename=`fridge-${match[3]}-${match[2]}-android-debug.apk`;
   assert.equal(path.basename(artifactFilename),artifactFilename,'APK version cannot form a download filename');
   const filename='fenleng-fridge_latest.apk';
+  const architecture=info.match(/^native-code: '([^']+)'\s*$/m)?.[1];
   return {absolute,filename,metadata:{url:'downloads/'+filename,artifactFilename,version:match[3],build:match[2],bytes:fs.statSync(absolute).size,
-    sha256,certificateSha256:certificate,kind:'debug-preview'}};
+    sha256,certificateSha256:certificate,kind:'debug-preview',...(architecture?{architecture}:{})}};
 }

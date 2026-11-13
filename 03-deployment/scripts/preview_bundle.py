@@ -95,6 +95,21 @@ def wait_healthy(check, attempts=10, sleep=time.sleep):
             sleep(1)
 
 
+def verify_active_release(link, releases, expected):
+    if not isinstance(expected, str) or len(expected) != 64 or any(c not in '0123456789abcdef' for c in expected):
+        raise ValueError('PREVIOUS_CONTENT_ID_REQUIRED')
+    if not link.is_symlink():
+        raise ValueError('ACTIVE_RELEASE_LINK_REQUIRED')
+    target = link.resolve(strict=True)
+    if target.parent != releases.resolve() or target.name != expected[:12]:
+        raise ValueError('ACTIVE_RELEASE_IDENTITY_MISMATCH')
+    manifest = json.loads((target / 'ARTIFACT-MANIFEST.json').read_text())
+    if manifest.get('contentId') != expected:
+        raise ValueError('ACTIVE_RELEASE_IDENTITY_MISMATCH')
+    verify_release_tree(target, manifest)
+    return target
+
+
 def snapshot(config, link, backup):
     backup.mkdir(parents=True, exist_ok=False)
     if config.is_symlink() or (link.exists() and not link.is_symlink()):

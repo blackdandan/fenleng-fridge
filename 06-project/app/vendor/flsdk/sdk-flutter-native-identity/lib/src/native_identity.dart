@@ -37,8 +37,23 @@ abstract interface class FenlengNativeIdentityClient {
   Future<String> authorize(FenlengNativeIdentityProvider provider);
 }
 
+final class FenlengAppleIdentityCredential {
+  const FenlengAppleIdentityCredential(
+      {required this.identityToken, this.displayName});
+  final String identityToken;
+  final String? displayName;
+  @override
+  String toString() =>
+      'FenlengAppleIdentityCredential(identityToken: <redacted>)';
+}
+
+/// Optional additive interface; existing WeChat hosts remain source-compatible.
+abstract interface class FenlengAppleIdentityClient {
+  Future<FenlengAppleIdentityCredential> authorizeApple();
+}
+
 final class MethodChannelFenlengNativeIdentity
-    implements FenlengNativeIdentityClient {
+    implements FenlengNativeIdentityClient, FenlengAppleIdentityClient {
   const MethodChannelFenlengNativeIdentity();
 
   static const MethodChannel _channel =
@@ -67,6 +82,25 @@ final class MethodChannelFenlengNativeIdentity
       );
     }
     return code;
+  }
+
+  @override
+  Future<FenlengAppleIdentityCredential> authorizeApple() async {
+    final raw = await _invoke<Object?>('authorizeApple');
+    if (raw is! Map ||
+        raw['identityToken'] is! String ||
+        (raw['identityToken'] as String).trim().isEmpty ||
+        (raw['identityToken'] as String).length > 16384 ||
+        (raw['identityToken'] as String).contains('\r') ||
+        (raw['identityToken'] as String).contains('\n') ||
+        (raw['displayName'] != null && raw['displayName'] is! String)) {
+      throw const FenlengNativeIdentityException(
+          'APPLE_IDENTITY_TOKEN_MISSING', 'Apple credential is invalid');
+    }
+    return FenlengAppleIdentityCredential(
+      identityToken: raw['identityToken'] as String,
+      displayName: raw['displayName'] as String?,
+    );
   }
 
   Future<T?> _invoke<T>(String method, [Map<String, Object>? arguments]) async {

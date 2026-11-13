@@ -4,7 +4,7 @@ packages:
   - packages/platform-adapters/*
 overrides:
   webpack: 5.91.0
-  '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz
+  '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz
 allowBuilds:
   '@parcel/watcher': true
   '@swc/core': true

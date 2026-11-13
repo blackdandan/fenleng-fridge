@@ -11,6 +11,41 @@ void main() {
       .instance.defaultBinaryMessenger
       .setMockMethodCallHandler(channel, null));
 
+  test('typed native Apple result preserves one-shot name and redacts token',
+      () async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, (call) async {
+      expect(call.method, 'authorizeApple');
+      return {'identityToken': 'fixture.apple.token', 'displayName': '测试用户'};
+    });
+    final result = await client.authorizeApple();
+    expect(result.identityToken, 'fixture.apple.token');
+    expect(result.displayName, '测试用户');
+    expect(result.toString(), isNot(contains('fixture.apple.token')));
+  });
+  for (final value in [
+    null,
+    {},
+    {'identityToken': ''},
+    {'identityToken': 'bad\ncredential'}
+  ]) {
+    test('rejects malformed Apple result', () async {
+      TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+          .setMockMethodCallHandler(channel, (_) async => value);
+      await expectLater(client.authorizeApple(),
+          throwsA(isA<FenlengNativeIdentityException>()));
+    });
+  }
+  test('Apple cancellation keeps its stable code', () async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, (_) async {
+      throw PlatformException(code: 'APPLE_AUTH_CANCELLED');
+    });
+    await expectLater(
+        client.authorizeApple(),
+        throwsA(isA<FenlengNativeIdentityException>()
+            .having((e) => e.code, 'code', 'APPLE_AUTH_CANCELLED')));
+  });
   test('configuration forwards only the existing public identity contract',
       () async {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger

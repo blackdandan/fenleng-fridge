@@ -9,7 +9,7 @@ from pathlib import Path
 import subprocess
 import urllib.request
 import zipfile
-from preview_bundle import atomic_write, restore, sha256, snapshot, verify_bundle, verify_release_tree, wait_healthy
+from preview_bundle import atomic_write, restore, sha256, snapshot, verify_bundle, verify_release_tree, verify_active_release, wait_healthy
 
 ROOT = Path('/opt/fenleng-websites/fenleng-fridge')
 CONFIG = Path('/etc/nginx/conf.d/fenleng-fridge.conf')
@@ -81,7 +81,7 @@ def health(release):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('action', choices=['verify', 'deploy', 'rollback', 'install-renewal-hook'])
+    parser.add_argument('action', choices=['verify', 'deploy', 'update', 'rollback', 'install-renewal-hook'])
     args = parser.parse_args()
     binding = json.loads((HERE / 'binding.json').read_text())
     if (binding['host'] != 'root@121.199.10.6' or binding['domain'] != DOMAIN
@@ -130,7 +130,12 @@ def main():
             nginx_reload()
             print(json.dumps({'status': 'rolled-back', 'backup': str(backup)}))
             return
-        if CONFIG.exists() or LINK.exists() or LINK.is_symlink():
+        updating = args.action == 'update'
+        if updating:
+            if not CONFIG.is_file() or CONFIG.is_symlink():
+                raise ValueError('EXISTING_CONFIG_REQUIRED')
+            verify_active_release(LINK, ROOT / 'releases', binding.get('previousContentId', ''))
+        elif CONFIG.exists() or LINK.exists() or LINK.is_symlink():
             raise ValueError('FIRST_BINDING_TARGET_OCCUPIED_REVIEW_REQUIRED')
         release_dir = ROOT / 'releases' / version
         reused = release_dir.exists()
@@ -149,11 +154,12 @@ def main():
                             shutil.copyfileobj(source, destination, 1024 * 1024)
                         target.chmod(0o644)
             verify_release_tree(release_dir, manifest)
-            atomic_write(CONFIG, config_bytes(False))
-            nginx_reload()
-            run(['/usr/bin/certbot', 'certonly', '--non-interactive', '--webroot',
-                 '-w', '/var/www/html', '--preferred-challenges', 'http',
-                 '--cert-name', DOMAIN, '-d', DOMAIN, '--keep-until-expiring'])
+            if not updating:
+                atomic_write(CONFIG, config_bytes(False))
+                nginx_reload()
+                run(['/usr/bin/certbot', 'certonly', '--non-interactive', '--webroot',
+                     '-w', '/var/www/html', '--preferred-challenges', 'http',
+                     '--cert-name', DOMAIN, '-d', DOMAIN, '--keep-until-expiring'])
             next_link = LINK.with_name(LINK.name + '.next')
             if next_link.exists() or next_link.is_symlink():
                 raise ValueError('LINK_TEMPORARY_OCCUPIED')

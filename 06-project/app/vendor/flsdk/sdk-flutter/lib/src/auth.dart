@@ -2,7 +2,6 @@ import 'dart:async';
 import 'client.dart';
 import 'qr_auth.dart';
 
-part 'apple_auth.dart';
 part 'auth_types.dart';
 part 'auth_storage.dart';
 part 'guest_auth.dart';
@@ -95,6 +94,38 @@ class FlutterAuthSDK {
         'code': code,
         if (device != null) 'device': device,
       });
+      await _store(tokens);
+      _sessionController.add(FlutterSessionStatus.authenticated);
+      return tokens;
+    } catch (_) {
+      _sessionController.add(FlutterSessionStatus.unauthenticated);
+      rethrow;
+    }
+  }
+
+  /// Exchange a native Apple identity token for the same Fenleng session.
+  Future<Map<String, dynamic>> loginWithAppleIdentityToken(String identityToken,
+      {String? displayName, Map<String, dynamic>? device}) async {
+    if (identityToken.trim().isEmpty ||
+        identityToken.length > 16384 ||
+        identityToken.contains('\r') ||
+        identityToken.contains('\n') ||
+        (displayName != null && displayName.length > 120)) {
+      throw const FenlengSdkException(
+          'VALIDATION_FAILED', 'Apple identity credential is invalid');
+    }
+    _sessionController.add(FlutterSessionStatus.authenticating);
+    try {
+      final tokens = await client.request(
+          '/api/platform/v1/auth/federated/apple/login',
+          method: 'POST',
+          body: {
+            'applicationCode': applicationCode,
+            'clientId': clientId,
+            'identityToken': identityToken,
+            if (displayName != null) 'displayName': displayName,
+            if (device != null) 'device': device,
+          });
       await _store(tokens);
       _sessionController.add(FlutterSessionStatus.authenticated);
       return tokens;

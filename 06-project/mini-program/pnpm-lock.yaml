@@ -164,7 +164,7 @@ settings:
 
 overrides:
   webpack: 5.91.0
-  '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz
+  '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz
 
 importers:
 
@@ -261,8 +261,8 @@ importers:
   packages/api-client:
     dependencies:
       '@fenleng/sdk-taro':
-        specifier: file:../../vendor/fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz
-        version: file:vendor/fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz
+        specifier: file:../../vendor/fenleng-sdk-taro-0.5.0-b5e529f.tgz
+        version: file:vendor/fenleng-sdk-taro-0.5.0-b5e529f.tgz(@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz)
       '@fridge/domain':
         specifier: workspace:*
         version: link:../domain
@@ -1252,13 +1252,15 @@ packages:
     resolution: {integrity: sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz':
-    resolution: {integrity: sha512-/QzJMOjq25Guv3hxMMkimrZAzIFGROl9vBv7kBquVXMBn8MYPlXOUdfHoEgXcnkouyCQsMKmv6nG+Pg5N6toQw==, tarball: file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz}
+  '@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz':
+    resolution: {integrity: sha512-wWlRpj36vvRGy6Zz2lAkIVFzhe6WUSjkkGxFWyU2Qgn/PSr+ogadeIMXHXghdLo1py6X6VHqFWWhpwYQSrvqiw==, tarball: file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz}
     version: 0.5.0
 
-  '@fenleng/sdk-taro@file:vendor/fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz':
-    resolution: {integrity: sha512-bh0x2qg+zhmyTRAs8NRHxVXG4zAkMkoNO1OrF+4v9uiDoWWfNzoSclqnp3YEXtFksLYchdQ5vgrasx2oN1nyfA==, tarball: file:vendor/fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz}
+  '@fenleng/sdk-taro@file:vendor/fenleng-sdk-taro-0.5.0-b5e529f.tgz':
+    resolution: {integrity: sha512-k7A/3MnHeWdx68uRYlIW2EIsviZT6zIEkjMBYM0Y6ttde+V5WxaHFybG4gr1pQeLHY0lr/O4uQxWmzY6+LQT/Q==, tarball: file:vendor/fenleng-sdk-taro-0.5.0-b5e529f.tgz}
     version: 0.5.0
+    peerDependencies:
+      '@fenleng/sdk-core': 0.5.0
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -6457,11 +6459,11 @@ snapshots:
 
   '@eslint/js@8.41.0': {}
 
-  '@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz': {}
+  '@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz': {}
 
-  '@fenleng/sdk-taro@file:vendor/fenleng-sdk-taro-0.5.0-fridge-deletion-consumer-candidate.tgz':
+  '@fenleng/sdk-taro@file:vendor/fenleng-sdk-taro-0.5.0-b5e529f.tgz(@fenleng/sdk-core@file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz)':
     dependencies:
-      '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-fridge-telemetry-candidate.tgz
+      '@fenleng/sdk-core': file:vendor/fenleng-sdk-core-0.5.0-b5e529f.tgz
 
   '@hapi/hoek@9.3.0': {}
 

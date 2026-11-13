@@ -224,13 +224,13 @@ packages:
       path: "vendor/flsdk/sdk-flutter"
       relative: true
     source: path
-    version: "0.5.0"
+    version: "0.6.0"
   fenleng_sdk_flutter_china_permissions:
     dependency: transitive
     description:
       path: "packages/sdk-flutter-china-permissions"
-      ref: "334611afbd9ae4be95771159a5cd00dc6f0ba31f"
-      resolved-ref: "334611afbd9ae4be95771159a5cd00dc6f0ba31f"
+      ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
+      resolved-ref: b5e529fab47f95a7fcbefc397f90051dce903b0b
       url: "https://github.com/blackdandan/fenleng-client-sdk.git"
     source: git
     version: "0.1.0"
@@ -247,7 +247,7 @@ packages:
       path: "vendor/flsdk/sdk-flutter-native-identity"
       relative: true
     source: path
-    version: "0.2.0"
+    version: "0.3.0"
   fenleng_theme:
     dependency: transitive
     description:

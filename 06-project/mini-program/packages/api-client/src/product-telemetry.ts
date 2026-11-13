@@ -6,6 +6,7 @@ interface Catalog {consentSource:string;separateAnalyticsToggle:boolean;events:r
 interface Options {
   enabled:boolean;consent():boolean;identity():Identity|null;ready():Promise<Identity|null>;
   catalog:unknown;context():TelemetryContext;nextKey():Promise<string>;
+  nextDeliveryId?:()=>string|Promise<string>;
   debounceMs?:number;pause?:(ms:number)=>Promise<void>;
   timers?:{setTimeout(callback:()=>void,ms:number):unknown;clearTimeout(id:unknown):void};
 }
@@ -51,7 +52,7 @@ export class MiniProductTelemetry {
             return binding.identity.client.request(endpoint,method,body,options);
           }};
         this.sdk=new TaroTelemetrySDK(client,{catalog:[...this.catalog.keys()],consent:()=>!this.closed && this.options.consent(),
-          context:this.options.context,maxQueueSize:100,batchSize:50});
+          context:this.options.context,deliveryIdFactory:this.options.nextDeliveryId,maxQueueSize:100,batchSize:50});
       }
       this.sdk.track(name,properties);this.schedule();return true;
     }catch {return false;}

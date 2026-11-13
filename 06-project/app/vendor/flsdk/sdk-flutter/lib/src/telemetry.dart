@@ -31,6 +31,7 @@ class FlutterTelemetrySDK {
       required this.hasConsent,
       required this.catalog,
       required this.context,
+      this.deliveryIdFactory,
       this.maxQueueSize = 100,
       this.batchSize = 50}) {
     if (maxQueueSize < 1 ||
@@ -41,6 +42,7 @@ class FlutterTelemetrySDK {
           'CONFIGURATION_INVALID', 'Telemetry queue settings are invalid');
   }
   final FenlengFlutterClient client;
+  final String Function()? deliveryIdFactory;
   final bool Function() hasConsent;
   final Set<String> catalog;
   final FlutterTelemetryContext Function() context;
@@ -67,9 +69,17 @@ class FlutterTelemetrySDK {
     _rejectSensitive(snapshot);
     final eventContext = context();
     _validateContext(eventContext);
+    final deliveryId = deliveryIdFactory?.call();
+    if (deliveryId != null &&
+        !RegExp(r'^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89aAbB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$')
+            .hasMatch(deliveryId)) {
+      throw const FenlengSdkException(
+          'TELEMETRY_DELIVERY_ID_INVALID', 'Delivery ID must be a UUID');
+    }
     if (_events.length >= maxQueueSize) _events.removeAt(0);
     _events.add({
       'event': name,
+      if (deliveryId != null) 'deliveryId': deliveryId,
       'timestamp': DateTime.now().toUtc().toIso8601String(),
       'properties': snapshot,
       'context': eventContext.toJson()
