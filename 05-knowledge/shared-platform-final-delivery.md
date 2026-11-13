@@ -12,3 +12,5 @@ Owner于2026-11-13明确要求平台提交、push和部署，剩余正式配置�
 - 最终生产证据：02-engineering/evidence/final-delivery/platform-production-verified.json；数据库2,248,469字节备份已验证可列出目录，路径为/opt/fenleng-shared-platform/production/backups/offline-0.1.0-rc.138。RC137可回滚。
 
 平台部署不等于冰箱正式客户端登记或Provider配置已完成。游客、提醒、采集等默认关闭能力，待Owner配置和真实联调后按产品登记启用；不改变现有物理删除审批及hold。
+
+归档复核：官方SDK随后push清理提交de7fb7c993f6a5e842c73d629ff88c6ed8e7ca88，只取消跟踪8个误纳的Gradle缓存并补ignore，保留本地缓存；消费API源码仍固定b5e529f。产品snapshot只包含66个真实源码文件，8项非源码排除记录在provenance，完整来源ZIP已通过逐文件校验。

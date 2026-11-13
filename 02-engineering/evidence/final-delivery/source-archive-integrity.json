@@ -1,0 +1,12 @@
+{
+  "status": "archive-integrity-verified",
+  "latestArchiveMetadata": ".fenleng/deliveries/latest-source-candidate.json",
+  "checks": [
+    "member hashes",
+    "content identity",
+    "safe archive paths",
+    "no signing credentials",
+    "66 official SDK source hashes"
+  ],
+  "sourceOfTruth": "main; archive metadata stays outside the archive to avoid self-reference"
+}

@@ -1,0 +1,75 @@
+{
+  "file": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\docs\\ip\\software-copyright\\work\\源程序鉴别材料.txt",
+  "duplicate_method": "同一份材料内的规范化语义行精确频次；不连接外部登记机构或第三方代码数据库",
+  "external_duplicate_check": false,
+  "line_count": 3411,
+  "non_empty_line_count": 3411,
+  "duplicate_ratio": 34.76,
+  "top_duplicate_lines": [
+    {
+      "line": "try {",
+      "count": 40
+    },
+    {
+      "line": "@override",
+      "count": 34
+    },
+    {
+      "line": "} catch (_) {",
+      "count": 28
+    },
+    {
+      "line": "_notify();",
+      "count": 24
+    },
+    {
+      "line": "children: [",
+      "count": 24
+    },
+    {
+      "line": "failed = true;",
+      "count": 11
+    },
+    {
+      "line": "} finally {",
+      "count": 9
+    },
+    {
+      "line": "return;",
+      "count": 9
+    },
+    {
+      "line": "errorKey = null;",
+      "count": 9
+    },
+    {
+      "line": "decoration: BoxDecoration(",
+      "count": 9
+    },
+    {
+      "line": "_gate(generation, context);",
+      "count": 9
+    },
+    {
+      "line": "const SizedBox(height: FridgeSpace.medium),",
+      "count": 9
+    },
+    {
+      "line": "SizedBox(",
+      "count": 8
+    },
+    {
+      "line": "crossAxisAlignment: CrossAxisAlignment.stretch,",
+      "count": 8
+    },
+    {
+      "line": "layout.d(",
+      "count": 8
+    }
+  ],
+  "integrity_score": 100,
+  "page_fill_score": 100,
+  "issues": [],
+  "verdict": "high_risk",
+  "guarantee": "本报告只能发现材料内部重复和格式风险，不能保证外部查重或原创性结论。"
+}

@@ -15,3 +15,7 @@
 完整首次通过率及全程耗时无法仅由这些证据重建，保持unknown。
 
 最终功能复核发现并修复平台任务领取/进度回写的事务裂缝；证据为02-engineering/evidence/data-request-recovery-results.json。新增真实PG6项、兼容共20项通过。初轮测试因模块依赖与Test导入不匹配编译失败，日志data-request-transaction-tests.log保留，修正后tests-fixed与recovery-regression日志和XML同时归档；不把首次失败改写成一次通过，也不因本轮后端修复重复未改的客户端全量构建/截图。
+
+## 最终收尾证据
+
+02-engineering/evidence/final-delivery为本轮发布、版本、下载及回归证据。平台实际rc138/V63；官网41f6bc67b6df；APK1e13091b…；官方SDK b5e529f。软著逐文件来源、自动/人工审查及PDF质量报告位于docs/ip/software-copyright/work。正式人工待办均转04-operations/owner-follow-ups.md。

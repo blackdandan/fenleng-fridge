@@ -71,7 +71,7 @@ def main():
     files = {str(p.relative_to(staging)).replace('\\', '/'): digest(p)
              for p in sorted(staging.rglob('*')) if p.is_file()}
     content_id = hashlib.sha256(''.join(f'{value}  {name}\n' for name, value in sorted(files.items())).encode()).hexdigest()
-    manifest = {'kind': 'self-contained-source-candidate', 'contentId': content_id, 'goalComplete': False,
+    manifest = {'kind': 'self-contained-source-candidate', 'contentId': content_id, 'goalComplete': json.loads((ROOT / '02-engineering/implementation-status.json').read_text(encoding='utf-8'))['goalComplete'],
                 'sdkPublished': True, 'files': files}
     (staging / 'CANDIDATE-MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
     archive = OUTPUT / ('fenleng-fridge-source-candidate-' + content_id[:12] + '.zip')

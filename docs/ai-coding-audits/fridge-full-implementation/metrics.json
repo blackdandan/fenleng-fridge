@@ -1,6 +1,6 @@
 {
   "epicId": "fridge-full-implementation",
-  "status": "snapshot",
+  "status": "final",
   "tasks": [],
   "totals": {
     "tokens": "unknown",
@@ -8,5 +8,6 @@
     "durationMs": "unknown",
     "reworkCount": "unknown",
     "conflictCount": "unknown"
-  }
+  },
+  "completionScope": "Owner final delivery with explicit follow-up transfer"
 }

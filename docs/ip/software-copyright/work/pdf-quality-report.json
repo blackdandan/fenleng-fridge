@@ -1,0 +1,27 @@
+{
+  "源代码.pdf": {
+    "pages": 60,
+    "allPagesHaveText": true,
+    "embeddedTrueType": true
+  },
+  "独立开发及原创性声明.pdf": {
+    "pages": 1,
+    "allPagesHaveText": true,
+    "embeddedTrueType": true
+  },
+  "用户执行步骤.pdf": {
+    "pages": 1,
+    "allPagesHaveText": true,
+    "embeddedTrueType": true
+  },
+  "软件主要功能描述.pdf": {
+    "pages": 1,
+    "allPagesHaveText": true,
+    "embeddedTrueType": true
+  },
+  "软件说明书.pdf": {
+    "pages": 9,
+    "allPagesHaveText": true,
+    "embeddedTrueType": true
+  }
+}

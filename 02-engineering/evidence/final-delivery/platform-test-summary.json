@@ -1,0 +1,52 @@
+{
+  "status": "passed-all-seven-modules",
+  "tests": 1048,
+  "modules": {
+    "domain": {
+      "tests": 98,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "application": {
+      "tests": 313,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "interfaces": {
+      "tests": 84,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "infrastructure": {
+      "tests": 139,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "persistence": {
+      "tests": 217,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1
+    },
+    "bootstrap": {
+      "tests": 118,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "edge-gateway": {
+      "tests": 79,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2
+    }
+  },
+  "execution": "Full suite exercised all modules; final HTTP catalog assertion repaired and HTTP module rerun passed. Other passing modules were not repeated.",
+  "productionRuntimeChangedByLastFix": false,
+  "skipped": 3,
+  "passed": 1045
+}

@@ -1,0 +1,13 @@
+{
+  "status": "owner-review-required",
+  "sourceSelection": "complete real Android business files, hash-traceable",
+  "automaticLineDuplicatePercent": 34.76,
+  "automaticVerdict": "high_risk",
+  "repeatedSemanticWindows": {
+    "5": 4,
+    "10": 0,
+    "20": 0
+  },
+  "originalityGuarantee": false,
+  "ownerDeferred": "Explicit 2026-11-13 instruction assigns remaining confirmations and manual review to Owner; does not block material generation or delivery completion."
+}

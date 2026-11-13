@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "kind": "fixed-signature-debug-preview-not-hardened",
+  "originalBytes": 204147812,
+  "arm64ReductionPercent": 64.79,
+  "artifacts": [
+    {
+      "path": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-arm64-v8a-debug.apk",
+      "bytes": 71877247,
+      "MiB": 68.55,
+      "sha256": "1e13091b421b214f0056d5f2c3488b13fdb2b4d0dd83770f47a549764f820654",
+      "flutterEngines": [
+        "lib/arm64-v8a/libflutter.so"
+      ],
+      "containsVulkanValidation": false,
+      "zipOverheadBytes": 139307
+    },
+    {
+      "path": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-armeabi-v7a-debug.apk",
+      "bytes": 66338031,
+      "MiB": 63.26,
+      "sha256": "dc12f48ffe190e1b202d4b2df7d9d839369efc53a6f2568e52889a394498d35b",
+      "flutterEngines": [
+        "lib/armeabi-v7a/libflutter.so"
+      ],
+      "containsVulkanValidation": false,
+      "zipOverheadBytes": 147626
+    },
+    {
+      "path": "06-project/app/apps/fridge/build/app/outputs/flutter-apk/app-x86_64-debug.apk",
+      "bytes": 73106051,
+      "MiB": 69.72,
+      "sha256": "725cfac432e2ef5089de1de3429c1d5c48ac1e2585777bd05dfd65770a848476",
+      "flutterEngines": [
+        "lib/x86_64/libflutter.so"
+      ],
+      "containsVulkanValidation": false,
+      "zipOverheadBytes": 156351
+    }
+  ],
+  "package": "com.fenlengtech.fridge",
+  "version": "0.1.0",
+  "arm64VersionCode": 2001,
+  "certificateSha256": "844fb2a1f368a875b79bf54b8e9859120ce80f9ecc0fbc1538ff41718e3f86e5",
+  "fullPublicDownloadSha256": "1e13091b421b214f0056d5f2c3488b13fdb2b4d0dd83770f47a549764f820654",
+  "publicDownload": "https://fridge.fenlengtech.com/downloads/fenleng-fridge_latest.apk",
+  "deviceInstallation": "not-run, Owner deferred",
+  "compiledTelemetryUUIDValidation": "deliveryIdFactory and TELEMETRY_DELIVERY_ID_INVALID found in actual kernel payload"
+}

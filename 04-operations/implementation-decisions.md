@@ -17,3 +17,7 @@ Owner后续配置与设备事项集中在[待办](owner-follow-ups.md)，源码�
 - 任务领取与结果回写纳入同一既有数据库事务，每次只处理一项、单轮仍受原batchSize限制，修复注销任务崩溃后永久停留“处理中”的恢复缺口。普通失败保留原退避，后项失败不回滚已提交前项，远端清理沿用现有幂等UID。20项相关回归通过；不新增安全策略、生产修复脚本或自动部署，证据见../02-engineering/evidence/data-request-recovery-results.json。
 
 - Owner明确回复“spec approved，发布开发预览站”后，按独立目录、站点配置和匹配证书发布fridge.fenlengtech.com。公开下载明确为当前未加固Debug预览；这次授权不外推到后端、其他网站或正式发行。首次重载就绪检查失败已实际回滚，补有上限重试后完成；证书续期加载复用既有timer并仅匹配本域名。11项本地恢复验证和完整外网APK哈希核对通过，微信真机仍待验，见../02-engineering/evidence/website-preview-production-results.json。
+
+## 最终收尾执行决定
+
+依据Owner明确授权整合平台/SDK最新main；未发布迁移顺延V61-V63，保留上游已部署历史。Docker虚拟化不可用时按现有固定SSH规则单向上传本机构建JAR，服务器缓存镜像离线装配并走原发布代理，不改治理政策。Android继续标明Debug开发预览，清理、分架构并移除非必要GPU验证库，原固定签名不变。SDK消费固定已push Git提交，保留旧candidate字节。软著材料使用完整真实Android业务文件、真实测试截图和内嵌中文字体，登记事实、签章、机械重复风险交Owner复核；不编造完成/首发日期或原创性保证。以上是Owner授权范围内的实现选择，没有代替Owner授予新权限。

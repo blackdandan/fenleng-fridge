@@ -1,0 +1,258 @@
+{
+  "file": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\docs\\ip\\software-copyright\\work\\源程序鉴别材料.txt",
+  "read_only": true,
+  "line_count": 3411,
+  "blank_line_count": 0,
+  "blank_line_numbers": [],
+  "forbidden_declaration_count": 0,
+  "forbidden_declarations": [],
+  "identifier_component_count": 10880,
+  "common_identifier_occurrences": 1035,
+  "common_identifier_ratio": 9.51,
+  "common_identifier_risk": "low_signal",
+  "top_common_identifiers": [
+    {
+      "identifier": "state",
+      "count": 174
+    },
+    {
+      "identifier": "context",
+      "count": 151
+    },
+    {
+      "identifier": "key",
+      "count": 136
+    },
+    {
+      "identifier": "value",
+      "count": 108
+    },
+    {
+      "identifier": "id",
+      "count": 47
+    },
+    {
+      "identifier": "list",
+      "count": 42
+    },
+    {
+      "identifier": "widget",
+      "count": 42
+    },
+    {
+      "identifier": "event",
+      "count": 39
+    },
+    {
+      "identifier": "model",
+      "count": 33
+    },
+    {
+      "identifier": "name",
+      "count": 30
+    },
+    {
+      "identifier": "controller",
+      "count": 27
+    },
+    {
+      "identifier": "provider",
+      "count": 26
+    },
+    {
+      "identifier": "repository",
+      "count": 25
+    },
+    {
+      "identifier": "builder",
+      "count": 22
+    },
+    {
+      "identifier": "result",
+      "count": 19
+    },
+    {
+      "identifier": "theme",
+      "count": 18
+    },
+    {
+      "identifier": "account",
+      "count": 16
+    },
+    {
+      "identifier": "page",
+      "count": 14
+    },
+    {
+      "identifier": "request",
+      "count": 13
+    },
+    {
+      "identifier": "data",
+      "count": 8
+    },
+    {
+      "identifier": "screen",
+      "count": 7
+    },
+    {
+      "identifier": "factory",
+      "count": 5
+    },
+    {
+      "identifier": "notifier",
+      "count": 5
+    },
+    {
+      "identifier": "action",
+      "count": 4
+    },
+    {
+      "identifier": "view",
+      "count": 4
+    },
+    {
+      "identifier": "client",
+      "count": 4
+    },
+    {
+      "identifier": "route",
+      "count": 4
+    },
+    {
+      "identifier": "type",
+      "count": 3
+    },
+    {
+      "identifier": "handler",
+      "count": 3
+    },
+    {
+      "identifier": "item",
+      "count": 3
+    }
+  ],
+  "top_identifiers": [
+    {
+      "identifier": "final",
+      "count": 273
+    },
+    {
+      "identifier": "if",
+      "count": 205
+    },
+    {
+      "identifier": "await",
+      "count": 161
+    },
+    {
+      "identifier": "string",
+      "count": 148
+    },
+    {
+      "identifier": "return",
+      "count": 146
+    },
+    {
+      "identifier": "future",
+      "count": 142
+    },
+    {
+      "identifier": "context",
+      "count": 124
+    },
+    {
+      "identifier": "void",
+      "count": 117
+    },
+    {
+      "identifier": "null",
+      "count": 113
+    },
+    {
+      "identifier": "text",
+      "count": 108
+    },
+    {
+      "identifier": "this",
+      "count": 107
+    },
+    {
+      "identifier": "fridgeproducttokens",
+      "count": 103
+    },
+    {
+      "identifier": "d",
+      "count": 97
+    },
+    {
+      "identifier": "layout",
+      "count": 95
+    },
+    {
+      "identifier": "value",
+      "count": 92
+    },
+    {
+      "identifier": "true",
+      "count": 92
+    },
+    {
+      "identifier": "state",
+      "count": 84
+    },
+    {
+      "identifier": "strings",
+      "count": 83
+    },
+    {
+      "identifier": "false",
+      "count": 81
+    },
+    {
+      "identifier": "required",
+      "count": 79
+    },
+    {
+      "identifier": "const",
+      "count": 79
+    },
+    {
+      "identifier": "child",
+      "count": 75
+    },
+    {
+      "identifier": "async",
+      "count": 74
+    },
+    {
+      "identifier": "key",
+      "count": 73
+    },
+    {
+      "identifier": "food",
+      "count": 62
+    },
+    {
+      "identifier": "map",
+      "count": 61
+    },
+    {
+      "identifier": "bool",
+      "count": 59
+    },
+    {
+      "identifier": "_closed",
+      "count": 53
+    },
+    {
+      "identifier": "zone",
+      "count": 52
+    },
+    {
+      "identifier": "color",
+      "count": 51
+    }
+  ],
+  "recommendation": "仅将结果用于源码选材和人工复核；不要通过批量改名、随机字符串或补写代码来降低指标。常见标识符不是抄袭结论，外部登记机构的数据库比对不由本地脚本保证。"
+}

@@ -45,14 +45,6 @@
     "sdk-flutter/test/wechat_deletion_test.dart": "024faf982c180c491cd9f4f69dc571c0135edd413d61bc7eca24dc7568e793a7",
     "sdk-flutter/tests/flutter.test.js": "1c52c56e9f9def0f77f0faa2c79c5c26ee96449a55ab549c36c100e350e0d82a",
     "sdk-flutter-native-identity/README.md": "92e1e4a2afe28f7b9da7887f3f7ea4d780fba3635e7600ba79418bd534f7f9d6",
-    "sdk-flutter-native-identity/android/.gradle/9.2.0/checksums/checksums.lock": "6b4df31e424630adc17f4c6c8cc5d7bb2921e2786a51f807452d444ee8103766",
-    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileChanges/last-build.bin": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
-    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileHashes/fileHashes.bin": "3ad88e2a83350e52339b78eff8dcd7f9a51ea5d0f686130bfceaf4422bc0b90a",
-    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileHashes/fileHashes.lock": "f5d6dd46f84eb302d619e9668cc965f45e0072a795ba3443e89c9600bedcefc8",
-    "sdk-flutter-native-identity/android/.gradle/9.2.0/gc.properties": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "sdk-flutter-native-identity/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock": "390084d323130a18e1c6e8a1efc784db98f1033b50bb26750b4de9d1463917a1",
-    "sdk-flutter-native-identity/android/.gradle/buildOutputCleanup/cache.properties": "9fa5b535b968921af02dac892dc5bfb011fe854dfbdf17369a62e0ccfbe652d3",
-    "sdk-flutter-native-identity/android/.gradle/vcs-1/gc.properties": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "sdk-flutter-native-identity/android/build.gradle": "2f0f3c16dfb18c52011a75627497666d9c765096b4d2322c02f888a468ec2564",
     "sdk-flutter-native-identity/android/settings.gradle": "4481c331f38121c2d6542a70c88df26be6d1e2b3937168c015a6f521998eb225",
     "sdk-flutter-native-identity/android/src/main/AndroidManifest.xml": "f8cb53c83f56a9b68fa8194aeaa06969bfe602eb0d3e799a20e319d51339262d",
@@ -78,5 +70,15 @@
     "sdk-flutter-firebase-identity/pubspec.lock": "73fda2d8b7243119a392fdfdc861a064389cd1d1cb6549a607ac4489796a8ff1",
     "sdk-flutter-firebase-identity/pubspec.yaml": "5ca25b82c03ae8e13f6cf9bbec006dfe9059a0c6aa73021abc5055a78bfc8d6a",
     "sdk-flutter-firebase-identity/test/firebase_identity_test.dart": "e83ae84529de1f6d24273c4de42533da19226c97f973f8c814a2bcb860fe29b6"
+  },
+  "excludedNonSourcePaths": {
+    "sdk-flutter-native-identity/android/.gradle/9.2.0/checksums/checksums.lock": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileChanges/last-build.bin": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileHashes/fileHashes.bin": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/9.2.0/fileHashes/fileHashes.lock": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/9.2.0/gc.properties": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/buildOutputCleanup/cache.properties": "Generated Gradle cache, excluded from source snapshot",
+    "sdk-flutter-native-identity/android/.gradle/vcs-1/gc.properties": "Generated Gradle cache, excluded from source snapshot"
   }
 }

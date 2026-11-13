@@ -1,0 +1,18 @@
+{
+  "input": "D:\\Development\\WorkSpaces\\CodeXWP\\fenleng-fridge\\docs\\ip\\software-copyright\\work\\application-info-summary.md",
+  "counts": {
+    "main_functions": 774,
+    "technical_characteristics": 73,
+    "source_line_count": "10374",
+    "development_hardware_environment": 20,
+    "runtime_hardware_environment": 20,
+    "development_operating_system": 9,
+    "development_tools": 36,
+    "runtime_platform_operating_system": 13,
+    "runtime_supporting_software": 41,
+    "development_purpose": 25,
+    "target_domain_industry": 13
+  },
+  "valid": true,
+  "errors": []
+}

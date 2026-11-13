@@ -1,0 +1,158 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.5/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :platform-application
+w: Deprecated Gradle Property 'kotlin.incremental.useClasspathSnapshot' Used
+The `kotlin.incremental.useClasspathSnapshot` deprecated property is used in your build.
+Solutions:
+ ? It is unsupported, please stop using it.
+ ? History based incremental compilation approach for JVM platform is removed. Kotlin Gradle plugin is now using a more efficient approach based on ABI snapshots.
+
+
+> Task :platform-application:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-domain:compileKotlin UP-TO-DATE
+> Task :platform-domain:compileJava NO-SOURCE
+> Task :platform-domain:processResources NO-SOURCE
+> Task :platform-domain:classes UP-TO-DATE
+> Task :platform-domain:jar UP-TO-DATE
+> Task :platform-application:compileKotlin UP-TO-DATE
+> Task :platform-application:compileJava NO-SOURCE
+> Task :platform-application:processResources NO-SOURCE
+> Task :platform-application:classes UP-TO-DATE
+> Task :platform-application:jar UP-TO-DATE
+> Task :platform-application:compileTestKotlin UP-TO-DATE
+> Task :platform-application:compileTestJava NO-SOURCE
+> Task :platform-application:processTestResources NO-SOURCE
+> Task :platform-application:testClasses UP-TO-DATE
+> Task :platform-application:test UP-TO-DATE
+> Task :platform-bootstrap:bootBuildInfo
+> Task :platform-bootstrap:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-infrastructure:compileKotlin UP-TO-DATE
+> Task :platform-infrastructure:compileJava NO-SOURCE
+> Task :platform-infrastructure:processResources NO-SOURCE
+> Task :platform-infrastructure:classes UP-TO-DATE
+> Task :platform-infrastructure:jar UP-TO-DATE
+> Task :platform-interfaces:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-interfaces:compileKotlin UP-TO-DATE
+> Task :platform-interfaces:compileJava NO-SOURCE
+> Task :platform-interfaces:processResources NO-SOURCE
+> Task :platform-interfaces:classes UP-TO-DATE
+> Task :platform-interfaces:jar UP-TO-DATE
+> Task :platform-persistence:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-persistence:compileKotlin UP-TO-DATE
+> Task :platform-persistence:compileJava NO-SOURCE
+> Task :platform-persistence:processResources UP-TO-DATE
+> Task :platform-persistence:classes UP-TO-DATE
+> Task :platform-persistence:jar UP-TO-DATE
+> Task :platform-bootstrap:compileKotlin UP-TO-DATE
+> Task :platform-bootstrap:compileJava NO-SOURCE
+> Task :platform-bootstrap:processResources UP-TO-DATE
+> Task :platform-bootstrap:classes
+> Task :platform-bootstrap:jar
+> Task :platform-bootstrap:compileTestKotlin UP-TO-DATE
+> Task :platform-bootstrap:compileTestJava NO-SOURCE
+> Task :platform-bootstrap:processTestResources UP-TO-DATE
+> Task :platform-bootstrap:testClasses UP-TO-DATE
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+> Task :platform-bootstrap:test
+
+{"@timestamp":"2026-11-13T21:32:35.2723142+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:36.1365486+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:36.1385492+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:37.4308057+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:37.4328062+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:42.2625248+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:42.2645254+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:43.1220621+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:43.1245275+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:43.918819+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:43.9218199+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5301897+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5316947+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5316947+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5326915+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.tomcat.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:32:45.5336917+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.tomcat.GracefulShutdown","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:32:45.5346921+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5346921+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:45.5376928+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.tomcat.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:32:45.5386935+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.tomcat.GracefulShutdown","thread_name":"tomcat-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:32:51.2449888+08:00","@version":"1","message":"fenleng-platform - Shutdown initiated...","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+{"@timestamp":"2026-11-13T21:32:51.4491197+08:00","@version":"1","message":"fenleng-platform - Shutdown completed.","logger_name":"com.zaxxer.hikari.HikariDataSource","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000}
+
+> Task :platform-domain:compileTestKotlin UP-TO-DATE
+> Task :platform-domain:compileTestJava NO-SOURCE
+> Task :platform-domain:processTestResources NO-SOURCE
+> Task :platform-domain:testClasses UP-TO-DATE
+> Task :platform-domain:test UP-TO-DATE
+> Task :platform-edge-gateway:bootBuildInfo
+> Task :platform-edge-gateway:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :platform-edge-gateway:compileKotlin UP-TO-DATE
+> Task :platform-edge-gateway:compileJava NO-SOURCE
+> Task :platform-edge-gateway:processResources UP-TO-DATE
+> Task :platform-edge-gateway:classes
+> Task :platform-edge-gateway:jar
+> Task :platform-edge-gateway:compileTestKotlin UP-TO-DATE
+> Task :platform-edge-gateway:compileTestJava NO-SOURCE
+> Task :platform-edge-gateway:processTestResources NO-SOURCE
+> Task :platform-edge-gateway:testClasses UP-TO-DATE
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+{"@timestamp":"2026-11-13T21:33:04.0195578+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:04.0205577+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"netty-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:06.0462218+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:06.0472221+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"netty-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:08.0628503+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:08.0628503+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"netty-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:08.0638509+08:00","@version":"1","message":"Commencing graceful shutdown. Waiting for active requests to complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"SpringApplicationShutdownHook","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+{"@timestamp":"2026-11-13T21:33:08.0638509+08:00","@version":"1","message":"Graceful shutdown complete","logger_name":"org.springframework.boot.reactor.netty.GracefulShutdown","thread_name":"netty-shutdown","level":"INFO","level_value":20000,"tags":["COMMONS-LOGGING"]}
+> Task :platform-edge-gateway:test
+> Task :platform-infrastructure:compileTestKotlin UP-TO-DATE
+> Task :platform-infrastructure:compileTestJava NO-SOURCE
+> Task :platform-infrastructure:processTestResources NO-SOURCE
+> Task :platform-infrastructure:testClasses UP-TO-DATE
+> Task :platform-infrastructure:test UP-TO-DATE
+> Task :platform-interfaces:processTestResources NO-SOURCE
+> Task :platform-persistence:compileTestKotlin UP-TO-DATE
+> Task :platform-persistence:compileTestJava NO-SOURCE
+> Task :platform-persistence:processTestResources UP-TO-DATE
+> Task :platform-persistence:testClasses UP-TO-DATE
+> Task :platform-interfaces:compileTestKotlin
+> Task :platform-persistence:test
+> Task :platform-interfaces:compileTestJava NO-SOURCE
+> Task :platform-interfaces:testClasses UP-TO-DATE
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :platform-interfaces:test
+
+PlatformErrorHandlerTest > runtime error catalog matches frozen v1 statuses() FAILED
+    org.opentest4j.AssertionFailedError: expected: <{400 BAD_REQUEST=5, 401 UNAUTHORIZED=2, 403 FORBIDDEN=2, 404 NOT_FOUND=1, 409 CONFLICT=9, 422 UNPROCESSABLE_ENTITY=1, 410 GONE=1, 429 TOO_MANY_REQUESTS=1, 500 INTERNAL_SERVER_ERROR=1, 503 SERVICE_UNAVAILABLE=2}> but was: <{400 BAD_REQUEST=5, 404 NOT_FOUND=2, 503 SERVICE_UNAVAILABLE=3, 409 CONFLICT=15, 403 FORBIDDEN=3, 401 UNAUTHORIZED=2, 422 UNPROCESSABLE_ENTITY=1, 410 GONE=1, 429 TOO_MANY_REQUESTS=1, 500 INTERNAL_SERVER_ERROR=1}>
+        at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+        at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+        at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+        at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+        at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1199)
+        at app//kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+        at app//kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+        at app//kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+        at app//kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+        at app//kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+        at app//com.fenleng.platform.interfaces.http.PlatformErrorHandlerTest.runtime error catalog matches frozen v1 statuses(PlatformErrorHandlerTest.kt:76)
+
+84 tests completed, 1 failed
+
+> Task :platform-interfaces:test FAILED
+
+[Incubating] Problems report is available at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':platform-interfaces:test'.
+> There were failing tests. See the report at: file:///D:/Development/WorkSpaces/CodeXWP/fenleng-shared-platform/backend/platform-interfaces/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 14m 21s
+35 actionable tasks: 9 executed, 26 up-to-date
